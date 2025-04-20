@@ -22,7 +22,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "LIADTECH - Votre succès en ligne commence ici",
   description: "Transformez vos idées en succès digital avec LIADTECH",
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -34,12 +34,18 @@ export default function RootLayout({
     <html lang="fr">
       <body className={inter.className}>
         <header className="border-b py-4">
-          <div className="container mx-auto flex justify-between items-center">
-            <Link href="/" className="flex items-center">
-              <span className="text-[#673de6] font-bold text-xl">
-                LIAD<span className="text-[#ff41ed]">TECH</span>
-              </span>
-            </Link>
+          <div className="container mx-auto flex justify-between items-center px-4">
+          <Link href="/" className="flex items-center">
+  <img 
+    src="/images/Logo Liadtech V2 3.svg" 
+    alt="LIADTECH Logo" 
+    style={{
+      height: "88px",
+      width: "206px"
+    }}
+    className="h-10 mr-2" 
+  />
+</Link>
 
             <nav className="hidden md:flex items-center space-x-6">
               <Link href="/" className="text-[#1f1d2c] hover:text-[#673de6] font-medium">
@@ -49,9 +55,12 @@ export default function RootLayout({
                 <button className="flex items-center text-[#1f1d2c] hover:text-[#673de6] font-medium">
                   Services <ChevronDown className="h-4 w-4 ml-1" />
                 </button>
-                <div className="absolute left-0 mt-2 w-screen bg-white shadow-xl rounded-md p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform -translate-x-1/4">
+                {/* <div className="absolute left-0 mt-2 w-screen bg-white shadow-xl rounded-md p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform -translate-x-1/4">
+                  <div className="text-[#1f1d2c] text-center mb-6 text-lg font-medium">
+                    De l'idée à l'automatisation, tout est imaginé pour vous
+                  </div>
                   <div className="grid grid-cols-3 gap-8">
-                    {/* Web & App / Web & Marketing */}
+                    // Web & App Section
                     <div>
                       <h3 className="text-lg font-bold text-gray-600 mb-4">Web & App</h3>
                       <div className="space-y-6">
@@ -200,7 +209,7 @@ export default function RootLayout({
                       </div>
                     </div>
 
-                    {/* Studio Créatif */}
+                    // Studio Créatif
                     <div>
                       <h3 className="text-lg font-bold text-gray-600 mb-4">Studio Créatif</h3>
                       <div className="space-y-6">
@@ -327,7 +336,7 @@ export default function RootLayout({
                       </div>
                     </div>
 
-                    {/* Cloud, SaaS & Support */}
+                    // Cloud, SaaS & Support
                     <div>
                       <h3 className="text-lg font-bold text-gray-600 mb-4">Cloud, SaaS & Support</h3>
                       <div className="space-y-6">
@@ -445,7 +454,7 @@ export default function RootLayout({
                     </div>
                   </div>
 
-                  {/* IA automatisation & Cybersécurité */}
+                  // IA automatisation & Cybersécurité 
                   <div className="mt-8 pt-8 border-t">
                     <h3 className="text-lg font-bold text-gray-600 mb-4">IA automatisation & Cybersécurité</h3>
                     <div className="grid grid-cols-4 gap-6">
@@ -510,7 +519,7 @@ export default function RootLayout({
                               strokeLinecap="round"
                               strokeLinejoin="round"
                               strokeWidth={2}
-                              d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                              d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.039-11.622 0-1.042-.133-2.052-.382-3.016z"
                             />
                           </svg>
                         </div>
@@ -543,7 +552,7 @@ export default function RootLayout({
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
               <Link href="/tarifs" className="text-[#1f1d2c] hover:text-[#673de6] font-medium">
                 Tarifs
@@ -582,10 +591,7 @@ export default function RootLayout({
                     </div>
 
                     <div className="flex items-start">
-                      <div
-                        className="flex-shrink-0 h-12 w-12 bg-[#673de6] rounded-full flex items-center
-justify-center mr-4"
-                      >
+                      <div className="flex-shrink-0 h-12 w-12 bg-[#673de6] rounded-full flex items-center justify-center mr-4">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           className="h-6 w-6 text-white"
@@ -761,11 +767,11 @@ justify-center mr-4"
 
             <div className="flex items-center space-x-4">
               <div className="flex items-center border rounded-md px-2 py-1">
-                <Globe className="h-4 w-4 text-gray-500 mr-1" />
-                <span className="text-sm">FR-EN</span>
+                <img src="/images/fr.svg" alt="Français" className="w-4 h-4 mr-1" />
+                <span className="text-sm">Français</span>
               </div>
               <Link href="/login">
-                <Button className="bg-[#673de6] hover:bg-[#5f65f4]">Connexion</Button>
+                <Button className="bg-[#673de6] hover:bg-[#5735bc] text-white">Connexion</Button>
               </Link>
             </div>
           </div>
@@ -773,93 +779,111 @@ justify-center mr-4"
 
         {children}
 
-        <footer className="bg-[#1f1d2c] text-white py-12">
-          <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-              <h3 className="font-bold text-xl mb-4">
-                <span className="text-[#673de6]">
-                  LIAD<span className="text-[#ff41ed]">TECH</span>
-                </span>
-              </h3>
-              <p className="text-gray-300 mb-4">Transformez vos idées en succès digital</p>
-              <div className="flex space-x-4">
-                <a href="#" className="text-gray-300 hover:text-white">
-                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
-                  </svg>
-                </a>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
-                  </svg>
-                </a>
+        {/* Footer Section */}
+        <footer className="bg-[#1f1d2c] text-white py-16 bg-no-repeat bg-cover bg-center" style={{ backgroundImage: "url('/images/demo-hosting-footer-bg.jpg')" }}>
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 mb-10">
+              {/* Footer Column 1 */}
+              <div className="lg:col-span-3 md:col-span-1">
+                <Link href="/" className="inline-block mb-6">
+                <img 
+    src="/images/Logo Liadtech V2 Blanc 3.svg" 
+    alt="LIADTECH Logo" 
+    style={{
+      height: "88px",
+      width: "206px"
+    }}
+    className="h-10 mr-2" 
+  />
+                </Link>
+                <p className="text-gray-300 mb-6">
+                  Experts en solutions digitales, nous accompagnons les entreprises dans leur croissance numérique avec des solutions sur mesure et une approche centrée sur l&apos;innovation
+                </p>
+                <div className="flex space-x-4 mt-6">
+                  <a href="#" className="text-white hover:text-[#673de6] transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                    </svg>
+                  </a>
+                  <a href="#" className="text-white hover:text-[#673de6] transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              {/* Footer Column 2 */}
+              <div className="lg:col-span-2 md:col-span-1">
+                <h4 className="text-lg font-medium mb-6">A propos</h4>
+                <ul className="space-y-3">
+                  <li><Link href="/services" className="text-gray-300 hover:text-white transition-colors">Services</Link></li>
+                  <li><Link href="/blog" className="text-gray-300 hover:text-white transition-colors">Blog</Link></li>
+                  <li><Link href="/qui-sommes-nous" className="text-gray-300 hover:text-white transition-colors">Qui sommes-nous</Link></li>
+                  <li><Link href="/contact" className="text-gray-300 hover:text-white transition-colors">Contact</Link></li>
+                </ul>
+              </div>
+
+              {/* Footer Column 3 */}
+              <div className="lg:col-span-2 md:col-span-1">
+                <h4 className="text-lg font-medium mb-6">Solutions</h4>
+                <ul className="space-y-3">
+                  <li><Link href="/developpement-web-app" className="text-gray-300 hover:text-white transition-colors">Développement Web/App</Link></li>
+                  <li><Link href="/digital-marketing" className="text-gray-300 hover:text-white transition-colors">Digital Marketing</Link></li>
+                  <li><Link href="/ui-ux-design" className="text-gray-300 hover:text-white transition-colors">UI/UX Design</Link></li>
+                  <li><Link href="/saas" className="text-gray-300 hover:text-white transition-colors">SaaS</Link></li>
+                  <li><Link href="/cloud" className="text-gray-300 hover:text-white transition-colors">Cloud</Link></li>
+                  <li><Link href="/ia" className="text-gray-300 hover:text-white transition-colors">IA</Link></li>
+                </ul>
+              </div>
+
+              {/* Footer Column 4 */}
+              <div className="lg:col-span-2 md:col-span-1">
+                <h4 className="text-lg font-medium mb-6">Contactez nous</h4>
+                <div className="mb-4">
+                  <p className="text-gray-300 mb-1">Besoin de soutien?</p>
+                  <a href="mailto:contact@liadtech.com" className="text-white hover:text-[#673de6] transition-colors">contact@liadtech.com</a>
+                </div>
+                <div>
+                  <p className="text-gray-300 mb-1">Espace Client</p>
+                  <a href="/espace-client" className="text-white hover:text-[#673de6] transition-colors">Connexion</a>
+                </div>
+              </div>
+
+              {/* Footer Column 5 */}
+              <div className="lg:col-span-3 md:col-span-1">
+                <h4 className="text-lg font-medium mb-6">Abonnez-vous à notre newsletter</h4>
+                <p className="text-gray-300 mb-6">Abonnez-vous à notre newsletter pour obtenir les dernières nouvelles et mises à jour!</p>
+                <div className="relative">
+                  <input 
+                    type="email" 
+                    className="w-full bg-white bg-opacity-10 border border-gray-600 rounded-md py-3 px-4 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#673de6]" 
+                    placeholder="Entrez votre e-mail"
+                  />
+                  <button className="absolute right-3 top-1/2 transform -translate-y-1/2 text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                      <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
 
-            <div>
-              <h4 className="font-bold mb-4">Services</h4>
-              <ul className="space-y-2">
-                <li>
-                  <Link href="/web-marketing" className="text-gray-300 hover:text-white">
-                    Web & Marketing
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/studio-creatif" className="text-gray-300 hover:text-white">
-                    Studio Créatif
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/cloud-saas" className="text-gray-300 hover:text-white">
-                    Cloud & SaaS
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/ia-cybersecurite" className="text-gray-300 hover:text-white">
-                    IA & Cybersécurité
-                  </Link>
-                </li>
-              </ul>
+            {/* Footer Bottom */}
+            <div className="border-t border-gray-700 pt-6 text-center">
+              <p className="text-sm text-gray-400 max-w-3xl mx-auto">
+                Ce site est protégé par recaptcha et le google 
+                <Link href="/politique-de-confidentialite" className="text-white hover:text-[#673de6] transition-colors border-b border-white mx-1">
+                  politique de confidentialité
+                </Link>
+                et 
+                <Link href="/conditions-de-service" className="text-white hover:text-[#673de6] transition-colors border-b border-white mx-1">
+                  conditions de service
+                </Link>
+                appliquées.
+              </p>
             </div>
-
-            <div>
-              <h4 className="font-bold mb-4">Ressources</h4>
-              <ul className="space-y-2">
-                <li>
-                  <Link href="/blog" className="text-gray-300 hover:text-white">
-                    Blog
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/faq" className="text-gray-300 hover:text-white">
-                    FAQ
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/tutoriels" className="text-gray-300 hover:text-white">
-                    Tutoriels
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/support" className="text-gray-300 hover:text-white">
-                    Support
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-bold mb-4">Contactez-nous</h4>
-              <ul className="space-y-2">
-                <li className="text-gray-300">Email: contact@liadtech.com</li>
-                <li className="text-gray-300">Tél: +33 1 23 45 67 89</li>
-                <li className="text-gray-300">Adresse: 123 Avenue Tech, 75001 Paris</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="container mx-auto mt-12 pt-6 border-t border-gray-700">
-            <p className="text-gray-400 text-center">© {new Date().getFullYear()} LIADTECH. Tous droits réservés.</p>
           </div>
         </footer>
       </body>
