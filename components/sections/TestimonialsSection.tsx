@@ -11,6 +11,7 @@ const testimonials: {
   description: string,
   jobTitle: string,
 }[] = [
+  
     {
       name: 'Yassine L.',
       image: '/Liadtech/Accueil/yassin section 6.png',
@@ -35,7 +36,9 @@ const TestimonialsSection = () => {
   return (
     <section className="pb-20">
       <div className="container mx-auto relative">
-        <Image src="/Liadtech/Accueil/Frame 80.svg" width={0} height={0} className='w-full h-full object-cover absolute top-0 left-0' alt="testimonials" />
+        {/* <Image src="/Liadtech/Accueil/Frame 80.svg" width={0} height={0} className='w-full h-full object-cover absolute top-0 left-0' alt="testimonials" /> */}
+        
+        {/* <Image src="/Liadtech/Accueil/icones/Rectangle 98.svg" width={0} height={0} className='w-auto h-auto absolute' alt='bg' /> */}
         <Swiper
           modules={[Navigation]}
           navigation={{
@@ -48,12 +51,15 @@ const TestimonialsSection = () => {
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
-              <div className="grid grid-cols-3 items-center gap-10">
-                <div className="col-span-1 self-end">
-                  <Image src={testimonial.image} width={0} height={0} className='w-full h-full' alt={testimonial.name} />
+              <div className="grid grid-cols-3 items-center h-[600px]  gap-10">
+                <div className="col-span-1 flex justify-end h-full relative overflow-hidden">
+                <Image src="/Liadtech/Accueil/icones/Rectangle 96.svg" width={0} height={0} className='w-[90%] left-0  h-auto absolute' alt='bg' />
+                <Image src={testimonial.image} width={0} height={0} className='w-full self-end h-auto z-10' alt={testimonial.name} />
                 </div>
-                <div className="col-span-2 px-10">
-                  <div className="flex flex-col gap-4 px-9 py-20 rounded-lg bg-white">
+                <div className="col-span-2 px-10 relative  ">
+                <Image src="/Liadtech/Accueil/icones/Rectangle 98.svg" width={0} height={0} className='!w-auto !h-[95%] right-5 -top-5 z-0 absolute' alt='bg' />
+                <Image src="/Liadtech/Accueil/icones/Rectangle 98.svg" width={0} height={0} className='!w-auto !h-[95%] left-5 -bottom-5 z-0 absolute' alt='bg' />
+                  <div className="flex flex-col gap-4 px-9 py-20 h-full relative rounded-lg z-10 bg-white">
                     <div className='flex items-center gap-2 justify-between'>
                       <div className="flex flex-col gap-2">
                         <h3 className="text-2xl font-bold text-[#2D1F67]">{testimonial.name}</h3>
@@ -73,8 +79,9 @@ const TestimonialsSection = () => {
                       </div>
                     </div>
                     <hr className='w-full border-purple-700' />
-                    <p className="text-sm text-gray-500">{testimonial.description}</p>
+                    <p className="text-2xl text-gray-500">{testimonial.description}</p>
                   </div>
+                  
                 </div>
               </div>
             </SwiperSlide>
