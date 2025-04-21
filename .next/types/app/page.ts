@@ -1,4 +1,4 @@
-// File: D:\Liadtech\MERN Stack\liadtech-pern-stack\app\page.tsx
+// File: /home/andev/LiadTech/liadtech-pern-stack/app/page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
