@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <main className="min-h-screen overflow-x-hidden bg-white">
       {/* Hero Section */}
-      <section className="container mx-auto pt-16 pb-12">
+      <section className="px-20 w-full mx-auto pt-16 pb-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="text-center lg:text-left">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1f1d2c] mb-4">
