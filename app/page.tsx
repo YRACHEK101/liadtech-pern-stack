@@ -19,16 +19,16 @@ export default function Home() {
 
   const youtubeModalRef = useRef<ModalRef>(null);
 
-  // التبديل إلى القسم المحدد
-  const toggleSection = (section) => {
-    setActiveSection(section);
+  // // التبديل إلى القسم المحدد
+  // const toggleSection = (section) => {
+  //   setActiveSection(section);
 
-    // التمرير السلس إلى القسم المحدد
-    const element = document.getElementById(section);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  //   // التمرير السلس إلى القسم المحدد
+  //   const element = document.getElementById(section);
+  //   if (element) {
+  //     element.scrollIntoView({ behavior: 'smooth' });
+  //   }
+  // };
 
   return (
     <main className="min-h-screen overflow-x-hidden bg-white">
@@ -488,7 +488,7 @@ function PricingTable() {
     ultimate: false
   });
 
-  const toggleCard = (card) => {
+  const toggleCard = (card: keyof typeof expandedCards) => {
     setExpandedCards(prev => ({
       ...prev,
       [card]: !prev[card]
@@ -717,7 +717,7 @@ const ExpandedCardContent = () => {
 };
 
 // Service Item Component
-const ServiceItem = ({ active, text, hasInfo = false }) => {
+const ServiceItem = ({ active=false, text='', hasInfo = false }) => {
   return (
     <li className="flex items-start gap-2">
       <div className="flex-shrink-0 mt-1">
@@ -749,7 +749,7 @@ const ServiceItem = ({ active, text, hasInfo = false }) => {
 };
 
 // Pour la rétrocompatibilité, gardons ces composants également
-const ListItem = ({ active, text, tooltip }) => {
+const ListItem = ({ active=false, text='', tooltip='' }) => {
   return (
     <li className="flex items-start text-sm">
       {active ? (

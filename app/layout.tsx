@@ -68,7 +68,7 @@ export default function RootLayout({
                         </span>
                         <div className="flex flex-col gap-8">
                           <div className="flex gap-3">
-                            <Image src={"/images/coding.svg"} alt="icon" width={46} height={46} />
+                            <Image src={"/images/coding.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
                                 Création de sites web
@@ -79,7 +79,7 @@ export default function RootLayout({
                             </div>
                           </div>
                           <div className="flex gap-3">
-                            <Image src={"/images/Group 141.svg"} alt="icon" width={46} height={46} />
+                            <Image src={"/images/Group 141.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
                                 Applications mobiles
@@ -95,7 +95,7 @@ export default function RootLayout({
                         </span>
                         <div className="flex flex-col gap-8">
                           <div className="flex gap-3">
-                            <Image src={"/images/speakerphone.svg"} alt="icon" width={46} height={46} />
+                            <Image src={"/images/speakerphone.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
                                 Marketing digital & publicité
@@ -106,7 +106,7 @@ export default function RootLayout({
                             </div>
                           </div>
                           <div className="flex gap-3">
-                            <Image src={"/images/seo-tag-search-engine-optimization_svgrepo.com.svg"} alt="icon" width={46} height={46} />
+                            <Image src={"/images/seo-tag-search-engine-optimization_svgrepo.com.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
                                 Référencement  Web /SEO
@@ -117,7 +117,7 @@ export default function RootLayout({
                             </div>
                           </div>
                           <div className="flex gap-3">
-                            <Image src={"/images/edit.svg"} alt="icon" width={46} height={46} />
+                            <Image src={"/images/edit.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
                                 Blogging & contenus
@@ -168,7 +168,7 @@ export default function RootLayout({
                             </div>
                           </div>
                           <div className="flex gap-3">
-                            <Image src={"/images/brush.svg"} alt="icon" width={46} height={46} />
+                            <Image src={"/images/brush.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
                                 Design Graphique & Visuels
@@ -179,7 +179,7 @@ export default function RootLayout({
                             </div>
                           </div>
                           <div className="flex gap-3">
-                            <Image src={"/images/Group 170 (1).svg"} alt="icon" width={46} height={46} />
+                            <Image src={"/images/Group 170 (1).svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
                                 Design UX/UI
@@ -197,7 +197,7 @@ export default function RootLayout({
                         </span>
                         <div className="flex flex-col gap-8">
                           <div className="flex gap-3">
-                            <Image src={"/images/cloud-computing-servers-blades.svg"} alt="icon" width={46} height={46} />
+                            <Image src={"/images/cloud-computing-servers-blades.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
                                 Infrastructure Cloud et migration
@@ -208,7 +208,7 @@ export default function RootLayout({
                             </div>
                           </div>
                           <div className="flex gap-3">
-                            <Image src={"/images/12-ui-code.svg"} alt="icon" width={46} height={46} />
+                            <Image src={"/images/12-ui-code.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
                                 Développement SaaS
@@ -219,7 +219,7 @@ export default function RootLayout({
                             </div>
                           </div>
                           <div className="flex gap-3">
-                            <Image src={"/images/hammer-and-wrench_svgrepo.com.svg"} alt="icon" width={46} height={46} />
+                            <Image src={"/images/hammer-and-wrench_svgrepo.com.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
                                 Maintenance & infogérance
@@ -230,7 +230,7 @@ export default function RootLayout({
                             </div>
                           </div>
                           <div className="flex gap-3">
-                            <Image src={"/images/Group 170.svg"} alt="icon" width={46} height={46} />
+                            <Image src={"/images/Group 170.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
                                 Applications sur mesure
@@ -257,7 +257,7 @@ export default function RootLayout({
                       </div>
                       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                         <div className="flex gap-3">
-                          <Image src={"/images/cloud-computing-security-robot.svg"} alt="icon" width={46} height={46} />
+                          <Image src={"/images/cloud-computing-security-robot.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                           <div className="flex flex-col flex-1  ">
                             <span className="font-bold">
                               Chatbots
@@ -268,7 +268,7 @@ export default function RootLayout({
                           </div>
                         </div>
                         <div className="flex gap-3">
-                          <Image src={"/images/Group 140.svg"} alt="icon" width={46} height={46} />
+                          <Image src={"/images/Group 140.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                           <div className="flex flex-col flex-1  ">
                             <span className="font-bold">
                               Automatisation & agents IA
@@ -279,7 +279,7 @@ export default function RootLayout({
                           </div>
                         </div>
                         <div className="flex gap-3">
-                          <Image src={"/images/Group 146.svg"} alt="icon" width={46} height={46} />
+                          <Image src={"/images/Group 146.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                           <div className="flex flex-col flex-1  ">
                             <span className="font-bold">
                               Audit de sécurité & Pentest
@@ -290,7 +290,7 @@ export default function RootLayout({
                           </div>
                         </div>
                         <div className="flex gap-3">
-                          <Image src={"/images/Group 147.svg"} alt="icon" width={46} height={46} />
+                          <Image src={"/images/Group 147.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                           <div className="flex flex-col flex-1  ">
                             <span className="font-bold">
                               Conformité RGPD
