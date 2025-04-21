@@ -503,7 +503,7 @@ function PricingTable() {
 
       <div className="flex flex-col md:flex-row justify-center gap-4">
         {/* Booster Card */}
-        <div className="flex-1 relative rounded-2xl border border-gray-200 overflow-hidden" style={{ marginTop: 46 }}
+        <div className="flex-1 self-start relative rounded-2xl border border-gray-200 overflow-hidden" style={{ marginTop: 46 }}
         >
           <div className="p-6">
             <h3 className="text-xl font-bold text-purple-900">Booster</h3>
@@ -551,7 +551,7 @@ function PricingTable() {
         </div>
 
         {/* Premium Card - Highlighted */}
-        <div className="flex-1 relative rounded-2xl border-2 border-purple-600 overflow-hidden bg-white transform md:scale-105 z-10">
+        <div className="flex-1 self-start relative rounded-2xl border-2 border-purple-600 overflow-hidden bg-white transform md:scale-105 z-10">
           <div className="title bg-purple-600 text-white text-center py-2 font-medium">
             Le plus populaire
           </div>
@@ -610,7 +610,7 @@ function PricingTable() {
         </div>
 
         {/* Ultimate Card */}
-        <div className="flex-1 relative rounded-2xl border border-gray-200 overflow-hidden" style={{ marginTop: 46 }}>
+        <div className="flex-1 self-start relative rounded-2xl border border-gray-200 overflow-hidden" style={{ marginTop: 46 }}>
           <div className="p-6">
             <h3 className="text-xl font-bold text-purple-900">Ultimate</h3>
             <p className="text-sm text-gray-600 mb-2">Pour scaler avec une vraie stratégie</p>
