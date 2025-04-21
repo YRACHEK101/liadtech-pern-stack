@@ -33,9 +33,9 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="container mx-auto pt-16 pb-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          <div className="text-center lg:text-left">
+      <section className="container mx-auto pt-16 pb-12 px-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 ">
+          <div className="text-center lg:text-left pt-10">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1f1d2c] mb-4">
               Plus de visibilité. Plus de clients. Moins de stress.
             </h1>
@@ -126,7 +126,7 @@ export default function Home() {
 
 
       {/* Trusted by clients section */}
-      <section className="container mx-auto text-center my-16">
+      <section className="w-full mx-auto text-center my-16">
         <h2 className="font-bold ">
           +100 entreprises nous font déjà confiance
         </h2>
@@ -176,7 +176,7 @@ export default function Home() {
       </section>
 
       {/* Pricing Table Section */}
-      <section className="py-16 container mx-auto">
+      <section className="py-16 w-full mx-auto">
         <PricingTable />
       </section>
 
@@ -184,11 +184,11 @@ export default function Home() {
 
       {/* Why Choose Section */}
       <section className="py-16 bg-gray-50">
-        <div className="container mx-auto">
+        <div className="w-full mx-auto">
           <h2 className="text-3xl font-bold text-center mb-2">Pourquoi choisir LIADTECH ?</h2>
           <p className="text-center text-gray-600 mb-12">Rapide. Fiable. Créatif.</p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="flex justify-center items-center gap-8">
             <Image
               src="/images/Pourquoi-choisir.svg"
               alt="Pourquoi choisir LIADTECH"
@@ -203,7 +203,7 @@ export default function Home() {
       <TestimonialsSection />
 
       <section className="bg-[#2D1F67] p-20 text-white flex flex-col gap-48">
-        <div className="container mx-auto flex flex-col items-center gap-5">
+        <div className="w-full mx-auto flex flex-col items-center gap-5">
           <div className="text-white text-5xl font-bold">
             Migration & refonte en toute sérénité
           </div>
@@ -249,7 +249,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 container mx-auto">
+        <div className="grid grid-cols-2 w-full mx-auto">
           <div className="flex flex-col gap-5 text-[24px] ">
             <span className="text-white text-6xl font-bold">
               Une refonte qui change tout
@@ -297,7 +297,7 @@ export default function Home() {
 
 
       <section>
-        <div className="container mx-auto grid grid-cols-2 gap-8 items-center py-16 relative">
+        <div className="w-full mx-auto grid grid-cols-2 gap-8 items-center py-16 relative">
           <Image
             src="/Liadtech/Accueil/dashboard section 9.svg"
             width={600}
@@ -343,7 +343,7 @@ export default function Home() {
 
 
       {/* Support Section */}
-      <section className="py-16 container mx-auto">
+      <section className="py-16 w-full mx-auto px-10">
         <div className="grid grid-cols-2 gap-8 items-center">
           <div className="flex flex-col gap-3">
             <h3 className="text-5xl font-bold">
@@ -387,7 +387,7 @@ export default function Home() {
         backgroundImage: "url('/Liadtech/Accueil/questions_bg.svg')",
         backgroundPosition: 'center',
       }}>
-        <div className="container mx-auto ">
+        <div className="w-full mx-auto ">
           <h2 className="text-5xl font-bold text-center mb-8 !text-white">Questions fréquentes</h2>
           <p className="text-xl text-center mb-12">
             Avant de vous lancer, voici les réponses aux questions qu'on nous pose souvent
@@ -429,7 +429,7 @@ export default function Home() {
 
       {/* Mission Section */}
       {/* <section className="py-16 bg-gray-50">
-        <div className="container mx-auto">
+        <div className="w-full mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="bg-[#ffa4f6]/20 p-8 rounded-xl flex justify-center">
               <Image

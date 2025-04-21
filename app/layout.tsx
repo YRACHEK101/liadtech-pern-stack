@@ -17,6 +17,8 @@ import {
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Footer from "./components/Footer"
+import Image from "next/image"
+import { Suspense } from "react"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -34,21 +36,19 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={inter.className}>
-        <header className="border-b py-4">
-          <div className="container mx-auto flex justify-between items-center px-4">
+        <header className="border-b">
+          <div className="w-full mx-auto flex justify-between items-center px-10">
             <Link href="/" className="flex items-center">
-              <img
+              <Image
                 src="/images/Logo Liadtech V2 3.svg"
                 alt="LIADTECH Logo"
-                style={{
-                  height: "88px",
-                  width: "206px"
-                }}
-                className="h-10 mr-2"
+                width={215.11}
+                height={121}
+                className=" mr-2"
               />
             </Link>
 
-            <nav className="hidden md:flex items-center space-x-6">
+            <nav className="hidden md:flex items-center gap-9 ">
               <Link href="/" className="text-[#1f1d2c] hover:text-[#673de6] font-medium">
                 Accueil
               </Link>
@@ -56,504 +56,7 @@ export default function RootLayout({
                 <button className="flex items-center text-[#1f1d2c] hover:text-[#673de6] font-medium">
                   Services <ChevronDown className="h-4 w-4 ml-1" />
                 </button>
-                {/* <div className="absolute left-0 mt-2 w-screen bg-white shadow-xl rounded-md p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform -translate-x-1/4">
-                  <div className="text-[#1f1d2c] text-center mb-6 text-lg font-medium">
-                    De l'idée à l'automatisation, tout est imaginé pour vous
-                  </div>
-                  <div className="grid grid-cols-3 gap-8">
-                    // Web & App Section
-                    <div>
-                      <h3 className="text-lg font-bold text-gray-600 mb-4">Web & App</h3>
-                      <div className="space-y-6">
-                        <div className="flex items-start">
-                          <div className="flex-shrink-0 h-10 w-10 bg-[#673de6] rounded-full flex items-center justify-center mr-3">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              className="h-5 w-5 text-white"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                              />
-                            </svg>
-                          </div>
-                          <div>
-                            <Link href="/creation-sites-web" className="group">
-                              <h4 className="font-medium group-hover:text-[#673de6] transition-colors">
-                                Création de sites web
-                              </h4>
-                              <p className="text-sm text-gray-600">
-                                Sites vitrine ou e-commerce conçus pour booster vos ventes et valoriser votre image
-                              </p>
-                            </Link>
-                          </div>
-                        </div>
-                        <div className="flex items-start">
-                          <div className="flex-shrink-0 h-10 w-10 bg-[#673de6] rounded-full flex items-center justify-center mr-3">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              className="h-5 w-5 text-white"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
-                              />
-                            </svg>
-                          </div>
-                          <div>
-                            <Link href="/applications-mobiles" className="group">
-                              <h4 className="font-medium group-hover:text-[#673de6] transition-colors">
-                                Applications mobiles
-                              </h4>
-                              <p className="text-sm text-gray-600">
-                                Apps iOS & Android intuitives pour toucher vos clients où qu'ils soient
-                              </p>
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-
-                      <h3 className="text-lg font-bold text-gray-600 mt-8 mb-4">Web & Marketing</h3>
-                      <div className="space-y-6">
-                        <div className="flex items-start">
-                          <div className="flex-shrink-0 h-10 w-10 bg-[#673de6] rounded-full flex items-center justify-center mr-3">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              className="h-5 w-5 text-white"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"
-                              />
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"
-                              />
-                            </svg>
-                          </div>
-                          <div>
-                            <Link href="/marketing-digital-publicite" className="group">
-                              <h4 className="font-medium group-hover:text-[#673de6] transition-colors">
-                                Marketing digital & publicité
-                              </h4>
-                              <p className="text-sm text-gray-600">
-                                Générez plus de leads avec nos stratégies SEO, SEA & pub ciblée
-                              </p>
-                            </Link>
-                          </div>
-                        </div>
-                        <div className="flex items-start">
-                          <div className="flex-shrink-0 h-10 w-10 bg-[#673de6] rounded-full flex items-center justify-center mr-3">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              className="h-5 w-5 text-white"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                              />
-                            </svg>
-                          </div>
-                          <div>
-                            <h4 className="font-medium">Référencement Web /SEO</h4>
-                            <p className="text-sm text-gray-600">
-                              Optimisez votre visibilité sur Google et attirez un trafic qualifié
-                            </p>
-                          </div>
-                        </div>
-                        <div className="flex items-start">
-                          <div className="flex-shrink-0 h-10 w-10 bg-[#673de6] rounded-full flex items-center justify-center mr-3">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              className="h-5 w-5 text-white"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
-                              />
-                            </svg>
-                          </div>
-                          <div>
-                            <h4 className="font-medium">Blogging & contenus</h4>
-                            <p className="text-sm text-gray-600">
-                              Attirez votre audience avec des articles stratégiques
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    // Studio Créatif
-                    <div>
-                      <h3 className="text-lg font-bold text-gray-600 mb-4">Studio Créatif</h3>
-                      <div className="space-y-6">
-                        <div className="flex items-start">
-                          <div className="flex-shrink-0 h-10 w-10 bg-[#673de6] rounded-full flex items-center justify-center mr-3">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              className="h-5 w-5 text-white"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
-                              />
-                            </svg>
-                          </div>
-                          <div>
-                            <h4 className="font-medium">Vidéos explicatives 2D/3D</h4>
-                            <p className="text-sm text-gray-600">Expliquez vos services avec clarté et impact</p>
-                          </div>
-                        </div>
-                        <div className="flex items-start">
-                          <div className="flex-shrink-0 h-10 w-10 bg-[#673de6] rounded-full flex items-center justify-center mr-3">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              className="h-5 w-5 text-white"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
-                              />
-                            </svg>
-                          </div>
-                          <div>
-                            <h4 className="font-medium">Création de logo</h4>
-                            <p className="text-sm text-gray-600">Apportez du rythme à votre identité visuelle</p>
-                          </div>
-                        </div>
-                        <div className="flex items-start">
-                          <div className="flex-shrink-0 h-10 w-10 bg-[#673de6] rounded-full flex items-center justify-center mr-3">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              className="h-5 w-5 text-white"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"
-                              />
-                            </svg>
-                          </div>
-                          <div>
-                            <Link href="/animations-narratives" className="group">
-                              <h4 className="font-medium group-hover:text-[#673de6] transition-colors">
-                                Animations narratives & mini-séries
-                              </h4>
-                              <p className="text-sm text-gray-600">
-                                Des histoires engageantes pour réseaux ou communication interne
-                              </p>
-                            </Link>
-                          </div>
-                        </div>
-                        <div className="flex items-start">
-                          <div className="flex-shrink-0 h-10 w-10 bg-[#673de6] rounded-full flex items-center justify-center mr-3">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              className="h-5 w-5 text-white"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                              />
-                            </svg>
-                          </div>
-                          <div>
-                            <h4 className="font-medium">Design Graphique & Visuels</h4>
-                            <p className="text-sm text-gray-600">
-                              Créations pour vos réseaux, sites web ou présentations
-                            </p>
-                          </div>
-                        </div>
-                        <div className="flex items-start">
-                          <div className="flex-shrink-0 h-10 w-10 bg-[#673de6] rounded-full flex items-center justify-center mr-3">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              className="h-5 w-5 text-white"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                              />
-                            </svg>
-                          </div>
-                          <div>
-                            <Link href="/design-ux-ui" className="group">
-                              <h4 className="font-medium group-hover:text-[#673de6] transition-colors">Design UX/UI</h4>
-                              <p className="text-sm text-gray-600">Interfaces modernes, intuitives et responsive</p>
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    // Cloud, SaaS & Support
-                    <div>
-                      <h3 className="text-lg font-bold text-gray-600 mb-4">Cloud, SaaS & Support</h3>
-                      <div className="space-y-6">
-                        <div className="flex items-start">
-                          <div className="flex-shrink-0 h-10 w-10 bg-[#673de6] rounded-full flex items-center justify-center mr-3">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              className="h-5 w-5 text-white"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"
-                              />
-                            </svg>
-                          </div>
-                          <div>
-                            <Link href="/infrastructure-cloud-migration" className="group">
-                              <h4 className="font-medium group-hover:text-[#673de6] transition-colors">
-                                Infrastructure Cloud et migration
-                              </h4>
-                              <p className="text-sm text-gray-600">Hébergement sécurisé, scalable, performant</p>
-                            </Link>
-                          </div>
-                        </div>
-                        <div className="flex items-start">
-                          <div className="flex-shrink-0 h-10 w-10 bg-[#673de6] rounded-full flex items-center justify-center mr-3">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              className="h-5 w-5 text-white"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                              />
-                            </svg>
-                          </div>
-                          <div>
-                            <Link href="/developpement-saas" className="group">
-                              <h4 className="font-medium group-hover:text-[#673de6] transition-colors">
-                                Développement SaaS
-                              </h4>
-                              <p className="text-sm text-gray-600">
-                                Applications modulaires et connectées à vos outils
-                              </p>
-                            </Link>
-                          </div>
-                        </div>
-                        <div className="flex items-start">
-                          <div className="flex-shrink-0 h-10 w-10 bg-[#673de6] rounded-full flex items-center justify-center mr-3">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              className="h-5 w-5 text-white"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
-                              />
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                              />
-                            </svg>
-                          </div>
-                          <div>
-                            <Link href="/maintenance-infogerance" className="group">
-                              <h4 className="font-medium group-hover:text-[#673de6] transition-colors">
-                                Maintenance & infogérance
-                              </h4>
-                              <p className="text-sm text-gray-600">
-                                Support, mises à jour, supervision technique continue
-                              </p>
-                            </Link>
-                          </div>
-                        </div>
-                        <div className="flex items-start">
-                          <div className="flex-shrink-0 h-10 w-10 bg-[#673de6] rounded-full flex items-center justify-center mr-3">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              className="h-5 w-5 text-white"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
-                              />
-                            </svg>
-                          </div>
-                          <div>
-                            <h4 className="font-medium">Applications sur mesure</h4>
-                            <p className="text-sm text-gray-600">MVP, dashboard, app métier full stack</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  // IA automatisation & Cybersécurité 
-                  <div className="mt-8 pt-8 border-t">
-                    <h3 className="text-lg font-bold text-gray-600 mb-4">IA automatisation & Cybersécurité</h3>
-                    <div className="grid grid-cols-4 gap-6">
-                      <div className="flex items-start">
-                        <div className="flex-shrink-0 h-10 w-10 bg-[#673de6] rounded-full flex items-center justify-center mr-3">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5 text-white"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
-                            />
-                          </svg>
-                        </div>
-                        <div>
-                          <h4 className="font-medium">Chatbots</h4>
-                          <p className="text-sm text-gray-600">Automatisez vos échanges avec des bots intelligents</p>
-                        </div>
-                      </div>
-                      <div className="flex items-start">
-                        <div className="flex-shrink-0 h-10 w-10 bg-[#673de6] rounded-full flex items-center justify-center mr-3">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5 text-white"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-                            />
-                          </svg>
-                        </div>
-                        <div>
-                          <Link href="/automatisation-agents-ia" className="group">
-                            <h4 className="font-medium group-hover:text-[#673de6] transition-colors">
-                              Automatisation & agents IA
-                            </h4>
-                            <p className="text-sm text-gray-600">Optimisez vos process internes et relation client</p>
-                          </Link>
-                        </div>
-                      </div>
-                      <div className="flex items-start">
-                        <div className="flex-shrink-0 h-10 w-10 bg-[#673de6] rounded-full flex items-center justify-center mr-3">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5 text-white"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.039-11.622 0-1.042-.133-2.052-.382-3.016z"
-                            />
-                          </svg>
-                        </div>
-                        <div>
-                          <h4 className="font-medium">Audit de sécurité & Pentest</h4>
-                          <p className="text-sm text-gray-600">Analyse complète de vos failles web, API, infra</p>
-                        </div>
-                      </div>
-                      <div className="flex items-start">
-                        <div className="flex-shrink-0 h-10 w-10 bg-[#673de6] rounded-full flex items-center justify-center mr-3">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5 text-white"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                            />
-                          </svg>
-                        </div>
-                        <div>
-                          <h4 className="font-medium">Conformité RGPD</h4>
-                          <p className="text-sm text-gray-600">Données, cookies, politiques légales & formations</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
+                
               </div>
               <Link href="/tarifs" className="text-[#1f1d2c] hover:text-[#673de6] font-medium">
                 Tarifs
@@ -767,9 +270,9 @@ export default function RootLayout({
             </nav>
 
             <div className="flex items-center space-x-4">
-              <div className="flex items-center border rounded-md px-2 py-1">
-                <img src="/images/fr.svg" alt="Français" className="w-4 h-4 mr-1" />
-                <span className="text-sm">Français</span>
+              <div className="flex items-center rounded-md px-2 py-1">
+                <img src="/images/fr.svg" alt="Français" className="w-12 h-10 mr-1" />
+                <span className="text-[20px">Français</span>
               </div>
               <Link href="/login">
                 <Button className="bg-[#673de6] hover:bg-[#5735bc] text-white">Connexion</Button>
@@ -778,7 +281,9 @@ export default function RootLayout({
           </div>
         </header>
 
+        <Suspense>
         {children}
+        </Suspense>
 
         <Footer />
       </body>

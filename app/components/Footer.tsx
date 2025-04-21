@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function Footer() {
   return (
     <footer className="bg-[#1B1438] text-white py-16 bg-no-repeat bg-cover bg-center" style={{ backgroundImage: "url('/Liadtech/Accueil/footer globe background.svg')" }}>
-      <div className="container mx-auto px-4">
+      <div className="w-full px-10 mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 mb-10 ">
           {/* Footer Column 1 */}
           <div className="lg:col-span-3 md:col-span-1">
