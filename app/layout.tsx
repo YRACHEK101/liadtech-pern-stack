@@ -56,7 +56,7 @@ export default function RootLayout({
                 <button className="flex items-center text-[#1f1d2c] hover:text-[#673de6]">
                   Services <ChevronDown className="h-4 w-4 ml-1" />
                 </button>
-                
+
               </div>
               <Link href="/tarifs" className="text-[#1f1d2c] hover:text-[#673de6]">
                 Tarifs
@@ -65,12 +65,11 @@ export default function RootLayout({
                 <button className="flex items-center text-[#1f1d2c] hover:text-[#673de6]">
                   Explorer <ChevronDown className="h-4 w-4 ml-1" />
                 </button>
-                <div className="absolute left-0 mt-2 w-[600px] bg-white shadow-xl rounded-md p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform -translate-x-1/2">
-                  <h3 className="text-lg font-medium text-gray-700 mb-6">
-                    Ce qu'on crée, ce qu'on partage, ce qui nous anime
-                  </h3>
+                <div className="absolute left-0 mt-16 w-screen max-w-[1044px] bg-white pl-[88px] shadow-md shadow-black/25 rounded-md pb-12 pt-6 pr-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform -translate-x-1/2">
+                  <h3 className="text-lg text-gray-700 mb-6 italic pl-11">Ce qu'on crée, ce qu'on partage, ce qui nous anime</h3>
 
-                  <div className="grid grid-cols-2 gap-8">
+                  <div className="flex gap-16">
+                    <div className="flex flex-col gap-8">
                     <div className="flex">
                       <div className="flex-shrink-0 h-12 w-12 bg-[#673de6] rounded-full flex items-center justify-center mr-4">
                         <svg
@@ -162,6 +161,15 @@ export default function RootLayout({
                         <p className="text-gray-600">Nos apps SaaS, outils IA, solutions développées en interne</p>
                       </div>
                     </div>
+                    </div>
+                    <div className="bg-[#D9D9D9] flex-1 rounded-xl px-8 py-[22px] flex flex-col justify-end">
+                      <div className="font-bold">
+                      Réalisations
+                      </div>
+                      <div className="text-[#3C3C3C] font-light">
+                        Nos plus beaux projets client
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -169,49 +177,57 @@ export default function RootLayout({
                 <button className="flex items-center text-[#1f1d2c] hover:text-[#673de6] ">
                   Support <ChevronDown className="h-4 w-4 ml-1" />
                 </button>
-                <div className="absolute left-0 mt-2 w-[600px] bg-white shadow-xl rounded-md p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform -translate-x-1/2">
-                  <h3 className="text-lg font-medium text-gray-700 mb-6">
-                    Tout ce qu'il vous faut pour suivre ou gérer vos projets
-                  </h3>
+                <div className="absolute left-0 mt-16 w-screen max-w-[1044px] bg-white pl-[88px] shadow-md shadow-black/25 rounded-md pb-12 pt-6 pr-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform -translate-x-1/2">
+                  <h3 className="text-lg text-gray-700 mb-6 italic pl-11">Tout ce qu'il vous faut pour suivre ou gérer vos projets</h3>
 
-                  <div className="grid grid-cols-2 gap-8">
-                    <div className="flex">
-                      <div className="flex-shrink-0 h-12 w-12 bg-[#673de6] rounded-full flex items-center justify-center mr-4">
-                        <FileText className="h-6 w-6 text-white" />
+                  <div className="flex gap-16">
+                    <div className="flex flex-col gap-8">
+                      <div className="flex">
+                        <div className="flex-shrink-0 h-12 w-12 bg-[#673de6] rounded-full flex items-center justify-center mr-4">
+                          <FileText className="h-6 w-6 text-white" />
+                        </div>
+                        <div>
+                          <h4 className="font-medium text-lg mb-1">Centre de ressources</h4>
+                          <p className="text-gray-600">Fiches pratiques, guides d'utilisation</p>
+                        </div>
                       </div>
-                      <div>
-                        <h4 className="font-medium text-lg mb-1">Centre de ressources</h4>
-                        <p className="text-gray-600">Fiches pratiques, guides d'utilisation</p>
+
+                      <div className="flex">
+                        <div className="flex-shrink-0 h-12 w-12 bg-[#673de6] rounded-full flex items-center justify-center mr-4">
+                          <MessageCircle className="h-6 w-6 text-white" />
+                        </div>
+                        <div>
+                          <h4 className="font-medium text-lg mb-1">Contact direct</h4>
+                          <p className="text-gray-600">Écrivez-nous pour tout besoin</p>
+                        </div>
+                      </div>
+
+                      <div className="flex">
+                        <div className="flex-shrink-0 h-12 w-12 bg-[#673de6] rounded-full flex items-center justify-center mr-4">
+                          <HelpCircle className="h-6 w-6 text-white" />
+                        </div>
+                        <div>
+                          <h4 className="font-medium text-lg mb-1">FAQ & Aide</h4>
+                          <p className="text-gray-600">Questions fréquentes et tips</p>
+                        </div>
+                      </div>
+
+                      <div className="flex">
+                        <div className="flex-shrink-0 h-12 w-12 bg-[#673de6] rounded-full flex items-center justify-center mr-4">
+                          <User className="h-6 w-6 text-white" />
+                        </div>
+                        <div>
+                          <h4 className="font-medium text-lg mb-1">Espace client / suivi</h4>
+                          <p className="text-gray-600">Connexion à votre tableau de bord projet</p>
+                        </div>
                       </div>
                     </div>
-
-                    <div className="flex">
-                      <div className="flex-shrink-0 h-12 w-12 bg-[#673de6] rounded-full flex items-center justify-center mr-4">
-                        <MessageCircle className="h-6 w-6 text-white" />
+                    <div className="bg-[#D9D9D9] flex-1 rounded-xl px-8 py-[22px] flex flex-col justify-end">
+                      <div className="font-bold">
+                      Espace Clients
                       </div>
-                      <div>
-                        <h4 className="font-medium text-lg mb-1">Contact direct</h4>
-                        <p className="text-gray-600">Écrivez-nous pour tout besoin</p>
-                      </div>
-                    </div>
-
-                    <div className="flex">
-                      <div className="flex-shrink-0 h-12 w-12 bg-[#673de6] rounded-full flex items-center justify-center mr-4">
-                        <HelpCircle className="h-6 w-6 text-white" />
-                      </div>
-                      <div>
-                        <h4 className="font-medium text-lg mb-1">FAQ & Aide</h4>
-                        <p className="text-gray-600">Questions fréquentes et tips</p>
-                      </div>
-                    </div>
-
-                    <div className="flex">
-                      <div className="flex-shrink-0 h-12 w-12 bg-[#673de6] rounded-full flex items-center justify-center mr-4">
-                        <User className="h-6 w-6 text-white" />
-                      </div>
-                      <div>
-                        <h4 className="font-medium text-lg mb-1">Espace client / suivi</h4>
-                        <p className="text-gray-600">Connexion à votre tableau de bord projet</p>
+                      <div className="text-[#3C3C3C] font-light">
+                      Connexion à votre tableau de bord projet
                       </div>
                     </div>
                   </div>
@@ -221,47 +237,57 @@ export default function RootLayout({
                 <button className="flex items-center text-[#1f1d2c] hover:text-[#673de6] ">
                   L'univers LIADTECH <ChevronDown className="h-4 w-4 ml-1" />
                 </button>
-                <div className="absolute left-0 mt-2 w-[600px] bg-white shadow-xl rounded-md p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform -translate-x-1/2">
-                  <h3 className="text-lg font-medium text-gray-700 mb-6">Derrière les écrans, il y a une équipe</h3>
+                <div className="absolute left-0 mt-16 w-screen max-w-[1044px] bg-white pl-[88px] shadow-md shadow-black/25 rounded-md pb-12 pt-6 pr-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform -translate-x-1/2">
+                  <h3 className="text-lg text-gray-700 mb-6 italic pl-11">Derrière les écrans, il y a une équipe</h3>
 
-                  <div className="grid grid-cols-2 gap-8">
-                    <div className="flex">
-                      <div className="flex-shrink-0 h-12 w-12 bg-[#673de6] rounded-full flex items-center justify-center mr-4">
-                        <Heart className="h-6 w-6 text-white" />
+                  <div className="flex gap-16">
+                    <div className="flex flex-col gap-8">
+                      <div className="flex">
+                        <div className="flex-shrink-0 h-12 w-12 bg-[#673de6] rounded-full flex items-center justify-center mr-4">
+                          <Heart className="h-6 w-6 text-white" />
+                        </div>
+                        <div>
+                          <h4 className="font-medium text-lg mb-1">Notre ADN</h4>
+                          <p className="text-gray-600">Vision, valeurs, ambitions</p>
+                        </div>
                       </div>
-                      <div>
-                        <h4 className="font-medium text-lg mb-1">Notre ADN</h4>
-                        <p className="text-gray-600">Vision, valeurs, ambitions</p>
+
+                      <div className="flex">
+                        <div className="flex-shrink-0 h-12 w-12 bg-[#673de6] rounded-full flex items-center justify-center mr-4">
+                          <Users className="h-6 w-6 text-white" />
+                        </div>
+                        <div>
+                          <h4 className="font-medium text-lg mb-1">L'équipe</h4>
+                          <p className="text-gray-600">Humains, techs, créatifs, ensemble</p>
+                        </div>
+                      </div>
+
+                      <div className="flex">
+                        <div className="flex-shrink-0 h-12 w-12 bg-[#673de6] rounded-full flex items-center justify-center mr-4">
+                          <Briefcase className="h-6 w-6 text-white" />
+                        </div>
+                        <div>
+                          <h4 className="font-medium text-lg mb-1">On recrute</h4>
+                          <p className="text-gray-600">Freelances, CDI, alternances</p>
+                        </div>
+                      </div>
+
+                      <div className="flex">
+                        <div className="flex-shrink-0 h-12 w-12 bg-[#673de6] rounded-full flex items-center justify-center mr-4">
+                          <Network className="h-6 w-6 text-white" />
+                        </div>
+                        <div>
+                          <h4 className="font-medium text-lg mb-1">Partenaires & Réseau</h4>
+                          <p className="text-gray-600">Nos collaborations et écosystème tech</p>
+                        </div>
                       </div>
                     </div>
-
-                    <div className="flex">
-                      <div className="flex-shrink-0 h-12 w-12 bg-[#673de6] rounded-full flex items-center justify-center mr-4">
-                        <Briefcase className="h-6 w-6 text-white" />
+                    <div className="bg-[#D9D9D9] flex-1 rounded-xl px-8 py-[22px] flex flex-col justify-end">
+                      <div className="font-bold">
+                        LIADTECH Academy
                       </div>
-                      <div>
-                        <h4 className="font-medium text-lg mb-1">On recrute</h4>
-                        <p className="text-gray-600">Freelances, CDI, alternances</p>
-                      </div>
-                    </div>
-
-                    <div className="flex">
-                      <div className="flex-shrink-0 h-12 w-12 bg-[#673de6] rounded-full flex items-center justify-center mr-4">
-                        <Users className="h-6 w-6 text-white" />
-                      </div>
-                      <div>
-                        <h4 className="font-medium text-lg mb-1">L'équipe</h4>
-                        <p className="text-gray-600">Humains, techs, créatifs, ensemble</p>
-                      </div>
-                    </div>
-
-                    <div className="flex">
-                      <div className="flex-shrink-0 h-12 w-12 bg-[#673de6] rounded-full flex items-center justify-center mr-4">
-                        <Network className="h-6 w-6 text-white" />
-                      </div>
-                      <div>
-                        <h4 className="font-medium text-lg mb-1">Partenaires & Réseau</h4>
-                        <p className="text-gray-600">Nos collaborations et écosystème tech</p>
+                      <div className="text-[#3C3C3C] font-light">
+                        Apprenez avec les experts derrière vos outils.
                       </div>
                     </div>
                   </div>
@@ -282,7 +308,7 @@ export default function RootLayout({
         </header>
 
         <Suspense>
-        {children}
+          {children}
         </Suspense>
 
         <Footer />
