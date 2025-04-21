@@ -66,12 +66,12 @@ const ContentSection = () => {
     return (
         <div>
             {/* Success Section */}
-            <section className="py-16 container mx-auto text-center">
+            <section className="py-16 w-full px-10 mx-auto text-center">
                 <h2 className="text-4xl md:text-5xl font-bold text-[#673de6] mb-4">Ce que vous pouvez créer avec LIADTECH</h2>
                 <p className="text-xl text-[#1f1d2c] mb-12">Sites. Apps. Branding. Visibilité. Résultats.</p>
 
                 {/* Category Buttons*/}
-                <div className="flex flex-wrap justify-center gap-4 mb-8" style={{ marginBottom: 0 }}>
+                <div className="flex flex-wrap  gap-9 justify-between mb-8" style={{ marginBottom: 0 }}>
                     {
                         contentSections.map((section,index) => (
                             <button

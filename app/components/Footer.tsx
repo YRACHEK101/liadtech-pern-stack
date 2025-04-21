@@ -4,17 +4,16 @@ import Link from 'next/link'
 export default function Footer() {
   return (
     <footer className="bg-[#1B1438] text-white py-16 bg-no-repeat bg-cover bg-center" style={{ backgroundImage: "url('/Liadtech/Accueil/footer globe background.svg')" }}>
-      <div className="w-full px-10 mx-auto px-4">
+      <div className="w-full px-10  mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 mb-10 ">
           {/* Footer Column 1 */}
-          <div className="lg:col-span-3 md:col-span-1">
-            <Link href="/" className="inline-block ">
+          <div className="lg:col-span-3 md:col-span-1 -mt-12 pl-10">
+            <Link href="/" className=" ">
               <Image
                 src="/images/Liadtech blanc avec backgroud 1.svg"
                 alt="LIADTECH Logo"
-                width={0}
-                height={0}
-                className="w-auto"
+                width={224}
+                height={130}
               />
             </Link>
             <p className="text-[#BEBEBE] mb-6">

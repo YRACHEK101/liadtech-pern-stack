@@ -37,7 +37,7 @@ export default function RootLayout({
     <html lang="fr">
       <body className={inter.className}>
         <header className="border-b">
-          <div className="w-full mx-auto flex justify-between items-center px-10">
+          <div className="w-full mx-auto flex justify-between items-center px-4">
             <Link href="/" className="flex items-center">
               <Image
                 src="/images/Logo Liadtech V2 3.svg"
@@ -48,21 +48,21 @@ export default function RootLayout({
               />
             </Link>
 
-            <nav className="hidden md:flex items-center gap-9 ">
-              <Link href="/" className="text-[#1f1d2c] hover:text-[#673de6] font-medium">
+            <nav className="hidden md:flex items-center gap-9">
+              <Link href="/" className="text-[#1f1d2c] hover:text-[#673de6]">
                 Accueil
               </Link>
               <div className="relative group">
-                <button className="flex items-center text-[#1f1d2c] hover:text-[#673de6] font-medium">
+                <button className="flex items-center text-[#1f1d2c] hover:text-[#673de6]">
                   Services <ChevronDown className="h-4 w-4 ml-1" />
                 </button>
                 
               </div>
-              <Link href="/tarifs" className="text-[#1f1d2c] hover:text-[#673de6] font-medium">
+              <Link href="/tarifs" className="text-[#1f1d2c] hover:text-[#673de6]">
                 Tarifs
               </Link>
               <div className="relative group">
-                <button className="flex items-center text-[#1f1d2c] hover:text-[#673de6] font-medium">
+                <button className="flex items-center text-[#1f1d2c] hover:text-[#673de6]">
                   Explorer <ChevronDown className="h-4 w-4 ml-1" />
                 </button>
                 <div className="absolute left-0 mt-2 w-[600px] bg-white shadow-xl rounded-md p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform -translate-x-1/2">
@@ -71,7 +71,7 @@ export default function RootLayout({
                   </h3>
 
                   <div className="grid grid-cols-2 gap-8">
-                    <div className="flex items-start">
+                    <div className="flex">
                       <div className="flex-shrink-0 h-12 w-12 bg-[#673de6] rounded-full flex items-center justify-center mr-4">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +94,7 @@ export default function RootLayout({
                       </div>
                     </div>
 
-                    <div className="flex items-start">
+                    <div className="flex">
                       <div className="flex-shrink-0 h-12 w-12 bg-[#673de6] rounded-full flex items-center justify-center mr-4">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +117,7 @@ export default function RootLayout({
                       </div>
                     </div>
 
-                    <div className="flex items-start">
+                    <div className="flex">
                       <div className="flex-shrink-0 h-12 w-12 bg-[#673de6] rounded-full flex items-center justify-center mr-4">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -140,7 +140,7 @@ export default function RootLayout({
                       </div>
                     </div>
 
-                    <div className="flex items-start">
+                    <div className="flex">
                       <div className="flex-shrink-0 h-12 w-12 bg-[#673de6] rounded-full flex items-center justify-center mr-4">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -166,7 +166,7 @@ export default function RootLayout({
                 </div>
               </div>
               <div className="relative group">
-                <button className="flex items-center text-[#1f1d2c] hover:text-[#673de6] font-medium">
+                <button className="flex items-center text-[#1f1d2c] hover:text-[#673de6] ">
                   Support <ChevronDown className="h-4 w-4 ml-1" />
                 </button>
                 <div className="absolute left-0 mt-2 w-[600px] bg-white shadow-xl rounded-md p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform -translate-x-1/2">
@@ -175,7 +175,7 @@ export default function RootLayout({
                   </h3>
 
                   <div className="grid grid-cols-2 gap-8">
-                    <div className="flex items-start">
+                    <div className="flex">
                       <div className="flex-shrink-0 h-12 w-12 bg-[#673de6] rounded-full flex items-center justify-center mr-4">
                         <FileText className="h-6 w-6 text-white" />
                       </div>
@@ -185,7 +185,7 @@ export default function RootLayout({
                       </div>
                     </div>
 
-                    <div className="flex items-start">
+                    <div className="flex">
                       <div className="flex-shrink-0 h-12 w-12 bg-[#673de6] rounded-full flex items-center justify-center mr-4">
                         <MessageCircle className="h-6 w-6 text-white" />
                       </div>
@@ -195,7 +195,7 @@ export default function RootLayout({
                       </div>
                     </div>
 
-                    <div className="flex items-start">
+                    <div className="flex">
                       <div className="flex-shrink-0 h-12 w-12 bg-[#673de6] rounded-full flex items-center justify-center mr-4">
                         <HelpCircle className="h-6 w-6 text-white" />
                       </div>
@@ -205,7 +205,7 @@ export default function RootLayout({
                       </div>
                     </div>
 
-                    <div className="flex items-start">
+                    <div className="flex">
                       <div className="flex-shrink-0 h-12 w-12 bg-[#673de6] rounded-full flex items-center justify-center mr-4">
                         <User className="h-6 w-6 text-white" />
                       </div>
@@ -218,14 +218,14 @@ export default function RootLayout({
                 </div>
               </div>
               <div className="relative group">
-                <button className="flex items-center text-[#1f1d2c] hover:text-[#673de6] font-medium">
+                <button className="flex items-center text-[#1f1d2c] hover:text-[#673de6] ">
                   L'univers LIADTECH <ChevronDown className="h-4 w-4 ml-1" />
                 </button>
                 <div className="absolute left-0 mt-2 w-[600px] bg-white shadow-xl rounded-md p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform -translate-x-1/2">
                   <h3 className="text-lg font-medium text-gray-700 mb-6">Derrière les écrans, il y a une équipe</h3>
 
                   <div className="grid grid-cols-2 gap-8">
-                    <div className="flex items-start">
+                    <div className="flex">
                       <div className="flex-shrink-0 h-12 w-12 bg-[#673de6] rounded-full flex items-center justify-center mr-4">
                         <Heart className="h-6 w-6 text-white" />
                       </div>
@@ -235,7 +235,7 @@ export default function RootLayout({
                       </div>
                     </div>
 
-                    <div className="flex items-start">
+                    <div className="flex">
                       <div className="flex-shrink-0 h-12 w-12 bg-[#673de6] rounded-full flex items-center justify-center mr-4">
                         <Briefcase className="h-6 w-6 text-white" />
                       </div>
@@ -245,7 +245,7 @@ export default function RootLayout({
                       </div>
                     </div>
 
-                    <div className="flex items-start">
+                    <div className="flex">
                       <div className="flex-shrink-0 h-12 w-12 bg-[#673de6] rounded-full flex items-center justify-center mr-4">
                         <Users className="h-6 w-6 text-white" />
                       </div>
@@ -255,7 +255,7 @@ export default function RootLayout({
                       </div>
                     </div>
 
-                    <div className="flex items-start">
+                    <div className="flex">
                       <div className="flex-shrink-0 h-12 w-12 bg-[#673de6] rounded-full flex items-center justify-center mr-4">
                         <Network className="h-6 w-6 text-white" />
                       </div>
@@ -275,7 +275,7 @@ export default function RootLayout({
                 <span className="text-[20px">Français</span>
               </div>
               <Link href="/login">
-                <Button className="bg-[#673de6] hover:bg-[#5735bc] text-white">Connexion</Button>
+                <button className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px]">Connexion</button>
               </Link>
             </div>
           </div>
