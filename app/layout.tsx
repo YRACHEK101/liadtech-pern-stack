@@ -134,8 +134,8 @@ export default function RootLayout({
                           Studio Créatif
                         </span>
                         <div className="flex flex-col gap-8">
-                          <div className="flex gap-3">
-                          <Image src={"/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-45-10.png"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
+                          <Link href={"/services/videos-explainer"} className="flex gap-3">
+                            <Image src={"/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-45-10.png"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
                                 Vidéos explicatives 2D/3D
@@ -144,9 +144,9 @@ export default function RootLayout({
                                 Expliquez vos services avec clarté et impact
                               </span>
                             </div>
-                          </div>
+                          </Link>
                           <div className="flex gap-3">
-                          <Image src={"/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-50-44.png"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
+                            <Image src={"/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-50-44.png"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
                                 création de logo
@@ -157,7 +157,7 @@ export default function RootLayout({
                             </div>
                           </div>
                           <div className="flex gap-3">
-                          <Image src={"/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-44-29.png"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
+                            <Image src={"/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-44-29.png"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
                                 Animations narratives & mini-séries

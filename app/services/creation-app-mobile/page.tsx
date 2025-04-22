@@ -49,7 +49,7 @@ const page = () => {
         <div>
             <section className='bg-[#2D1F67] overflow-hidden grid grid-cols-2 px-10'>
                 <div className='flex flex-col text-white self-center '>
-                    <h2 className='text-[52px] font-bold !text-left !text-white'>
+                    <h2 className='!leading-[56px] !text-[52px] font-bold !text-left !text-white'>
                         Touchez vos clients, là où ils sont : dans leur poche.
                     </h2>
                     <span className='font-bold text-[22px] mb-16  '>
@@ -111,7 +111,7 @@ const page = () => {
                 </div>
                 <div className="grid grid-cols-2 container mx-auto">
                     <div className="flex flex-col gap-9 text-[24px] ">
-                        <span className="text-white text-6xl font-bold">
+                        <span className="text-white text-[47px] leading-[59px] font-bold">
                             Notre expertise mobile, votre avantage compétitif
                         </span>
                         <span className="text-white text-2xl font-semibold">
@@ -119,12 +119,14 @@ const page = () => {
                         </span>
                     </div>
 
+                    <Image src={"/images/App mobile (1).svg"} width={0} height={0} className='w-auto   h-auto' alt='pic' />
+
                 </div>
             </section>
             <section className='grid grid-cols-2 px-16 py-[110px]'>
-                <div></div>
-                <div className='flex flex-col items-end '>
-                    <h2 className='text-[52px] font-bold !text-left mb-9'>
+            <Image src={"/images/Création du l'app.svg"} width={0} height={0} className='w-auto   h-auto' alt='pic' />
+                            <div className='flex flex-col items-end '>
+                    <h2 className='!leading-[56px] !text-[52px] font-bold !text-left mb-9'>
                         Des applications sur mesure pour chaque besoin
                     </h2>
 
@@ -216,7 +218,7 @@ const page = () => {
                     <span className='font-bold text-5xl'>
                         Votre app inclut toujours…
                     </span>
-                    <span className=' font-bold text-[#673DE6]'>
+                    <span className=' font-bold text-[#673DE6] !text-[20px]'>
                         Parlez à un expert LIADTECH ou démarrez votre projet en quelques clics.
                     </span>
                     <div className='flex flex-col gap-4 '>
@@ -226,17 +228,18 @@ const page = () => {
                                     <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                                 <div className='flex flex-col'>
-                                    <span className=''>{site}</span>
+                                    <span className='!text-[20px] '>{site}</span>
                                 </div>
                             </div>
                         ))}
                     </div>
                 </div>
+                <Image src={"/images/Création du l'app 3.svg"} width={0} height={0} className='w-auto   h-auto' alt='pic' />
             </section>
             <section className='grid grid-cols-2 px-16 py-[110px]'>
-                <div></div>
+            <Image src={"/images/Création du l'app 4.svg"} width={0} height={0} className='w-auto   h-auto' alt='pic' />
                 <div className='flex flex-col gap-4 '>
-                    <h2 className='text-[52px] font-bold !text-left'>
+                    <h2 className='!leading-[56px] !text-[52px] font-bold !text-left'>
                         Discutons de votre projet. Une app performante peut tout changer.
                     </h2>
                     <Link href="/create-my-app-mobile">

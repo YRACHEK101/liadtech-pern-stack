@@ -48,7 +48,7 @@ const page = () => {
         <div>
             <section className='bg-[#2D1F67] overflow-hidden grid grid-cols-2 px-[42px]'>
                 <div className='flex flex-col text-white self-center '>
-                    <h2 className='text-[52px] font-bold !text-left !text-white'>
+                    <h2 className='!leading-[56px] !text-[52px] font-bold !text-left !text-white'>
                         Vos clients vous cherchent. Assurons-nous qu’ils vous trouvent.
                     </h2>
                     <span className=' text-[22px] mb-9  '>
@@ -92,7 +92,7 @@ const page = () => {
             <section className='px-10 grid grid-cols-2'>
                 <Image src="/images/SEO.svg" width={0} height={0} className='w-auto h-auto mb-5 scale-125 origin-left z-0' alt='hero' />
                 <div className='flex flex-col   z-10'>
-                    <h2 className='text-[52px] font-bold !text-left mb-9'>
+                    <h2 className='!leading-[56px] !text-[52px] font-bold !text-left mb-9'>
                         Ce que vous gagnez avec nos Bénéfice
                     </h2>
 
@@ -192,7 +192,7 @@ const page = () => {
                 <div className='grid grid-cols-2 '>
                     <Image src="/images/SEO 2.svg" width={0} height={0} className='w-auto h-auto mb-5 scale-125 origin-left z-0' alt='hero' />
                     <div className='flex flex-col pt-28  z-10'>
-                        <h2 className='text-[52px] font-bold !text-left mb-9'>
+                        <h2 className='!leading-[56px] !text-[52px] font-bold !text-left mb-9'>
                             Ce que vous gagnez avec nos Bénéfice
                         </h2>
 
@@ -243,18 +243,17 @@ const page = () => {
                 </div>
                 <div className='grid grid-cols-2 px-16 py-[110px]'>
                     <div className='flex flex-col gap-4 '>
-                        <h2 className='text-[52px] font-bold !text-left'>
+                        <h2 className='!leading-[56px] !text-[52px] font-bold !text-left'>
                             Passez à l’action dès maintenant.
                         </h2>
                         <h3 className='text-[32px] font-medium text-[#2D1F67] '>
                             Confiez-nous votre stratégie digitale, et observez les résultats.
                         </h3>
-                        <Link href="/create-my-app-mobile">
-                            <button className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px]">
+                        <Link href="/create-my-app-mobile" className="bg-[#673de6] self-start hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px]">
                                 Créer ma stratégie digitale sur mesure
-                            </button>
                         </Link>
                     </div>
+                    <Image src="/images/SEO 7 (2).svg" width={0} height={0} className='w-auto h-auto mb-5  origin-left z-0' alt='hero' />
                 </div>
             </section>
 

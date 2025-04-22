@@ -46,218 +46,146 @@ const sitesFeatures = [
 const page = () => {
     return (
         <div>
-            <section className='bg-[#2D1F67] overflow-hidden grid grid-cols-2 px-[42px]'>
-                <div className='flex flex-col text-white self-center '>
-                    <h2 className='text-[52px] font-bold !text-left !text-white'>
-                        Vos clients vous cherchent. Assurons-nous qu’ils vous trouvent.
+            <section className='bg-[#DDBFFF] overflow-hidden grid grid-cols-2 px-[48px]'>
+                <div className='flex flex-col text-[#2D1F67] self-center '>
+                    <h2 className='!leading-[56px] !text-[52px] font-bold !text-left '>
+                        Des contenus pensés pour Google, mais écrits pour vos clients.
                     </h2>
                     <span className=' text-[22px] mb-9  '>
-                        Un bon site ne sert à rien s’il est invisible. Grâce à notre expertise SEO, vous attirez du trafic… et des clients qualifiés.
+                        Nous créons une stratégie éditoriale complète — articles, pages, contenus SEO-friendly — qui attire, convainc et améliore durablement votre visibilité.
                     </span>
 
                     <div className='flex gap-4 flex-nowrap'>
-                        <Link href="/create-my-app-mobile">
+                        <Link href="/">
                             <button className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px]">
-                                Lancer mon audit SEO gratuit
+                                Créer ma stratégie de contenus
                             </button>
                         </Link>
-                        <Link href="/create-my-app-mobile">
+                        <Link href="/">
                             <button className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px]">
-                                Demander ma stratégie de référencement
+                                Voir des exemples d’articles performants
                             </button>
                         </Link>
                     </div>
                 </div>
-                <Image src="/images/SEO 4.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
+                <Image src="/images/Bloggin et contenu.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
             </section>
             <TrustedByClientsSection />
             {/* Pricing Table Section */}
-            <section className="py-16 container mx-auto">
+            <section className="py-16 container mx-auto mb-[150px] ">
                 <PricingTable />
             </section>
-            <section className='pl-10 grid grid-cols-2'>
-                <div className='flex flex-col gap-6 pt-[151px] text-[#2D1F67] '>
+            <section className='pl-10 grid grid-cols-2 mb-36'>
+                <div className='flex flex-col gap-6 text-[20px] text-[#2D1F67] '>
                     <div className='text-6xl font-bold'>
-                        Notre approche stratégique
+                        Le contenu n’est pas un luxe. C’est un moteur de croissance.
                     </div>
-                    <div className='font-bold text-2xl '>
+                    <div className='font-bold text-xl '>
+                        Chez LIADTECH, on ne se contente pas d’écrire des articles.On produit des contenus qui
+                    </div>
+                    <div className='flex flex-col gap-5'>
+                        <div className='flex items-center gap-3'>
+                            <div className='bg-gray-300 size-11 rounded-full'></div>
+                            <div>
+                                Améliorent votre référencement sur Google
+                            </div>
+                        </div>
+                        <div className='flex items-center gap-3'>
+                            <div className='bg-gray-300 size-11 rounded-full'></div>
+                            <div>
+                                Inspirent confiance à vos visiteurs
+                            </div>
+                        </div>
+                        <div className='flex items-center gap-3'>
+                            <div className='bg-gray-300 size-11 rounded-full'></div>
+                            <div>
+                                Génèrent un trafic qualifié et durable
+                            </div>
+                        </div>
+                        <div className='flex items-center gap-3'>
+                            <div className='bg-gray-300 size-11 rounded-full'></div>
+                            <div>
+                                Nourrissent tous vos canaux : SEO, Ads, Réseaux sociaux, Email
+                            </div>
+                        </div>
+                        <div className='flex items-center gap-3'>
+                            <div className='bg-gray-300 size-11 rounded-full'></div>
+                            <div>
+                                Transforment vos visiteurs en prospects
+                            </div>
+                        </div>
+                        <div className='flex items-center gap-3'>
+                            <div className='bg-gray-300 size-11 rounded-full'></div>
+                            <div>
+                                Maintenance & support offerts pendant 1 mois
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <Image src="/images/Blogging et contenu 5.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
+            </section>
+            <section className='px-10 grid grid-cols-2 mb-32'>
+                <Image src="/images/Blogging et contenu 4.svg" width={0} height={0} className='w-auto h-auto mb-5 origin-left z-0' alt='hero' />
+                <div className='flex flex-col gap-6  text-[#2D1F67] pt-11 '>
+                    <div className='text-6xl font-bold'>
+                        Ce que vous obtenez avec nous
+                    </div>
+                    <div className='flex flex-col gap-5 text-[20px]'>
+                        <div className='flex items-center gap-3'>
+                            <div className='bg-gray-300 size-11 rounded-full'></div>
+                            <div className=''>
+                                Une stratégie de contenu alignée à votre marché et vos objectifs
+                            </div>
+                        </div>
+                        <div className='flex items-center gap-3'>
+                            <div className='bg-gray-300 size-11 rounded-full'></div>
+                            <div>
+                                Des contenus rédigés par des experts SEO (humains & IA)
+                            </div>
+                        </div>
+                        <div className='flex items-center gap-3'>
+                            <div className='bg-gray-300 size-11 rounded-full'></div>
+                            <div>
+                                Création de votre blog si vous n’en avez pas encore
+                            </div>
+                        </div>
+                        <div className='flex items-center gap-3'>
+                            <div className='bg-gray-300 size-11 rounded-full'></div>
+                            <div>
+                                Optimisation SEO : titres, mots-clés, balises, maillage…
+                            </div>
+                        </div>
+                        <div className='flex items-center gap-3'>
+                            <div className='bg-gray-300 size-11 rounded-full'></div>
+                            <div>
+                                Un plan éditorial structuré et un suivi de performance
+                            </div>
+                        </div>
+                        <div className='flex items-center gap-3'>
+                            <div className='bg-gray-300 size-11 rounded-full'></div>
+                            <div>
+                                Du temps gagné, pour une visibilité longue durée
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section className='pl-10 grid grid-cols-2'>
+                <div className='flex flex-col !pt-14 text-[#2D1F67] '>
+                    <div className='text-6xl font-bold mb-[6px]'>
+                        Ne laissez pas votre site vide ou invisible.
+                    </div>
+                    <div className='font-bold text-[32px] mb-[29px]'>
                         Une stratégie digitale qui transforme les clics… en clients.
                     </div>
-                    <div >
-                        Analyse de votre marché, positionnement, objectifs… Pas de posts inutiles, pas de pubs jetées au hasard. Une stratégie sur-mesure, testée, mesurée, ajustée chaque semaine.
-                    </div>
+                    <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start">
+                        Créer ma stratégie de contenus
+                    </Link>
                 </div>
-                <Image src="/images/SEO 3.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
+                <Image src="/images/Blogging et contenu 6.svg" width={0} height={0} className='w-auto h-auto mb-5 ' alt='hero' />
             </section>
-            <section className='px-10 grid grid-cols-2'>
-                <Image src="/images/SEO.svg" width={0} height={0} className='w-auto h-auto mb-5 scale-125 origin-left z-0' alt='hero' />
-                <div className='flex flex-col   z-10'>
-                    <h2 className='text-[52px] font-bold !text-left mb-9'>
-                        Ce que vous gagnez avec nos Bénéfice
-                    </h2>
-
-                    <div className='flex flex-col gap-8'>
-                        <div className='flex items-center gap-3'>
-                            <span className='w-20' ></span>
-                            <div className='flex-1 flex flex-col'>
-                                <span className='font-bold text-[24px] text-[#2D1F67] '>
-                                    Visibilité accrue
-                                </span>
-                                <span>
-                                    Vous êtes vu par les bonnes personnes, au bon moment
-                                </span>
-                            </div>
-
-                        </div>
-                        <div className='flex items-center gap-3'>
-                            <span className='w-20' ></span>
-
-
-                            <div className='flex-1 flex flex-col'>
-                                <span className='font-bold text-[24px] text-[#2D1F67] '>
-                                    Leads qualifiés
-                                </span>
-                                <span>
-                                    Pas juste du trafic : des vrais prospects
-                                </span>
-                            </div>
-
-                        </div>
-                        <div className='flex items-center gap-3'>
-                            <span className='w-20' ></span>
-
-                            <div className='flex-1 flex flex-col'>
-                                <span className='font-bold text-[24px] text-[#2D1F67] '>
-                                    Gain de temps
-                                </span>
-                                <span>
-                                    On gère tout, vous vous concentrez sur votre activité
-                                </span>
-                            </div>
-
-                        </div>
-                        <div className='flex items-center gap-3'>
-                            <span className='w-20' ></span>
-
-                            <div className='flex-1 flex flex-col    '>
-                                <span className='font-bold text-[24px] text-[#2D1F67] '>
-                                    Expertise + IA
-                                </span>
-                                <span>
-                                    Analyse, IA, automatisations intelligentes
-                                </span>
-                            </div>
-
-                        </div>
-                        <div className='flex items-center gap-3'>
-                            <span className='w-20' ></span>
-
-                            <div className='flex-1 flex flex-col    '>
-                                <span className='font-bold text-[24px] text-[#2D1F67] '>
-                                    Suivi & ajustement
-                                </span>
-                                <span>
-                                    Reporting clair et optimisations régulières
-                                </span>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
-            </section>
-
-            <section className='pl-10 grid grid-cols-2'>
-                <div className='flex flex-col gap-6 !pt-[151px] text-[#2D1F67] '>
-                    <div className='text-6xl font-bold'>
-                        Nos services inclus
-                    </div>
-                    <div className='flex flex-col gap-4 '>
-                        {sitesFeatures.map((site, index) => (
-                            <div key={index} className='flex  gap-3'>
-                                <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                                <div className='flex flex-col'>
-                                    <span className=''>{site}</span>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-                <Image src="/images/SEO 5.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
-            </section>
-            <section className='bg-[#DDBFFF] '>
-                <div className='grid grid-cols-2 '>
-                    <Image src="/images/SEO 2.svg" width={0} height={0} className='w-auto h-auto mb-5 scale-125 origin-left z-0' alt='hero' />
-                    <div className='flex flex-col pt-28  z-10'>
-                        <h2 className='text-[52px] font-bold !text-left mb-9'>
-                            Ce que vous gagnez avec nos Bénéfice
-                        </h2>
-
-                        <div className='flex flex-col gap-8'>
-                            <div className='flex items-center gap-3'>
-                                <span className='w-20' ></span>
-                                <div className='flex-1 flex flex-col'>
-                                    <span className='font-medium text-[24px] text-[#2D1F67] '>
-                                        Stratégie 360° centrée conversion
-                                    </span>
-                                </div>
-
-                            </div>
-                            <div className='flex items-center gap-3'>
-                                <span className='w-20' ></span>
-
-
-                                <div className='flex-1 flex flex-col'>
-                                    <span className='font-medium text-[24px] text-[#2D1F67] '>
-                                        Équipe multidisciplinaire (dev, pub, contenu, graphisme, SEO)
-                                    </span>
-                                </div>
-
-                            </div>
-                            <div className='flex items-center gap-3'>
-                                <span className='w-20' ></span>
-
-                                <div className='flex-1 flex flex-col'>
-                                    <span className='font-medium text-[24px] text-[#2D1F67] '>
-                                        Suivi régulier, résultats mesurés
-                                    </span>
-                                </div>
-
-                            </div>
-                            <div className='flex items-center gap-3'>
-                                <span className='w-20' ></span>
-
-                                <div className='flex-1 flex flex-col    '>
-                                    <span className='font-medium text-[24px] text-[#2D1F67] '>
-                                        Expertise avancée en acquisition & croissance digitale
-                                    </span>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div className='grid grid-cols-2 px-16 py-[110px]'>
-                    <div className='flex flex-col gap-4 '>
-                        <h2 className='text-[52px] font-bold !text-left'>
-                            Passez à l’action dès maintenant.
-                        </h2>
-                        <h3 className='text-[32px] font-medium text-[#2D1F67] '>
-                            Confiez-nous votre stratégie digitale, et observez les résultats.
-                        </h3>
-                        <Link href="/create-my-app-mobile">
-                            <button className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px]">
-                                Créer ma stratégie digitale sur mesure
-                            </button>
-                        </Link>
-                    </div>
-                </div>
-            </section>
-
 
         </div>
     )
