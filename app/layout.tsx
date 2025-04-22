@@ -67,7 +67,7 @@ export default function RootLayout({
                           Web & Mobile
                         </span>
                         <div className="flex flex-col gap-8">
-                          <div className="flex gap-3">
+                          <Link href="/services/creation-site-web" className="flex gap-3">
                             <Image src={"/images/coding.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
@@ -77,8 +77,8 @@ export default function RootLayout({
                                 Sites vitrine ou e-commerce conçus pour booster vos ventes et valoriser votre image
                               </span>
                             </div>
-                          </div>
-                          <div className="flex gap-3">
+                          </Link>
+                          <Link href="/services/creation-app-mobile" className="flex gap-3">
                             <Image src={"/images/Group 141.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
@@ -88,7 +88,7 @@ export default function RootLayout({
                                 Apps iOS & Android intuitives pour toucher vos clients où qu’ils soient
                               </span>
                             </div>
-                          </div>
+                          </Link>
                         </div>
                         <span className="text-[#696868] font-bold">
                           Digital Merketing
@@ -105,7 +105,7 @@ export default function RootLayout({
                               </span>
                             </div>
                           </div>
-                          <div className="flex gap-3">
+                          <Link href="/services/seo" className="flex gap-3">
                             <Image src={"/images/seo-tag-search-engine-optimization_svgrepo.com.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
@@ -115,7 +115,7 @@ export default function RootLayout({
                                 Optimisez votre visibilité sur Google et attirez un trafic qualifié
                               </span>
                             </div>
-                          </div>
+                          </Link>
                           <div className="flex gap-3">
                             <Image src={"/images/edit.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
