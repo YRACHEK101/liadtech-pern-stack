@@ -3,7 +3,15 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1B1438] text-white py-16 bg-no-repeat bg-cover bg-center" style={{ backgroundImage: "url('/Liadtech/Accueil/footer globe background.svg')" }}>
+    <footer 
+      className="bg-[#1B1438] text-white py-16 bg-no-repeat" 
+      style={{ 
+        backgroundImage: "url('/Liadtech/Accueil/footer globe background.svg')",
+        backgroundPosition:'top right',
+        backgroundSize:'60% 90%',
+        backgroundAttachment:'fixed'
+      }}
+      >
       <div className="w-full px-10  mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 mb-10 ">
           {/* Footer Column 1 */}
@@ -53,7 +61,7 @@ export default function Footer() {
           {/* Footer Column 3 */}
           <div className="lg:col-span-2 md:col-span-1">
             <h4 className="text-lg font-medium mb-6">Solutions</h4>
-            <ul className="space-y-3">
+            <ul className="space-y-3 [&_li_a]:whitespace-nowrap ">
               <li><Link href="/services/creation-sites-web" className="text-[#BEBEBE] hover:text-white transition-colors">Création de sites web</Link></li>
               <li><Link href="/services/applications-mobiles" className="text-[#BEBEBE] hover:text-white transition-colors">Applications mobiles</Link></li>
               <li><Link href="/services/marketing-digital" className="text-[#BEBEBE] hover:text-white transition-colors">Marketing digital & publicité</Link></li>
