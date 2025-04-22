@@ -234,7 +234,7 @@ const page = () => {
                     <Image src="/images/Blogging et contenu 5.svg" width={0} height={0} className='w-auto invisible h-auto mb-5' alt='hero' />
                 </section>
                 <section className='pl-10 grid grid-cols-2 mb-36'>
-                    <Image src="/images/Blogging et contenu 5.svg" width={0} height={0} className='w-auto invisible h-auto mb-5' alt='hero' />
+                    <Image src="/images/explainer.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
                     <div className='flex flex-col gap-6 text-[20px] text-white '>
                         <div className='text-6xl font-bold'>
                             Une équipe créative complète. Et ça fait toute la différence.
