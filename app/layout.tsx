@@ -94,7 +94,7 @@ export default function RootLayout({
                           Digital Merketing
                         </span>
                         <div className="flex flex-col gap-8">
-                          <div className="flex gap-3">
+                          <Link href={"/services/marketing-digital"} className="flex gap-3">
                             <Image src={"/images/speakerphone.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
@@ -104,7 +104,7 @@ export default function RootLayout({
                                 Générez plus de leads avec nos stratégies SEO, SEA & pub ciblée
                               </span>
                             </div>
-                          </div>
+                          </Link>
                           <Link href="/services/seo" className="flex gap-3">
                             <Image src={"/images/seo-tag-search-engine-optimization_svgrepo.com.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
