@@ -116,7 +116,7 @@ export default function RootLayout({
                               </span>
                             </div>
                           </Link>
-                          <div className="flex gap-3">
+                          <Link href={"/services/blogging-and-content"} className="flex gap-3">
                             <Image src={"/images/edit.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
@@ -126,7 +126,7 @@ export default function RootLayout({
                                 Attirez votre audience avec des articles stratégiques
                               </span>
                             </div>
-                          </div>
+                          </Link>
                         </div>
                       </div>
                       <div className="flex flex-col gap-6">
