@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={inter.className}>
-        <header className="border-b">
+        <header className="border-b bg-white">
           <div className="w-full mx-auto flex justify-between items-center px-4">
             <Link href="/" className="flex items-center">
               <Image
@@ -49,7 +49,7 @@ export default function RootLayout({
               />
             </Link>
 
-            <nav className="hidden md:flex items-center gap-9 ">
+            <nav className="hidden md:flex items-center gap-9  ">
               <Link href="/" className="text-[#1f1d2c] hover:text-[#673de6]">
                 Accueil
               </Link>
@@ -135,7 +135,7 @@ export default function RootLayout({
                         </span>
                         <div className="flex flex-col gap-8">
                           <div className="flex gap-3">
-                            <div className="w-11 h-11 self-start bg-purple-600"></div>
+                          <Image src={"/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-45-10.png"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
                                 Vidéos explicatives 2D/3D
@@ -146,7 +146,7 @@ export default function RootLayout({
                             </div>
                           </div>
                           <div className="flex gap-3">
-                            <div className="w-11 h-11 self-start bg-purple-600"></div>
+                          <Image src={"/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-50-44.png"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
                                 création de logo
@@ -157,7 +157,7 @@ export default function RootLayout({
                             </div>
                           </div>
                           <div className="flex gap-3">
-                            <div className="w-11 h-11 self-start bg-purple-600"></div>
+                          <Image src={"/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-44-29.png"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
                                 Animations narratives & mini-séries

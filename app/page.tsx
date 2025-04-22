@@ -343,7 +343,7 @@ export default function Home() {
 
 
       {/* Support Section */}
-      <section className="py-16 w-full px-10 mx-auto">
+      <section className="py-16 w-full px-14 mx-auto">
         <div className="grid grid-cols-2 gap-8 items-center">
           <div className="flex flex-col gap-3">
             <h3 className="text-5xl font-bold">
@@ -481,7 +481,7 @@ export default function Home() {
 }
 
 // Pricing Table Component
-function PricingTable() {
+export function PricingTable({hideTitle = false}) {
   const [expandedCards, setExpandedCards] = useState({
     booster: false,
     premium: false,
@@ -497,9 +497,11 @@ function PricingTable() {
 
   return (
     <div className="w-full max-w-6xl mx-auto">
-      <h2 className="text-4xl font-bold text-center text-purple-900 mb-12">
-        Des solutions clés en main, pour<br />chaque ambition
-      </h2>
+      {!hideTitle && (
+        <h2 className="text-4xl font-bold text-center text-purple-900 mb-12">
+          Des solutions clés en main, pour<br />chaque ambition
+        </h2>
+      )}
 
       <div className="flex flex-col md:flex-row justify-center gap-4">
         {/* Booster Card */}
