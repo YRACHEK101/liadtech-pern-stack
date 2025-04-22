@@ -99,10 +99,10 @@ const ContentSection = () => {
                                 className={`container mx-auto mt-8 mb-16 transition-opacity duration-300 ${activeSection === section.id ? 'opacity-100' : 'hidden opacity-0'}`}
                                 id={section.id}
                             >
-                                <div className="rounded-3xl bg-[#1f1d2c] p-8 md:p-12 flex flex-col lg:flex-row gap-8 overflow-hidden relative">
+                                <div className="rounded-3xl bg-[#1f1d2c] p-10 !pr-0 grid grid-cols-2 relative">
                                     {/* Left Column */}
-                                    <div className="lg:w-1/2 z-10">
-                                        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                                    <div className="z-10 flex flex-col">
+                                        <h2 className="text-4xl md:text-5xl flex-1 flex justify-center items-center font-bold text-white mb-6">
                                             {section.title}
                                         </h2>
                                         <p className="text-gray-300 mb-8 max-w-md">
@@ -114,16 +114,12 @@ const ContentSection = () => {
                                             </Button>
                                         </Link>
                                     </div>
-
-                                </div>
-                                {/* Right Column - Image */}
-                                <div className="relative">
                                     <Image
                                         src={section.image}
                                         alt={section.alt}
-                                        width={500}
-                                        height={350}
-                                        className="img-web"
+                                        width={0}
+                                        height={0}
+                                        className="size-auto -my-20  z-0 "
                                     />
                                 </div>
                             </section>

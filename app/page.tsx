@@ -32,19 +32,19 @@ export default function Home() {
   // };
 
   return (
-    <main className="min-h-screen overflow-x-hidden bg-white">
+    <main className="min-h-screen overflow-x-hidden  bg-white">
       {/* Hero Section */}
-      <section className="px-20 w-full mx-auto pt-16 pb-12">
+      <section className="pl-[71px] w-full mx-auto pt-16 pb-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="text-center lg:text-left">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1f1d2c] mb-4">
+            <h1 className="text-[53px] font-bold text-[#1f1d2c] mb-4">
               Plus de visibilité. Plus de clients. Moins de stress.
             </h1>
-            <p className="text-lg text-gray-600 mb-6">
+            <p className="text-[20px] text-gray-600 mb-6">
               Tout est pensé pour faire décoller votre business.<br />
               Site web optimisé, image professionnelle, marketing digital et automatisation
             </p>
-            <div className="space-y-3 mb-8">
+            <div className="space-y-3 mb-8 text-[20px]">
               <div className="flex items-start">
                 <div className="flex-shrink-0 mt-1">
                   <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -90,26 +90,25 @@ export default function Home() {
                 <p className="ml-3 text-gray-700">Un accompagnement de A à Z (créa, technique & support)</p>
               </div>
             </div>
-            <div className="btn-group">
-              <div className="flex items-center gap-2">
+            <div className="pl-4 flex flex-col gap-2.5">
+              <div className="flex items-center gap-[26px]">
                 <button className="bg-[#673de6] hover:bg-[#5628c5] text-white px-6 py-3 rounded-lg font-medium">
                   Découvrir nos Solutions tout-en-un
                 </button>
                 <div onClick={() => youtubeModalRef.current?.show()} className="flex items-center justify-center bg-[#A384FF] hover:bg-[#A384FF] size-12 !rounded-full">
                   <button className="bg-[#673de6] hover:bg-[#5628c5] size-10 !rounded-full flex justify-center items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" strokeWidth={0} stroke="currentColor" className="size-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" strokeWidth={0} stroke="currentColor" className="size-10 absolute">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
                     </svg>
                   </button>
                 </div>
               </div>
-              <div className="P-group">
-                <p className="Co text-sm text-gray-600 mt-4">
-                  Commencer avec un expert LIADTECH</p>
-                <p className="text-sm text-gray-600 mt-4">
-                  100 % sur-mesure - Livraison rapide - Support 24/7
-                </p>
-              </div>
+              <p className="text-[20px] text-[#673DE6] font-bold">
+                Commencer avec un expert LIADTECH
+              </p>
+              <p className="text-[23px] text-gray-600">
+                100 % sur-mesure - Livraison rapide - Support 24/7
+              </p>
             </div>
           </div>
           <div className="flex justify-center">
@@ -124,20 +123,22 @@ export default function Home() {
         </div>
       </section>
 
-      
+
 
       {/* Trusted by clients section */}
       <TrustedByClientsSection />
 
       {/* Pricing Table Section */}
-      <section className="py-16 container mx-auto">
+      <section className="py-16 px-10 mx-auto">
         <PricingTable />
       </section>
 
-      <ContentSection />
+      <div className="mb-36">
+        <ContentSection />
+      </div>
 
       {/* Why Choose Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 mb-36">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-center mb-2">Pourquoi choisir LIADTECH ?</h2>
           <p className="text-center text-gray-600 mb-12">Rapide. Fiable. Créatif.</p>
@@ -156,7 +157,7 @@ export default function Home() {
 
       <TestimonialsSection />
 
-      <section className="bg-[#2D1F67] p-20 text-white flex flex-col gap-48">
+      <section className="bg-[#2D1F67] px-[62px] py-[64px] text-white flex flex-col gap-48">
         <div className="container mx-auto flex flex-col items-center gap-5">
           <div className="text-white text-5xl font-bold">
             Migration & refonte en toute sérénité
@@ -251,13 +252,13 @@ export default function Home() {
 
 
       <section>
-        <div className="w-full px-7 mx-auto grid grid-cols-2 pb-16 relative">
+        <div className="w-full pr-7 mx-auto grid grid-cols-2 pb-16 relative">
           <Image
             src="/Liadtech/Accueil/dashboard section 9.svg"
             width={0}
             height={0}
             alt="Dashboard Liadtech"
-            className="w-full h-full relative z-10"
+            className="w-full h-full relative -mt-5 z-10 scale-110 origin-top"
           />
 
           <div className="flex flex-col gap-5 pt-20">
@@ -297,7 +298,7 @@ export default function Home() {
 
 
       {/* Support Section */}
-      <section className="py-16 w-full px-14 mx-auto">
+      <section className="py-36 w-full px-14 mx-auto">
         <div className="grid grid-cols-2 gap-8 items-center">
           <div className="flex flex-col gap-3">
             <h3 className="text-5xl font-bold">
@@ -342,12 +343,12 @@ export default function Home() {
         backgroundPosition: 'center',
       }}>
         <div className="container mx-auto ">
-          <h2 className="text-5xl font-bold text-center mb-8 !text-white">Questions fréquentes</h2>
-          <p className="text-xl text-center mb-12">
+          <h2 className="!leading-[56px] !text-[52px] font-bold text-center mb-8 !text-white">Questions fréquentes</h2>
+          <p className="text-[32px] text-center mb-12">
             Avant de vous lancer, voici les réponses aux questions qu'on nous pose souvent
           </p>
 
-          <div className="grid grid-cols-1 gap-4 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 gap-4 max-w-[1263px] w-full mx-auto">
             <FAQItem
               question="Est-ce que je peux vraiment tout faire avec un seul prestataire ?"
               answer="Oui. Chez LIADTECH, on centralise tout : site web, logo, vidéo explicative, marketing digital, réseaux sociaux... Vous avez un seul interlocuteur, un seul espace de suivi, et une vision claire de votre projet."
@@ -424,18 +425,18 @@ export default function Home() {
         </div>
       </section> */}
 
-        {/* Youtube video modal */}
-        <Modal ref={youtubeModalRef} >
-          <div className="w-full h-full">
-            Youtube video
-          </div>
-        </Modal>
+      {/* Youtube video modal */}
+      <Modal ref={youtubeModalRef} >
+        <div className="w-full h-full">
+          Youtube video
+        </div>
+      </Modal>
     </main>
   )
 }
 
 // Pricing Table Component
-export function PricingTable({hideTitle = false}) {
+export function PricingTable({ hideTitle = false }) {
   const [expandedCards, setExpandedCards] = useState({
     booster: false,
     premium: false,
@@ -673,7 +674,7 @@ const ExpandedCardContent = () => {
 };
 
 // Service Item Component
-const ServiceItem = ({ active=false, text='', hasInfo = false }) => {
+const ServiceItem = ({ active = false, text = '', hasInfo = false }) => {
   return (
     <li className="flex items-start gap-2">
       <div className="flex-shrink-0 mt-1">
@@ -705,7 +706,7 @@ const ServiceItem = ({ active=false, text='', hasInfo = false }) => {
 };
 
 // Pour la rétrocompatibilité, gardons ces composants également
-const ListItem = ({ active=false, text='', tooltip='' }) => {
+const ListItem = ({ active = false, text = '', tooltip = '' }) => {
   return (
     <li className="flex items-start text-sm">
       {active ? (

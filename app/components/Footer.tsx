@@ -86,11 +86,15 @@ export default function Footer() {
             <h4 className="text-lg font-medium mb-6">Abonnez-vous à notre newsletter</h4>
             <p className="text-[#BEBEBE] mb-6">Abonnez-vous à notre newsletter pour obtenir les dernières nouvelles et mises à jour!</p>
             <div className="relative">
+              <label className='flex items-center gap-1 w-full bg-purple-500/50  border border-purple-600 rounded-md py-3 px-4 text-white  focus:outline-none focus:ring-2 focus:ring-[#673de6]'>
               <input
                 type="email"
-                className="w-full bg-purple-500/50 placeholder:text-white border border-purple-600 rounded-md py-3 px-4 text-white  focus:outline-none focus:ring-2 focus:ring-[#673de6]"
+                className="bg-transparent focus:outline-none placeholder:text-white"
                 placeholder="Entrez votre e-mail"
+                required
               />
+                <Image src={"/Liadtech/Accueil/icones/Frame 150.svg"} width={0} height={0} className='size-auto' alt='icon' />
+              </label>
               {/* <button className="absolute right-3 top-1/2 transform -translate-y-1/2 text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />

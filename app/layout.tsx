@@ -36,8 +36,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={inter.className}>
-        <header className="border-b bg-white">
+      <body className={`${inter.className}`}>
+        <header className="border-b bg-white ">
           <div className="w-full mx-auto flex justify-between items-center px-4">
             <Link href="/" className="flex items-center">
               <Image
@@ -57,7 +57,7 @@ export default function RootLayout({
                 <button className="flex items-center text-[#1f1d2c] hover:text-[#673de6]">
                   Services <ChevronDown className="h-4 w-4 ml-1" />
                 </button>
-                <div className="absolute inset-x-4 pt-16 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                <div className="absolute hidden group-hover:block inset-x-4 pt-16 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                   <div className=" bg-white pl-[88px] shadow-md shadow-black/25 rounded-md pb-12 pt-6 pr-10  ">
                     <h3 className="text-lg text-gray-700 mb-6 italic pl-11">De l’idée à l’automatisation, tout est imaginé pour vous</h3>
 
@@ -312,7 +312,7 @@ export default function RootLayout({
                 <button className="flex items-center text-[#1f1d2c] hover:text-[#673de6]">
                   Explorer <ChevronDown className="h-4 w-4 ml-1" />
                 </button>
-                <div className="absolute left-0 pt-16 opacity-0 w-screen max-w-[1044px] transform -translate-x-1/2 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50  ">
+                <div className="absolute hidden group-hover:block left-0 pt-16 opacity-0 w-screen max-w-[1044px] transform -translate-x-1/2 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50  ">
                   <div className=" bg-white pl-[88px] shadow-md shadow-black/25 rounded-md pb-12 pt-6 pr-10 ">
                     <h3 className="text-lg text-gray-700 mb-6 italic pl-11">Ce qu'on crée, ce qu'on partage, ce qui nous anime</h3>
                     <div className="flex gap-16">
@@ -425,7 +425,7 @@ export default function RootLayout({
                 <button className="flex items-center text-[#1f1d2c] hover:text-[#673de6] ">
                   Support <ChevronDown className="h-4 w-4 ml-1" />
                 </button>
-                <div className="absolute left-0 pt-16 opacity-0 w-screen max-w-[1044px] transform -translate-x-1/2 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50  ">
+                <div className="absolute hidden group-hover:block left-0 pt-16 opacity-0 w-screen max-w-[1044px] transform -translate-x-1/2 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50  ">
                   <div className=" bg-white pl-[88px] shadow-md shadow-black/25 rounded-md pb-12 pt-6 pr-10 ">                  <h3 className="text-lg text-gray-700 mb-6 italic pl-11">Tout ce qu'il vous faut pour suivre ou gérer vos projets</h3>
 
                     <div className="flex gap-16">
@@ -486,7 +486,7 @@ export default function RootLayout({
                 <button className="flex items-center text-[#1f1d2c] hover:text-[#673de6] ">
                   L'univers LIADTECH <ChevronDown className="h-4 w-4 ml-1" />
                 </button>
-                <div className="absolute left-0 pt-16 opacity-0 w-screen max-w-[1044px] transform -translate-x-1/2 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50  ">
+                <div className="absolute hidden group-hover:block left-0 pt-16 opacity-0 w-screen max-w-[1044px] transform -translate-x-1/2 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50  ">
                   <div className=" bg-white pl-[88px] shadow-md shadow-black/25 rounded-md pb-12 pt-6 pr-10 ">                  <h3 className="text-lg text-gray-700 mb-6 italic pl-11">Derrière les écrans, il y a une équipe</h3>
 
                     <div className="flex gap-16">
