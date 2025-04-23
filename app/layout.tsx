@@ -156,7 +156,7 @@ export default function RootLayout({
                               </span>
                             </div>
                           </div>
-                          <div className="flex gap-3">
+                          <Link href="/services/animations-narratives" className="flex gap-3">
                             <Image src={"/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-44-29.png"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
@@ -166,7 +166,7 @@ export default function RootLayout({
                                 Des histoires engageantes pour réseaux ou communication interne
                               </span>
                             </div>
-                          </div>
+                          </Link>
                           <div className="flex gap-3">
                             <Image src={"/images/brush.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
