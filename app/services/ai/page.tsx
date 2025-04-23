@@ -25,13 +25,13 @@ const features2 = [
 const page = () => {
     return (
         <div>
-            <section className='grid grid-cols-2 px-16 py-10'>
+            <section className='grid grid-cols-2 px-16 py-10 bg-[#2D1F67] text-white '>
                 <div className='flex flex-col gap-7 pt-20 pr-20 z-10 '>
-                    <span className='font-bold text-5xl text-[#2D1F67] '>
+                    <span className='font-bold text-5xl '>
                         Expliquez votre concept
                         en 30 secondes chrono.
                     </span>
-                    <span className=' font-bold text-[#2D1F67] !text-[20px]'>
+                    <span className=' font-bold !text-[20px]'>
                         Attirez l’attention, simplifiez votre message et boostez vos conversions avec une animation 2D claire, moderne et percutante.
                     </span>
                     <div className='flex flex-col '>
@@ -45,7 +45,7 @@ const page = () => {
                         ))}
                     </div>
                     <div className='flex items-center gap-4'>
-                        <div className="text-[85px] font-bold text-[#2D1F67]">750€</div>
+                        <div className="text-[85px] font-bold">750€</div>
                         <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] flex gap-3.5 items-center text-white rounded-lg px-[31px] py-[10px]">
                             <span>
                                 Profiter de l’offre
@@ -54,7 +54,7 @@ const page = () => {
                         </Link>
                     </div>
                 </div>
-                <Image src={"/images/Ux ui.svg"} width={0} height={0} className='w-auto origin-top-right scale-[120%] pt-10 z-0  h-auto' alt='pic' />
+                <Image src={"/images/AI.svg"} width={0} height={0} className='w-auto origin-top-right scale-[120%] pt-10 z-0  h-auto' alt='pic' />
             </section>
             <section className=' py-12 px-5 flex flex-col items-center'>
                 <span className='font-bold text-[59px] text-[#2D1F67] mb-2'>
@@ -74,13 +74,13 @@ const page = () => {
                 </span>
 
             </section>
-            <section className='grid grid-cols-2 px-16 pb-20 bg-[#2D1F67] '>
+            <section className='grid grid-cols-2 px-16 pb-20  '>
 
-                <div className='flex flex-col gap-7 pt-32 pr-20 text-white '>
-                    <span className='font-bold text-5xl '>
+                <div className='flex flex-col gap-7 pt-32 pr-20 '>
+                    <span className='font-bold text-5xl text-[#2D1F67] '>
                         Lancez votre marque avec impact, développez sans limites.
                     </span>
-                    <span className=' font-bold !text-[20px]'>
+                    <span className=' font-bold !text-[20px] text-[#2D1F67] '>
                         Ne perdez plus de temps avec les démarches techniques. Créez, animez et propulsez votre image grâce à nos packs 100% clé-en-main.
                     </span>
                     <div className='flex flex-col gap-4 '>
@@ -90,7 +90,7 @@ const page = () => {
                                     <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                                 <div className='flex flex-col'>
-                                    <span className='!text-[20px] '>{site}</span>
+                                    <span className='!text-[20px]  '>{site}</span>
                                 </div>
                             </div>
                         ))}
@@ -99,12 +99,12 @@ const page = () => {
                         Idéal pour les marques ambitieuses qui veulent se démarquer sur les réseaux et au-delà.
                     </div>
                 </div>
-                <Image src={"/images/UXUI section une.svg"} width={0} height={0} className='w-auto origin-top-right scale-y-125 scale-x-110   h-auto' alt='pic' />
+                <Image src={"/images/AI Section une.svg"} width={0} height={0} className='w-auto origin-top-right scale-y-125 scale-x-110   h-auto' alt='pic' />
             </section>
-            <section className='grid grid-cols-2 px-16  bg-[#2D1F67] py-36 '>
-                <Image src={"/images/UXUI section deux.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
+            <section className='grid grid-cols-2 px-16  bg-[#2D1F67] pb-36 '>
+                <Image src={"/images/AI Section deux.svg"} width={0} height={0} className='w-auto h-auto ' alt='pic' />
 
-                <div className='flex flex-col gap-7  pr-20 text-white '>
+                <div className='flex flex-col gap-7  pr-20 text-white pt-36 '>
                     <span className='font-bold text-5xl '>
                         Donnez vie à votre message avec des animations percutantes
                     </span>
