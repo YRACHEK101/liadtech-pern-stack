@@ -1,3 +1,4 @@
+import PricingPacksSection from '@/components/sections/PricingPacksSection'
 import TarifPricingPlan from '@/components/tarifs/TarifPricingPlan'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -56,24 +57,7 @@ const page = () => {
                 </div>
                 <Image src={"/images/liadteche site image_saas 1.svg"} width={0} height={0} className='w-auto origin-top-right scale-[120%] z-0 pl-3  h-auto' alt='pic' />
             </section>
-            <section className=' py-12 px-5 flex flex-col items-center'>
-                <span className='font-bold text-[59px] text-[#2D1F67] mb-2'>
-                    Choisissez votre pack Studio Créatif avec Liadtech
-                </span>
-                <span className='text-[32px] font-light text-[#2D1F67] mb-8'>
-                    Des animations pensées pour captiver, valoriser et faire rayonner votre message.
-                </span>
-                <TarifPricingPlan plans={[
-                    'Digital Marketing',
-                    'Studio Créatif',
-                    'Cloud, SaaS & Support'
-                ]} />
-
-                <span className='text-[26px] font-light text-[#673DE6] my-4'>
-                    Conditions de paiement
-                </span>
-
-            </section>
+            <PricingPacksSection />
             <section className='grid grid-cols-2 gap-[78px] px-16 pb-20  '>
             <Image src={"/images/SAAS.svg"} width={0} height={0} className='w-auto -mt-10    h-full' alt='pic' />
 

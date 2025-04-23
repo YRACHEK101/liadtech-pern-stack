@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Check, Play, Film, Edit, Clock, Headphones } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import PricingPacksSection from "@/components/sections/PricingPacksSection"
 
 export default function AnimationsNarratives() {
   return (
@@ -112,146 +113,7 @@ export default function AnimationsNarratives() {
       </section>
 
       {/* Studio Créatif Section */}
-      <section className="py-16 bg-[#f8f5ff]">
-        <div className="container mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-4">Choisissez votre pack Studio Créatif avec Liadtech</h2>
-          <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-            Des animations pensées pour chaque besoin, conçues pour donner votre message.
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Pack 1 */}
-            <Card className="border-2 border-gray-200 hover:border-[#673de6] transition-colors">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-4">Animation explicative</h3>
-                <p className="text-gray-600 mb-6">
-                  Idéal pour présenter un concept ou un service de façon claire et concise.
-                </p>
-
-                <div className="mb-6">
-                  <div className="text-4xl font-bold mb-2">
-                    <span className="text-[#673de6]">0</span>
-                    <span className="text-3xl">€</span>
-                  </div>
-                  <p className="text-sm text-gray-500">*Prix personnalisé selon besoins</p>
-                </div>
-
-                <div className="space-y-3 mb-6">
-                  <div className="flex items-center">
-                    <div className="w-5 h-5 rounded-full border border-[#673de6] flex items-center justify-center mr-3">
-                      <div className="w-3 h-3 rounded-full bg-[#673de6]"></div>
-                    </div>
-                    <span>Site vitrine</span>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-5 h-5 rounded-full border border-[#673de6] flex items-center justify-center mr-3">
-                      <div className="w-3 h-3 rounded-full bg-[#673de6]"></div>
-                    </div>
-                    <span>Site dynamique et worpress</span>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-5 h-5 rounded-full border border-[#673de6] flex items-center justify-center mr-3">
-                      <div className="w-3 h-3 rounded-full bg-[#673de6]"></div>
-                    </div>
-                    <span>Site e-commerce</span>
-                  </div>
-                </div>
-
-                <Button className="w-full bg-white hover:bg-gray-100 text-[#673de6] border border-[#673de6]">
-                  Sélectionner
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Pack 2 */}
-            <Card className="border-2 border-[#673de6] shadow-lg relative">
-              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#673de6] text-white px-4 py-1 rounded-full text-sm">
-                Le plus populaire!
-              </div>
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-4">Mini-série narrative</h3>
-                <p className="text-gray-600 mb-6">
-                  Parfait pour raconter une histoire de marque en plusieurs épisodes.
-                </p>
-
-                <div className="mb-6">
-                  <div className="text-4xl font-bold mb-2">
-                    <span className="text-[#673de6]">0</span>
-                    <span className="text-3xl">€</span>
-                  </div>
-                  <p className="text-sm text-gray-500">*Prix personnalisé selon besoins</p>
-                </div>
-
-                <div className="space-y-3 mb-6">
-                  <div className="flex items-center">
-                    <div className="w-5 h-5 rounded-full border border-[#673de6] flex items-center justify-center mr-3">
-                      <div className="w-3 h-3 rounded-full bg-[#673de6]"></div>
-                    </div>
-                    <span>Site vitrine</span>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-5 h-5 rounded-full border border-[#673de6] flex items-center justify-center mr-3">
-                      <div className="w-3 h-3 rounded-full bg-[#673de6]"></div>
-                    </div>
-                    <span>Site dynamique et worpress</span>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-5 h-5 rounded-full border border-[#673de6] flex items-center justify-center mr-3">
-                      <div className="w-3 h-3 rounded-full bg-[#673de6]"></div>
-                    </div>
-                    <span>Site e-commerce</span>
-                  </div>
-                </div>
-
-                <Button className="w-full bg-[#673de6] hover:bg-[#5f65f4] text-white">Sélectionner</Button>
-              </CardContent>
-            </Card>
-
-            {/* Pack 3 */}
-            <Card className="border-2 border-gray-200 hover:border-[#673de6] transition-colors">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-4">Animation personnalisée</h3>
-                <p className="text-gray-600 mb-6">Solution sur mesure pour des besoins spécifiques et complexes.</p>
-
-                <div className="mb-6">
-                  <div className="text-4xl font-bold mb-2">
-                    <span className="text-[#673de6]">0</span>
-                    <span className="text-3xl">€</span>
-                  </div>
-                  <p className="text-sm text-gray-500">*Prix personnalisé selon besoins</p>
-                </div>
-
-                <div className="space-y-3 mb-6">
-                  <div className="flex items-center">
-                    <div className="w-5 h-5 rounded-full border border-[#673de6] flex items-center justify-center mr-3">
-                      <div className="w-3 h-3 rounded-full bg-[#673de6]"></div>
-                    </div>
-                    <span>Site vitrine</span>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-5 h-5 rounded-full border border-[#673de6] flex items-center justify-center mr-3">
-                      <div className="w-3 h-3 rounded-full bg-[#673de6]"></div>
-                    </div>
-                    <span>Site dynamique et worpress</span>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-5 h-5 rounded-full border border-[#673de6] flex items-center justify-center mr-3">
-                      <div className="w-3 h-3 rounded-full bg-[#673de6]"></div>
-                    </div>
-                    <span>Site e-commerce</span>
-                  </div>
-                </div>
-
-                <Button className="w-full bg-white hover:bg-gray-100 text-[#673de6] border border-[#673de6]">
-                  Sélectionner
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="text-center mt-8 text-sm text-gray-500">Conditions de paiement</div>
-        </div>
-      </section>
+      <PricingPacksSection />
 
       {/* Brand Impact Section */}
       <section className="py-16 container mx-auto">

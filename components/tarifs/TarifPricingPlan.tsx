@@ -14,7 +14,7 @@ const TarifPricingPlan = ({ plans=[] }: { plans: string[] }) => {
 
             <div className="flex flex-col md:flex-row justify-center items-end gap-4">
                 {/* Booster Card */}
-                <div className="flex-1 self-start relative rounded-2xl border border-gray-200 overflow-hidden" style={{ marginTop: 46 }}
+                <div className="flex-1 !w-full md:!w-auto md:!self-start relative rounded-2xl border border-gray-200 overflow-hidden" style={{ marginTop: 46 }}
                 >
                     <div className="py-12 px-[34px]">
                         <h3 className="text-xl font-bold text-[#2D1F67] ">
@@ -89,7 +89,7 @@ const TarifPricingPlan = ({ plans=[] }: { plans: string[] }) => {
                 </div>
 
                 {/* Premium Card - Highlighted */}
-                <div className="flex-1 self-start relative rounded-2xl border-2 border-purple-600 overflow-hidden bg-white transform  z-10">
+                <div className="flex-1 !w-full md:!w-auto md:!self-start relative rounded-2xl border-2 border-purple-600 overflow-hidden bg-white transform  z-10">
                     <div className="title bg-purple-600 text-white text-center py-2 font-medium">
                         Le plus populaire
                     </div>
@@ -167,7 +167,7 @@ const TarifPricingPlan = ({ plans=[] }: { plans: string[] }) => {
                 </div>
 
                 {/* Ultimate Card */}
-                <div className="flex-1 self-start relative rounded-2xl border border-gray-200 overflow-hidden" style={{ marginTop: 46 }}>
+                <div className="flex-1 !w-full md:!w-auto md:!self-start relative rounded-2xl border border-gray-200 overflow-hidden" style={{ marginTop: 46 }}>
                     <div className="py-12 px-[34px]">
                         <h3 className="text-xl font-bold text-[#2D1F67] ">
                             {plans[2]}

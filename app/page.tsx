@@ -12,6 +12,7 @@ import TestimonialsSection from "@/components/sections/TestimonialsSection"
 import Modal, { ModalRef } from "@/components/ui/modal"
 import TrustedByClientsSection from "@/components/sections/TrustedByClientsSection"
 import TarifPricingPlan from "@/components/tarifs/TarifPricingPlan"
+import PricingPacksSection from "@/components/sections/PricingPacksSection"
 
 
 
@@ -33,19 +34,19 @@ export default function Home() {
   // };
 
   return (
-    <main className="min-h-screen overflow-x-hidden  bg-white">
+    <main className="min-h-screen overflow-x-hidden bg-white">
       {/* Hero Section */}
-      <section className="pl-[71px] w-full mx-auto pt-16 pb-12">
+      <section className="px-4 md:px-6 lg:pl-[71px] w-full mx-auto pt-8 lg:pt-16 pb-8 lg:pb-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="text-center lg:text-left z-10">
-            <h1 className="text-[53px] font-bold text-[#1f1d2c] mb-4">
+            <h1 className="text-3xl md:text-4xl lg:text-[53px] font-bold text-[#1f1d2c] mb-4">
               Plus de visibilité. Plus de clients. Moins de stress.
             </h1>
-            <p className="text-[20px] text-gray-600 mb-6">
-              Tout est pensé pour faire décoller votre business.<br />
+            <p className="text-base md:text-lg lg:text-[20px] text-gray-600 mb-6">
+              Tout est pensé pour faire décoller votre business.<br className="hidden md:block" />
               Site web optimisé, image professionnelle, marketing digital et automatisation
             </p>
-            <div className="space-y-3 mb-8 text-[20px]">
+            <div className="space-y-3 mb-8 text-base md:text-lg lg:text-[20px]">
               <div className="flex items-start">
                 <div className="flex-shrink-0 mt-1">
                   <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -91,12 +92,12 @@ export default function Home() {
                 <p className="ml-3 text-gray-700">Un accompagnement de A à Z (créa, technique & support)</p>
               </div>
             </div>
-            <div className="pl-4 flex flex-col gap-2.5">
-              <div className="flex items-center gap-[26px]">
-                <button className="bg-[#673de6] hover:bg-[#5628c5] text-white px-6 py-3 rounded-lg font-medium">
+            <div className="pl-0 md:pl-4 flex flex-col gap-2.5">
+              <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-[26px]">
+                <button className="w-full sm:w-auto bg-[#673de6] hover:bg-[#5628c5] text-white px-6 py-3 rounded-lg font-medium">
                   Découvrir nos Solutions tout-en-un
                 </button>
-                <div onClick={() => youtubeModalRef.current?.show()} className="flex items-center justify-center bg-[#A384FF] hover:bg-[#A384FF] size-12 !rounded-full">
+                <div onClick={() => youtubeModalRef.current?.show()} className="flex items-center justify-center bg-[#A384FF] hover:bg-[#A384FF] size-12 !rounded-full mt-4 sm:mt-0">
                   <button className="bg-[#673de6] hover:bg-[#5628c5] size-10 !rounded-full flex justify-center items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" strokeWidth={0} stroke="currentColor" className="size-10 absolute">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
@@ -104,20 +105,20 @@ export default function Home() {
                   </button>
                 </div>
               </div>
-              <p className="text-[20px] text-[#673DE6] font-bold">
+              <p className="text-base md:text-lg lg:text-[20px] text-[#673DE6] font-bold text-center sm:text-left">
                 Commencer avec un expert LIADTECH
               </p>
-              <p className="text-[23px] text-gray-600">
+              <p className="text-lg md:text-xl lg:text-[23px] text-gray-600 text-center sm:text-left">
                 100 % sur-mesure - Livraison rapide - Support 24/7
               </p>
             </div>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-8 lg:mt-0">
             <div className="relative">
               <img
                 src="/images/robot-liadtech.png"
                 alt="Robot LIADTECH"
-                className="object-contain"
+                className="object-contain max-w-full h-auto"
               />
             </div>
           </div>
@@ -130,47 +131,30 @@ export default function Home() {
       <TrustedByClientsSection />
 
       {/* Pricing Table Section */}
-      <section className=' py-12 px-6 flex flex-col items-center'>
-        <span className='font-bold text-[59px] text-[#2D1F67] mb-2'>
-          Choisissez votre pack Studio Créatif avec Liadtech
-        </span>
-        <span className='text-[32px] font-light text-[#2D1F67] mb-8'>
-          Des animations pensées pour captiver, valoriser et faire rayonner votre message.
-        </span>
-        <TarifPricingPlan plans={[
-          'Digital Marketing',
-          'Studio Créatif',
-          'Cloud, SaaS & Support'
-        ]} />
+      <PricingPacksSection />
 
-        <span className='text-[26px] font-light text-[#673DE6] my-4'>
-          Conditions de paiement
-        </span>
-
-      </section>
-
-      <div className="py-44">
+      <div className="py-16 md:py-28 lg:py-44">
         <ContentSection />
       </div>
 
-      <section className="bg-[#2D1F67] px-[62px] pt-[64px] mb-36 pb-[159px] text-white flex flex-col gap-48">
+      <section className="bg-[#2D1F67] px-4 md:px-8 lg:px-[62px] pt-8 md:pt-12 lg:pt-[64px] mb-16 md:mb-24 lg:mb-36 pb-12 md:pb-24 lg:pb-[159px] text-white flex flex-col gap-16 md:gap-32 lg:gap-48">
         <div className="container mx-auto flex flex-col items-center gap-5">
-          <div className="text-white text-5xl font-bold">
+          <div className="text-white text-3xl md:text-4xl lg:text-5xl font-bold text-center">
             Migration & refonte en toute sérénité
           </div>
-          <div className="text-center font-light">
+          <div className="text-center font-light text-base md:text-lg">
             Ne repartez pas de zéro.<br />
             LIADTECH récupère vos bases, les modernise, et vous fait franchir un cap digital.
           </div>
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-[#41308F] flex flex-col gap-2 items-center shadow-lg rounded-lg p-4">
               <div className="bg-[#9C51F1] rounded-md p-2 mb-2">
                 <Image src={"/Liadtech/Accueil/icones/sync_svgrepo.com.svg"} width={60} height={60} alt="Rectangle 97" />
               </div>
-              <span className="font-bold text-center text-[22px]">
+              <span className="font-bold text-center text-lg md:text-xl lg:text-[22px]">
                 Contenus existants récupérés
               </span>
-              <p className="text-center font-light text-[26px]">
+              <p className="text-center font-light text-base md:text-xl lg:text-[26px]">
                 On reprend vos textes, visuels ou anciens sites. Aucune perte. Du neuf avec vos bases.
               </p>
             </div>
@@ -179,10 +163,10 @@ export default function Home() {
                 <Image src={"/Liadtech/Accueil/icones/ruler-pencil_svgrepo.com.svg"} width={60} height={60} alt="Rectangle 97" />
 
               </div>
-              <span className="font-bold text-center text-[22px]">
+              <span className="font-bold text-center text-lg md:text-xl lg:text-[22px]">
                 Design & structure optimisés
               </span>
-              <p className="text-center font-light text-[26px]">
+              <p className="text-center font-light text-base md:text-xl lg:text-[26px]">
                 Nouveau look, SEO boosté, image professionnelle.Vous repartez plus fort.
               </p>
             </div>
@@ -191,21 +175,21 @@ export default function Home() {
 
                 <Image src={"/Liadtech/Accueil/icones/face-smile_svgrepo.com.svg"} width={60} height={60} alt="Rectangle 97" />
               </div>
-              <span className="font-bold text-center text-[22px]">
+              <span className="font-bold text-center text-lg md:text-xl lg:text-[22px]">
                 Simplicité totale
               </span>
-              <p className="text-center font-light text-[26px]">
+              <p className="text-center font-light text-base md:text-xl lg:text-[26px]">
                 Vous validez, on s'occupe de tout. Sans stress, sans perte de temps.
               </p>
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 container mx-auto">
-          <div className="flex flex-col gap-5 text-[24px] ">
-            <span className="text-white text-6xl font-bold">
+        <div className="grid grid-cols-1 md:grid-cols-2 container mx-auto gap-8">
+          <div className="flex flex-col gap-5 text-base md:text-lg lg:text-[24px]">
+            <span className="text-white text-3xl md:text-4xl lg:text-6xl font-bold">
               Une refonte qui change tout
             </span>
-            <span className="text-white text-2xl font-semibold">
+            <span className="text-white text-xl md:text-2xl font-semibold">
               On ne se contente pas de « relooker » un site.
             </span>
             <span className="text-white text-xs font-light">
@@ -235,10 +219,10 @@ export default function Home() {
             </span>
           </div>
           <div className="relative">
-            <span className="absolute -bottom-2 left-0 text-white font-bold text-5xl">
+            <span className="absolute -bottom-2 left-0 text-white font-bold text-2xl md:text-4xl lg:text-5xl">
               Avant
             </span>
-            <span className="absolute -top-2 right-0 text-white font-bold text-5xl">
+            <span className="absolute -top-2 right-0 text-white font-bold text-2xl md:text-4xl lg:text-5xl">
               Après
             </span>
             <Image src={"/Liadtech/Accueil/section 8 before after.svg"} width={0} height={622} alt="check mark" className="w-full" />
@@ -247,41 +231,36 @@ export default function Home() {
       </section>
 
       {/* Why Choose Section */}
-      <section className=" bg-gray-50 mb-36">
-        <div className="container mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-2">Pourquoi choisir LIADTECH ?</h2>
-          <p className="text-center text-gray-600 mb-12">Rapide. Fiable. Créatif.</p>
+      <section className="bg-gray-50 mb-16 md:mb-24 lg:mb-36 py-8 md:py-12">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-2">Pourquoi choisir LIADTECH ?</h2>
+          <p className="text-center text-gray-600 mb-8 md:mb-12">Rapide. Fiable. Créatif.</p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Image
+          <Image
               src="/images/Pourquoi-choisir.svg"
               alt="Pourquoi choisir LIADTECH"
-              width={500}
-              height={350}
-              className="img-LIADTECH"
+              width={0}
+              height={0}
+              className="w-full h-full  max-w-[1263px] max-h-[897px]"
             />
-          </div>
         </div>
       </section>
 
       <TestimonialsSection />
 
-
-
-
       <section>
-        <div className="w-full pr-7 mx-auto grid grid-cols-2 pb-16 relative">
+        <div className="w-full px-4 md:px-6 lg:pr-7 mx-auto grid grid-cols-1 md:grid-cols-2 pb-8 md:pb-16 relative gap-8 md:gap-0">
           <Image
             src="/Liadtech/Accueil/dashboard section 9.svg"
             width={0}
             height={0}
             alt="Dashboard Liadtech"
-            className="w-full h-full relative -mt-5 z-10 scale-110 origin-top"
+            className="w-full h-auto relative -mt-0 md:-mt-5 z-10 scale-100 md:scale-110 origin-top"
           />
 
-          <div className="flex flex-col gap-5 pt-20">
-            <h3 className="text-6xl font-bold text-[#2D1F67] ">Un seul espace pour tout gérer</h3>
-            <p className="text-lg">
+          <div className="flex flex-col gap-5 pt-6 md:pt-12 lg:pt-20">
+            <h3 className="text-3xl md:text-4xl lg:text-6xl font-bold text-[#2D1F67]">Un seul espace pour tout gérer</h3>
+            <p className="text-base md:text-lg">
               Suivez chaque projet de votre site en temps réel depuis un espace client fluide, intuitif et sécurisé.
             </p>
 
@@ -316,13 +295,13 @@ export default function Home() {
 
 
       {/* Support Section */}
-      <section className="py-36 w-full px-14 mx-auto">
-        <div className="grid grid-cols-2 gap-8 items-center">
+      <section className="py-16 md:py-24 lg:py-36 w-full px-4 md:px-8 lg:px-14 mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="flex flex-col gap-3">
-            <h3 className="text-5xl font-bold">
+            <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold">
               Support & réactivité 24/7
             </h3>
-            <span className="text-3xl text-[#673DE6] font-semibold">
+            <span className="text-xl md:text-2xl lg:text-3xl text-[#673DE6] font-semibold">
               Toujours là quand vous avez besoin
             </span>
             <div className="flex flex-col">
@@ -352,21 +331,21 @@ export default function Home() {
             </div>
 
           </div>
-          <Image src={"/Liadtech/Accueil/Support section 10.svg"} width={0} height={410} className="w-full" alt="Support" />
+          <Image src={"/Liadtech/Accueil/Support section 10.svg"} width={0} height={410} className="w-full h-auto" alt="Support" />
         </div>
       </section>
 
-      <section className="text-white py-20 w-full min-h-[130vh] bg-no-repeat bg-cover" style={{
+      <section className="text-white py-16 md:py-20 w-full min-h-0 md:min-h-[80vh] lg:min-h-[130vh] bg-no-repeat bg-cover" style={{
         backgroundImage: "url('/Liadtech/Accueil/questions_bg.svg')",
         backgroundPosition: 'center',
       }}>
-        <div className="container mx-auto ">
-          <h2 className="!leading-[56px] !text-[52px] font-bold text-center mb-8 !text-white">Questions fréquentes</h2>
-          <p className="text-[32px] text-center mb-12">
+        <div className="container mx-auto px-4">
+          <h2 className="!leading-tight md:!leading-[56px] text-3xl md:text-4xl !lg:text-[52px] font-bold text-center mb-4 md:mb-8 !text-white">Questions fréquentes</h2>
+          <p className="text-xl md:text-2xl lg:text-[32px] text-center mb-8 md:mb-12">
             Avant de vous lancer, voici les réponses aux questions qu'on nous pose souvent
           </p>
 
-          <div className="grid grid-cols-1 gap-4 max-w-[1263px] w-full mx-auto">
+          <div className="grid grid-cols-1 gap-4 max-w-full md:max-w-[1263px] w-full mx-auto">
             <FAQItem
               question="Est-ce que je peux vraiment tout faire avec un seul prestataire ?"
               answer="Oui. Chez LIADTECH, on centralise tout : site web, logo, vidéo explicative, marketing digital, réseaux sociaux... Vous avez un seul interlocuteur, un seul espace de suivi, et une vision claire de votre projet."
