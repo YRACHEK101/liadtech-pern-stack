@@ -58,15 +58,11 @@ const page = () => {
                     </span>
 
                     <div className='flex flex-col md:flex-row gap-4'>
-                        <Link href="/create-my-app-mobile">
-                            <button className="w-full md:w-auto bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px]">
+                        <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap flex items-center gap-2">
                                 Lancer mon audit SEO gratuit
-                            </button>
                         </Link>
-                        <Link href="/create-my-app-mobile">
-                            <button className="w-full md:w-auto bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px]">
+                        <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap flex items-center gap-2">
                                 Demander ma stratégie de référencement
-                            </button>
                         </Link>
                     </div>
                 </div>

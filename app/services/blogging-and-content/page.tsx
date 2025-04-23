@@ -58,15 +58,11 @@ const page = () => {
                     </span>
 
                     <div className='flex flex-col md:flex-row gap-4 pb-4'>
-                        <Link href="/">
-                            <button className="w-full md:w-auto bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px]">
+                        <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap">
                                 Créer ma stratégie de contenus
-                            </button>
                         </Link>
-                        <Link href="/">
-                            <button className="w-full md:w-auto bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px]">
+                        <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap">
                                 Voir des exemples d'articles performants
-                            </button>
                         </Link>
                     </div>
                 </div>
@@ -180,7 +176,7 @@ const page = () => {
                     <div className='font-bold text-2xl md:text-[32px] mb-6 md:mb-[29px]'>
                         Une stratégie digitale qui transforme les clics… en clients.
                     </div>
-                    <Link href="/" className="w-full md:w-auto text-center bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start">
+                    <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap">
                         Créer ma stratégie de contenus
                     </Link>
                 </div>

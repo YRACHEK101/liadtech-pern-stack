@@ -40,14 +40,14 @@ const page = () => {
                             <div key={index} className='flex gap-3 md:gap-[25px]'>
                                 <Image src={"/Liadtech/Accueil/icones/Vector 10.png"} width={0} height={0} className='w-auto h-auto' alt='pic' />
                                 <div className='flex flex-col'>
-                                    <span className='text-base md:!text-[20px]'>{site}</span>
+                                    <span className='text-base md:!text-[20px] whitespace-nowrap'>{site}</span>
                                 </div>
                             </div>
                         ))}
                     </div>
-                    <div className='flex flex-col md:flex-row items-start md:items-center gap-4'>
+                    <div className='flex flex-col md:flex-row items-start md:items-center gap-4 '>
                         <div className="text-5xl md:text-[85px] font-bold text-[#2D1F67]">750€</div>
-                        <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] flex gap-3.5 items-center text-white rounded-lg px-6 md:px-[31px] py-[10px]">
+                        <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg !px-[31px] !py-[10px] self-start mb-4 whitespace-nowrap flex items-center gap-2">
                             <span>
                                 Profiter de l'offre
                             </span>
