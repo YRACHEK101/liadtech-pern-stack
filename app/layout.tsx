@@ -207,7 +207,7 @@ export default function RootLayout({
                               </span>
                             </div>
                           </div>
-                          <div className="flex gap-3">
+                          <Link href={"/services/saas"} className="flex gap-3">
                             <Image src={"/images/12-ui-code.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
@@ -217,7 +217,7 @@ export default function RootLayout({
                                 Applications modulaires et connectées à vos outils
                               </span>
                             </div>
-                          </div>
+                          </Link>
                           <Link href={"/services/maintenance"} className="flex gap-3">
                             <Image src={"/images/hammer-and-wrench_svgrepo.com.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
