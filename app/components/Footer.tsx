@@ -9,7 +9,6 @@ export default function Footer() {
         backgroundImage: "url('/Liadtech/Accueil/footer globe background.svg')",
         backgroundPosition:'top right',
         backgroundSize:'60% 90%',
-        backgroundAttachment:'fixed'
       }}
       >
       <div className="w-full px-10  mx-auto">

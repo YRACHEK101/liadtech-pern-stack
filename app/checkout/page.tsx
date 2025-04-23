@@ -122,7 +122,7 @@ export default function CheckoutView() {
             Paiement simple, rapide et sécurisé
           </h3>
         </div>
-
+    
         <div className="w-full flex relative gap-9 py-[30px] px-[37px]">
           <Image src={"/Liadtech/checkout/Rectangle 92.svg"} className='absolute top-0 z-0 right-0 !w-auto !h-5/6 ' width={0} height={0} alt='bg' />
           <Image src={"/Liadtech/checkout/Rectangle 93.svg"} className='absolute bottom-0 z-0 left-0 !w-auto !h-5/6 ' width={0} height={0} alt='bg' />
