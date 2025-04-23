@@ -58,10 +58,8 @@ const page = () => {
                         Une application mobile, c'est une présence continue, une expérience personnalisée… et un levier puissant pour booster votre croissance.
                     </span>
 
-                    <Link href="/create-my-app-mobile">
-                        <button className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px]">
+                    <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap">
                             Créer mon Application mobile
-                        </button>
                     </Link>
                 </div>
                 <Image src="/images/App mobile.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
