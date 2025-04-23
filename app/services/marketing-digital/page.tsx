@@ -42,18 +42,18 @@ const sitesFeatures = [
     'Gestion réseaux sociaux – Calendrier éditorial, création visuels & textes, cohérence de marque',
     'Campagnes publicitaires – Meta, Google, TikTok',
     'Branding digital – Une image claire, forte, reconnaissable',
-    'A/B Testing & Reporting – Analyses régulières, réunions et recommandations d’optimisation',
+    "A/B Testing & Reporting – Analyses régulières, réunions et recommandations d'optimisation",
 ]
 
 const page = () => {
     return (
         <div>
-            <section className='bg-[#2D1F67] overflow-hidden grid grid-cols-2 px-[42px]'>
-                <div className='flex flex-col text-white self-center '>
-                    <h2 className='!leading-[56px] !text-[52px] font-bold !text-left !text-white'>
-                        Plus qu’une présence en ligne : une machine à générer des clients.
+            <section className='bg-[#2D1F67] overflow-hidden grid grid-cols-1 md:grid-cols-2 px-4 md:px-[42px]'>
+                <div className='flex flex-col text-white self-center py-8 md:py-0'>
+                    <h2 className='!leading-[40px] md:!leading-[56px] !text-[32px] md:!text-[52px] font-bold !text-left !text-white'>
+                        Plus qu'une présence en ligne : une machine à générer des clients.
                     </h2>
-                    <span className=' text-[22px] mb-9  '>
+                    <span className='text-[18px] md:text-[22px] mb-9'>
                         Nous transformons votre visibilité digitale en résultats concrets, grâce à une stratégie complète de contenus, campagnes publicitaires, SEO… et gestion de vos réseaux sociaux
                     </span>
                 </div>
@@ -63,24 +63,24 @@ const page = () => {
             {/* Pricing Table Section */}
             <PricingPacksSection />
 
-            <section className='pl-10 grid grid-cols-2'>
-                <div className='flex flex-col gap-6 pt-[151px] text-[#2D1F67] '>
-                    <div className='text-6xl font-bold'>
+            <section className='px-4 md:pl-10 grid grid-cols-1 md:grid-cols-2'>
+                <div className='flex flex-col gap-6 pt-8 md:pt-[151px] text-[#2D1F67]'>
+                    <div className='text-4xl md:text-6xl font-bold'>
                         Notre approche stratégique
                     </div>
-                    <div className='font-bold text-2xl '>
+                    <div className='font-bold text-xl md:text-2xl'>
                         Une stratégie digitale qui transforme les clics… en clients.
                     </div>
-                    <div >
+                    <div>
                         Analyse de votre marché, positionnement, objectifs… Pas de posts inutiles, pas de pubs jetées au hasard. Une stratégie sur-mesure, testée, mesurée, ajustée chaque semaine.
                     </div>
                 </div>
                 <Image src="/images/digital marketing Section 1.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
             </section>
-            <section className='px-10 grid grid-cols-2'>
-                <Image src="/images/Blogging et contenu 3.svg" width={0} height={0} className='w-auto h-auto mb-5  origin-left z-0' alt='hero' />
-                <div className='flex flex-col   z-10'>
-                    <h2 className='!leading-[56px] !text-[52px] font-bold !text-left mb-9'>
+            <section className='px-4 md:px-10 grid grid-cols-1 md:grid-cols-2'>
+                <Image src="/images/Blogging et contenu 3.svg" width={0} height={0} className='w-auto h-auto mb-5 origin-left z-0 order-2 md:order-1' alt='hero' />
+                <div className='flex flex-col z-10 order-1 md:order-2'>
+                    <h2 className='!leading-[40px] md:!leading-[56px] !text-[32px] md:!text-[52px] font-bold !text-left mb-9'>
                         Ce que vous gagnez avec nos Bénéfice
                     </h2>
 
@@ -156,9 +156,9 @@ const page = () => {
 
             </section>
 
-            <section className='pl-10 grid grid-cols-2 pb-10'>
-                <div className='flex flex-col gap-6 !pt-[151px] text-[#2D1F67] '>
-                    <div className='text-6xl font-bold'>
+            <section className='px-4 md:pl-10 grid grid-cols-1 md:grid-cols-2 pb-10'>
+                <div className='flex flex-col gap-6 !pt-8 md:!pt-[151px] text-[#2D1F67]'>
+                    <div className='text-4xl md:text-6xl font-bold'>
                         Nos services inclus
                     </div>
                     <div className='flex flex-col gap-4 '>
@@ -176,11 +176,11 @@ const page = () => {
                 </div>
                 <Image src="/images/Bloggin et contenu 2.svg" width={0} height={0} className='w-auto h-auto mb-5  origin-left z-0' alt='hero' />
             </section>
-            <section className='bg-[#DDBFFF] '>
-                <div className='grid grid-cols-2 '>
-                    <Image src="/images/digital marketing Section 2.svg" width={0} height={0} className='w-auto h-auto mb-5  origin-left z-0' alt='hero' />
-                    <div className='flex flex-col pt-28  z-10'>
-                        <h2 className='!leading-[56px] !text-[52px] font-bold !text-left mb-9'>
+            <section className='bg-[#DDBFFF]'>
+                <div className='grid grid-cols-1 md:grid-cols-2'>
+                    <Image src="/images/digital marketing Section 2.svg" width={0} height={0} className='w-auto h-auto mb-5 origin-left z-0 order-2 md:order-1' alt='hero' />
+                    <div className='flex flex-col pt-8 md:pt-28 z-10 order-1 md:order-2 px-4 md:px-0'>
+                        <h2 className='!leading-[40px] md:!leading-[56px] !text-[32px] md:!text-[52px] font-bold !text-left mb-9'>
                             Pourquoi choisir LIADTECH
                         </h2>
 
@@ -229,19 +229,19 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-                <div className='grid grid-cols-2 px-16 py-[110px]'>
-                    <div className='flex flex-col gap-4 '>
-                        <h2 className='!leading-[56px] !text-[52px] font-bold !text-left'>
-                            Passez à l’action dès maintenant.
+                <div className='grid grid-cols-1 md:grid-cols-2 px-4 md:px-16 py-8 md:py-[110px]'>
+                    <div className='flex flex-col gap-4'>
+                        <h2 className='!leading-[40px] md:!leading-[56px] !text-[32px] md:!text-[52px] font-bold !text-left'>
+                            Passez à l'action dès maintenant.
                         </h2>
-                        <h3 className='text-[32px] font-medium text-[#2D1F67] '>
+                        <h3 className='text-[24px] md:text-[32px] font-medium text-[#2D1F67]'>
                             Confiez-nous votre stratégie digitale, et observez les résultats.
                         </h3>
                         <Link href="/create-my-app-mobile" className="bg-[#673de6] self-start hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px]">
                             Créer ma stratégie digitale sur mesure
                         </Link>
                     </div>
-                    <Image src="/images/Marketing digital.svg" width={0} height={0} className='w-auto h-auto mb-5  origin-left z-0' alt='hero' />
+                    <Image src="/images/Marketing digital.svg" width={0} height={0} className='w-auto h-auto mb-5 origin-left z-0' alt='hero' />
                 </div>
             </section>
 
