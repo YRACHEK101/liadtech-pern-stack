@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="w-full px-10  mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 mb-10 ">
           {/* Footer Column 1 */}
-          <div className="lg:col-span-3 md:col-span-1 -mt-12 pl-10">
+          <div className="lg:col-span-3 md:col-span-1 -mt-12 lg:pl-10">
             <Link href="/" className=" ">
               <Image
                 src="/images/Liadtech blanc avec backgroud 1.svg"
@@ -96,7 +96,7 @@ export default function Footer() {
               <label className='flex items-center gap-1 w-full bg-purple-500/50  border border-purple-600 rounded-md py-3 px-4 text-white  focus:outline-none focus:ring-2 focus:ring-[#673de6]'>
               <input
                 type="email"
-                className="bg-transparent focus:outline-none placeholder:text-white"
+                className="bg-transparent flex-1 focus:outline-none placeholder:text-white"
                 placeholder="Entrez votre e-mail"
                 required
               />
