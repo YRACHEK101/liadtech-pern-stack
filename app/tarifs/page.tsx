@@ -113,13 +113,13 @@ const page = () => {
                         Votre succès en ligne commence ici
                     </h3>
                 </div>
-                <div className="flex flex-wrap pb-16 w-full max-w-[1100px] mx-auto  gap-9 justify-center" style={{ marginBottom: 0 }}>
+                <div className="flex flex-wrap sm:pb-16 w-full max-w-[1100px] mx-auto  gap-2 sm:gap-9 justify-center" style={{ marginBottom: 0 }}>
                     {
                         contentSections.map((section,index) => (
                             <button
                                 key={index}
                                 onClick={() => setActiveSection(section.id)}
-                                className={`rounded-full px-6 py-2 font-medium text-lg shadow-sm whitespace-nowrap !w-auto transition-all duration-300 transform ${activeSection === section.id
+                                className={`rounded-full px-2 sm:px-6 sm:py-2 sm:font-medium sm:text-lg shadow-sm whitespace-nowrap !w-auto transition-all duration-300 transform ${activeSection === section.id
                                     ? 'bg-[#5d3ee6] text-white scale-105'
                                     : 'bg-[#FF41ED88] text-[#1f1d2c] hover:bg-[#c58fee] hover:scale-102'
                                     }`}

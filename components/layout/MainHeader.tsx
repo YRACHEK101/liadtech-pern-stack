@@ -62,7 +62,7 @@ const MainHeader = () => {
                                             Web & Mobile
                                         </span>
                                         <div className="flex flex-col gap-8">
-                                            <Link href="/services/creation-sites-web" className="flex gap-3">
+                                            <Link href="/services/creation-sites-web" className="flex gap-3" onClick={toggleDrawer}>
                                                 <Image src={"/images/coding.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                                                 <div className="flex flex-col flex-1  ">
                                                     <span className="font-bold">
@@ -73,7 +73,7 @@ const MainHeader = () => {
                                                     </span>
                                                 </div>
                                             </Link>
-                                            <Link href="/services/applications-mobiles" className="flex gap-3">
+                                            <Link href="/services/applications-mobiles" className="flex gap-3" onClick={toggleDrawer}>
                                                 <Image src={"/images/Group 141.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                                                 <div className="flex flex-col flex-1  ">
                                                     <span className="font-bold">
@@ -89,7 +89,7 @@ const MainHeader = () => {
                                             Digital Merketing
                                         </span>
                                         <div className="flex flex-col gap-8">
-                                            <Link href={"/services/marketing-digital"} className="flex gap-3">
+                                            <Link href={"/services/marketing-digital"} className="flex gap-3" onClick={toggleDrawer}>
                                                 <Image src={"/images/speakerphone.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                                                 <div className="flex flex-col flex-1  ">
                                                     <span className="font-bold">
@@ -100,7 +100,7 @@ const MainHeader = () => {
                                                     </span>
                                                 </div>
                                             </Link>
-                                            <Link href="/services/referencement-seo" className="flex gap-3">
+                                            <Link href="/services/referencement-seo" className="flex gap-3" onClick={toggleDrawer}>
                                                 <Image src={"/images/seo-tag-search-engine-optimization_svgrepo.com.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                                                 <div className="flex flex-col flex-1  ">
                                                     <span className="font-bold">
@@ -111,7 +111,7 @@ const MainHeader = () => {
                                                     </span>
                                                 </div>
                                             </Link>
-                                            <Link href={"/services/blogging-contenus"} className="flex gap-3">
+                                            <Link href={"/services/blogging-contenus"} className="flex gap-3" onClick={toggleDrawer}>
                                                 <Image src={"/images/edit.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                                                 <div className="flex flex-col flex-1  ">
                                                     <span className="font-bold">
@@ -129,7 +129,7 @@ const MainHeader = () => {
                                             Studio Créatif
                                         </span>
                                         <div className="flex flex-col gap-8">
-                                            <Link href={"/services/videos-explicatives"} className="flex gap-3">
+                                            <Link href={"/services/videos-explicatives"} className="flex gap-3" onClick={toggleDrawer}>
                                                 <Image src={"/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-45-10.png"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                                                 <div className="flex flex-col flex-1  ">
                                                     <span className="font-bold">
@@ -151,7 +151,7 @@ const MainHeader = () => {
                                                     </span>
                                                 </div>
                                             </div>
-                                            <Link href="/services/animations-narratives" className="flex gap-3">
+                                            <Link href="/services/animations-narratives" className="flex gap-3" onClick={toggleDrawer}>
                                                 <Image src={"/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-44-29.png"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                                                 <div className="flex flex-col flex-1  ">
                                                     <span className="font-bold">
@@ -173,7 +173,7 @@ const MainHeader = () => {
                                                     </span>
                                                 </div>
                                             </div>
-                                            <Link href={"/services/design-ux-ui"} className="flex gap-3">
+                                            <Link href={"/services/design-ux-ui"} className="flex gap-3" onClick={toggleDrawer}>
                                                 <Image src={"/images/Group 170 (1).svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                                                 <div className="flex flex-col flex-1  ">
                                                     <span className="font-bold">
@@ -191,7 +191,7 @@ const MainHeader = () => {
                                             Cloud, SaaS & Support
                                         </span>
                                         <div className="flex flex-col gap-8">
-                                            <Link href={"/services/infrastructure-cloud"} className="flex gap-3">
+                                            <Link href={"/services/infrastructure-cloud"} className="flex gap-3" onClick={toggleDrawer}>
                                                 <Image src={"/images/cloud-computing-servers-blades.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                                                 <div className="flex flex-col flex-1  ">
                                                     <span className="font-bold">
@@ -202,7 +202,7 @@ const MainHeader = () => {
                                                     </span>
                                                 </div>
                                             </Link>
-                                            <Link href={"/services/developpement-saas"} className="flex gap-3">
+                                            <Link href={"/services/developpement-saas"} className="flex gap-3" onClick={toggleDrawer}>
                                                 <Image src={"/images/12-ui-code.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                                                 <div className="flex flex-col flex-1  ">
                                                     <span className="font-bold">
@@ -213,7 +213,7 @@ const MainHeader = () => {
                                                     </span>
                                                 </div>
                                             </Link>
-                                            <Link href={"/services/maintenance-infogerance"} className="flex gap-3">
+                                            <Link href={"/services/maintenance-infogerance"} className="flex gap-3" onClick={toggleDrawer}>
                                                 <Image src={"/images/hammer-and-wrench_svgrepo.com.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                                                 <div className="flex flex-col flex-1  ">
                                                     <span className="font-bold">
@@ -262,7 +262,7 @@ const MainHeader = () => {
                                                 </span>
                                             </div>
                                         </div>
-                                        <Link href={"/services/automatisation-ia"} className="flex gap-3">
+                                        <Link href={"/services/automatisation-ia"} className="flex gap-3" onClick={toggleDrawer}>
                                             <Image src={"/images/Group 140.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                                             <div className="flex flex-col flex-1  ">
                                                 <span className="font-bold">
@@ -284,7 +284,7 @@ const MainHeader = () => {
                                                 </span>
                                             </div>
                                         </div>
-                                        <Link href={"/services/security-and-compliance"} className="flex gap-3">
+                                        <Link href={"/services/security-and-compliance"} className="flex gap-3" onClick={toggleDrawer}>
                                             <Image src={"/images/Group 147.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                                             <div className="flex flex-col flex-1  ">
                                                 <span className="font-bold">
@@ -575,7 +575,7 @@ const MainHeader = () => {
 
                         <div className='flex flex-col flex-1 h-full overflow-auto'>
                         <nav className="flex flex-col space-y-4 flex-1  ">
-                            <Link href="/" className="text-[#1f1d2c] hover:text-[#673de6] py-2">
+                            <Link href="/" className="text-[#1f1d2c] hover:text-[#673de6] py-2" onClick={toggleDrawer}>
                                 Accueil
                             </Link>
                             <div>
@@ -590,11 +590,11 @@ const MainHeader = () => {
                                     <div className="pl-4 space-y-4 mt-2">
                                         <div className="space-y-2">
                                             <span className="text-[#696868] font-bold block">Web & Mobile</span>
-                                            <Link href="/services/creation-sites-web" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1">
+                                            <Link href="/services/creation-sites-web" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                 <Image src="/images/coding.svg" alt="icon" width={24} height={24} />
                                                 Création de sites web
                                             </Link>
-                                            <Link href="/services/applications-mobiles" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1">
+                                            <Link href="/services/applications-mobiles" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                 <Image src="/images/Group 141.svg" alt="icon" width={24} height={24} />
                                                 Applications mobiles
                                             </Link>
@@ -602,15 +602,15 @@ const MainHeader = () => {
 
                                         <div className="space-y-2">
                                             <span className="text-[#696868] font-bold block">Digital Marketing</span>
-                                            <Link href="/services/marketing-digital" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1">
+                                            <Link href="/services/marketing-digital" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                 <Image src="/images/speakerphone.svg" alt="icon" width={24} height={24} />
                                                 Marketing digital & publicité
                                             </Link>
-                                            <Link href="/services/referencement-seo" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1">
+                                            <Link href="/services/referencement-seo" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                 <Image src="/images/seo-tag-search-engine-optimization_svgrepo.com.svg" alt="icon" width={24} height={24} />
                                                 Référencement Web /SEO
                                             </Link>
-                                            <Link href="/services/blogging-contenus" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1">
+                                            <Link href="/services/blogging-contenus" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                 <Image src="/images/edit.svg" alt="icon" width={24} height={24} />
                                                 Blogging & contenus
                                             </Link>
@@ -618,23 +618,23 @@ const MainHeader = () => {
 
                                         <div className="space-y-2">
                                             <span className="text-[#696868] font-bold block">Studio Créatif</span>
-                                            <Link href="/services/videos-explicatives" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1">
+                                            <Link href="/services/videos-explicatives" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                 <Image src="/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-45-10.png" alt="icon" width={24} height={24} />
                                                 Vidéos explicatives 2D/3D
                                             </Link>
-                                            <Link href="/services/creation-logo" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1">
+                                            <Link href="/services/creation-logo" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                 <Image src="/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-50-44.png" alt="icon" width={24} height={24} />
                                                 Création de logo
                                             </Link>
-                                            <Link href="/services/animations-narratives" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1">
+                                            <Link href="/services/animations-narratives" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                 <Image src="/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-44-29.png" alt="icon" width={24} height={24} />
                                                 Animations narratives & mini-séries
                                             </Link>
-                                            <Link href="/services/design-graphique" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1">
+                                            <Link href="/services/design-graphique" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                 <Image src="/images/brush.svg" alt="icon" width={24} height={24} />
                                                 Design Graphique & Visuels
                                             </Link>
-                                            <Link href="/services/design-ux-ui" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1">
+                                            <Link href="/services/design-ux-ui" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                 <Image src="/images/Group 170 (1).svg" alt="icon" width={24} height={24} />
                                                 Design UX/UI
                                             </Link>
@@ -642,19 +642,19 @@ const MainHeader = () => {
 
                                         <div className="space-y-2">
                                             <span className="text-[#696868] font-bold block">Cloud, SaaS & Support</span>
-                                            <Link href="/services/infrastructure-cloud" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1">
+                                            <Link href="/services/infrastructure-cloud" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                 <Image src="/images/cloud-computing-servers-blades.svg" alt="icon" width={24} height={24} />
                                                 Infrastructure Cloud et migration
                                             </Link>
-                                            <Link href="/services/developpement-saas" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1">
+                                            <Link href="/services/developpement-saas" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                 <Image src="/images/12-ui-code.svg" alt="icon" width={24} height={24} />
                                                 Développement SaaS
                                             </Link>
-                                            <Link href="/services/maintenance-infogerance" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1">
+                                            <Link href="/services/maintenance-infogerance" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                 <Image src="/images/hammer-and-wrench_svgrepo.com.svg" alt="icon" width={24} height={24} />
                                                 Maintenance & infogérance
                                             </Link>
-                                            <Link href="/services/applications-sur-mesure" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1">
+                                            <Link href="/services/applications-sur-mesure" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                 <Image src="/images/Group 170.svg" alt="icon" width={24} height={24} />
                                                 Applications sur mesure
                                             </Link>
@@ -667,19 +667,19 @@ const MainHeader = () => {
                                                     AVEC AI
                                                 </span> */}
                                             </div>
-                                            <Link href="/services/chatbots" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1">
+                                            <Link href="/services/chatbots" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                 <Image src="/images/cloud-computing-security-robot.svg" alt="icon" width={24} height={24} />
                                                 Chatbots
                                             </Link>
-                                            <Link href="/services/automatisation-ia" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1">
+                                            <Link href="/services/automatisation-ia" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                 <Image src="/images/Group 140.svg" alt="icon" width={24} height={24} />
                                                 Automatisation & agents IA
                                             </Link>
-                                            <Link href="/services/audit-securite" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1">
+                                            <Link href="/services/audit-securite" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                 <Image src="/images/Group 146.svg" alt="icon" width={24} height={24} />
                                                 Audit de sécurité & Pentest
                                             </Link>
-                                            <Link href="/services/security-and-compliance" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1">
+                                            <Link href="/services/security-and-compliance" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                 <Image src="/images/Group 147.svg" alt="icon" width={24} height={24} />
                                                 Conformité RGPD
                                             </Link>
@@ -701,7 +701,7 @@ const MainHeader = () => {
                                 {openDropdown === 'explorer' && (
                                     <div className="pl-4 space-y-4 mt-2">
                                         <div className="space-y-2">
-                                            <Link href="/realisations" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1">
+                                            <Link href="/realisations" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                 <div className="flex-shrink-0 h-6 w-6 bg-[#673de6] rounded-full flex items-center justify-center">
                                                     <svg
                                                         xmlns="http://www.w3.org/2000/svg"
@@ -720,7 +720,7 @@ const MainHeader = () => {
                                                 </div>
                                                 Réalisations
                                             </Link>
-                                            <Link href="/clients" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1">
+                                            <Link href="/clients" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                 <div className="flex-shrink-0 h-6 w-6 bg-[#673de6] rounded-full flex items-center justify-center">
                                                     <svg
                                                         xmlns="http://www.w3.org/2000/svg"
@@ -739,7 +739,7 @@ const MainHeader = () => {
                                                 </div>
                                                 Nos clients
                                             </Link>
-                                            <Link href="/ressources" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1">
+                                            <Link href="/ressources" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                 <div className="flex-shrink-0 h-6 w-6 bg-[#673de6] rounded-full flex items-center justify-center">
                                                     <svg
                                                         xmlns="http://www.w3.org/2000/svg"
@@ -758,7 +758,7 @@ const MainHeader = () => {
                                                 </div>
                                                 Ressources & Articles
                                             </Link>
-                                            <Link href="/projets-internes" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1">
+                                            <Link href="/projets-internes" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                 <div className="flex-shrink-0 h-6 w-6 bg-[#673de6] rounded-full flex items-center justify-center">
                                                     <svg
                                                         xmlns="http://www.w3.org/2000/svg"
@@ -792,25 +792,25 @@ const MainHeader = () => {
                                 {openDropdown === 'support' && (
                                     <div className="pl-4 space-y-4 mt-2">
                                         <div className="space-y-2">
-                                            <Link href="/ressources" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1">
+                                            <Link href="/ressources" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                 <div className="flex-shrink-0 h-6 w-6 bg-[#673de6] rounded-full flex items-center justify-center">
                                                     <FileText className="h-4 w-4 text-white" />
                                                 </div>
                                                 Centre de ressources
                                             </Link>
-                                            <Link href="/contact" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1">
+                                            <Link href="/contact" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                 <div className="flex-shrink-0 h-6 w-6 bg-[#673de6] rounded-full flex items-center justify-center">
                                                     <MessageCircle className="h-4 w-4 text-white" />
                                                 </div>
                                                 Contact direct
                                             </Link>
-                                            <Link href="/faq" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1">
+                                            <Link href="/faq" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                 <div className="flex-shrink-0 h-6 w-6 bg-[#673de6] rounded-full flex items-center justify-center">
                                                     <HelpCircle className="h-4 w-4 text-white" />
                                                 </div>
                                                 FAQ & Aide
                                             </Link>
-                                            <Link href="/espace-client" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1">
+                                            <Link href="/espace-client" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                 <div className="flex-shrink-0 h-6 w-6 bg-[#673de6] rounded-full flex items-center justify-center">
                                                     <User className="h-4 w-4 text-white" />
                                                 </div>
@@ -831,31 +831,31 @@ const MainHeader = () => {
                                 {openDropdown === 'univers' && (
                                     <div className="pl-4 space-y-4 mt-2">
                                         <div className="space-y-2">
-                                            <Link href="/adn" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1">
+                                            <Link href="/adn" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                 <div className="flex-shrink-0 h-6 w-6 bg-[#673de6] rounded-full flex items-center justify-center">
                                                     <Dna className="h-4 w-4 text-white" />
                                                 </div>
                                                 Notre ADN
                                             </Link>
-                                            <Link href="/equipe" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1">
+                                            <Link href="/equipe" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                 <div className="flex-shrink-0 h-6 w-6 bg-[#673de6] rounded-full flex items-center justify-center">
                                                     <Users className="h-4 w-4 text-white" />
                                                 </div>
                                                 L'équipe
                                             </Link>
-                                            <Link href="/recrutement" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1">
+                                            <Link href="/recrutement" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                 <div className="flex-shrink-0 h-6 w-6 bg-[#673de6] rounded-full flex items-center justify-center">
                                                     <Briefcase className="h-4 w-4 text-white" />
                                                 </div>
                                                 On recrute
                                             </Link>
-                                            <Link href="/partenaires" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1">
+                                            <Link href="/partenaires" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                 <div className="flex-shrink-0 h-6 w-6 bg-[#673de6] rounded-full flex items-center justify-center">
                                                     <Network className="h-4 w-4 text-white" />
                                                 </div>
                                                 Partenaires & Réseau
                                             </Link>
-                                            <Link href="/academy" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1">
+                                            <Link href="/academy" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                 <div className="flex-shrink-0 h-6 w-6 bg-[#673de6] rounded-full flex items-center justify-center">
                                                     <svg
                                                         xmlns="http://www.w3.org/2000/svg"
