@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '../ui/button'
+import { cn } from '@/lib/utils'
 
 
 const contentSections = [
@@ -88,9 +89,12 @@ const ContentSection = () => {
                 }
             </div>
             {
-                contentSections.filter((section) => section.id === activeSection).map((section, index) => (
+                contentSections.map((section, index) => (
                     <section
-                        className='px-4 sm:px-6 md:px-12 lg:px-24'
+                        className={cn(
+                            "px-4 sm:px-6 md:px-12 lg:px-24 transition-opacity duration-300",
+                            section.id === activeSection ? 'block opacity-100' : 'hidden opacity-0'
+                        )}
                         key={section.id}
                     >
                         <div className="rounded-3xl bg-[#1f1d2c] p-6 md:p-10 md:!pr-0 grid grid-cols-1 md:grid-cols-2 relative">
