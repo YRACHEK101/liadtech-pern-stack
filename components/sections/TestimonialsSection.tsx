@@ -49,8 +49,8 @@ const TestimonialsSection = () => {
             <SwiperSlide key={index}>
               <div className="flex px-12 flex-col md:grid md:grid-cols-3 items-center md:h-[600px] gap-5 md:gap-10">
                 <div className="w-full md:col-span-1 flex justify-center md:justify-end h-full relative overflow-hidden">
-                  <Image src="/Liadtech/Accueil/icones/Rectangle 96.svg" width={0} height={0} className='w-[90%] left-0 bottom-10 right-10 h-auto absolute hidden md:block' alt='bg' />
-                  <Image src={testimonial.image} width={0} height={0} className='w-3/4 md:w-full self-end h-auto z-10' alt={testimonial.name} />
+                  <Image src="/Liadtech/Accueil/icones/Rectangle 96.svg" width={0} height={0} className='w-[90%] left-0 bottom-10 right-10 h-[90%] md:h-auto absolute' alt='bg' />
+                  <Image src={testimonial.image} width={0} height={0} className='w-3/4 md:w-full self-end h-[500px] object-contain md:max-h-full md:h-auto z-10' alt={testimonial.name} />
                 </div>
                 <div className="w-full md:col-span-2 px-2 md:px-10 relative">
                   <Image src="/Liadtech/Accueil/icones/Rectangle 98.svg" width={0} height={0} className='!w-auto !h-[95%] right-5 -top-5 z-0 absolute hidden md:block' alt='bg' />
