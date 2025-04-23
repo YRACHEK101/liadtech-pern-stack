@@ -132,6 +132,7 @@ export default function Home() {
 
       {/* Pricing Table Section */}
       <PricingPacksSection />
+      {/* <PricingTable /> */}
 
       <div className="py-16 md:py-28 lg:py-44">
         <ContentSection />
@@ -448,35 +449,36 @@ export function PricingTable({ hideTitle = false }) {
   };
 
   return (
-    <div className="w-full max-w-6xl mx-auto">
+    <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
       {!hideTitle && (
-        <h2 className="text-4xl font-bold text-center text-purple-900 mb-12">
-          Des solutions clés en main, pour<br />chaque ambition
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-purple-900 mb-8 sm:mb-12">
+          Des solutions clés en main, pour<br className="hidden sm:block" />chaque ambition
         </h2>
       )}
 
-      <div className="flex flex-col md:flex-row justify-center gap-4">
+      <div className="flex flex-col lg:flex-row items-center lg:items-stretch justify-center gap-4 sm:gap-6 lg:gap-8">
         {/* Booster Card */}
-        <div className="flex-1 self-start relative rounded-2xl border border-gray-200 overflow-hidden" style={{ marginTop: 46 }}
+        <div className="flex-1 lg:self-start relative rounded-2xl border border-gray-200 overflow-hidden transform transition-transform hover:scale-[1.02]"
+          style={{ marginTop: '46px' }}
         >
-          <div className="p-6">
-            <h3 className="text-xl font-bold text-purple-900">Booster</h3>
-            <p className="text-sm text-gray-600 mb-2">Idéal pour se lancer proprement</p>
+          <div className="p-4 sm:p-6">
+            <h3 className="text-lg sm:text-xl font-bold text-purple-900">Booster</h3>
+            <p className="text-xs sm:text-sm text-gray-600 mb-2">Idéal pour se lancer proprement</p>
 
             <div className="flex items-center gap-2">
-              <span className="text-gray-400 line-through">1750€</span>
-              <span className="bg-purple-200 text-purple-700 text-xs px-3 py-1 rounded-full">ÉCONOMISEZ 44 %</span>
+              <span className="text-sm sm:text-base text-gray-400 line-through">1750€</span>
+              <span className="bg-purple-200 text-purple-700 text-xs px-2 sm:px-3 py-1 rounded-full">ÉCONOMISEZ 44 %</span>
             </div>
 
-            <div className="text-5xl font-bold text-purple-900 my-3" style={{ marginLeft: 80 }}>990€</div>
+            <div className="text-4xl sm:text-5xl font-bold text-purple-900 my-3" style={{ marginLeft: '80px' }}>990€</div>
 
-            <a href="/Checkout?productId=1" className="block w-full py-2 border border-purple-600 text-purple-600 rounded-lg font-medium hover:bg-purple-50 mb-8 text-center">
+            <a href="/Checkout?productId=1" className="block w-full py-2 border border-purple-600 text-purple-600 rounded-lg font-medium hover:bg-purple-50 mb-6 sm:mb-8 text-center text-sm sm:text-base">
               Sélectionner
             </a>
 
-            <h4 className="font-semibold mb-2">Audit basique</h4>
+            <h4 className="font-semibold mb-2 text-sm sm:text-base">Audit basique</h4>
 
-            <ul className="space-y-3">
+            <ul className="space-y-2 sm:space-y-3">
               <ServiceItem active={true} text="Audit basique" />
               <ServiceItem active={true} text="Refonte améliorée (1 à 5 pages)" />
               <ServiceItem active={true} text="Design responsive (mobile/tablette)" />
@@ -489,41 +491,41 @@ export function PricingTable({ hideTitle = false }) {
             </ul>
 
             {expandedCards.booster && (
-              <div className="mt-6">
+              <div className="mt-4 sm:mt-6">
                 <ExpandedCardContent />
               </div>
             )}
 
             <button
               onClick={() => toggleCard('booster')}
-              className="flex items-center justify-center mt-6 text-purple-600 font-medium"
+              className="flex items-center justify-center mt-4 sm:mt-6 text-purple-600 font-medium text-sm sm:text-base"
             >
               {expandedCards.booster ? 'Masquer' : 'Voir tous'}
-              {expandedCards.booster ? <ChevronUp className="h-5 w-5 ml-1" /> : <ChevronDown className="h-5 w-5 ml-1" />}
+              {expandedCards.booster ? <ChevronUp className="h-4 w-4 sm:h-5 sm:w-5 ml-1" /> : <ChevronDown className="h-4 w-4 sm:h-5 sm:w-5 ml-1" />}
             </button>
           </div>
         </div>
 
         {/* Premium Card - Highlighted */}
-        <div className="flex-1 self-start relative rounded-2xl border-2 border-purple-600 overflow-hidden bg-white transform md:scale-105 z-10">
-          <div className="title bg-purple-600 text-white text-center py-2 font-medium">
+        <div className="flex-1 lg:self-start relative rounded-2xl border-2 border-purple-600 overflow-hidden bg-white transform lg:scale-105 z-10 transition-transform hover:scale-[1.02]">
+          <div className="title bg-purple-600 text-white text-center py-2 font-medium text-sm sm:text-base">
             Le plus populaire
           </div>
 
-          <div className="p-6">
-            <h3 className="text-xl font-bold text-purple-900">Premium</h3>
-            <p className="text-sm text-gray-600 mb-2">Pour une présence professionnelle forte</p>
+          <div className="p-4 sm:p-6">
+            <h3 className="text-lg sm:text-xl font-bold text-purple-900">Premium</h3>
+            <p className="text-xs sm:text-sm text-gray-600 mb-2">Pour une présence professionnelle forte</p>
 
             <div className="flex items-center gap-2">
-              <span className="text-gray-400 line-through">3000€</span>
-              <span className="bg-purple-200 text-purple-700 text-xs px-3 py-1 rounded-full">ÉCONOMISEZ 34 %</span>
+              <span className="text-sm sm:text-base text-gray-400 line-through">3000€</span>
+              <span className="bg-purple-200 text-purple-700 text-xs px-2 sm:px-3 py-1 rounded-full">ÉCONOMISEZ 34 %</span>
             </div>
 
-            <div className="text-5xl font-bold text-purple-900 my-3">1990€</div>
+            <div className="text-4xl sm:text-5xl font-bold text-purple-900 my-3">1990€</div>
 
             <a
               href="/Checkout?productId=2"
-              className="block w-full py-2 text-white rounded-lg font-medium mb-8 text-center"
+              className="block w-full py-2 text-white rounded-lg font-medium mb-6 sm:mb-8 text-center text-sm sm:text-base"
               style={{
                 backgroundColor: '#673de6',
               }}
@@ -533,9 +535,9 @@ export function PricingTable({ hideTitle = false }) {
               Sélectionner
             </a>
 
-            <h4 className="font-semibold mb-2">Site Web et Audit</h4>
+            <h4 className="font-semibold mb-2 text-sm sm:text-base">Site Web et Audit</h4>
 
-            <ul className="space-y-3">
+            <ul className="space-y-2 sm:space-y-3">
               <ServiceItem active={true} text="Audit complet" />
               <ServiceItem active={true} text="Refonte améliorée (6 à 10 pages)" />
               <ServiceItem active={true} text="Design responsive (mobile/tablette)" />
@@ -548,41 +550,43 @@ export function PricingTable({ hideTitle = false }) {
             </ul>
 
             {expandedCards.premium && (
-              <div className="mt-6">
+              <div className="mt-4 sm:mt-6">
                 <ExpandedCardContent />
               </div>
             )}
 
             <button
               onClick={() => toggleCard('premium')}
-              className="flex items-center justify-center mt-6 text-purple-600 font-medium"
+              className="flex items-center justify-center mt-4 sm:mt-6 text-purple-600 font-medium text-sm sm:text-base"
             >
               {expandedCards.premium ? 'Masquer' : 'Voir tous'}
-              {expandedCards.premium ? <ChevronUp className="h-5 w-5 ml-1" /> : <ChevronDown className="h-5 w-5 ml-1" />}
+              {expandedCards.premium ? <ChevronUp className="h-4 w-4 sm:h-5 sm:w-5 ml-1" /> : <ChevronDown className="h-4 w-4 sm:h-5 sm:w-5 ml-1" />}
             </button>
           </div>
         </div>
 
         {/* Ultimate Card */}
-        <div className="flex-1 self-start relative rounded-2xl border border-gray-200 overflow-hidden" style={{ marginTop: 46 }}>
-          <div className="p-6">
-            <h3 className="text-xl font-bold text-purple-900">Ultimate</h3>
-            <p className="text-sm text-gray-600 mb-2">Pour scaler avec une vraie stratégie</p>
+        <div className="flex-1 lg:self-start relative rounded-2xl border border-gray-200 overflow-hidden transform transition-transform hover:scale-[1.02]"
+          style={{ marginTop: '46px' }}
+        >
+          <div className="p-4 sm:p-6">
+            <h3 className="text-lg sm:text-xl font-bold text-purple-900">Ultimate</h3>
+            <p className="text-xs sm:text-sm text-gray-600 mb-2">Pour scaler avec une vraie stratégie</p>
 
             <div className="flex items-center gap-2">
-              <span className="text-gray-400 line-through">5500€</span>
-              <span className="bg-purple-200 text-purple-700 text-xs px-3 py-1 rounded-full">ÉCONOMISEZ 39 %</span>
+              <span className="text-sm sm:text-base text-gray-400 line-through">5500€</span>
+              <span className="bg-purple-200 text-purple-700 text-xs px-2 sm:px-3 py-1 rounded-full">ÉCONOMISEZ 39 %</span>
             </div>
 
-            <div className="text-5xl font-bold text-purple-900 my-3">3390€</div>
+            <div className="text-4xl sm:text-5xl font-bold text-purple-900 my-3">3390€</div>
 
-            <a href="/Checkout?productId=3" className="block w-full py-2 border border-purple-600 text-purple-600 rounded-lg font-medium hover:bg-purple-50 mb-8 text-center">
+            <a href="/Checkout?productId=3" className="block w-full py-2 border border-purple-600 text-purple-600 rounded-lg font-medium hover:bg-purple-50 mb-6 sm:mb-8 text-center text-sm sm:text-base">
               Sélectionner
             </a>
 
-            <h4 className="font-semibold mb-2">Site Web et Audit</h4>
+            <h4 className="font-semibold mb-2 text-sm sm:text-base">Site Web et Audit</h4>
 
-            <ul className="space-y-3">
+            <ul className="space-y-2 sm:space-y-3">
               <ServiceItem active={true} text="Audit complet" />
               <ServiceItem active={true} text="Refonte améliorée (6 à 10 pages)" />
               <ServiceItem active={true} text="Design responsive (mobile/tablette)" />
@@ -595,17 +599,17 @@ export function PricingTable({ hideTitle = false }) {
             </ul>
 
             {expandedCards.ultimate && (
-              <div className="mt-6">
+              <div className="mt-4 sm:mt-6">
                 <ExpandedCardContent />
               </div>
             )}
 
             <button
               onClick={() => toggleCard('ultimate')}
-              className="flex items-center justify-center mt-6 text-purple-600 font-medium"
+              className="flex items-center justify-center mt-4 sm:mt-6 text-purple-600 font-medium text-sm sm:text-base"
             >
               {expandedCards.ultimate ? 'Masquer' : 'Voir tous'}
-              {expandedCards.ultimate ? <ChevronUp className="h-5 w-5 ml-1" /> : <ChevronDown className="h-5 w-5 ml-1" />}
+              {expandedCards.ultimate ? <ChevronUp className="h-4 w-4 sm:h-5 sm:w-5 ml-1" /> : <ChevronDown className="h-4 w-4 sm:h-5 sm:w-5 ml-1" />}
             </button>
           </div>
         </div>
@@ -676,20 +680,20 @@ const ServiceItem = ({ active = false, text = '', hasInfo = false }) => {
     <li className="flex items-start gap-2">
       <div className="flex-shrink-0 mt-1">
         {active ? (
-          <div className="w-5 h-5 items-center justify-center">
+          <div className="w-4 h-4 sm:w-5 sm:h-5 items-center justify-center">
             <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
         ) : (
-          <div className="w-5 h-5 flex items-center justify-center">
+          <div className="w-4 h-4 sm:w-5 sm:h-5 flex items-center justify-center">
             <svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11.8636 2.00022L2 2.00012L7 1.99991" stroke="#949695" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
         )}
       </div>
-      <span className="text-sm text-gray-700">
+      <span className="text-xs sm:text-sm text-gray-700">
         {text}
         {hasInfo && <Info size={12} className="inline ml-1 text-gray-400" />}
       </span>
