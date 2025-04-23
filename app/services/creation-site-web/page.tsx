@@ -49,15 +49,15 @@ const sitesFeatures = [
 const page = () => {
     return (
         <div>
-            <section className='bg-[#CC9EFF] overflow-hidden grid grid-cols-2 px-10'>
-                <div className='flex flex-col text-[#2D1F67] self-center '>
-                    <h2 className='!leading-[56px] !text-[52px] font-bold !text-left'>
+            <section className='bg-[#CC9EFF] overflow-hidden grid grid-cols-1 md:grid-cols-2 px-4 md:px-10'>
+                <div className='flex flex-col text-[#2D1F67] self-center'>
+                    <h2 className='!leading-[40px] md:!leading-[56px] !text-[32px] md:!text-[52px] font-bold !text-left'>
                         Un site qui vous ressemble.Conçu pour convertir… et séduire vos clients.
                     </h2>
-                    <span className='font-bold text-[22px] '>
+                    <span className='font-bold text-[18px] md:text-[22px]'>
                         Sites vitrines, e-commerce ou applications sur-mesure :
                     </span>
-                    <span className='text-[22px] mb-16 '>
+                    <span className='text-[18px] md:text-[22px] mb-8 md:mb-16'>
                         offrez à vos visiteurs une expérience fluide, gagnez en visibilité, en crédibilité… et en clients.
                     </span>
                     <Link href="/create-my-website">
@@ -66,47 +66,47 @@ const page = () => {
                         </button>
                     </Link>
                 </div>
-                <Image src="/images/digital web.svg" width={0} height={0} className='w-auto h-auto mb-20' alt='hero' />
+                <Image src="/images/digital web.svg" width={0} height={0} className='w-auto h-auto mb-10 md:mb-20' alt='hero' />
             </section>
             <TrustedByClientsSection />
             {/* Pricing Table Section */}
             <PricingPacksSection />
 
-            <section className='bg-[#2D1F67] pl-[66px] py-[132px] text-white '>
-                <div className='flex relative'>
-                    <div className='flex flex-col gap-7 z-10'>
-                        <span className='font-bold text-5xl'>Types de sites que vous pouvez créer</span>
-                        <span className='font-bold'>Ne perdez plus de temps avec les démarches techniques. Créez, animez et propulsez votre image grâce à nos packs 100% clé-en-main.</span>
-                        <div className='flex flex-col gap-4'>
+            <section className='bg-[#2D1F67] px-4 md:pl-[66px] py-16 md:py-[132px] text-white'>
+                <div className='flex flex-col md:flex-row relative'>
+                    <div className='flex flex-col gap-4 md:gap-7 z-10'>
+                        <span className='font-bold text-3xl md:text-5xl'>Types de sites que vous pouvez créer</span>
+                        <span className='font-bold text-sm md:text-base'>Ne perdez plus de temps avec les démarches techniques. Créez, animez et propulsez votre image grâce à nos packs 100% clé-en-main.</span>
+                        <div className='flex flex-col gap-3 md:gap-4'>
                             {sitesTypes.map((site, index) => (
-                                <div key={index} className='flex  gap-3'>
+                                <div key={index} className='flex gap-3'>
                                     <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
                                     <div className='flex flex-col'>
-                                        <span className='font-bold'>{site.title}</span>
-                                        <span className='text-sm font-light w-11/12'>{site.description}</span>
+                                        <span className='font-bold text-sm md:text-base'>{site.title}</span>
+                                        <span className='text-xs md:text-sm font-light w-11/12'>{site.description}</span>
                                     </div>
                                 </div>
                             ))}
                         </div>
                     </div>
-                    <Image src="/images/digital web Section 1 (1).svg" width={0} height={0} className='absolute w-auto h-auto right-0 bottom-0 z-0' alt='section-image' />
+                    <Image src="/images/digital web Section 1 (1).svg" width={0} height={0} className='hidden md:block absolute w-auto h-auto right-0 bottom-0 z-0' alt='section-image' />
                 </div>
-                <div className='flex items-center mt-20 '>
-                    <Image src="/images/digital Web Section 2.svg" width={0} height={0} className=' w-auto h-auto  ' alt='section-image' />
-                    <div className='flex flex-col gap-7 pt-20 pr-20 absolute right-20'>
-                        <span className='font-bold text-5xl'>
+                <div className='flex flex-col md:flex-row items-center mt-10 md:mt-20'>
+                    <Image src="/images/digital Web Section 2.svg" width={0} height={0} className='w-auto h-auto' alt='section-image' />
+                    <div className='flex flex-col gap-4 md:gap-7 pt-10 md:pt-20 md:pr-20 md:absolute md:right-20'>
+                        <span className='font-bold text-3xl md:text-5xl'>
                             Ce que votre site inclut
                         </span>
-                        <div className='flex flex-col gap-4 '>
+                        <div className='flex flex-col gap-3 md:gap-4'>
                             {sitesFeatures.map((site, index) => (
-                                <div key={index} className='flex  gap-3'>
+                                <div key={index} className='flex gap-3'>
                                     <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
                                     <div className='flex flex-col'>
-                                        <span className='font-bold'>{site}</span>
+                                        <span className='font-bold text-sm md:text-base'>{site}</span>
                                     </div>
                                 </div>
                             ))}
@@ -114,14 +114,16 @@ const page = () => {
                     </div>
                 </div>
             </section>
-            <section className='grid grid-cols-2 px-16 py-[110px] overflow-hidden'>
-                <div className='flex flex-col '>
-                    <h2 className='!leading-[56px] !text-[52px] font-bold !text-left'>
-                        Pourquoi un bon site change tout                    </h2>
-                    <span className='text-[22px] font-light text-[#673DE6] mb-12'>
-                        Un site bien conçu, ce n’est pas juste un beau design.C’est un outil de croissance qui travaille pour vous, même quand vous dormez.                    </span>
+            <section className='grid grid-cols-1 md:grid-cols-2 px-4 md:px-16 py-16 md:py-[110px] overflow-hidden'>
+                <div className='flex flex-col'>
+                    <h2 className='!leading-[40px] md:!leading-[56px] !text-[32px] md:!text-[52px] font-bold !text-left'>
+                        Pourquoi un bon site change tout
+                    </h2>
+                    <span className='text-[18px] md:text-[22px] font-light text-[#673DE6] mb-8 md:mb-12'>
+                        Un site bien conçu, ce n'est pas juste un beau design.C'est un outil de croissance qui travaille pour vous, même quand vous dormez.
+                    </span>
 
-                    <div className='flex flex-col gap-8'>
+                    <div className='flex flex-col gap-6 md:gap-8'>
                         <div className='flex items-center gap-3'>
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clipPath="url(#clip0_325_30184)">
@@ -140,10 +142,9 @@ const page = () => {
                                     </clipPath>
                                 </defs>
                             </svg>
-                            <span>
+                            <span className='text-sm md:text-base'>
                                 Améliore votre image de marque
                             </span>
-
                         </div>
                         <div className='flex items-center gap-3'>
                             <svg width="38" height="41" viewBox="0 0 38 41" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -151,58 +152,46 @@ const page = () => {
                                 <path fillRule="evenodd" clipRule="evenodd" d="M13.3806 1.70825H24.1108C26.8591 1.70825 25.3499 5.93759 24.2372 8.51738L22.9709 11.4759L22.7998 11.8749C23.9993 11.8152 25.1854 12.1559 26.18 12.8458C29.9007 16.3376 32.9205 20.5415 35.0692 25.2212C35.9065 26.9516 36.2386 28.8934 36.0257 30.8129C35.77 35.7053 31.943 39.604 27.1713 39.8333H10.3201C5.54708 39.6109 1.71443 35.7163 1.45335 30.823C1.24033 28.9036 1.5725 26.9617 2.40991 25.2314C4.56115 20.5471 7.58507 16.3394 11.3113 12.8458C12.3061 12.1559 13.4921 11.8152 14.6914 11.8749L14.4932 11.4149L13.2542 8.51738C12.1464 5.93759 10.6298 1.70825 13.3806 1.70825Z" stroke="#673DE6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M22.1017 13C23.0369 13 23.7952 12.3285 23.7952 11.5001C23.7952 10.6717 23.0369 10.0002 22.1017 10.0002V13ZM14.8982 10.0002C13.963 10.0002 13.2048 10.6717 13.2048 11.5001C13.2048 12.3285 13.963 13 14.8982 13V10.0002ZM28.1515 10.7999C28.9619 10.3864 29.2406 9.4693 28.7736 8.7515C28.3067 8.0337 27.2714 7.78701 26.461 8.20051L28.1515 10.7999ZM22.2536 11.1861L22.5804 12.6578L22.5853 12.657L22.2536 11.1861ZM14.7221 11.1381L15.0728 9.67061L15.0574 9.66785L14.7221 11.1381ZM10.513 8.18741C9.69435 7.78673 8.664 8.04966 8.21161 8.77468C7.7592 9.49972 8.05606 10.4123 8.87467 10.813L10.513 8.18741ZM22.1017 10.0002H14.8982V13H22.1017V10.0002ZM26.461 8.20051C25.0452 8.92279 23.5129 9.43386 21.9219 9.71522L22.5853 12.657C24.5392 12.3114 26.4185 11.6841 28.1515 10.7999L26.461 8.20051ZM21.9269 9.71436C19.6612 10.109 17.3323 10.0941 15.0728 9.67061L14.3716 12.6055C17.0774 13.1126 19.8669 13.1304 22.5804 12.6578L21.9269 9.71436ZM15.0574 9.66785C13.4706 9.38412 11.9388 8.88533 10.513 8.18741L8.87467 10.813C10.6016 11.6583 12.4598 12.2637 14.387 12.6084L15.0574 9.66785Z" fill="#673DE6" />
                             </svg>
-
-
-                            <span>
+                            <span className='text-sm md:text-base'>
                                 Augmente vos conversions
                             </span>
-
                         </div>
                         <div className='flex items-center gap-3'>
                             <svg width="41" height="36" viewBox="0 0 41 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M38.0421 0H2.95788C1.32678 0 0 1.16125 0 2.58858V3.00395C0 4.19024 0.917492 5.19003 2.16324 5.49488V27.407C2.16324 27.9058 2.62522 28.31 3.19506 28.31H19.4682V30.1693C18.168 30.5484 17.2275 31.6229 17.2275 32.8866C17.2275 34.4659 18.6956 35.7508 20.5 35.7508C22.3044 35.7508 23.7725 34.4659 23.7725 32.8866C23.7725 31.6229 22.832 30.5484 21.5318 30.1693V28.31H37.805C38.3748 28.31 38.8368 27.9058 38.8368 27.407V5.495C40.0825 5.19016 41 4.19024 41 3.00407V2.5887C41 1.16125 39.6731 0 38.0421 0ZM20.5 33.945C19.8333 33.945 19.2911 33.4704 19.2911 32.8868C19.2911 32.3034 19.8333 31.8288 20.5 31.8288C21.1667 31.8288 21.7089 32.3034 21.7089 32.8868C21.7089 33.4703 21.1667 33.945 20.5 33.945ZM36.7731 26.5041H4.22687V5.59253H36.7731V26.5041ZM38.9364 3.00395C38.9364 3.43546 38.5352 3.78654 38.0421 3.78654H2.95788C2.4648 3.78654 2.06363 3.43546 2.06363 3.00395V2.58858C2.06363 2.15707 2.4648 1.80598 2.95788 1.80598H38.0421C38.5352 1.80598 38.9364 2.15707 38.9364 2.58858V3.00395Z" fill="#673DE6" />
                                 <path d="M7.05586 24.3875C7.31987 24.3875 7.58401 24.2994 7.78556 24.123L11.7409 20.6614L15.5573 22.3312C16.023 22.535 16.5887 22.4032 16.8772 22.0245L20.7862 16.8928L26.6498 20.314C26.9014 20.4608 27.214 20.5033 27.5051 20.4311C27.7959 20.3584 28.0357 20.1778 28.1611 19.937L32.1955 12.1838L33.0023 13.7604C33.1739 14.0957 33.5503 14.2946 33.9446 14.2946C34.0856 14.2946 34.2288 14.2692 34.3657 14.2155C34.8857 14.0117 35.1187 13.4775 34.8856 13.0224L33.0259 9.38848C32.914 9.16996 32.7075 8.99923 32.4518 8.91387C32.1961 8.82875 31.9121 8.83573 31.6624 8.93349L27.511 10.5608C26.991 10.7646 26.7582 11.299 26.9912 11.7541C27.2244 12.2093 27.8347 12.4129 28.3548 12.2089L30.3148 11.4404L26.7857 18.2225L21.0725 14.889C20.8448 14.7563 20.5659 14.7079 20.2978 14.7549C20.0294 14.802 19.7934 14.9402 19.6415 15.1395L15.6655 20.3592L11.9985 18.7548C11.6015 18.5809 11.1218 18.649 10.8075 18.924L6.32643 22.8458C5.92347 23.1985 5.92347 23.7702 6.32657 24.1228C6.52771 24.2993 6.79185 24.3875 7.05586 24.3875Z" fill="#673DE6" />
                             </svg>
-
-                            <span>
+                            <span className='text-sm md:text-base'>
                                 Boost votre visibilité Google
                             </span>
-
                         </div>
-
                     </div>
                 </div>
-                <Image src={"/images/Site web.svg"} width={0} height={0} className='w-auto !-mt-[110px]  h-auto' alt='pic' />
+                <Image src={"/images/Site web.svg"} width={0} height={0} className='w-auto !-mt-0 md:!-mt-[110px] h-auto' alt='pic' />
             </section>
-            <section className='grid grid-cols-2 px-16 py-[110px]'>
-                <Image src={"/images/SEO 7.svg"} width={0} height={0} className='w-auto   h-auto' alt='pic' />
-                <div className='flex flex-col '>
-                    <h2 className='!leading-[56px] !text-[52px] font-bold !text-left'>
+            <section className='grid grid-cols-1 md:grid-cols-2 px-4 md:px-16 py-16 md:py-[110px]'>
+                <Image src={"/images/SEO 7.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
+                <div className='flex flex-col'>
+                    <h2 className='!leading-[40px] md:!leading-[56px] !text-[32px] md:!text-[52px] font-bold !text-left'>
                         Prêt à lancer un site qui vous apporte de vrais résultats ?
                     </h2>
-                    <span className='text-[22px] font-light text-[#673DE6] mb-12'>
+                    <span className='text-[18px] md:text-[22px] font-light text-[#673DE6] mb-8 md:mb-12'>
                         Parlez à un expert LIADTECH ou démarrez votre projet en quelques clics.
                     </span>
 
-                    <div className='flex flex-col gap-8'>
+                    <div className='flex flex-col gap-6 md:gap-8'>
                         <div className='flex items-center gap-3'>
-                            <Image src={"/images/hand-finger.svg"} width={0} height={0} className='w-auto   h-auto' alt='pic' />
-
-                            <span>
+                            <Image src={"/images/hand-finger.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
+                            <span className='text-sm md:text-base'>
                                 Réserver un appel gratuit
                             </span>
-
                         </div>
                         <div className='flex items-center gap-3'>
-                            <Image src={"/images/hand-finger.svg"} width={0} height={0} className='w-auto   h-auto' alt='pic' />
-
-
-                            <span>
+                            <Image src={"/images/hand-finger.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
+                            <span className='text-sm md:text-base'>
                                 Réserver un appel gratuit
                             </span>
-
                         </div>
-
                     </div>
                 </div>
             </section>
