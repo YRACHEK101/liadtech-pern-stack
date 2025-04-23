@@ -1,5 +1,6 @@
 import { PricingTable } from '@/app/page'
 import TrustedByClientsSection from '@/components/sections/TrustedByClientsSection'
+import TarifPricingPlan from '@/components/tarifs/TarifPricingPlan'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -59,9 +60,25 @@ const page = () => {
             </section>
             <TrustedByClientsSection />
             {/* Pricing Table Section */}
-            <section className="py-16 container mx-auto">
-                <PricingTable />
+            <section className=' py-12 px-6 flex flex-col items-center'>
+                <span className='font-bold text-[59px] text-[#2D1F67] mb-2'>
+                    Choisissez votre pack Studio Créatif avec Liadtech
+                </span>
+                <span className='text-[32px] font-light text-[#2D1F67] mb-8'>
+                    Des animations pensées pour captiver, valoriser et faire rayonner votre message.
+                </span>
+                <TarifPricingPlan plans={[
+                    'Digital Marketing',
+                    'Studio Créatif',
+                    'Cloud, SaaS & Support'
+                ]} />
+
+                <span className='text-[26px] font-light text-[#673DE6] my-4'>
+                    Conditions de paiement
+                </span>
+
             </section>
+
             <section className='pl-10 grid grid-cols-2'>
                 <div className='flex flex-col gap-6 pt-[151px] text-[#2D1F67] '>
                     <div className='text-6xl font-bold'>
@@ -178,7 +195,7 @@ const page = () => {
             <section className='bg-[#DDBFFF] '>
                 <div className='grid grid-cols-2 '>
                     <Image src="/images/digital marketing Section 2.svg" width={0} height={0} className='w-auto h-auto mb-5  origin-left z-0' alt='hero' />
-                                        <div className='flex flex-col pt-28  z-10'>
+                    <div className='flex flex-col pt-28  z-10'>
                         <h2 className='!leading-[56px] !text-[52px] font-bold !text-left mb-9'>
                             Pourquoi choisir LIADTECH
                         </h2>
@@ -237,7 +254,7 @@ const page = () => {
                             Confiez-nous votre stratégie digitale, et observez les résultats.
                         </h3>
                         <Link href="/create-my-app-mobile" className="bg-[#673de6] self-start hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px]">
-                                Créer ma stratégie digitale sur mesure
+                            Créer ma stratégie digitale sur mesure
                         </Link>
                     </div>
                     <Image src="/images/Marketing digital.svg" width={0} height={0} className='w-auto h-auto mb-5  origin-left z-0' alt='hero' />

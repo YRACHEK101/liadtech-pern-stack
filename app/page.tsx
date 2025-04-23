@@ -11,6 +11,7 @@ import ContentSection from "@/components/sections/ContentSection"
 import TestimonialsSection from "@/components/sections/TestimonialsSection"
 import Modal, { ModalRef } from "@/components/ui/modal"
 import TrustedByClientsSection from "@/components/sections/TrustedByClientsSection"
+import TarifPricingPlan from "@/components/tarifs/TarifPricingPlan"
 
 
 
@@ -129,35 +130,30 @@ export default function Home() {
       <TrustedByClientsSection />
 
       {/* Pricing Table Section */}
-      <section className="py-16 px-10 mx-auto">
-        <PricingTable />
+      <section className=' py-12 px-6 flex flex-col items-center'>
+        <span className='font-bold text-[59px] text-[#2D1F67] mb-2'>
+          Choisissez votre pack Studio Créatif avec Liadtech
+        </span>
+        <span className='text-[32px] font-light text-[#2D1F67] mb-8'>
+          Des animations pensées pour captiver, valoriser et faire rayonner votre message.
+        </span>
+        <TarifPricingPlan plans={[
+          'Digital Marketing',
+          'Studio Créatif',
+          'Cloud, SaaS & Support'
+        ]} />
+
+        <span className='text-[26px] font-light text-[#673DE6] my-4'>
+          Conditions de paiement
+        </span>
+
       </section>
 
       <div className="py-44">
         <ContentSection />
       </div>
 
-      {/* Why Choose Section */}
-      <section className=" bg-gray-50 mb-36">
-        <div className="container mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-2">Pourquoi choisir LIADTECH ?</h2>
-          <p className="text-center text-gray-600 mb-12">Rapide. Fiable. Créatif.</p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Image
-              src="/images/Pourquoi-choisir.svg"
-              alt="Pourquoi choisir LIADTECH"
-              width={500}
-              height={350}
-              className="img-LIADTECH"
-            />
-          </div>
-        </div>
-      </section>
-
-      <TestimonialsSection />
-
-      <section className="bg-[#2D1F67] px-[62px] pt-[64px] pb-[159px] text-white flex flex-col gap-48">
+      <section className="bg-[#2D1F67] px-[62px] pt-[64px] mb-36 pb-[159px] text-white flex flex-col gap-48">
         <div className="container mx-auto flex flex-col items-center gap-5">
           <div className="text-white text-5xl font-bold">
             Migration & refonte en toute sérénité
@@ -249,6 +245,28 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Why Choose Section */}
+      <section className=" bg-gray-50 mb-36">
+        <div className="container mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-2">Pourquoi choisir LIADTECH ?</h2>
+          <p className="text-center text-gray-600 mb-12">Rapide. Fiable. Créatif.</p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <Image
+              src="/images/Pourquoi-choisir.svg"
+              alt="Pourquoi choisir LIADTECH"
+              width={500}
+              height={350}
+              className="img-LIADTECH"
+            />
+          </div>
+        </div>
+      </section>
+
+      <TestimonialsSection />
+
+
 
 
       <section>

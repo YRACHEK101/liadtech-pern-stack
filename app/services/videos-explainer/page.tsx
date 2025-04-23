@@ -1,5 +1,6 @@
 import { PricingTable } from '@/app/page'
 import TrustedByClientsSection from '@/components/sections/TrustedByClientsSection'
+import TarifPricingPlan from '@/components/tarifs/TarifPricingPlan'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -72,9 +73,25 @@ const page = () => {
             </section>
             <TrustedByClientsSection />
             {/* Pricing Table Section */}
-            <section className="py-16 container mx-auto mb-[150px] ">
-                <PricingTable />
+            <section className=' py-12 px-6 flex flex-col items-center'>
+                <span className='font-bold text-[59px] text-[#2D1F67] mb-2'>
+                    Choisissez votre pack Studio Créatif avec Liadtech
+                </span>
+                <span className='text-[32px] font-light text-[#2D1F67] mb-8'>
+                    Des animations pensées pour captiver, valoriser et faire rayonner votre message.
+                </span>
+                <TarifPricingPlan plans={[
+                    'Digital Marketing',
+                    'Studio Créatif',
+                    'Cloud, SaaS & Support'
+                ]} />
+
+                <span className='text-[26px] font-light text-[#673DE6] my-4'>
+                    Conditions de paiement
+                </span>
+
             </section>
+
             <section className='pl-10 grid grid-cols-2 mb-36'>
                 <div className='flex flex-col gap-6 text-[20px] text-[#2D1F67] '>
                     <div className='text-6xl font-bold'>
