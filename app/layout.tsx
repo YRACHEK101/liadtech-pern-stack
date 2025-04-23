@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={`${inter.className}`}>
-        <header className="border-b bg-white ">
+        <header className="border-b bg-white shadow-md shadow-black/25  z-50 relative">
           <div className="w-full mx-auto flex justify-between items-center px-4">
             <Link href="/" className="flex items-center">
               <Image
