@@ -109,7 +109,7 @@ const page = () => {
                     <h1 className="text-6xl font-bold text-center">
                         Votre succès en ligne commence ici
                     </h1>
-                    <h3 className='text-2xl'>
+                    <h3 className='text-2xl text-center'>
                         Votre succès en ligne commence ici
                     </h3>
                 </div>
