@@ -42,22 +42,22 @@ const sitesFeatures = [
     'Gestion réseaux sociaux – Calendrier éditorial, création visuels & textes, cohérence de marque',
     'Campagnes publicitaires – Meta, Google, TikTok',
     'Branding digital – Une image claire, forte, reconnaissable',
-    'A/B Testing & Reporting – Analyses régulières, réunions et recommandations d’optimisation',
+    'A/B Testing & Reporting – Analyses régulières, réunions et recommandations d\’optimisation',
 ]
 
 const page = () => {
     return (
         <div>
-            <section className=' overflow-hidden grid grid-cols-2 px-[48px]'>
-                <div className='flex flex-col text-[#2D1F67] self-center '>
-                    <h2 className='!leading-[56px] !text-[52px] font-bold !text-left '>
-                        Une vidéo bien faite, c’est simple : elle explique, elle convainc, elle vend.
+            <section className='overflow-hidden grid grid-cols-1 md:grid-cols-2 px-4 md:px-[48px]'>
+                <div className='flex flex-col text-[#2D1F67] self-center text-center md:text-left'>
+                    <h2 className='!leading-[40px] md:!leading-[56px] !text-[32px] md:!text-[52px] font-bold'>
+                        Une vidéo bien faite, c'est simple : elle explique, elle convainc, elle vend.
                     </h2>
-                    <span className=' text-[22px] mb-9  '>
+                    <span className='text-[18px] md:text-[22px] mb-9'>
                         En 60 secondes, votre message devient clair… et inoubliable.
                     </span>
 
-                    <div className='flex gap-4 flex-nowrap'>
+                    <div className='flex gap-4 flex-wrap justify-center md:justify-start'>
                         <Link href="/">
                             <button className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px]">
                                 Créer ma vidéo explicative
@@ -76,10 +76,10 @@ const page = () => {
             {/* Pricing Table Section */}
             <PricingPacksSection />
 
-            <section className='pl-10 grid grid-cols-2 mb-36'>
-                <div className='flex flex-col gap-6 text-[20px] text-[#2D1F67] '>
-                    <div className='text-6xl font-bold'>
-                        Une vidéo, c’est plus qu’un format. C’est un outil de conversion.
+            <section className='px-4 md:px-10 grid grid-cols-1 md:grid-cols-2 mb-20 md:mb-36'>
+                <div className='flex flex-col gap-6 text-[18px] md:text-[20px] text-[#2D1F67] text-center md:text-left'>
+                    <div className='text-4xl md:text-6xl font-bold'>
+                        Une vidéo, c'est plus qu'un format. C'est un outil de conversion.
                     </div>
                     <div className='flex flex-col gap-5'>
                         <div className='flex items-center gap-3'>
@@ -91,7 +91,7 @@ const page = () => {
                         <div className='flex items-center gap-3'>
                             <div className='bg-gray-300 size-11 rounded-full'></div>
                             <div>
-                                Jusqu’à 70 % de conversions en plus
+                                Jusqu'à 70 % de conversions en plus
                             </div>
                         </div>
                         <div className='flex items-center gap-3'>
@@ -103,26 +103,26 @@ const page = () => {
                         <div className='flex items-center gap-3'>
                             <div className='bg-gray-300 size-11 rounded-full'></div>
                             <div>
-                                S’intègre partout : site, pub, réseaux, email
+                                S'intègre partout : site, pub, réseaux, email
                             </div>
                         </div>
                         <div className='flex items-center gap-3'>
                             <div className='bg-gray-300 size-11 rounded-full'></div>
                             <div>
-                                Crée un souvenir plus fort qu’un paragraphe
+                                Crée un souvenir plus fort qu'un paragraphe
                             </div>
                         </div>
                     </div>
                 </div>
                 <Image src="/images/Blogging et contenu 5.svg" width={0} height={0} className='w-auto invisible h-auto mb-5' alt='hero' />
             </section>
-            <section className='px-10 grid grid-cols-2 mb-32'>
-                <Image src="/images/Blogging et contenu 4.svg" width={0} height={0} className='w-auto invisible h-auto mb-5 origin-left z-0' alt='hero' />
-                <div className='flex flex-col gap-6  text-[#2D1F67] pt-11 '>
-                    <div className='text-6xl font-bold'>
+            <section className='px-4 md:px-10 grid grid-cols-1 md:grid-cols-2 mb-20 md:mb-32'>
+                <Image src="/images/Blogging et contenu 4.svg" width={0} height={0} className='w-auto invisible h-auto mb-5 origin-left z-0 order-2 md:order-1' alt='hero' />
+                <div className='flex flex-col gap-6 text-[#2D1F67] pt-6 md:pt-11 text-center md:text-left order-1 md:order-2'>
+                    <div className='text-4xl md:text-6xl font-bold'>
                         Notre méthode de création
                     </div>
-                    <div className='flex flex-col gap-5 text-[20px]'>
+                    <div className='flex flex-col gap-5 text-[18px] md:text-[20px] text-left'>
                         <div className='flex items-center gap-3'>
                             <div className='bg-gray-300 size-11 rounded-full'></div>
                             <div className=''>
@@ -153,7 +153,7 @@ const page = () => {
                                     Storyboard
                                 </div>
                                 <div>
-                                    Création de votre blog si vous n’en avez pas encore
+                                    Création de votre blog si vous n'en avez pas encore
 
                                 </div>
                             </div>
@@ -187,10 +187,10 @@ const page = () => {
 
             </section>
 
-            <section className='bg-[#2D1F67] pt-60 px-11 pb-14'>
-                <section className='pl-10 grid grid-cols-2 mb-[88px]'>
-                    <div className='flex flex-col gap-6 text-[20px] text-white '>
-                        <div className='text-6xl font-bold'>
+            <section className='bg-[#2D1F67] pt-20 md:pt-60 px-4 md:px-11 pb-14'>
+                <section className='grid grid-cols-1 md:grid-cols-2 mb-20 md:mb-[88px]'>
+                    <div className='flex flex-col gap-6 text-[18px] md:text-[20px] text-white text-center md:text-left'>
+                        <div className='text-4xl md:text-6xl font-bold'>
                             Nos services inclus
                         </div>
                         <div className='flex flex-col gap-5'>
@@ -234,16 +234,16 @@ const page = () => {
                     </div>
                     <Image src="/images/Blogging et contenu 5.svg" width={0} height={0} className='w-auto invisible h-auto mb-5' alt='hero' />
                 </section>
-                <section className='pl-10 grid grid-cols-2 mb-36'>
-                    <Image src="/images/explainer.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
-                    <div className='flex flex-col gap-6 text-[20px] text-white '>
-                        <div className='text-6xl font-bold'>
+                <section className='grid grid-cols-1 md:grid-cols-2 mb-20 md:mb-36'>
+                    <Image src="/images/explainer.svg" width={0} height={0} className='w-auto h-auto mb-5 order-2 md:order-1' alt='hero' />
+                    <div className='flex flex-col gap-6 text-[18px] md:text-[20px] text-white text-center md:text-left order-1 md:order-2'>
+                        <div className='text-4xl md:text-6xl font-bold'>
                             Une équipe créative complète. Et ça fait toute la différence.
                         </div>
                         <div className='font-bold text-xl '>
-                            Une vidéo n’est jamais faite à moitié.Elle est conçue par une équipe composée de :
+                            Une vidéo n'est jamais faite à moitié.Elle est conçue par une équipe composée de :
                         </div>
-                        <div className='flex flex-col gap-5'>
+                        <div className='flex flex-col gap-5 text-left'>
                             <div className='flex items-center gap-3'>
                                 <div className='bg-gray-300 size-11 rounded-full'></div>
                                 <div className='flex-1'>
@@ -287,7 +287,7 @@ const page = () => {
                                         Sound designers & voix-off pros
                                     </div>
                                     <div>
-                                        pour l’ambiance et la narration
+                                        pour l'ambiance et la narration
 
                                     </div>
                                 </div>
@@ -299,7 +299,7 @@ const page = () => {
                                         Stratèges marketing
                                     </div>
                                     <div>
-                                        pour garantir l’efficacité du message
+                                        pour garantir l'efficacité du message
 
                                     </div>
                                 </div>
@@ -314,19 +314,19 @@ const page = () => {
                     </div>
 
                 </section>
-                <section className='pl-10 flex gap-2 justify-between'>
-                    <div className='flex flex-col !pt-14 text-white col-span-3'>
-                        <div className='text-6xl font-bold mb-[6px]'>
-                            Votre message mérite d’être vu, compris… et retenu.
+                <section className='flex flex-col md:flex-row gap-8 md:gap-2 justify-between'>
+                    <div className='flex flex-col !pt-8 md:!pt-14 text-white text-center md:text-left'>
+                        <div className='text-4xl md:text-6xl font-bold mb-[6px]'>
+                            Votre message mérite d'être vu, compris… et retenu.
                         </div>
-                        <div className='font-bold text-[32px] mb-[29px]'>
-                            Confiez-nous votre stratégie digitale, et observez les résulFaites passer vos idées à l’image avec une vidéo qui marque les esprits — et déclenche l’action
+                        <div className='font-bold text-[24px] md:text-[32px] mb-[29px]'>
+                            Confiez-nous votre stratégie digitale, et observez les résulFaites passer vos idées à l'image avec une vidéo qui marque les esprits — et déclenche l'action
                         </div>
-                        <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start">
+                        <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-center md:self-start">
                             Créer ma vidéo explicative
                         </Link>
                     </div>
-                    <Image src="/images/Frame 15708.svg" width={0} height={0} className='w-auto h-auto mb-5 ' alt='hero' />
+                    <Image src="/images/Frame 15708.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
                 </section>
             </section>
 
