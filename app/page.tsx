@@ -133,12 +133,12 @@ export default function Home() {
         <PricingTable />
       </section>
 
-      <div className="mb-36">
+      <div className="py-44">
         <ContentSection />
       </div>
 
       {/* Why Choose Section */}
-      <section className="py-16 bg-gray-50 mb-36">
+      <section className=" bg-gray-50 mb-36">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-center mb-2">Pourquoi choisir LIADTECH ?</h2>
           <p className="text-center text-gray-600 mb-12">Rapide. Fiable. Créatif.</p>

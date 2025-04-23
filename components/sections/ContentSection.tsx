@@ -64,67 +64,60 @@ const ContentSection = () => {
 
 
     return (
-        <div>
+        <div className=''>
             {/* Success Section */}
-            <section className="py-16 w-full px-10 mx-auto text-center">
-                <h2 className="text-4xl md:text-5xl font-bold text-[#673de6] mb-4">Ce que vous pouvez créer avec LIADTECH</h2>
-                <p className="text-xl text-[#1f1d2c] mb-12">Sites. Apps. Branding. Visibilité. Résultats.</p>
-
-                {/* Category Buttons*/}
-                <div className="flex flex-wrap  gap-9 justify-between mb-8" style={{ marginBottom: 0 }}>
-                    {
-                        contentSections.map((section,index) => (
-                            <button
-                                key={index}
-                                onClick={() => setActiveSection(section.id)}
-                                className={`rounded-full px-6 py-2 font-medium shadow-sm whitespace-nowrap !w-auto transition-all duration-300 transform ${activeSection === section.id
-                                    ? 'bg-[#5d3ee6] text-white scale-105'
-                                    : 'bg-[#d59fff] text-[#1f1d2c] hover:bg-[#c58fee] hover:scale-102'
-                                    }`}
-                                style={{ width: 196 }}
-                            >
-                                {section.tabTitle}
-                            </button>
-                        ))
-                    }
-                </div>
+            <section className="mb-9 w-full px-10 mx-auto text-center">
+                <h2 className="!text-[64px] font-bold text-[#673de6] mb-4">Ce que vous pouvez créer avec LIADTECH</h2>
+                <p className="text-[32px] text-[#1f1d2c] mb-12 font-light">Sites. Apps. Branding. Visibilité. Résultats.</p>
             </section>
+            {/* Category Buttons*/}
+            <div className="flex flex-wrap  gap-[29px] justify-center mb-[58px]">
+                {
+                    contentSections.map((section, index) => (
+                        <button
+                            key={index}
+                            onClick={() => setActiveSection(section.id)}
+                            className={`rounded-full px-[29px] py-[10px] font-bold text-[19px] shadow-sm whitespace-nowrap !w-auto transition-all duration-300 transform ${activeSection === section.id
+                                ? 'bg-[#5d3ee6] text-white cursor-default'
+                                : 'bg-[#d59fff] text-[#1f1d2c] hover:bg-[#c58fee] hover:scale-110'
+                                }`}
+                            style={{ width: 196 }}
+                        >
+                            {section.tabTitle}
+                        </button>
+                    ))
+                }
+            </div>
             {
                 contentSections.filter((section) => section.id === activeSection).map((section, index) => (
-                    <div key={index}>
-                        {/* Content Sections - تظهر فقط القسم النشط */}
-                        <div className="transition-all duration-500">
-                            {/* web-mobile */}
-                            <section
-                                className={`container mx-auto mt-8 mb-16 transition-opacity duration-300 ${activeSection === section.id ? 'opacity-100' : 'hidden opacity-0'}`}
-                                id={section.id}
-                            >
-                                <div className="rounded-3xl bg-[#1f1d2c] p-10 !pr-0 grid grid-cols-2 relative">
-                                    {/* Left Column */}
-                                    <div className="z-10 flex flex-col">
-                                        <h2 className="text-4xl md:text-5xl flex-1 flex justify-center items-center font-bold text-white mb-6">
-                                            {section.title}
-                                        </h2>
-                                        <p className="text-gray-300 mb-8 max-w-md">
-                                            {section.description}
-                                        </p>
-                                        <Link href={section.actionButtonLink}>
-                                            <Button className="bg-[#5f65f4] hover:bg-[#673de6] text-white px-8 py-3 rounded-lg">
-                                                {section.actionButtonLabel}
-                                            </Button>
-                                        </Link>
-                                    </div>
-                                    <Image
+                    <section
+                        className='px-24'
+                        key={section.id}
+                    >
+                        <div className="rounded-3xl bg-[#1f1d2c] p-10 !pr-0 grid grid-cols-2 relative">
+                            {/* Left Column */}
+                            <div className="z-10 flex flex-col">
+                                <h2 className="text-4xl md:text-5xl flex-1 flex justify-center items-center font-bold text-white mb-6">
+                                    {section.title}
+                                </h2>
+                                <p className="text-gray-300 mb-8 max-w-md">
+                                    {section.description}
+                                </p>
+                                <Link href={section.actionButtonLink}>
+                                    <Button className="bg-[#5f65f4] hover:bg-[#673de6] text-white px-8 py-3 rounded-lg">
+                                        {section.actionButtonLabel}
+                                    </Button>
+                                </Link>
+                            </div>
+                            <Image
                                         src={section.image}
                                         alt={section.alt}
                                         width={0}
                                         height={0}
-                                        className="size-auto -my-20  z-0 "
+                                        className="size-auto -my-20 z-0 "
                                     />
-                                </div>
-                            </section>
                         </div>
-                    </div>
+                    </section>
                 ))
             }
         </div>
