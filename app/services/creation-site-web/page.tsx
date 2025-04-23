@@ -60,10 +60,8 @@ const page = () => {
                     <span className='text-[18px] md:text-[22px] mb-8 md:mb-16'>
                         offrez à vos visiteurs une expérience fluide, gagnez en visibilité, en crédibilité… et en clients.
                     </span>
-                    <Link href="/create-my-website">
-                        <button className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px]">
+                    <Link href="/create-my-website" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap">
                             Créer mon site web
-                        </button>
                     </Link>
                 </div>
                 <Image src="/images/digital web.svg" width={0} height={0} className='w-auto h-auto mb-10 md:mb-20' alt='hero' />

@@ -51,7 +51,7 @@ const page = () => {
         <div>
             <section className='bg-[#2D1F67] overflow-hidden grid grid-cols-1 md:grid-cols-2 px-4 md:px-10'>
                 <div className='flex flex-col text-white self-center text-center md:text-left'>
-                    <h2 className='!leading-[40px] md:!leading-[56px] !text-[32px] md:!text-[52px] font-bold !text-white'>
+                    <h2 className='!leading-[40px] md:!leading-[56px] !text-left !text-[32px] md:!text-[52px] font-bold !text-white'>
                         Touchez vos clients, là où ils sont : dans leur poche.
                     </h2>
                     <span className='font-bold text-[18px] md:text-[22px] mb-8 md:mb-16'>
@@ -240,10 +240,8 @@ const page = () => {
                     <h2 className='!leading-[40px] md:!leading-[56px] !text-[32px] md:!text-[52px] font-bold'>
                         Discutons de votre projet. Une app performante peut tout changer.
                     </h2>
-                    <Link href="/create-my-app-mobile">
-                        <button className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px]">
+                    <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap">
                             Parlez à un expert
-                        </button>
                     </Link>
                 </div>
             </section>

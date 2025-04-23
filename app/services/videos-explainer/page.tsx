@@ -58,15 +58,11 @@ const page = () => {
                     </span>
 
                     <div className='flex gap-4 flex-wrap justify-center md:justify-start'>
-                        <Link href="/">
-                            <button className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px]">
-                                Créer ma vidéo explicative
-                            </button>
+                        <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap flex items-center gap-2">
+                            Créer ma vidéo explicative
                         </Link>
-                        <Link href="/">
-                            <button className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px]">
-                                Voir des exemples
-                            </button>
+                        <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap flex items-center gap-2">
+                            Voir des exemples
                         </Link>
                     </div>
                 </div>
@@ -322,7 +318,7 @@ const page = () => {
                         <div className='font-bold text-[24px] md:text-[32px] mb-[29px]'>
                             Confiez-nous votre stratégie digitale, et observez les résulFaites passer vos idées à l'image avec une vidéo qui marque les esprits — et déclenche l'action
                         </div>
-                        <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-center md:self-start">
+                        <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap">
                             Créer ma vidéo explicative
                         </Link>
                     </div>
