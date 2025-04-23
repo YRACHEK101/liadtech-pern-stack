@@ -42,47 +42,47 @@ const sitesFeatures = [
     'Gestion réseaux sociaux – Calendrier éditorial, création visuels & textes, cohérence de marque',
     'Campagnes publicitaires – Meta, Google, TikTok',
     'Branding digital – Une image claire, forte, reconnaissable',
-    'A/B Testing & Reporting – Analyses régulières, réunions et recommandations d’optimisation',
+    'A/B Testing & Reporting – Analyses régulières, réunions et recommandations d\'optimisation',
 ]
 
 const page = () => {
     return (
         <div>
-            <section className='bg-[#DDBFFF] overflow-hidden grid grid-cols-2 px-[48px]'>
-                <div className='flex flex-col text-[#2D1F67] self-center '>
-                    <h2 className='!leading-[56px] !text-[52px] font-bold !text-left '>
+            <section className='bg-[#DDBFFF] overflow-hidden grid md:grid-cols-2 grid-cols-1 px-4 md:px-[48px] gap-8'>
+                <div className='flex flex-col text-[#2D1F67] self-center'>
+                    <h2 className='!leading-[1.2] md:!leading-[56px] text-3xl md:!text-[52px] font-bold !text-left'>
                         Des contenus pensés pour Google, mais écrits pour vos clients.
                     </h2>
-                    <span className=' text-[22px] mb-9  '>
+                    <span className='text-lg md:text-[22px] mb-6 md:mb-9'>
                         Nous créons une stratégie éditoriale complète — articles, pages, contenus SEO-friendly — qui attire, convainc et améliore durablement votre visibilité.
                     </span>
 
-                    <div className='flex gap-4 flex-nowrap'>
+                    <div className='flex flex-col md:flex-row gap-4 pb-4'>
                         <Link href="/">
-                            <button className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px]">
+                            <button className="w-full md:w-auto bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px]">
                                 Créer ma stratégie de contenus
                             </button>
                         </Link>
                         <Link href="/">
-                            <button className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px]">
-                                Voir des exemples d’articles performants
+                            <button className="w-full md:w-auto bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px]">
+                                Voir des exemples d'articles performants
                             </button>
                         </Link>
                     </div>
                 </div>
-                <Image src="/images/Bloggin et contenu.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
+                <Image src="/images/Bloggin et contenu.svg" width={0} height={0} className='w-full md:w-auto h-auto mb-5' alt='hero' />
             </section>
             <TrustedByClientsSection />
             {/* Pricing Table Section */}
             <PricingPacksSection />
 
-            <section className='pl-10 grid grid-cols-2 mb-36'>
-                <div className='flex flex-col gap-6 text-[20px] text-[#2D1F67] '>
-                    <div className='text-6xl font-bold'>
-                        Le contenu n’est pas un luxe. C’est un moteur de croissance.
+            <section className='px-4 md:pl-10 grid md:grid-cols-2 grid-cols-1 mb-20 md:mb-36 gap-8'>
+                <div className='flex flex-col gap-6 text-[18px] md:text-[20px] text-[#2D1F67]'>
+                    <div className='text-4xl md:text-6xl font-bold'>
+                        Le contenu n'est pas un luxe. C'est un moteur de croissance.
                     </div>
-                    <div className='font-bold text-xl '>
-                        Chez LIADTECH, on ne se contente pas d’écrire des articles.On produit des contenus qui
+                    <div className='font-bold text-lg md:text-xl'>
+                        Chez LIADTECH, on ne se contente pas d'écrire des articles.On produit des contenus qui
                     </div>
                     <div className='flex flex-col gap-5'>
                         <div className='flex items-center gap-3'>
@@ -123,18 +123,18 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-                <Image src="/images/Blogging et contenu 5.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
+                <Image src="/images/Blogging et contenu 5.svg" width={0} height={0} className='w-full md:w-auto h-auto mb-5' alt='hero' />
             </section>
-            <section className='px-10 grid grid-cols-2 mb-32'>
-                <Image src="/images/Blogging et contenu 4.svg" width={0} height={0} className='w-auto h-auto mb-5 origin-left z-0' alt='hero' />
-                <div className='flex flex-col gap-6  text-[#2D1F67] pt-11 '>
-                    <div className='text-6xl font-bold'>
+            <section className='px-4 md:px-10 grid md:grid-cols-2 grid-cols-1 mb-20 md:mb-32 gap-8'>
+                <Image src="/images/Blogging et contenu 4.svg" width={0} height={0} className='w-full md:w-auto h-auto mb-5 origin-left z-0 order-2 md:order-1' alt='hero' />
+                <div className='flex flex-col gap-6 text-[#2D1F67] pt-6 md:pt-11 order-1 md:order-2'>
+                    <div className='text-4xl md:text-6xl font-bold'>
                         Ce que vous obtenez avec nous
                     </div>
-                    <div className='flex flex-col gap-5 text-[20px]'>
+                    <div className='flex flex-col gap-5 text-[18px] md:text-[20px]'>
                         <div className='flex items-center gap-3'>
                             <div className='bg-gray-300 size-11 rounded-full'></div>
-                            <div className=''>
+                            <div>
                                 Une stratégie de contenu alignée à votre marché et vos objectifs
                             </div>
                         </div>
@@ -147,7 +147,7 @@ const page = () => {
                         <div className='flex items-center gap-3'>
                             <div className='bg-gray-300 size-11 rounded-full'></div>
                             <div>
-                                Création de votre blog si vous n’en avez pas encore
+                                Création de votre blog si vous n'en avez pas encore
                             </div>
                         </div>
                         <div className='flex items-center gap-3'>
@@ -170,24 +170,22 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-
             </section>
 
-            <section className='pl-10 grid grid-cols-2'>
-                <div className='flex flex-col !pt-14 text-[#2D1F67] '>
-                    <div className='text-6xl font-bold mb-[6px]'>
+            <section className='px-4 md:pl-10 grid md:grid-cols-2 grid-cols-1 gap-8'>
+                <div className='flex flex-col !pt-8 md:!pt-14 text-[#2D1F67]'>
+                    <div className='text-4xl md:text-6xl font-bold mb-[6px]'>
                         Ne laissez pas votre site vide ou invisible.
                     </div>
-                    <div className='font-bold text-[32px] mb-[29px]'>
+                    <div className='font-bold text-2xl md:text-[32px] mb-6 md:mb-[29px]'>
                         Une stratégie digitale qui transforme les clics… en clients.
                     </div>
-                    <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start">
+                    <Link href="/" className="w-full md:w-auto text-center bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start">
                         Créer ma stratégie de contenus
                     </Link>
                 </div>
-                <Image src="/images/Blogging et contenu 6.svg" width={0} height={0} className='w-auto h-auto mb-5 ' alt='hero' />
+                <Image src="/images/Blogging et contenu 6.svg" width={0} height={0} className='w-full md:w-auto h-auto mb-5' alt='hero' />
             </section>
-
         </div>
     )
 }
