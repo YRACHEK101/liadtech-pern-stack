@@ -157,7 +157,7 @@ export default function Home() {
 
       <TestimonialsSection />
 
-      <section className="bg-[#2D1F67] px-[62px] py-[64px] text-white flex flex-col gap-48">
+      <section className="bg-[#2D1F67] px-[62px] pt-[64px] pb-[159px] text-white flex flex-col gap-48">
         <div className="container mx-auto flex flex-col items-center gap-5">
           <div className="text-white text-5xl font-bold">
             Migration & refonte en toute sérénité
