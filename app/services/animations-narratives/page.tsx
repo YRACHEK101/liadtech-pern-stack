@@ -45,7 +45,7 @@ const page = () => {
                         ))}
                     </div>
                     <div className='flex items-center gap-4'>
-                        <div className="text-[85px] font-bold text-[#2D1F67]">990€</div>
+                        <div className="text-[85px] font-bold text-[#2D1F67]">750€</div>
                         <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] flex gap-3.5 items-center text-white rounded-lg px-[31px] py-[10px]">
                             <span>
                                 Profiter de l’offre
