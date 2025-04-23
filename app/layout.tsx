@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={`${inter.className}`}>
-        <header className="border-b bg-white shadow-md shadow-black/25  z-50 relative">
+        <header className="border-b bg-white sticky top-0 text-black shadow-md shadow-black/25  z-50">
           <div className="w-full mx-auto flex justify-between items-center px-4">
             <Link href="/" className="flex items-center">
               <Image
@@ -67,7 +67,7 @@ export default function RootLayout({
                           Web & Mobile
                         </span>
                         <div className="flex flex-col gap-8">
-                          <Link href="/services/creation-site-web" className="flex gap-3">
+                          <Link href="/services/creation-sites-web" className="flex gap-3">
                             <Image src={"/images/coding.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
@@ -78,7 +78,7 @@ export default function RootLayout({
                               </span>
                             </div>
                           </Link>
-                          <Link href="/services/creation-app-mobile" className="flex gap-3">
+                          <Link href="/services/applications-mobiles" className="flex gap-3">
                             <Image src={"/images/Group 141.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
@@ -105,7 +105,7 @@ export default function RootLayout({
                               </span>
                             </div>
                           </Link>
-                          <Link href="/services/seo" className="flex gap-3">
+                          <Link href="/services/referencement-seo" className="flex gap-3">
                             <Image src={"/images/seo-tag-search-engine-optimization_svgrepo.com.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
@@ -116,7 +116,7 @@ export default function RootLayout({
                               </span>
                             </div>
                           </Link>
-                          <Link href={"/services/blogging-and-content"} className="flex gap-3">
+                          <Link href={"/services/blogging-contenus"} className="flex gap-3">
                             <Image src={"/images/edit.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
@@ -134,7 +134,7 @@ export default function RootLayout({
                           Studio Créatif
                         </span>
                         <div className="flex flex-col gap-8">
-                          <Link href={"/services/videos-explainer"} className="flex gap-3">
+                          <Link href={"/services/videos-explicatives"} className="flex gap-3">
                             <Image src={"/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-45-10.png"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
@@ -178,7 +178,7 @@ export default function RootLayout({
                               </span>
                             </div>
                           </div>
-                          <Link href={"/services/design-ui-ux"} className="flex gap-3">
+                          <Link href={"/services/design-ux-ui"} className="flex gap-3">
                             <Image src={"/images/Group 170 (1).svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
@@ -196,7 +196,7 @@ export default function RootLayout({
                           Cloud, SaaS & Support
                         </span>
                         <div className="flex flex-col gap-8">
-                          <Link href={"/services/cloud"} className="flex gap-3">
+                          <Link href={"/services/infrastructure-cloud"} className="flex gap-3">
                             <Image src={"/images/cloud-computing-servers-blades.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
@@ -207,7 +207,7 @@ export default function RootLayout({
                               </span>
                             </div>
                           </Link>
-                          <Link href={"/services/saas"} className="flex gap-3">
+                          <Link href={"/services/developpement-saas"} className="flex gap-3">
                             <Image src={"/images/12-ui-code.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
@@ -218,7 +218,7 @@ export default function RootLayout({
                               </span>
                             </div>
                           </Link>
-                          <Link href={"/services/maintenance"} className="flex gap-3">
+                          <Link href={"/services/maintenance-infogerance"} className="flex gap-3">
                             <Image src={"/images/hammer-and-wrench_svgrepo.com.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
@@ -267,7 +267,7 @@ export default function RootLayout({
                             </span>
                           </div>
                         </div>
-                        <Link href={"/services/ai"} className="flex gap-3">
+                        <Link href={"/services/automatisation-ia"} className="flex gap-3">
                           <Image src={"/images/Group 140.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                           <div className="flex flex-col flex-1  ">
                             <span className="font-bold">
@@ -550,9 +550,9 @@ export default function RootLayout({
                 <img src="/images/fr.svg" alt="Français" className="w-12 h-10 mr-1" />
                 <span className="text-[20px">Français</span>
               </div>
-              <Link href="/login">
+              <a target="_blank" href="https://espace-client.liadtech.com/login">
                 <button className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px]">Connexion</button>
-              </Link>
+              </a>
             </div>
           </div>
         </header>

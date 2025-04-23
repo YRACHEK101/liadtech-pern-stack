@@ -85,7 +85,7 @@ export default function Footer() {
           <div className="lg:col-span-2 md:col-span-1 flex flex-col">
             <h4 className="text-lg font-medium mb-6">Contactez nous</h4>
               <a href="mailto:contact@liadtech.com" className="text-[#BEBEBE] mb-2 underline hover:text-[#673de6] transition-colors">contact@liadtech.com</a>
-              <a href="/espace-client" className="text-[#BEBEBE] hover:text-[#673de6] underline transition-colors">Espace Client</a>
+              <a target="_blank" href="https://espace-client.liadtech.com/login" className="text-[#BEBEBE] hover:text-[#673de6] underline transition-colors">Espace Client</a>
           </div>
 
           {/* Footer Column 5 */}
