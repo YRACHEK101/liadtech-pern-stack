@@ -196,7 +196,7 @@ export default function RootLayout({
                           Cloud, SaaS & Support
                         </span>
                         <div className="flex flex-col gap-8">
-                          <div className="flex gap-3">
+                          <Link href={"/services/cloud"} className="flex gap-3">
                             <Image src={"/images/cloud-computing-servers-blades.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
                               <span className="font-bold">
@@ -206,7 +206,7 @@ export default function RootLayout({
                                 Hébergement sécurisé, scalable, performant
                               </span>
                             </div>
-                          </div>
+                          </Link>
                           <Link href={"/services/saas"} className="flex gap-3">
                             <Image src={"/images/12-ui-code.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                             <div className="flex flex-col flex-1  ">
