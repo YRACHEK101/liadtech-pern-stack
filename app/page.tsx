@@ -38,7 +38,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="px-4 md:px-6 lg:pl-[71px] w-full mx-auto pt-8 lg:pt-16 pb-8 lg:pb-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          <div className="text-center lg:text-left z-10">
+          <div className="  z-10">
             <h1 className="text-3xl md:text-4xl lg:text-[53px] font-bold text-[#1f1d2c] mb-4">
               Plus de visibilité. Plus de clients. Moins de stress.
             </h1>
