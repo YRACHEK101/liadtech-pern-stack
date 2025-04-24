@@ -1,3 +1,5 @@
+"use client"
+
 import Image from 'next/image';
 import React from 'react'
 import { Select, SelectValue, SelectTrigger, SelectItem, SelectContent } from '../ui/select';
