@@ -146,7 +146,7 @@ export default function Home() {
 
       {/* Why Choose Section */}
       <section className="bg-gray-50 mb-16 md:mb-24 lg:mb-36 py-8 md:py-12">
-        <div className="container mx-auto px-1">
+        <div className="container mx-auto px-1 flex flex-col items-center">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-2">Pourquoi choisir LIADTECH ?</h2>
           <p className="text-center text-gray-600 mb-8 md:mb-12">Rapide. Fiable. Créatif.</p>
 
@@ -155,7 +155,7 @@ export default function Home() {
               alt="Pourquoi choisir LIADTECH"
               width={0}
               height={0}
-              className="w-full h-full  max-w-[1263px] max-h-[897px]"
+              className="w-full h-full bg-red-500  max-w-[1263px] max-h-[897px]"
             />
         </div>
       </section>
