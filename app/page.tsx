@@ -98,7 +98,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 xl:grid-cols-2 container mx-auto gap-8">
+        <div className="grid grid-cols-1 xl:grid-cols-2 sm:px-20 xl:px-0 container mx-auto gap-8">
           <div className="flex flex-col gap-5 text-base md:text-lg lg:text-[24px]">
             <span className="text-white text-3xl font-bold">
               Une refonte qui change tout
