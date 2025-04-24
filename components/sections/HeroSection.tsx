@@ -10,7 +10,7 @@ const HeroSection = () => {
         <section className="container  w-full mx-auto pt-16 pb-12">
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-2 items-center">
                 <div className="  z-10 ">
-                    <div className="text-[#2f1c6a] !font-[1000] text-4xl">
+                    <div className="text-[#2f1c6a] !font-bold text-4xl">
                     Everything you need to create a website
                     </div>
                     <p className="text-[20px] text-[#2f1c6a] mb-6 font-bold">
