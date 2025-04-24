@@ -50,8 +50,8 @@ const TestimonialsSection = () => {
               <div className="flex px-12 flex-col lg:grid lg:grid-cols-3 items-center lg:h-[600px] gap-5 lg:gap-10">
                 <div className="w-full lg:col-span-1 flex justify-center h-full relative ">
                   <Image src="/Liadtech/Accueil/icones/Rectangle 96.svg" width={0} height={0} className='max-w-full w-[90%] h-[90%] max-h-full  absolute' alt='bg' />
-                  {/* <Image src={testimonial.image} width={0} height={0} className='w-3/4 lg:w-full h-full  max-h-[500px] object-contain lg:max-h-full lg:h-auto z-10' alt={testimonial.name} /> */}
-                  <Image src={testimonial.image} width={0} height={0} className='w-3/4 lg:w-full h-[500px] object-contain lg:max-h-full lg:h-auto z-10' alt={testimonial.name} />
+                  <Image src={testimonial.image} width={0} height={0} className='w-3/4 lg:w-full h-full  max-h-[500px] object-contain lg:max-h-full lg:h-auto z-10' alt={testimonial.name} />
+                  {/* <Image src={testimonial.image} width={0} height={0} className='w-3/4 lg:w-full h-[500px] object-contain lg:max-h-full lg:h-auto z-10' alt={testimonial.name} /> */}
                 </div>
                 <div className="w-full lg:col-span-2 relative mb-10 ">
                   <Image src="/Liadtech/Accueil/icones/Rectangle 98.svg" width={0} height={0} className='max-w-full w-auto max-h-full h-auto -top-5 -right-5 z-0 absolute' alt='bg' />

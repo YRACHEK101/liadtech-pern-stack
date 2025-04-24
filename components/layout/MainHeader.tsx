@@ -18,7 +18,7 @@ const MainHeader = () => {
     }
 
     return (
-        <header className="border-b bg-white h-[113px] text-black shadow-md shadow-black/25 z-50 sticky top-0">
+        <header className="border-b bg-white h-[80px] lg:h-[113px] text-black shadow-md shadow-black/25 z-50 sticky top-0">
             <div className="w-full mx-auto flex justify-between h-full items-center px-4">
                 <Link href="/" className="flex items-center">
                     <Image
