@@ -49,12 +49,13 @@ const sitesFeatures = [
 const page = () => {
     return (
         <div>
-            <section className='bg-[#CC9EFF] overflow-hidden grid grid-cols-1 md:grid-cols-2 px-4 md:px-10'>
-                <div className='flex flex-col text-[#2D1F67] self-center'>
-                    <h2 className='!leading-[40px] md:!leading-[56px] !text-[32px] md:!text-[52px] font-bold !text-left'>
+            <div className=' bg-[#CC9EFF]'>
+            <section className=' container mx-auto overflow-hidden grid grid-cols-1 xl:grid-cols-2 px-4 md:px-10 pt-20'>
+                <div className='flex flex-col text-[#2D1F67] self-center '>
+                    <h2 className='text-3xl md:text-4xl lg:text-6xl font-bold !text-left'>
                         Un site qui vous ressemble.Conçu pour convertir… et séduire vos clients.
                     </h2>
-                    <span className='font-bold text-[18px] md:text-[22px]'>
+                    <span className='font-bold md:text-xl lg:text-2xl'>
                         Sites vitrines, e-commerce ou applications sur-mesure :
                     </span>
                     <span className='text-[18px] md:text-[22px] mb-8 md:mb-16'>
@@ -64,16 +65,17 @@ const page = () => {
                             Créer mon site web
                     </Link>
                 </div>
-                <Image src="/images/digital web.svg" width={0} height={0} className='w-auto h-auto mb-10 md:mb-20' alt='hero' />
+                <Image src="/images/digital web.svg" width={0} height={0} className='w-auto mx-auto h-auto mb-10 md:mb-20' alt='hero' />
             </section>
+            </div>
             <TrustedByClientsSection />
             {/* Pricing Table Section */}
             <PricingPacksSection />
 
-            <section className='bg-[#2D1F67] px-4 md:pl-[66px] py-16 md:py-[132px] text-white'>
-                <div className='flex flex-col md:flex-row relative'>
+            <section className='bg-[#2D1F67]  md:pl-[66px] py-16 md:py-[132px] text-white'>
+                <div className='flex container mx-auto flex-col xl:flex-row relative'>
                     <div className='flex flex-col gap-4 md:gap-7 z-10'>
-                        <span className='font-bold text-3xl md:text-5xl'>Types de sites que vous pouvez créer</span>
+                        <span className='font-bold text-3xl md:text-4xl lg:text-5xl'>Types de sites que vous pouvez créer</span>
                         <span className='font-bold text-sm md:text-base'>Ne perdez plus de temps avec les démarches techniques. Créez, animez et propulsez votre image grâce à nos packs 100% clé-en-main.</span>
                         <div className='flex flex-col gap-3 md:gap-4'>
                             {sitesTypes.map((site, index) => (
@@ -89,11 +91,11 @@ const page = () => {
                             ))}
                         </div>
                     </div>
-                    <Image src="/images/digital web Section 1 (1).svg" width={0} height={0} className='hidden md:block absolute w-auto h-auto right-0 bottom-0 z-0' alt='section-image' />
+                    <Image src="/images/digital web Section 1 (1).svg" width={0} height={0} className=' xl:absolute w-auto h-auto right-0 bottom-0 z-0' alt='section-image' />
                 </div>
-                <div className='flex flex-col md:flex-row items-center mt-10 md:mt-20'>
+                <div className='flex container mx-auto flex-col xl:flex-row items-center mt-10 md:mt-20'>
                     <Image src="/images/digital Web Section 2.svg" width={0} height={0} className='w-auto h-auto' alt='section-image' />
-                    <div className='flex flex-col gap-4 md:gap-7 pt-10 md:pt-20 md:pr-20 md:absolute md:right-20'>
+                    <div className='flex flex-col gap-4 md:gap-7 pt-10 md:pt-20 md:pr-20 md:right-20'>
                         <span className='font-bold text-3xl md:text-5xl'>
                             Ce que votre site inclut
                         </span>
@@ -112,9 +114,9 @@ const page = () => {
                     </div>
                 </div>
             </section>
-            <section className='grid grid-cols-1 md:grid-cols-2 px-4 md:px-16 py-16 md:py-[110px] overflow-hidden'>
-                <div className='flex flex-col'>
-                    <h2 className='!leading-[40px] md:!leading-[56px] !text-[32px] md:!text-[52px] font-bold !text-left'>
+            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-16 md:py-[110px] overflow-hidden'>
+                <div className='flex  flex-col'>
+                    <h2 className='text-3xl md:text-4xl lg:text-6xl font-bold !text-left'>
                         Pourquoi un bon site change tout
                     </h2>
                     <span className='text-[18px] md:text-[22px] font-light text-[#673DE6] mb-8 md:mb-12'>
@@ -165,12 +167,12 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-                <Image src={"/images/Site web.svg"} width={0} height={0} className='w-auto !-mt-0 md:!-mt-[110px] h-auto' alt='pic' />
+                <Image src={"/images/Site web.svg"} width={0} height={0} className='w-auto xl:!-mt-[110px] h-auto' alt='pic' />
             </section>
-            <section className='grid grid-cols-1 md:grid-cols-2 px-4 md:px-16 py-16 md:py-[110px]'>
+            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-16 md:py-[110px]'>
                 <Image src={"/images/SEO 7.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
                 <div className='flex flex-col'>
-                    <h2 className='!leading-[40px] md:!leading-[56px] !text-[32px] md:!text-[52px] font-bold !text-left'>
+                    <h2 className='text-3xl md:text-4xl lg:text-6xl font-bold !text-left'>
                         Prêt à lancer un site qui vous apporte de vrais résultats ?
                     </h2>
                     <span className='text-[18px] md:text-[22px] font-light text-[#673DE6] mb-8 md:mb-12'>
