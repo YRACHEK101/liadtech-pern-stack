@@ -21,6 +21,7 @@ import Footer from "./components/Footer"
 import Image from "next/image"
 import { Suspense } from "react"
 import MainHeader from "@/components/layout/MainHeader"
+import AIChatBotFloatingButton from "@/components/layout/AIChatBotFloatingButton"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -45,6 +46,7 @@ export default function RootLayout({
         </Suspense>
 
         <Footer />
+        <AIChatBotFloatingButton />
       </body>
     </html>
   )

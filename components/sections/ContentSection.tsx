@@ -68,8 +68,8 @@ const ContentSection = () => {
         <div className='container mx-auto'>
             {/* Success Section */}
             <section className="mb-6 md:mb-9 w-full px-4 sm:px-6 md:px-10 mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl lg:text-6xl text-[#2D1F67]  font-bold mb-2 md:mb-4">Ce que vous pouvez créer avec LIADTECH</h2>
-                <p className="md:text-xl lg:text-2xl text-[#1f1d2c] mb-6 md:mb-12 font-light">Sites. Apps. Branding. Visibilité. Résultats.</p>
+                <h2 className="text-4xl  text-[#2D1F67]  font-bold mb-2 md:mb-4">Ce que vous pouvez créer avec LIADTECH</h2>
+                <p className="text-[#2D1F67] text-base mb-6 md:mb-12 font-light">Sites. Apps. Branding. Visibilité. Résultats.</p>
             </section>
             {/* Category Buttons*/}
             <div className="flex flex-wrap gap-2 sm:gap-3 md:gap-[29px] justify-center mb-6 md:mb-[58px] px-2 sm:px-4">

@@ -7,7 +7,7 @@ import Image from 'next/image'
 const HeroSection = () => {
     const youtubeModalRef = useRef<ModalRef>(null)
     return (
-        <section className="container px-20 xl:px-0  w-full mx-auto pt-16 pb-12">
+        <section className="container sm:px-20 xl:px-0  w-full mx-auto pt-16 pb-12">
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-2 items-center">
                 <div className="  z-10 ">
 

@@ -130,7 +130,7 @@ const page = () => {
                         ))
                     }
                 </div>
-                <div className='mb-[90px]'>
+                <div className='mb-[90px] container mx-auto px-2'>
                 <TarifPricingPlan plans={contentSections.find(section => section.id === activeSection)?.plans || []} />
                 </div>
 
