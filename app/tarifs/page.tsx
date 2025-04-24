@@ -119,8 +119,8 @@ const page = () => {
                             <button
                                 key={index}
                                 onClick={() => setActiveSection(section.id)}
-                                className={`rounded-full px-2 sm:px-6 sm:py-2 sm:font-medium sm:text-lg shadow-sm whitespace-nowrap !w-auto transition-all duration-300 transform ${activeSection === section.id
-                                    ? 'bg-[#5d3ee6] text-white scale-105'
+                                className={`rounded-full text-white px-2 sm:px-6 sm:py-2 sm:font-medium sm:text-lg shadow-sm whitespace-nowrap !w-auto transition-all duration-300 transform ${activeSection === section.id
+                                    ? 'bg-[#5d3ee6]  scale-105'
                                     : 'bg-[#FF41ED88] text-[#1f1d2c] hover:bg-[#c58fee] hover:scale-102'
                                     }`}
                                 style={{ width: 196 }}

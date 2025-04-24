@@ -2,7 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+@font-face {
+  font-family: 'DMSans';
+  src: url('https://fonts.gstatic.com/s/dmsans/v15/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'DMSans', sans-serif;
+}
+
+/* @layer base {
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
@@ -67,11 +78,11 @@
 }
 body {
   font-family: 'Raleway';
-}
+} */
 /* ===================================
    17. Footer
 ====================================== */
-footer {
+/* footer {
   padding-top: 110px;
   padding-bottom: 110px;
 }
@@ -110,9 +121,9 @@ footer .nav-link {
 }
 footer .footer-navbar .nav-item:last-child a {
   padding-right: 0;
-}
+} */
 /* Footer dark  */
-.footer-dark {
+/* .footer-dark {
   color: var(--aluminium-grey);
 }
 .footer-dark p, .footer-dark a {
@@ -120,13 +131,13 @@ footer .footer-navbar .nav-item:last-child a {
 }
 .footer-dark a:hover {
   color: var(--base-color);
-}
+} */
 /* Footer light */
-.footer-light a:hover {
+/* .footer-light a:hover {
   color: var(--base-color);
-}
+} */
 /* Footer navbar */
-.footer-navbar li {
+/* .footer-navbar li {
   display: inline-block;
   margin-bottom: 0;
 }
@@ -141,9 +152,9 @@ footer .footer-navbar .nav-item:last-child a {
 }
 .footer-navbar .nav-link:focus {
   color: inherit;
-}
+} */
 /* Footer sticky */
-.main-content {
+/* .main-content {
   position: relative;
   z-index: 2;
   background: var(--white);
@@ -153,9 +164,9 @@ footer .footer-navbar .nav-item:last-child a {
   position: sticky;
   bottom: 0;
   overflow: hidden;
-}
+} */
 /* Landing page footer */
-.footer-demo ul li {
+/* .footer-demo ul li {
   margin-bottom: 0;
   line-height: 30px;
 }
@@ -448,7 +459,7 @@ img.img-LIADTECH {
   body {
     @apply bg-background text-foreground;
   }
-}
+} */
 
 
 

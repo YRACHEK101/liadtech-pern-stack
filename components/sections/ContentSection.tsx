@@ -65,11 +65,11 @@ const ContentSection = () => {
 
 
     return (
-        <div className='w-full'>
+        <div className='container mx-auto'>
             {/* Success Section */}
             <section className="mb-6 md:mb-9 w-full px-4 sm:px-6 md:px-10 mx-auto text-center">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:!text-[64px] font-bold text-[#673de6] mb-2 md:mb-4 !leading-[80px]">Ce que vous pouvez créer avec LIADTECH</h2>
-                <p className="text-xl sm:text-2xl md:text-[32px] text-[#1f1d2c] mb-6 md:mb-12 font-light">Sites. Apps. Branding. Visibilité. Résultats.</p>
+                <h2 className="text-6xl text-[#2D1F67]  font-bold mb-2 md:mb-4">Ce que vous pouvez créer avec LIADTECH</h2>
+                <p className="text-2xl text-[#1f1d2c] mb-6 md:mb-12 font-light">Sites. Apps. Branding. Visibilité. Résultats.</p>
             </section>
             {/* Category Buttons*/}
             <div className="flex flex-wrap gap-2 sm:gap-3 md:gap-[29px] justify-center mb-6 md:mb-[58px] px-2 sm:px-4">
@@ -78,8 +78,8 @@ const ContentSection = () => {
                         <button
                             key={index}
                             onClick={() => setActiveSection(section.id)}
-                            className={`rounded-full px-3 sm:px-4 md:px-[29px] py-2 md:py-[10px] font-bold text-sm md:text-[19px] shadow-sm whitespace-nowrap transition-all duration-300 transform ${activeSection === section.id
-                                ? 'bg-[#5d3ee6] text-white cursor-default'
+                            className={`rounded-full text-white  px-3 sm:px-4 md:px-[29px] py-2 md:py-[10px] font-bold shadow-sm whitespace-nowrap transition-all duration-300 transform ${activeSection === section.id
+                                ? 'bg-[#5d3ee6] cursor-default'
                                 : 'bg-[#d59fff] text-[#1f1d2c] hover:bg-[#c58fee] hover:scale-105 md:hover:scale-110'
                                 }`}
                         >
@@ -92,21 +92,21 @@ const ContentSection = () => {
                 contentSections.map((section, index) => (
                     <section
                         className={cn(
-                            "px-4 sm:px-6 md:px-12 lg:px-24 transition-opacity duration-300",
+                            "px-4 sm:px-6 md:px-12 xl:px-24 transition-opacity duration-300",
                             section.id === activeSection ? 'block opacity-100' : 'hidden opacity-0'
                         )}
                         key={section.id}
                     >
-                        <div className="rounded-3xl bg-[#1f1d2c] p-6 md:p-10 md:!pr-0 grid grid-cols-1 md:grid-cols-2 relative">
+                        <div className="rounded-3xl bg-[#1f1d2c] p-6 md:p-10 md:!pr-0 grid grid-cols-1 xl:grid-cols-2 relative">
                             {/* Left Column */}
                             <div className="z-10 flex flex-col">
-                                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl flex-1 flex justify-center md:justify-start items-center font-bold !text-white mb-4 md:mb-6 text-center md:!text-left">
+                                <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl flex-1 flex justify-center md:justify-start items-center font-bold !text-white mb-4 md:mb-6 text-center md:!text-left">
                                     {section.title}
                                 </h2>
                                 <p className="text-gray-300 mb-6 md:mb-8 max-w-md text-center md:text-left mx-auto md:mx-0">
                                     {section.description}
                                 </p>
-                                <div className="flex justify-center md:justify-start mb-8 md:mb-0">
+                                <div className="flex justify-center md:justify-start mb-8">
                                     <Link href={section.actionButtonLink}>
                                         <Button className="bg-[#5f65f4] hover:bg-[#673de6] text-white px-4 sm:px-6 md:px-8 py-2 md:py-3 rounded-lg text-sm md:text-base">
                                             {section.actionButtonLabel}
@@ -120,7 +120,7 @@ const ContentSection = () => {
                                     alt={section.alt}
                                     width={0}
                                     height={0}
-                                    className="size-auto md:-my-20 z-0 max-w-full"
+                                    className="size-auto xl:-my-20 z-0 max-w-full"
                                 />
                             </div>
                         </div>

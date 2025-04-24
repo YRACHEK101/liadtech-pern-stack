@@ -12,9 +12,9 @@ export default function Footer() {
       }}
       >
       <div className="w-full px-10  mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 mb-10 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 mb-10 ">
           {/* Footer Column 1 */}
-          <div className="lg:col-span-3 md:col-span-1 -mt-12 lg:pl-10">
+          <div className="lg:col-span-1 xl:col-span-1 -mt-12 lg:pl-10">
             <Link href="/" className=" ">
               <Image
                 src="/images/Liadtech blanc avec backgroud 1.svg"
@@ -41,7 +41,7 @@ export default function Footer() {
           </div>
 
           {/* Footer Column 2 */}
-          <div className="lg:col-span-2 md:col-span-1">
+          <div className="lg:col-span-1 xl:col-span-1">
             <h4 className="text-lg font-medium mb-6">A propos</h4>
             <ul className="space-y-3">
               <li><Link href="/" className="text-[#BEBEBE] hover:text-white transition-colors">Accueil</Link></li>
@@ -58,7 +58,7 @@ export default function Footer() {
           </div>
 
           {/* Footer Column 3 */}
-          <div className="lg:col-span-2 md:col-span-1">
+          <div className="lg:col-span-1 xl:col-span-1">
             <h4 className="text-lg font-medium mb-6">Solutions</h4>
             <ul className="space-y-3 [&_li_a]:whitespace-nowrap ">
               <li><Link href="/services/creation-sites-web" className="text-[#BEBEBE] hover:text-white transition-colors">Création de sites web</Link></li>
@@ -82,21 +82,21 @@ export default function Footer() {
           </div>
 
           {/* Footer Column 4 */}
-          <div className="lg:col-span-2 md:col-span-1 flex flex-col">
+          <div className="lg:col-span-1 xl:col-span-1 flex flex-col">
             <h4 className="text-lg font-medium mb-6">Contactez nous</h4>
               <a href="mailto:contact@liadtech.com" className="text-[#BEBEBE] mb-2 underline hover:text-[#673de6] transition-colors">contact@liadtech.com</a>
               <a target="_blank" href="https://espace-client.liadtech.com/login" className="text-[#BEBEBE] hover:text-[#673de6] underline transition-colors">Espace Client</a>
           </div>
 
           {/* Footer Column 5 */}
-          <div className="lg:col-span-3 md:col-span-1">
+          <div className="lg:col-span-1 xl:col-span-1">
             <h4 className="text-lg font-medium mb-6">Abonnez-vous à notre newsletter</h4>
             <p className="text-[#BEBEBE] mb-6">Abonnez-vous à notre newsletter pour obtenir les dernières nouvelles et mises à jour!</p>
             <div className="relative">
               <label className='flex items-center gap-1 w-full bg-purple-500/50  border border-purple-600 rounded-md py-3 px-4 text-white  focus:outline-none focus:ring-2 focus:ring-[#673de6]'>
               <input
                 type="email"
-                className="bg-transparent flex-1 focus:outline-none placeholder:text-white"
+                className="bg-transparent flex-1 min-w-0 focus:outline-none placeholder:text-white"
                 placeholder="Entrez votre e-mail"
                 required
               />

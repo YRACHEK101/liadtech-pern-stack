@@ -13,7 +13,7 @@ import Modal, { ModalRef } from "@/components/ui/modal"
 import TrustedByClientsSection from "@/components/sections/TrustedByClientsSection"
 import TarifPricingPlan from "@/components/tarifs/TarifPricingPlan"
 import PricingPacksSection from "@/components/sections/PricingPacksSection"
-
+import HeroSection from "@/components/sections/HeroSection"
 
 
 export default function Home() {
@@ -36,94 +36,7 @@ export default function Home() {
   return (
     <main className="min-h-screen overflow-x-hidden bg-white">
       {/* Hero Section */}
-      <section className="px-4 md:px-6 lg:pl-[71px] w-full mx-auto pt-8 lg:pt-16 pb-8 lg:pb-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          <div className="  z-10">
-            <h1 className="text-3xl md:text-4xl lg:text-[53px] font-bold text-[#1f1d2c] mb-4">
-              Plus de visibilité. Plus de clients. Moins de stress.
-            </h1>
-            <p className="text-base md:text-lg lg:text-[20px] text-gray-600 mb-6">
-              Tout est pensé pour faire décoller votre business.<br className="hidden md:block" />
-              Site web optimisé, image professionnelle, marketing digital et automatisation
-            </p>
-            <div className="space-y-3 mb-8 text-base md:text-lg lg:text-[20px]">
-              <div className="flex items-start">
-                <div className="flex-shrink-0 mt-1">
-                  <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18 2L7.81818 20L2 10.8571" stroke="#673DE6" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </div>
-                <p className="ml-3 text-gray-700">Un site web qui convertit les visiteurs en clients</p>
-              </div>
-              <div className="flex items-start">
-                <div className="flex-shrink-0 mt-1">
-                  <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18 2L7.81818 20L2 10.8571" stroke="#673DE6" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-
-                </div>
-                <p className="ml-3 text-gray-700">Un branding pro qui inspire confiance</p>
-              </div>
-              <div className="flex items-start">
-                <div className="flex-shrink-0 mt-1">
-                  <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18 2L7.81818 20L2 10.8571" stroke="#673DE6" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-
-                </div>
-                <p className="ml-3 text-gray-700">Des vidéos qui expliquent, vendent et captent l'attention</p>
-              </div>
-              <div className="flex items-start">
-                <div className="flex-shrink-0 mt-1">
-                  <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18 2L7.81818 20L2 10.8571" stroke="#673DE6" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-
-                </div>
-                <p className="ml-3 text-gray-700">Des campagnes marketing qui boostent vos ventes</p>
-              </div>
-              <div className="flex items-start">
-                <div className="flex-shrink-0 mt-1">
-                  <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18 2L7.81818 20L2 10.8571" stroke="#673DE6" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-
-                </div>
-                <p className="ml-3 text-gray-700">Un accompagnement de A à Z (créa, technique & support)</p>
-              </div>
-            </div>
-            <div className="pl-0 md:pl-4 flex flex-col gap-2.5">
-              <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-[26px]">
-                <button className="w-full sm:w-auto bg-[#673de6] hover:bg-[#5628c5] text-white px-6 py-3 rounded-lg font-medium">
-                  Découvrir nos Solutions tout-en-un
-                </button>
-                <div onClick={() => youtubeModalRef.current?.show()} className="flex items-center justify-center bg-[#A384FF] hover:bg-[#A384FF] size-12 !rounded-full mt-4 sm:mt-0">
-                  <button className="bg-[#673de6] hover:bg-[#5628c5] size-10 !rounded-full flex justify-center items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" strokeWidth={0} stroke="currentColor" className="size-10 absolute">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <p className="text-base md:text-lg lg:text-[20px] text-[#673DE6] font-bold text-center sm:text-left">
-                Commencer avec un expert LIADTECH
-              </p>
-              <p className="text-lg md:text-xl lg:text-[23px] text-gray-600 text-center sm:text-left">
-                100 % sur-mesure - Livraison rapide - Support 24/7
-              </p>
-            </div>
-          </div>
-          <div className="flex justify-center mt-8 lg:mt-0">
-            <div className="relative">
-              <img
-                src="/images/robot-liadtech.png"
-                alt="Robot LIADTECH"
-                className="object-contain max-w-full h-auto"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroSection />
 
 
 
@@ -135,10 +48,10 @@ export default function Home() {
       {/* <PricingTable /> */}
 
       <div className="py-16 md:py-28 lg:py-44">
-        <ContentSection />
+      <ContentSection />
       </div>
 
-      <section className="bg-[#2D1F67] px-4 md:px-8 lg:px-[62px] pt-8 md:pt-12 lg:pt-[64px] mb-16 md:mb-24 lg:mb-36 pb-12 md:pb-24 lg:pb-[159px] text-white flex flex-col gap-16 md:gap-32 lg:gap-48">
+      <section className="bg-[#2D1F67] pt-8 md:pt-12 lg:pt-[64px] mb-16 md:mb-24 lg:mb-36 pb-12 md:pb-24 lg:pb-[159px] text-white flex flex-col gap-16 md:gap-32 lg:gap-48">
         <div className="container mx-auto flex flex-col items-center gap-5">
           <div className="text-white text-3xl md:text-4xl lg:text-5xl font-bold text-center">
             Migration & refonte en toute sérénité
@@ -149,8 +62,8 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-[#41308F] flex flex-col gap-2 items-center shadow-lg rounded-lg p-4">
-              <div className="bg-[#9C51F1] rounded-md p-2 mb-2">
-                <Image src={"/Liadtech/Accueil/icones/sync_svgrepo.com.svg"} width={60} height={60} alt="Rectangle 97" />
+              <div className="bg-[#9C51F1] rounded-lg p-2 mb-2">
+                <Image src={"/Liadtech/Accueil/icones/sync_svgrepo.com.svg"} width={40} height={40} alt="Rectangle 97" />
               </div>
               <span className="font-bold text-center text-lg md:text-xl lg:text-[22px]">
                 Contenus existants récupérés
@@ -160,8 +73,8 @@ export default function Home() {
               </p>
             </div>
             <div className="bg-[#41308F] flex flex-col gap-2 items-center shadow-lg rounded-lg p-4">
-              <div className="bg-[#9C51F1] rounded-md p-2 mb-2">
-                <Image src={"/Liadtech/Accueil/icones/ruler-pencil_svgrepo.com.svg"} width={60} height={60} alt="Rectangle 97" />
+              <div className="bg-[#9C51F1] rounded-lg p-2 mb-2">
+                <Image src={"/Liadtech/Accueil/icones/ruler-pencil_svgrepo.com.svg"} width={40} height={40} alt="Rectangle 97" />
 
               </div>
               <span className="font-bold text-center text-lg md:text-xl lg:text-[22px]">
@@ -172,9 +85,9 @@ export default function Home() {
               </p>
             </div>
             <div className="bg-[#41308F] flex flex-col gap-2 items-center shadow-lg rounded-lg p-4">
-              <div className="bg-[#9C51F1] rounded-md p-2 mb-2">
+              <div className="bg-[#9C51F1] rounded-lg p-2 mb-2">
 
-                <Image src={"/Liadtech/Accueil/icones/face-smile_svgrepo.com.svg"} width={60} height={60} alt="Rectangle 97" />
+                <Image src={"/Liadtech/Accueil/icones/face-smile_svgrepo.com.svg"} width={40} height={40} alt="Rectangle 97" />
               </div>
               <span className="font-bold text-center text-lg md:text-xl lg:text-[22px]">
                 Simplicité totale
@@ -185,7 +98,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 container mx-auto gap-8">
+        <div className="grid grid-cols-1 xl:grid-cols-2 container mx-auto gap-8">
           <div className="flex flex-col gap-5 text-base md:text-lg lg:text-[24px]">
             <span className="text-white text-3xl md:text-4xl lg:text-6xl font-bold">
               Une refonte qui change tout
@@ -219,7 +132,7 @@ export default function Home() {
               Vous validez, on s'occupe du reste.
             </span>
           </div>
-          <div className="relative">
+          <div className="relative self-start">
             <span className="absolute -bottom-2 left-0 text-white font-bold text-2xl md:text-4xl lg:text-5xl">
               Avant
             </span>
@@ -233,7 +146,7 @@ export default function Home() {
 
       {/* Why Choose Section */}
       <section className="bg-gray-50 mb-16 md:mb-24 lg:mb-36 py-8 md:py-12">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-1">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-2">Pourquoi choisir LIADTECH ?</h2>
           <p className="text-center text-gray-600 mb-8 md:mb-12">Rapide. Fiable. Créatif.</p>
 
@@ -250,7 +163,7 @@ export default function Home() {
       <TestimonialsSection />
 
       <section>
-        <div className="w-full px-4 md:px-6 lg:pr-7 mx-auto grid grid-cols-1 md:grid-cols-2 pb-8 md:pb-16 relative gap-8 md:gap-0">
+        <div className="w-full container mx-auto lg:pr-7 grid grid-cols-1 md:grid-cols-2 pb-8 md:pb-16 relative gap-8 md:gap-0">
           <Image
             src="/Liadtech/Accueil/dashboard section 9.svg"
             width={0}
@@ -296,8 +209,8 @@ export default function Home() {
 
 
       {/* Support Section */}
-      <section className="py-16 md:py-24 lg:py-36 w-full px-4 md:px-8 lg:px-14 mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <section className="py-16 md:py-24 lg:py-36 w-full container mx-auto">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 items-center">
           <div className="flex flex-col gap-3">
             <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold">
               Support & réactivité 24/7
@@ -423,12 +336,7 @@ export default function Home() {
         </div>
       </section> */}
 
-      {/* Youtube video modal */}
-      <Modal ref={youtubeModalRef} >
-        <div className="w-full h-full">
-          Youtube video
-        </div>
-      </Modal>
+      
     </main>
   )
 }
@@ -449,7 +357,7 @@ export function PricingTable({ hideTitle = false }) {
   };
 
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
+    <div className="w-full max-w-6xl mx-auto  py-8 sm:py-12 lg:py-16">
       {!hideTitle && (
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-purple-900 mb-8 sm:mb-12">
           Des solutions clés en main, pour<br className="hidden sm:block" />chaque ambition
