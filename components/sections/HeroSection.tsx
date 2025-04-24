@@ -17,7 +17,7 @@ const HeroSection = () => {
                             </h1>
                         )
                     }
-                    <h1 className="text-3xl md:text-4xl lg:text-[53px] !leading-[56px] font-bold text-[#1f1d2c] mb-4">
+                    <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-[#1f1d2c] mb-4">
                         Plus de visibilité. Plus de clients. Moins de stress.
                     </h1>
                     <p className="text-base md:text-lg lg:text-[20px] text-gray-600 mb-6">
