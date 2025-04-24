@@ -7,67 +7,46 @@ import Image from 'next/image'
 const HeroSection = () => {
     const youtubeModalRef = useRef<ModalRef>(null)
     return (
-        <section className="container   w-full mx-auto pt-16 pb-12">
-            <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 items-center">
-                <div className="  z-10">
-                    {
-                        false && ( // just for compare our font with hostinger
-                            <h1 className="text-[#2D1F67] font-bold text-2xl">
-                                Everything you need to create a website
-                            </h1>
-                        )
-                    }
-                    <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-[#1f1d2c] mb-4">
-                        Plus de visibilité. Plus de clients. Moins de stress.
-                    </h1>
-                    <p className="text-base md:text-lg lg:text-[20px] text-gray-600 mb-6">
+        <section className="container  w-full mx-auto pt-16 pb-12">
+            <div className="grid grid-cols-1 xl:grid-cols-2 gap-2 items-center">
+                <div className="  z-10 ">
+                    <div className="text-[#2f1c6a] !font-[1000] text-4xl">
+                    Everything you need to create a website
+                    </div>
+                    <p className="text-[20px] text-[#2f1c6a] mb-6 font-bold">
                         Tout est pensé pour faire décoller votre business.<br className="hidden md:block" />
                         Site web optimisé, image professionnelle, marketing digital et automatisation
                     </p>
-                    <div className="space-y-3 mb-8 text-base md:text-lg lg:text-[20px]">
-                        <div className="flex ">
-                            <div className="flex-shrink-0 mt-1">
-                                <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18 2L7.81818 20L2 10.8571" stroke="#673DE6" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </div>
-                            <p className="ml-3 text-gray-700">Un site web qui convertit les visiteurs en clients</p>
+                    <div className="flex flex-col gap-2 mb-8">
+                        <div className="flex items-center ">
+                            <svg width="24px" height="20px" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 2L7.81818 20L2 10.8571" stroke="#673DE6" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                            <p className="ml-3 flex-1 text-[#2f1c6a]">Un site web qui convertit les visiteurs en clients</p>
                         </div>
-                        <div className="flex ">
-                            <div className="flex-shrink-0 mt-1">
-                                <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18 2L7.81818 20L2 10.8571" stroke="#673DE6" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-
-                            </div>
-                            <p className="ml-3 text-gray-700">Un branding pro qui inspire confiance</p>
+                        <div className="flex items-center ">
+                            <svg width="24px" height="20px" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 2L7.81818 20L2 10.8571" stroke="#673DE6" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                            <p className="ml-3 flex-1 text-[#2f1c6a]">Un branding pro qui inspire confiance</p>
                         </div>
-                        <div className="flex ">
-                            <div className="flex-shrink-0 mt-1">
-                                <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18 2L7.81818 20L2 10.8571" stroke="#673DE6" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-
-                            </div>
-                            <p className="ml-3 text-gray-700">Des vidéos qui expliquent, vendent et captent l'attention</p>
+                        <div className="flex items-center ">
+                            <svg width="24px" height="20px" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 2L7.81818 20L2 10.8571" stroke="#673DE6" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                            <p className="ml-3 flex-1 text-[#2f1c6a]">Des vidéos qui expliquent, vendent et captent l'attention</p>
                         </div>
-                        <div className="flex ">
-                            <div className="flex-shrink-0 mt-1">
-                                <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18 2L7.81818 20L2 10.8571" stroke="#673DE6" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-
-                            </div>
-                            <p className="ml-3 text-gray-700">Des campagnes marketing qui boostent vos ventes</p>
+                        <div className="flex items-center ">
+                            <svg width="24px" height="20px" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 2L7.81818 20L2 10.8571" stroke="#673DE6" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                            <p className="ml-3 flex-1 text-[#2f1c6a]">Des campagnes marketing qui boostent vos ventes</p>
                         </div>
-                        <div className="flex ">
-                            <div className="flex-shrink-0 mt-1">
-                                <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18 2L7.81818 20L2 10.8571" stroke="#673DE6" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-
-                            </div>
-                            <p className="ml-3 text-gray-700">Un accompagnement de A à Z (créa, technique & support)</p>
+                        <div className="flex items-center ">
+                            <svg width="24px" height="20px" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 2L7.81818 20L2 10.8571" stroke="#673DE6" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                            <p className="ml-3 flex-1 text-[#2f1c6a]">Un accompagnement de A à Z (créa, technique & support)</p>
                         </div>
                     </div>
                     <div className="flex flex-col gap-2.5">
@@ -86,7 +65,7 @@ const HeroSection = () => {
                         <p className="text-base md:text-lg lg:text-[20px] text-[#673DE6] font-bold text-center sm:text-left">
                             Commencer avec un expert LIADTECH
                         </p>
-                        <p className="text-lg md:text-xl lg:text-[23px] text-gray-600 text-center sm:text-left">
+                        <p className=" text-[#2f1c6a] text-center sm:text-left">
                             100 % sur-mesure - Livraison rapide - Support 24/7
                         </p>
                     </div>
@@ -99,7 +78,7 @@ const HeroSection = () => {
                             alt="Robot LIADTECH"
                             width={0}
                             height={0}
-                            className="object-contain w-full max-w-full h-auto"
+                            className="w-auto h-auto"
                         />
                     </div>
                 </div>
