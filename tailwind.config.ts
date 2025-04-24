@@ -19,6 +19,10 @@ const config = {
       },
     },
     extend: {
+      fontWeight: {
+        950: '950',
+        1000: '1000', // this will still be capped at 900 by most browsers
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
