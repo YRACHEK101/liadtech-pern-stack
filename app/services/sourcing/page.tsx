@@ -26,48 +26,51 @@ const features2 = [
 const page = () => {
     return (
         <div>
-            <section className='grid grid-cols-2 px-16 py-10 bg-[#2D1F67] text-white '>
-                <div className='flex flex-col gap-7 pt-20 pr-20 z-10 '>
-                    <span className='font-bold text-5xl '>
+            <div className='bg-[#2D1F67]'>
+            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-10 text-white'>
+                <div className='flex flex-col gap-7 pt-10 md:pt-20 pr-0 md:pr-20 z-10'>
+                    <span className='font-bold text-3xl md:text-4xl lg:text-6xl'>
                         Expliquez votre concept
                         en 30 secondes chrono.
                     </span>
-                    <span className=' font-bold !text-[20px]'>
-                        Attirez l’attention, simplifiez votre message et boostez vos conversions avec une animation 2D claire, moderne et percutante.
+                    <span className='font-bold text-base md:text-xl lg:text-2xl'>
+                        Attirez l'attention, simplifiez votre message et boostez vos conversions avec une animation 2D claire, moderne et percutante.
                     </span>
-                    <div className='flex flex-col '>
+                    <div className='flex flex-col'>
                         {features2.map((site, index) => (
                             <div key={index} className='flex  gap-[25px]'>
-                                <Image src={"/Liadtech/Accueil/icones/Vector 10.png"} width={0} height={0} className='w-auto h-auto' alt='pic' />
+                                <Image src={"/Liadtech/Accueil/icones/Vector 10.png"} width={0} height={0} className='!size-5 self-center' alt='pic' />
                                 <div className='flex flex-col'>
                                     <span className='!text-[20px] '>{site}</span>
                                 </div>
                             </div>
                         ))}
                     </div>
-                    <div className='flex items-center gap-4'>
+                    <div className='flex items-center gap-4 flex-col md:flex-row'>
                         <div className="text-[85px] font-bold">750€</div>
-                        <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap flex items-center gap-2">
+                        <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] mb-4 whitespace-nowrap flex items-center gap-2">
                             <span>
-                                Profiter de l’offre
+                                Profiter de l'offre
                             </span>
                             <Image src={"/images/Group 96.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
                         </Link>
                     </div>
                 </div>
-                <Image src={"/images/Sourcing.svg"} width={0} height={0} className='w-auto origin-top-right scale-110 z-0 pl-3 pt-10  h-auto' alt='pic' />
+                <Image src={"/images/Sourcing.svg"} width={0} height={0} className='w-auto mx-auto origin-top-right xl:scale-110 z-0 xl:pl-3 xl:pt-10  h-auto' alt='pic' />
             </section>
+            </div>
             <PricingPacksSection />
-            <section className='grid grid-cols-2 gap-[78px] px-16 pb-20 bg-[#DCBDFFAA]  '>
 
-                <div className='flex flex-col gap-7 pt-32 pr-20 '>
-                    <span className='font-bold text-5xl text-[#2D1F67] '>
+            <div className='bg-[#DCBDFFAA]'>
+            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 gap-8 md:gap-[78px] px-4 md:px-16 pb-20'>
+                <div className='flex flex-col gap-7 pt-10 md:pt-32 pr-0 md:pr-20'>
+                    <span className='font-bold text-3xl md:text-4xl lg:text-6xl text-[#2D1F67]'>
                         Lancez votre marque avec impact, développez sans limites.
                     </span>
-                    <span className=' font-bold !text-[20px] text-[#2D1F67] '>
+                    <span className='font-bold text-base md:text-xl lg:text-2xl text-[#2D1F67]'>
                         Ne perdez plus de temps avec les démarches techniques. Créez, animez et propulsez votre image grâce à nos packs 100% clé-en-main.
                     </span>
-                    <div className='flex flex-col gap-4 '>
+                    <div className='flex flex-col gap-4'>
                         {features2.map((site, index) => (
                             <div key={index} className='flex  gap-3'>
                                 <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -84,15 +87,15 @@ const page = () => {
                     </div>
                 </div>
                 <Image src={"/images/liadteche site image-11 1.svg"} width={0} height={0} className='w-auto -mt-10    h-full' alt='pic' />
-
             </section>
-            <section className='grid grid-cols-2 px-16   pb-36  '>
-                        <div></div>
-                <div className='flex flex-col gap-7  pr-20  pt-36  '>
-                    <span className='font-bold text-5xl text-[#2D1F67]'>
+            </div>
+            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 pb-20 md:pb-36'>
+                <div></div>
+                <div className='flex flex-col gap-7 pr-0 md:pr-20 pt-10 md:pt-36'>
+                    <span className='font-bold text-3xl md:text-4xl lg:text-6xl text-[#2D1F67]'>
                         Donnez vie à votre message avec des animations percutantes
                     </span>
-                    <div className='flex flex-col gap-4 '>
+                    <div className='flex flex-col gap-4'>
                         {features2.map((site, index) => (
                             <div key={index} className='flex  gap-3'>
                                 <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -105,7 +108,6 @@ const page = () => {
                         ))}
                     </div>
                 </div>
-
             </section>
         </div>
     )

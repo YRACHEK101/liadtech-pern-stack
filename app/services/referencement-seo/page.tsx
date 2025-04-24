@@ -47,37 +47,39 @@ const sitesFeatures = [
 
 const page = () => {
     return (
-        <div>
-            <section className='bg-[#2D1F67] overflow-hidden grid grid-cols-1 md:grid-cols-2 px-4 md:px-[42px]'>
+        <div className='overflow-x-hidden'>
+            <div className='bg-[#2D1F67]'>
+            <section className='overflow-hidden grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 pt-10 md:px-[42px]'>
                 <div className='flex flex-col text-white self-center py-8 md:py-0'>
-                    <h2 className='!leading-[40px] md:!leading-[56px] !text-[32px] md:!text-[52px] font-bold !text-left !text-white'>
+                    <h2 className='text-3xl md:text-4xl lg:text-6xl font-bold !text-left !text-white'>
                         Vos clients vous cherchent. Assurons-nous qu'ils vous trouvent.
                     </h2>
-                    <span className='text-[18px] md:text-[22px] mb-9'>
+                    <span className='text-base md:text-xl lg:text-2xl mb-9'>
                         Un bon site ne sert à rien s'il est invisible. Grâce à notre expertise SEO, vous attirez du trafic… et des clients qualifiés.
                     </span>
 
                     <div className='flex flex-col md:flex-row gap-4'>
-                        <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap flex items-center gap-2">
+                        <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-5 lg:px-[31px] py-[10px] self-start mb-4 whitespace-nowrap flex items-center gap-2">
                                 Lancer mon audit SEO gratuit
                         </Link>
-                        <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap flex items-center gap-2">
+                        <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-5 lg:px-[31px] py-[10px] self-start mb-4 whitespace-nowrap flex items-center gap-2">
                                 Demander ma stratégie de référencement
                         </Link>
                     </div>
                 </div>
                 <Image src="/images/SEO 4.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
             </section>
+            </div>
             <TrustedByClientsSection />
             {/* Pricing Table Section */}
             <PricingPacksSection />
 
-            <section className='px-4 md:pl-10 grid grid-cols-1 md:grid-cols-2'>
+            <section className='px-4 md:pl-10 grid grid-cols-1 container mx-auto xl:grid-cols-2'>
                 <div className='flex flex-col gap-6 pt-8 md:pt-[151px] text-[#2D1F67]'>
-                    <div className='text-4xl md:text-6xl font-bold'>
+                    <div className='text-3xl md:text-4xl lg:text-6xl font-bold'>
                         Notre approche stratégique
                     </div>
-                    <div className='font-bold text-xl md:text-2xl'>
+                    <div className='font-bold text-xl md:text-2xl lg:text-3xl'>
                         Une stratégie digitale qui transforme les clics… en clients.
                     </div>
                     <div>
@@ -86,10 +88,10 @@ const page = () => {
                 </div>
                 <Image src="/images/SEO 3.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
             </section>
-            <section className='px-4 md:px-10 grid grid-cols-1 md:grid-cols-2'>
+            <section className='px-4 md:px-10 grid grid-cols-1 container mx-auto xl:grid-cols-2'>
                 <Image src="/images/SEO.svg" width={0} height={0} className='w-auto h-auto mb-5 scale-100 md:scale-125 origin-left z-0' alt='hero' />
                 <div className='flex flex-col z-10'>
-                    <h2 className='!leading-[40px] md:!leading-[56px] !text-[32px] md:!text-[52px] font-bold !text-left mb-9'>
+                    <h2 className='text-3xl md:text-4xl lg:text-6xl font-bold !text-left mb-9'>
                         Ce que vous gagnez avec nos Bénéfice
                     </h2>
 
@@ -165,9 +167,9 @@ const page = () => {
 
             </section>
 
-            <section className='px-4 md:pl-10 grid grid-cols-1 md:grid-cols-2'>
+            <section className='px-4 md:pl-10 grid grid-cols-1 container mx-auto xl:grid-cols-2'>
                 <div className='flex flex-col gap-6 pt-8 md:!pt-[151px] text-[#2D1F67]'>
-                    <div className='text-4xl md:text-6xl font-bold'>
+                    <div className='text-3xl md:text-4xl lg:text-6xl font-bold'>
                         Nos services inclus
                     </div>
                     <div className='flex flex-col gap-4 '>
@@ -186,10 +188,10 @@ const page = () => {
                 <Image src="/images/SEO 5.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
             </section>
             <section className='bg-[#DDBFFF]'>
-                <div className='grid grid-cols-1 md:grid-cols-2'>
+                <div className='grid grid-cols-1 container mx-auto xl:grid-cols-2'>
                     <Image src="/images/SEO 2.svg" width={0} height={0} className='w-auto h-auto mb-5 scale-100 md:scale-125 origin-left z-0' alt='hero' />
                     <div className='flex flex-col pt-8 md:pt-28 z-10 px-4 md:px-0'>
-                        <h2 className='!leading-[40px] md:!leading-[56px] !text-[32px] md:!text-[52px] font-bold !text-left mb-9'>
+                        <h2 className='text-3xl md:text-4xl lg:text-6xl font-bold !text-left mb-9'>
                             Ce que vous gagnez avec nos Bénéfice
                         </h2>
 
@@ -238,12 +240,12 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-                <div className='grid grid-cols-1 md:grid-cols-2 px-4 md:px-16 py-8 md:py-[110px]'>
+                <div className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-8 md:py-[110px]'>
                     <div className='flex flex-col gap-4'>
-                        <h2 className='!leading-[40px] md:!leading-[56px] !text-[32px] md:!text-[52px] font-bold !text-left'>
+                        <h2 className='text-3xl md:text-4xl lg:text-6xl font-bold !text-left'>
                             Passez à l'action dès maintenant.
                         </h2>
-                        <h3 className='text-[24px] md:text-[32px] font-medium text-[#2D1F67]'>
+                        <h3 className='text-xl md:text-2xl lg:text-3xl font-medium text-[#2D1F67]'>
                             Confiez-nous votre stratégie digitale, et observez les résultats.
                         </h3>
                         <Link href="/create-my-app-mobile" className="bg-[#673de6] self-start hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px]">

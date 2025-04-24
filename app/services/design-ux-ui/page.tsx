@@ -26,19 +26,19 @@ const features2 = [
 const page = () => {
     return (
         <div>
-            <section className='grid grid-cols-1 md:grid-cols-2 px-4 md:px-16 py-10'>
+            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-10'>
                 <div className='flex flex-col gap-7 pt-10 md:pt-20 pr-0 md:pr-20 z-10'>
-                    <span className='font-bold text-3xl md:text-5xl text-[#2D1F67]'>
+                    <span className='font-bold text-3xl md:text-4xl lg:text-6xl text-[#2D1F67]'>
                         Expliquez votre concept
                         en 30 secondes chrono.
                     </span>
-                    <span className='font-bold text-[#2D1F67] text-base md:!text-[20px]'>
+                    <span className='font-bold text-[#2D1F67] text-base md:text-xl lg:text-2xl'>
                         Attirez l'attention, simplifiez votre message et boostez vos conversions avec une animation 2D claire, moderne et percutante.
                     </span>
                     <div className='flex flex-col'>
                         {features.map((site, index) => (
                             <div key={index} className='flex gap-4 md:gap-[25px]'>
-                                <Image src={"/Liadtech/Accueil/icones/Vector 10.png"} width={0} height={0} className='w-auto h-auto' alt='pic' />
+                                <Image src={"/Liadtech/Accueil/icones/Vector 10.png"} width={0} height={0} className='!size-5 self-center' alt='pic' />
                                 <div className='flex flex-col'>
                                     <span className='text-base md:!text-[20px]'>{site}</span>
                                 </div>
@@ -55,15 +55,15 @@ const page = () => {
                         </Link>
                     </div>
                 </div>
-                <Image src={"/images/Ux ui.svg"} width={0} height={0} className='w-auto origin-top-right scale-100 md:scale-[120%] pt-10 z-0 h-auto' alt='pic' />
+                <Image src={"/images/Ux ui.svg"} width={0} height={0} className='w-auto mx-auto origin-top-right scale-100 xl:scale-[120%] pt-10 z-0 h-auto' alt='pic' />
             </section>
             <PricingPacksSection />
-            <section className='grid grid-cols-1 md:grid-cols-2 px-4 md:px-16 pb-20 bg-[#2D1F67]'>
+            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 pb-20 bg-[#2D1F67]'>
                 <div className='flex flex-col gap-7 pt-16 md:pt-32 pr-0 md:pr-20 text-white'>
-                    <span className='font-bold text-3xl md:text-5xl'>
+                    <span className='font-bold text-3xl md:text-4xl lg:text-6xl'>
                         Lancez votre marque avec impact, développez sans limites.
                     </span>
-                    <span className='font-bold text-base md:!text-[20px]'>
+                    <span className='font-bold text-base md:text-xl lg:text-2xl'>
                         Ne perdez plus de temps avec les démarches techniques. Créez, animez et propulsez votre image grâce à nos packs 100% clé-en-main.
                     </span>
                     <div className='flex flex-col gap-4'>
@@ -84,11 +84,11 @@ const page = () => {
                 </div>
                 <Image src={"/images/UXUI section une.svg"} width={0} height={0} className='w-auto origin-top-right scale-100 md:scale-y-125 md:scale-x-110 h-auto' alt='pic' />
             </section>
-            <section className='grid grid-cols-1 md:grid-cols-2 px-4 md:px-16 bg-[#2D1F67] py-20 md:py-36'>
+            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 bg-[#2D1F67] py-20 md:py-36 gap-10'>
                 <Image src={"/images/UXUI section deux.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
 
                 <div className='flex flex-col gap-7 pr-0 md:pr-20 text-white'>
-                    <span className='font-bold text-3xl md:text-5xl'>
+                    <span className='font-bold text-3xl md:text-4xl lg:text-6xl'>
                         Donnez vie à votre message avec des animations percutantes
                     </span>
                     <div className='flex flex-col gap-4'>

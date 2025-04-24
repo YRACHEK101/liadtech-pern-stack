@@ -26,13 +26,15 @@ const features2 = [
 const page = () => {
     return (
         <div>
-            <section className='grid grid-cols-1 md:grid-cols-2 px-4 md:px-16 py-10 bg-[#2D1F67] text-white'>
+            
+            <div className='bg-[#2D1F67]'>
+            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-10  text-white'>
                 <div className='flex flex-col gap-7 pt-10 md:pt-20 pr-0 md:pr-20 z-10'>
-                    <span className='font-bold text-3xl md:text-5xl'>
+                    <span className='font-bold text-3xl md:text-4xl lg:text-6xl'>
                         Expliquez votre concept
                         en 30 secondes chrono.
                     </span>
-                    <span className='font-bold text-lg md:!text-[20px]'>
+                    <span className='font-bold text-base md:text-xl lg:text-2xl'>
                         Attirez l'attention, simplifiez votre message et boostez vos conversions avec une animation 2D claire, moderne et percutante.
                     </span>
                     <div className='flex flex-col'>
@@ -55,15 +57,16 @@ const page = () => {
                         </Link>
                     </div>
                 </div>
-                <Image src={"/images/AI.svg"} width={0} height={0} className='w-auto origin-top-right scale-100 md:scale-[120%] pt-10 z-0 h-auto' alt='pic' />
+                <Image src={"/images/AI.svg"} width={0} height={0} className='w-auto mx-auto origin-top-right scale-100 xl:scale-[120%] xl:pt-10 z-0 h-auto' alt='pic' />
             </section>
+            </div>
             <PricingPacksSection />
-            <section className='grid grid-cols-1 md:grid-cols-2 px-4 md:px-16 pb-20'>
+            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 pb-20'>
                 <div className='flex flex-col gap-7 pt-10 md:pt-32 pr-0 md:pr-20'>
-                    <span className='font-bold text-3xl md:text-5xl text-[#2D1F67]'>
+                    <span className='font-bold text-3xl md:text-4xl lg:text-6xl text-[#2D1F67]'>
                         Lancez votre marque avec impact, développez sans limites.
                     </span>
-                    <span className='font-bold text-lg md:!text-[20px] text-[#2D1F67]'>
+                    <span className='font-bold text-base md:text-xl lg:text-2xl text-[#2D1F67]'>
                         Ne perdez plus de temps avec les démarches techniques. Créez, animez et propulsez votre image grâce à nos packs 100% clé-en-main.
                     </span>
                     <div className='flex flex-col gap-4'>
@@ -82,12 +85,13 @@ const page = () => {
                         Idéal pour les marques ambitieuses qui veulent se démarquer sur les réseaux et au-delà.
                     </div>
                 </div>
-                <Image src={"/images/AI Section une.svg"} width={0} height={0} className='w-auto origin-top-right scale-100 md:scale-y-125 md:scale-x-110 h-auto' alt='pic' />
+                <Image src={"/images/AI Section une.svg"} width={0} height={0} className='w-auto origin-top-right scale-100 xl:scale-y-125 xl:scale-x-110 h-auto' alt='pic' />
             </section>
-            <section className='grid grid-cols-1 md:grid-cols-2 px-4 md:px-16 bg-[#2D1F67] pb-20 md:pb-36'>
+            <div className='bg-[#2D1F67]'>
+                <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 bg-[#2D1F67] pb-20 md:pb-36'>
                 <Image src={"/images/AI Section deux.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
                 <div className='flex flex-col gap-7 pr-0 md:pr-20 text-white pt-10 md:pt-36'>
-                    <span className='font-bold text-3xl md:text-5xl'>
+                    <span className='font-bold text-3xl md:text-4xl lg:text-6xl'>
                         Donnez vie à votre message avec des animations percutantes
                     </span>
                     <div className='flex flex-col gap-4'>
@@ -97,13 +101,14 @@ const page = () => {
                                     <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                                 <div className='flex flex-col'>
-                                    <span className='text-lg md:!text-[20px]'>{site}</span>
+                                    <span className='text-lg xl:!text-[20px]'>{site}</span>
                                 </div>
                             </div>
                         ))}
                     </div>
                 </div>
             </section>
+            </div>
         </div>
     )
 }

@@ -49,12 +49,13 @@ const sitesFeatures = [
 const page = () => {
     return (
         <div>
-            <section className='bg-[#2D1F67] overflow-hidden grid grid-cols-1 md:grid-cols-2 px-4 md:px-10'>
+            <div className='bg-[#2D1F67]'>
+            <section className=' overflow-hidden grid grid-cols-1 pt-10 container mx-auto xl:grid-cols-2 px-4 md:px-10'>
                 <div className='flex flex-col text-white self-center text-center md:text-left'>
-                    <h2 className='!leading-[40px] md:!leading-[56px] !text-left !text-[32px] md:!text-[52px] font-bold !text-white'>
+                    <h2 className='text-3xl md:text-4xl lg:text-6xl font-bold !text-white mb-4'>
                         Touchez vos clients, là où ils sont : dans leur poche.
                     </h2>
-                    <span className='font-bold text-[18px] md:text-[22px] mb-8 md:mb-16'>
+                    <span className='font-bold text-base md:text-xl lg:text-2xl mb-8 md:mb-16'>
                         Une application mobile, c'est une présence continue, une expérience personnalisée… et un levier puissant pour booster votre croissance.
                     </span>
 
@@ -63,12 +64,13 @@ const page = () => {
                     </Link>
                 </div>
                 <Image src="/images/App mobile.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
-            </section>
+                </section>
+            </div>
             <TrustedByClientsSection />
             {/* Pricing Table Section */}
             <PricingPacksSection />
 
-            <section className="bg-[#2D1F67] p-6 md:p-20 text-white flex flex-col gap-20 md:gap-96">
+            <section className="bg-[#2D1F67] p-6 md:p-20 text-white flex flex-col gap-20 md:gap-40">
                 <div className="container mx-auto flex flex-col items-center gap-5">
                     <div className="text-white text-3xl md:text-5xl font-bold mb-[50px] md:mb-[105px] text-center">
                         Pourquoi une app mobile change tout ?
@@ -76,40 +78,40 @@ const page = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div className="bg-[#41308F] flex flex-col gap-2 items-center shadow-lg rounded-lg p-4">
                             <div className="bg-[#9C51F1] rounded-md p-2 mb-2">
-                                <Image src={"/images/rocket.svg"} width={60} height={60} alt="Rectangle 97" />
+                                <Image src={"/images/rocket.svg"} width={40} height={40} alt="Rectangle 97" />
                             </div>
-                            <span className="font-bold text-center text-[18px] md:text-[22px]">
+                            <span className="font-bold text-center text-[18px] lg:text-[22px]">
                                 Accès instantané à vos services
                             </span>
-                            <p className="text-center font-light text-[18px] md:text-[26px]">
+                            <p className="text-center font-light text-[18px] lg:text-[26px]">
                                 Vos clients n'ont plus à chercher votre site, ils vous trouvent en un tap.
                             </p>
                         </div>
                         <div className="bg-[#41308F] flex flex-col gap-2 items-center shadow-lg rounded-lg p-4">
                             <div className="bg-[#9C51F1] rounded-md p-2 mb-2">
-                                <Image src={"/Liadtech/Accueil/icones/sync_svgrepo.com.svg"} width={60} height={60} alt="Rectangle 97" />
+                                <Image src={"/Liadtech/Accueil/icones/sync_svgrepo.com.svg"} width={40} height={40} alt="Rectangle 97" />
                             </div>
-                            <span className="font-bold text-center text-[18px] md:text-[22px]">
+                            <span className="font-bold text-center text-[18px] lg:text-[22px]">
                                 Engagement récurrent & fidélisation
                             </span>
-                            <p className="text-center font-light text-[18px] md:text-[26px]">
+                            <p className="text-center font-light text-[18px] lg:text-[26px]">
                                 Notifications push, achats récurrents, raccourcis… vos clients reviennent plus souvent.
                             </p>
                         </div>
                         <div className="bg-[#41308F] flex flex-col gap-2 items-center shadow-lg rounded-lg p-4">
                             <div className="bg-[#9C51F1] rounded-md p-2 mb-2">
-                                <Image src={"/Liadtech/Accueil/icones/face-smile_svgrepo.com.svg"} width={60} height={60} alt="Rectangle 97" />
+                                <Image src={"/Liadtech/Accueil/icones/face-smile_svgrepo.com.svg"} width={40} height={40} alt="Rectangle 97" />
                             </div>
-                            <span className="font-bold text-center text-[18px] md:text-[22px]">
+                            <span className="font-bold text-center text-[18px] lg:text-[22px]">
                                 Des données précieuses sur vos utilisateurs
                             </span>
-                            <p className="text-center font-light text-[18px] md:text-[26px]">
+                            <p className="text-center font-light text-[18px] lg:text-[26px]">
                                 Analyse du comportement, parcours client, préférences : vous pilotez avec clarté.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 container mx-auto gap-8">
+                <div className="grid grid-cols-1 xl:grid-cols-2 container mx-auto gap-8">
                     <div className="flex flex-col gap-9 text-[18px] md:text-[24px]">
                         <span className="text-white text-[32px] md:text-[47px] leading-[40px] md:leading-[59px] font-bold">
                             Notre expertise mobile, votre avantage compétitif
@@ -123,10 +125,10 @@ const page = () => {
 
                 </div>
             </section>
-            <section className='grid grid-cols-1 md:grid-cols-2 px-4 md:px-16 py-[50px] md:py-[110px]'>
+            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-[50px] md:py-[110px]'>
                 <Image src={"/images/Création du l'app.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
                 <div className='flex flex-col items-center md:items-end mt-8 md:mt-0'>
-                    <h2 className='!leading-[40px] md:!leading-[56px] !text-[32px] md:!text-[52px] font-bold !text-left mb-9 text-center md:text-left'>
+                    <h2 className='text-3xl md:text-4xl lg:text-6xl font-bold !text-left mb-9 text-center md:text-left'>
                         Des applications sur mesure pour chaque besoin
                     </h2>
 
@@ -211,12 +213,12 @@ const page = () => {
                     </div>
                 </div>
             </section>
-            <section className='grid grid-cols-1 md:grid-cols-2 px-4 md:px-16 py-10'>
+            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-10'>
                 <div className='flex flex-col gap-7 pt-10 md:pt-20 pr-0 md:pr-20'>
-                    <span className='font-bold text-3xl md:text-5xl text-center md:text-left'>
+                    <span className='font-bold text-3xl md:text-4xl lg:text-6xl text-center md:text-left'>
                         Votre app inclut toujours…
                     </span>
-                    <span className='font-bold text-[#673DE6] !text-[18px] md:!text-[20px] text-center md:text-left'>
+                    <span className='font-bold text-[#673DE6] text-base md:text-xl lg:text-2xl text-center md:text-left'>
                         Parlez à un expert LIADTECH ou démarrez votre projet en quelques clics.
                     </span>
                     <div className='flex flex-col gap-4'>
@@ -234,10 +236,10 @@ const page = () => {
                 </div>
                 <Image src={"/images/Création du l'app 3.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
             </section>
-            <section className='grid grid-cols-1 md:grid-cols-2 px-4 md:px-16 py-[50px] md:py-[110px]'>
+            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-[50px] md:py-[110px]'>
                 <Image src={"/images/Création du l'app 4.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
                 <div className='flex flex-col gap-4 mt-8 md:mt-0 text-center md:text-left'>
-                    <h2 className='!leading-[40px] md:!leading-[56px] !text-[32px] md:!text-[52px] font-bold'>
+                    <h2 className='text-3xl md:text-4xl lg:text-6xl font-bold'>
                         Discutons de votre projet. Une app performante peut tout changer.
                     </h2>
                     <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap">

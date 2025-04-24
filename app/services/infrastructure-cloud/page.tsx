@@ -26,13 +26,13 @@ const features2 = [
 const page = () => {
     return (
         <div>
-            <section className='grid grid-cols-1 md:grid-cols-2 px-4 md:px-16 py-6 md:py-10'>
+            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-6 md:py-10'>
                 <div className='flex flex-col gap-4 md:gap-7 pt-10 md:pt-20 pr-0 md:pr-20 z-10'>
-                    <span className='font-bold text-3xl md:text-5xl text-[#2D1F67]'>
+                    <span className='font-bold text-3xl md:text-4xl lg:text-6xl text-[#2D1F67]'>
                         Expliquez votre concept
                         en 30 secondes chrono.
                     </span>
-                    <span className='font-bold text-[#2D1F67] text-base md:!text-[20px]'>
+                    <span className='font-bold text-[#2D1F67] text-base md:text-xl lg:text-2xl'>
                         Attirez l'attention, simplifiez votre message et boostez vos conversions avec une animation 2D claire, moderne et percutante.
                     </span>
                     <div className='flex flex-col'>
@@ -58,12 +58,12 @@ const page = () => {
                 <Image src={"/images/Maintenance, TMA & MCO.svg"} width={0} height={0} className='w-auto origin-top-right invisible scale-[120%] pt-10 md:pt-20 z-0 h-auto' alt='pic' />
             </section>
             <PricingPacksSection />
-            <section className='grid grid-cols-1 md:grid-cols-2 px-4 md:px-16 py-6 md:py-10'>
+            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-6 md:py-10'>
                 <div className='flex flex-col gap-4 md:gap-7 pr-0 md:pr-20'>
-                    <span className='font-bold text-3xl md:text-5xl text-[#2D1F67]'>
+                    <span className='font-bold text-3xl md:text-4xl lg:text-6xl text-[#2D1F67]'>
                         Lancez votre marque avec impact, développez sans limites.
                     </span>
-                    <span className='font-bold text-[#2D1F67] text-base md:!text-[20px]'>
+                    <span className='font-bold text-[#2D1F67] text-base md:text-xl lg:text-2xl'>
                         Ne perdez plus de temps avec les démarches techniques. Créez, animez et propulsez votre image grâce à nos packs 100% clé-en-main.
                     </span>
                     <div className='flex flex-col gap-3 md:gap-4'>
@@ -84,10 +84,10 @@ const page = () => {
                 </div>
                 <Image src={"/images/Maintenance, TMA & MCO section1.svg"} width={0} height={0} className='w-auto invisible -mt-10 h-full' alt='pic' />
             </section>
-            <section className='grid grid-cols-1 md:grid-cols-2 px-4 md:px-16 gap-10 md:gap-20 py-6 md:py-10'>
+            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 gap-10 md:gap-20 py-6 md:py-10'>
                 <Image src={"/images/cloud 1.svg"} width={0} height={0} className='w-auto origin-top !h-full' alt='pic' />
                 <div className='flex flex-col gap-4 md:gap-7 pr-0 md:pr-20'>
-                    <span className='font-bold leading-tight md:leading-[59px] text-3xl md:text-[47px] text-[#2D1F67]'>
+                    <span className='font-bold text-3xl md:text-4xl lg:text-6xl text-[#2D1F67]'>
                         Donnez vie à votre message avec des animations percutantes
                     </span>
                     <div className='flex flex-col gap-3 md:gap-4'>
