@@ -558,7 +558,7 @@ const MainHeader = () => {
                 onClick={toggleDrawer}
             >
                 <div
-                    className={`fixed right-0 top-0 h-full w-[280px] bg-white shadow-lg transform transition-transform duration-300 ease-in-out ${isDrawerOpen ? 'translate-x-0' : 'translate-x-full'
+                    className={`fixed right-0 top-0 h-full w-[280px] sm:w-[320px] md:w-[400px] bg-white shadow-lg transform transition-transform duration-300 ease-in-out ${isDrawerOpen ? 'translate-x-0' : 'translate-x-full'
                         }`}
                     onClick={e => e.stopPropagation()}
                 >
