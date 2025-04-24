@@ -155,7 +155,7 @@ export default function Home() {
               alt="Pourquoi choisir LIADTECH"
               width={0}
               height={0}
-              className="w-full h-full bg-red-500  max-w-[1263px] max-h-[897px]"
+              className="w-full h-full  max-w-[1263px] max-h-[897px]"
             />
         </div>
       </section>
