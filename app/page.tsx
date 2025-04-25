@@ -98,7 +98,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 xl:grid-cols-2 sm:px-20 xl:px-0 container mx-auto gap-8">
+        <div className="grid grid-cols-1 xl:grid-cols-2 sm:px-20 xl:px-4 container mx-auto gap-8">
           <div className="flex flex-col gap-5 text-base md:text-lg lg:text-[24px]">
             <span className="text-white text-3xl font-bold">
               Une refonte qui change tout
@@ -213,7 +213,7 @@ export default function Home() {
 
 
       {/* Support Section */}
-      <section className="py-16 md:py-24 lg:py-36 w-full container sm:px-20 xl:px-0  mx-auto">
+      <section className="py-16 md:py-24 lg:py-36 w-full container sm:px-20 xl:px-4  mx-auto">
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 items-center">
           <div className="flex flex-col gap-3 text-[#2D1F67] text-base font-normal">
             <h3 className="text-3xl  font-bold">
