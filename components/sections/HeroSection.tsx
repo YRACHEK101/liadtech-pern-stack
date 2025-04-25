@@ -7,7 +7,7 @@ import Image from 'next/image'
 const HeroSection = () => {
     const youtubeModalRef = useRef<ModalRef>(null)
     return (
-        <section className="sm:container px-5 sm:px-20 xl:px-0  w-full mx-auto pt-16 pb-12">
+        <section className="sm:container px-5 sm:px-20 xl:px-4  w-full mx-auto pt-16 pb-12">
             <div className="grid grid-cols-1 xl:grid-cols-2  gap-2 items-center">
                 <div className="  z-10 ">
 
@@ -46,7 +46,7 @@ const HeroSection = () => {
                     </div>
                     <div className="flex flex-col gap-2.5">
                         <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-[26px]">
-                            <Link href={"/"} className="w-full sm:w-auto bg-[#673de6] rounded-lg hover:bg-[rgb(86,40,197)] text-white px-6 py-3 !rounded-lgLink font-medium">
+                            <Link href={"/"} className="w-full text-center sm:text-left sm:w-auto bg-[#673de6] rounded-lg hover:bg-[rgb(86,40,197)] text-white px-6 py-3 !rounded-lgLink font-medium">
                                 Découvrir nos Solutions tout-en-un
                             </Link>
                             <div onClick={() => youtubeModalRef.current?.show()} className="flex items-center justify-center bg-[#A384FF] hover:bg-[#A384FF] size-12 !rounded-full mt-4 sm:mt-0">
