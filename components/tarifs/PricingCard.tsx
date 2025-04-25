@@ -22,10 +22,11 @@ const PricingCard: React.FC<PricingCardProps> = ({
 }) => {
     const [isExpanded, setIsExpanded] = useState(false);
     return (
-        <div className={`flex-1 !max-w-sm !self-start relative rounded-2xl border border-gray-200 ${isPopular ?'border-purple-600':''} `} style={{ marginTop: 46 }}>
+        <div className={`flex-1 !w-full !max-w-[300px] sm:!max-w-[360px] !self-start relative rounded-2xl border border-gray-200 ${isPopular ?'border-purple-600':''} `} style={{ marginTop: 46 }}>
             {isPopular && (
-                <div className="title bg-purple-400 text-white text-center py-2 rounded-t-2xl font-medium">
+                <div className="title bg-purple-400 font-bold text-white text-center py-2 rounded-t-2xl">
                     Le plus populaire
+                    {/* MOST POPULAR */}
                 </div>
             )}
             <div className="py-12 px-[34px]">
@@ -130,7 +131,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
 
                 <button
               onClick={() => setIsExpanded(!isExpanded)}
-              className="flex items-center justify-center text-center w-full mt-4 sm:mt-6 text-purple-600 font-medium text-sm sm:text-base"
+              className=" mx-auto flex justify-center mt-4 sm:mt-6 text-purple-600 font-bold"
             >
               {isExpanded ? 'Masquer' : 'Voir tous'}
               {isExpanded ? <ChevronUp className="h-4 w-4 sm:h-5 sm:w-5 ml-1" /> : <ChevronDown className="h-4 w-4 sm:h-5 sm:w-5 ml-1" />}

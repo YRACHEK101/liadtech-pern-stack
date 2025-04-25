@@ -47,21 +47,21 @@ export default function Home() {
       <PricingPacksSection />
       {/* <PricingTable /> */}
 
-      <div className="py-16 md:py-28 lg:py-44">
+      <div className="mb-16 md:mb-28 lg:mb-44">
       <ContentSection />
       </div>
 
-      <section className="bg-[#2D1F67] pt-8 md:pt-12 lg:pt-[64px] mb-16 md:mb-24 lg:mb-36 pb-12 md:pb-24 lg:pb-[159px] text-white flex flex-col gap-16 md:gap-32 lg:gap-48">
-        <div className="container mx-auto flex flex-col items-center gap-5">
-          <div className="text-white text-3xl font-bold text-center">
+      <section className="bg-[#2D1F67] pt-14 lg:pt-[64px] mb-16 md:mb-24 lg:mb-36 pb-12 md:pb-24 lg:pb-[159px] text-white flex flex-col gap-16 md:gap-32 lg:gap-48">
+        <div className="px-4 sm:px-0 sm:container sm:mx-auto flex flex-col items-center ">
+          <div className="text-white text-2xl mb-6 md:text-[28px] md:leading-[36px] lg:text-4xl  font-bold text-center">
             Migration & refonte en toute sérénité
           </div>
-          <div className="text-center font-normal text-lg">
+          <div className="text-center font-normal mb-8 md:mb-12">
             Ne repartez pas de zéro.<br />
             LIADTECH récupère vos bases, les modernise, et vous fait franchir un cap digital.
           </div>
-          <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
-            <div className="bg-[#41308F] flex flex-col gap-2 shadow-lg rounded-lg p-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+            <div className="bg-[#41308F] flex flex-col gap-2 shadow-lg rounded-xl p-8">
               <div className="bg-[#9C51F1] rounded-lg p-2 mb-2 self-start">
                 <Image src={"/Liadtech/Accueil/icones/sync_svgrepo.com.svg"} width={24} height={24} alt="Rectangle 97" />
               </div>
@@ -72,7 +72,7 @@ export default function Home() {
                 On reprend vos textes, visu Du neuf avec vos bases.
               </p>
             </div>
-            <div className="bg-[#41308F] flex flex-col gap-2 shadow-lg rounded-lg p-8">
+            <div className="bg-[#41308F] flex flex-col gap-2 shadow-lg rounded-xl p-8">
               <div className="bg-[#9C51F1] rounded-lg p-2 mb-2 self-start">
                 <Image src={"/Liadtech/Accueil/icones/ruler-pencil_svgrepo.com.svg"} width={24} height={24} alt="Rectangle 97" />
 
@@ -84,7 +84,7 @@ export default function Home() {
                 Nouveau look, SEO boosté, image professionnelle.Vous repartez plus fort.
               </p>
             </div>
-            <div className="bg-[#41308F] flex flex-col gap-2 shadow-lg rounded-lg p-8">
+            <div className="bg-[#41308F] flex flex-col gap-2 shadow-lg rounded-xl p-8">
               <div className="bg-[#9C51F1] rounded-lg p-2 mb-2 self-start">
 
                 <Image src={"/Liadtech/Accueil/icones/face-smile_svgrepo.com.svg"} width={24} height={24} alt="Rectangle 97" />
@@ -100,29 +100,29 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-1 xl:grid-cols-2 sm:px-20 xl:px-4 container mx-auto gap-8">
           <div className="flex flex-col gap-5 text-base md:text-lg lg:text-[24px]">
-            <span className="text-white text-3xl font-bold">
+            <span className="text-white text-2xl md:text-[28px] leading-[36px] lg:text-4xl  font-bold">
               Une refonte qui change tout
             </span>
-            <span className="text-white text-3xl font-semibold">
+            <span className="text-white text-2xl md:text-[28px] leading-[36px] lg:text-4xl  font-semibold">
               On ne se contente pas de « relooker » un site.
             </span>
             <span className="text-white text-sm font-light">
               On repense votre présence digitale pour qu'elle attire, convertisse, et vous aide à grandir.
             </span>
             <div className="flex items-center gap-2 text-lg font-normal">
-              <Image src={"/Liadtech/Accueil/icones/Vector 8.svg"} width={16} height={18} alt="check mark" />
+              <Image src={"/Liadtech/Accueil/icones/Vector 8.svg"} width={0} height={0} alt="check mark" className="self-start !size-3 mt-2" />
               <span>
                 plus rapide, mieux référencé, plus clair pour vos clients.
               </span>
             </div>
             <div className="flex items-center gap-2 text-lg font-normal">
-              <Image src={"/Liadtech/Accueil/icones/Vector 8.svg"} width={16} height={18} alt="check mark" />
+              <Image src={"/Liadtech/Accueil/icones/Vector 8.svg"} width={0} height={0} alt="check mark" className="self-start !size-3 mt-2" />
               <span>
                 Une identité visuelle modernisée et cohérente.
               </span>
             </div>
             <div className="flex items-center gap-2 text-lg font-normal">
-              <Image src={"/Liadtech/Accueil/icones/Vector 8.svg"} width={16} height={18} alt="check mark" />
+              <Image src={"/Liadtech/Accueil/icones/Vector 8.svg"} width={0} height={0} alt="check mark" className="self-start !size-3 mt-2" />
               <span>
                 Aucune perte de contenu, aucun stress.
               </span>
@@ -163,7 +163,7 @@ export default function Home() {
       <TestimonialsSection />
 
       <section>
-        <div className="w-full container  pt-10 mx-auto lg:pr-7 grid grid-cols-1 xl:grid-cols-2 pb-8 xl:pb-16 relative gap-8 xl:gap-0">
+        <div className="w-full container !px-4 pt-10 mx-auto lg:pr-7 grid grid-cols-1 xl:grid-cols-2 pb-8 xl:pb-16 relative gap-8 xl:gap-0">
 
           <Image
             src="/Liadtech/Accueil/dashboard section 9.svg"
@@ -177,8 +177,8 @@ export default function Home() {
           <span className='py-1 px-3 self-start rounded-full text-[#2D1F67] font-bold bg-[#d5dfff]'>
               EASY TO USE DASHBOARD
             </span>
-            <h3 className="text-3xl font-bold text-[#2D1F67]">Un seul espace pour tout gérer</h3>
-            <p className="text-[#2D1F67] text-base font-normal">
+            <h3 className="text-2xl md:text-[28px] leading-[36px] lg:text-4xl font-bold text-[#2D1F67]">Un seul espace pour tout gérer</h3>
+            <p className="text-[#2D1F67] font-normal">
               Suivez chaque projet de votre site en temps réel depuis un espace client fluide, intuitif et sécurisé.
             </p>
 
@@ -216,10 +216,10 @@ export default function Home() {
       <section className="py-16 md:py-24 lg:py-36 w-full container sm:px-20 xl:px-4  mx-auto">
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 items-center">
           <div className="flex flex-col gap-3 text-[#2D1F67] text-base font-normal">
-            <h3 className="text-3xl  font-bold">
+            <h3 className="text-2xl md:text-[28px] leading-[36px] lg:text-4xl  font-bold">
               Support & réactivité 24/7
             </h3>
-            <span className="text-xl md:text-2xl lg:text-3xl text-[#673DE6] font-semibold">
+            <span className=" text-[#673DE6] font-normal">
               Toujours là quand vous avez besoin
             </span>
             <div className="flex flex-col">
@@ -258,8 +258,8 @@ export default function Home() {
         backgroundPosition: 'center',
       }}>
         <div className="container mx-auto px-4">
-          <h2 className=" text-4xl font-bold text-center mb-4 md:mb-8 !text-white">Questions fréquentes</h2>
-          <p className="text-lg text-center mb-8 md:mb-12 font-normal">
+          <h2 className=" text-2xl md:text-[28px] leading-[36px] lg:text-4xl  font-bold text-center mb-4 md:mb-8 !text-white">Questions fréquentes</h2>
+          <p className=" text-center mb-8 md:mb-12 font-normal">
             Avant de vous lancer, voici les réponses aux questions qu'on nous pose souvent
           </p>
 

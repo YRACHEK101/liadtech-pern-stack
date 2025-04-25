@@ -67,18 +67,18 @@ const ContentSection = () => {
     return (
         <div className='container mx-auto'>
             {/* Success Section */}
-            <section className="mb-6 md:mb-9 w-full px-4 sm:px-6 md:px-10 mx-auto text-center">
-                <h2 className="text-4xl  text-[#2D1F67]  font-bold mb-2 md:mb-4">Ce que vous pouvez créer avec LIADTECH</h2>
-                <p className="text-[#2D1F67] text-base mb-6 md:mb-12 font-light">Sites. Apps. Branding. Visibilité. Résultats.</p>
+            <section className="mb-6 md:mb-9 w-full mx-auto text-center">
+                <h2 className="text-2xl md:text-[28px] leading-[36px] lg:text-4xl  text-[#2D1F67]  font-bold mb-2 md:mb-4">Ce que vous pouvez créer avec LIADTECH</h2>
+                <p className="text-[#2D1F67] text-base mb-6 md:mb-12 font-normal">Sites. Apps. Branding. Visibilité. Résultats.</p>
             </section>
             {/* Category Buttons*/}
-            <div className="flex flex-wrap gap-2 sm:gap-3 md:gap-[29px] justify-center mb-6 md:mb-[58px] px-2 sm:px-4">
+            <div className="flex flex-wrap gap-2 sm:gap-3 md:gap-[29px] justify-center mb-6 md:mb-[58px]">
                 {
                     contentSections.map((section, index) => (
                         <button
                             key={index}
                             onClick={() => setActiveSection(section.id)}
-                            className={`rounded-full text-white  px-3 sm:px-4 md:px-[29px] py-2 md:py-[10px] font-bold shadow-sm whitespace-nowrap transition-all duration-300 transform ${activeSection === section.id
+                            className={`rounded-full text-white text-sm  px-3 sm:px-4 md:px-[29px] py-2 md:py-[10px] font-bold shadow-sm whitespace-nowrap transition-all duration-300 transform ${activeSection === section.id
                                 ? 'bg-[#5d3ee6] cursor-default'
                                 : 'bg-[#d59fff] text-[#1f1d2c] hover:bg-[#c58fee] hover:scale-105 md:hover:scale-110'
                                 }`}
@@ -92,7 +92,7 @@ const ContentSection = () => {
                 contentSections.map((section, index) => (
                     <section
                         className={cn(
-                            "px-4 sm:px-6 md:px-12 xl:px-24 transition-opacity duration-300",
+                            " transition-opacity duration-300",
                             section.id === activeSection ? 'block opacity-100' : 'hidden opacity-0'
                         )}
                         key={section.id}
@@ -100,13 +100,13 @@ const ContentSection = () => {
                         <div className="rounded-3xl bg-[#1f1d2c] p-6 md:p-10 md:!pr-0 grid grid-cols-1 xl:grid-cols-2 relative">
                             {/* Left Column */}
                             <div className="z-10 flex flex-col">
-                                <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl flex-1 flex justify-center md:justify-start items-center font-bold !text-white mb-4 md:mb-6 text-center md:!text-left">
+                                <h2 className="text-2xl md:text-[28px] leading-[36px] lg:text-4xl flex-1  font-bold !text-white mb-4 md:mb-6">
                                     {section.title}
                                 </h2>
-                                <p className="text-gray-300 mb-6 md:mb-8 max-w-md text-center md:text-left mx-auto md:mx-0">
+                                <p className="text-gray-300 mb-6 md:mb-8 max-w-md md:mx-0">
                                     {section.description}
                                 </p>
-                                <div className="flex justify-center md:justify-start mb-8">
+                                <div className="flex  mb-8">
                                     <Link href={section.actionButtonLink}>
                                         <Button className="bg-[#5f65f4] hover:bg-[#673de6] text-white px-4 sm:px-6 md:px-8 py-2 md:py-3 rounded-lg text-sm md:text-base">
                                             {section.actionButtonLabel}

@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { ChevronDown, MessageCircle, FileText, HelpCircle, User, Dna, Users, Briefcase, Network, Menu, X } from 'lucide-react'
@@ -7,6 +7,16 @@ import { ChevronDown, MessageCircle, FileText, HelpCircle, User, Dna, Users, Bri
 const MainHeader = () => {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false)
     const [openDropdown, setOpenDropdown] = useState<string | null>(null)
+    const [isScrolled, setIsScrolled] = useState(false)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 100)
+        }
+
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [])
 
     const toggleDrawer = () => {
         setIsDrawerOpen(!isDrawerOpen)
@@ -18,7 +28,7 @@ const MainHeader = () => {
     }
 
     return (
-        <header className="border-b bg-white h-[80px] lg:h-[113px] text-black shadow-md shadow-black/25 z-50 sticky top-0">
+        <header className={`bg-white h-[80px] lg:h-[113px] text-black shadow-black/15 z-50 sticky top-0 transition-shadow duration-300 ${isScrolled ? 'shadow-lg' : ''}`}>
             <div className="w-full mx-auto flex justify-between h-full items-center px-4">
                 <Link href="/" className="flex items-center">
                     <Image
@@ -52,8 +62,8 @@ const MainHeader = () => {
                         <button className="flex items-center text-[#1f1d2c] hover:text-[#673de6]">
                             Services <ChevronDown className="h-4 w-4 ml-1" />
                         </button>
-                        <div className="absolute hidden group-hover:block inset-x-4 pt-16 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                            <div className=" bg-white pl-[88px] shadow-md shadow-black/25 rounded-md pb-12 pt-6 pr-10  ">
+                        <div className="fixed hidden group-hover:flex flex-col inset-x-4 bottom-4 top-16  pt-16 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                            <div className=" bg-white overflow-auto hover:overflow-auto max-h-[90vh] pl-[88px] shadow-md shadow-black/25 rounded-md pb-12 pt-6 pr-10  ">
                                 <h3 className="text-lg text-gray-700 mb-6 italic pl-11">De l'idée à l'automatisation, tout est imaginé pour vous</h3>
 
                                 <div className="grid grid-cols-3 gap-10">

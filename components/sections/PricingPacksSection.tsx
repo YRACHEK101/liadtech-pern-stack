@@ -16,7 +16,7 @@ const PricingPacksSection = () => {
           'Cloud, SaaS & Support'
         ]} />
 
-        <span className='text-lg md:text-xl lg:text-[26px] font-light text-[#673DE6] my-4 text-center'>
+        <span className='font-bold text-[#673DE6] mb-4 xl:mt-4 mt-4 z-10 text-center'>
           Conditions de paiement
         </span>
       </section>

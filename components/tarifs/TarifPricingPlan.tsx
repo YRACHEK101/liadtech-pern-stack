@@ -1,7 +1,7 @@
 "use client"
 
-import React from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React, { useEffect } from 'react'
+import { Swiper, SwiperSlide, SwiperRef } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -12,6 +12,17 @@ import { cn } from '@/lib/utils';
 
 
 const TarifPricingPlan = ({ plans = [] }: { plans: string[] }) => {
+    const swiperRef = React.useRef<SwiperRef>(null);
+
+    const handlePrevClick = () => {
+        swiperRef.current?.swiper.slidePrev();
+    };
+
+    const handleNextClick = () => {
+        swiperRef.current?.swiper.slideNext();
+    };    
+
+
     const features = [
         {
             title: <>
@@ -249,28 +260,30 @@ const TarifPricingPlan = ({ plans = [] }: { plans: string[] }) => {
     return (
         <div className="w-full mx-auto bg-[#fafbff] relative ">
             <div className="xl:flex xl:flex-row xl:justify-center xl:items-end xl:gap-4">
-                <div className="">
+                <div className='relative lg:!hidden'>
                     <Swiper
+                        ref={swiperRef}
                         modules={[Pagination, Navigation]}
                         spaceBetween={5}
                         slidesPerView={1}
+                        initialSlide={1}
                         navigation={true}
                         pagination={{
-                            clickable:true
+                            clickable: true
                         }}
                         className={cn(
                             // common
-                            "xl:!hidden !overflow-visible [&_.swiper-button-disabled]:!hidden w-full",
+                            "  !w-full !max-w-96 !pb-0 !overflow-visible ", //[&_.swiper-button-disabled]:!hidden //  
                             // swiper prev btn
-                            "[&_.swiper-button-prev]:bg-white hover:[&_.swiper-button-prev]:bg-gray-100 [&_.swiper-button-prev]:rounded-full [&_.swiper-button-prev]:left-10  [&_.swiper-button-prev]:!size-[46px] [&_.swiper-button-prev]:shadow-[0px_5px_10px_0px_#00000033] [&_.swiper-button-prev::after]:text-purple-600 [&_.swiper-button-prev::after]:!text-xl [&_.swiper-button-prev::after]:!font-bold [&_.swiper-button-prev]:z-10",
+                            "[&_.swiper-button-prev]:!hidden", // [&_.swiper-button-prev]:-left-5 sm:[&_.swiper-button-prev]:-left-32 md:[&_.swiper-button-prev]:-left-48
                             // swiper next btn
-                            "[&_.swiper-button-next]:bg-white hover:[&_.swiper-button-next]:bg-gray-100 [&_.swiper-button-next]:rounded-full [&_.swiper-button-next]:right-10 [&_.swiper-button-next]:!size-[46px] [&_.swiper-button-next]:shadow-[0px_5px_10px_0px_#00000033] [&_.swiper-button-next::after]:text-purple-600 [&_.swiper-button-next::after]:!text-xl [&_.swiper-button-next::after]:!font-bold [&_.swiper-button-next]:z-10",
+                            "[&_.swiper-button-next]:!hidden", // [&_.swiper-button-next]:-right-5 sm:[&_.swiper-button-next]:-right-32 md:[&_.swiper-button-next]:-right-48
                             // pagination
                             "[&_.swiper-pagination]:!absolute [&_.swiper-pagination]:h-min [&_.swiper-pagination]:!top-0 [&_.swiper-pagination]:!mx-auto [&_.swiper-pagination-bullet]:!size-3 [&_.swiper-pagination-bullet]:!border-purple-400 [&_.swiper-pagination-bullet]:!opacity-100 [&_.swiper-pagination-bullet]:!mx-2 [&_.swiper-pagination-bullet]:bg-transparent [&_.swiper-pagination-bullet-active]:!bg-purple-400 [&_.swiper-pagination-bullet]:!border"
                         )}
                     >
-                        <SwiperSlide>
-                            <div className='flex justify-center'>
+                        <SwiperSlide className=''>
+                            <div className='flex justify-center pt-10'>
                                 <PricingCard
                                     title={plans[0]}
                                     features={features}
@@ -278,7 +291,7 @@ const TarifPricingPlan = ({ plans = [] }: { plans: string[] }) => {
                                 />
                             </div>
                         </SwiperSlide>
-                        <SwiperSlide>
+                        <SwiperSlide className=''>
                             <div className='flex justify-center'>
                                 <PricingCard
                                     title={plans[1]}
@@ -288,8 +301,8 @@ const TarifPricingPlan = ({ plans = [] }: { plans: string[] }) => {
                                 />
                             </div>
                         </SwiperSlide>
-                        <SwiperSlide>
-                            <div className='flex justify-center'>
+                        <SwiperSlide className=''>
+                            <div className='flex justify-center pt-10'>
                                 <PricingCard
                                     title={plans[2]}
                                     features={ultimateFeatures}
@@ -298,11 +311,17 @@ const TarifPricingPlan = ({ plans = [] }: { plans: string[] }) => {
                             </div>
                         </SwiperSlide>
                     </Swiper>
+                    <div 
+                        onClick={handlePrevClick}
+                        className='swiper-button-prev !mt-14 bg-white hover:bg-gray-100 rounded-full !size-[46px] shadow-[0px_5px_10px_0px_#00000033] after:text-purple-600 after:!text-xl after:!font-bold !z-20 cursor-pointer'></div>
+                    <div 
+                        onClick={handleNextClick}
+                        className='swiper-button-next !mt-14 bg-white hover:bg-gray-100 rounded-full !size-[46px] shadow-[0px_5px_10px_0px_#00000033] after:text-purple-600 after:!text-xl after:!font-bold !z-20 cursor-pointer'></div>
                 </div>
 
                 {/* Desktop view */}
-                <div className="hidden w-full xl:grid grid-cols-3 xl:gap-4">
-                    <div className='mt-5'>
+                <div className="hidden w-full lg:flex justify-center gap-4  ">
+                    <div className='mt-10'>
                         <PricingCard
                             title={plans[0]}
                             features={features}
@@ -317,7 +336,7 @@ const TarifPricingPlan = ({ plans = [] }: { plans: string[] }) => {
                             blockedFeatures={blockedFeatures.slice(1)}
                         />
                     </div>
-                    <div className='mt-5'>
+                    <div className='mt-10'>
                         <PricingCard
                             title={plans[2]}
                             features={ultimateFeatures}
