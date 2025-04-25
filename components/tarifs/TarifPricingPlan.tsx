@@ -8,6 +8,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import PricingCard from './PricingCard';
 
+
+
 const TarifPricingPlan = ({ plans = [] }: { plans: string[] }) => {
     const features = [
         {
@@ -249,10 +251,10 @@ const TarifPricingPlan = ({ plans = [] }: { plans: string[] }) => {
                 <div className="relative">
                     <Swiper
                         modules={[Pagination, Navigation]}
-                        spaceBetween={16}
+                        spaceBetween={5}
                         slidesPerView={1}
                         navigation={true}
-                        className="xl:!hidden !overflow-y-visible  w-full [&_.swiper-button-next]:bg-white/90 hover:[&_.swiper-button-next]:bg-gray-100/90 [&_.swiper-button-next]:right-0 [&_.swiper-button-prev]:left-0 [&_.swiper-button-next]:rounded-full [&_.swiper-button-next]:!size-20 [&_.swiper-button-next]:shadow-md [&_.swiper-button-prev]:bg-white/90 hover:[&_.swiper-button-prev]:bg-gray-100/90 [&_.swiper-button-prev]:rounded-full [&_.swiper-button-prev]:!size-20 [&_.swiper-button-prev]:shadow-md [&_.swiper-button-next::after]:text-purple-600 [&_.swiper-button-prev::after]:text-purple-600 [&_.swiper-button-next::after]:!text-3xl [&_.swiper-button-prev::after]:!text-3xl [&_.swiper-button-next]:z-10 [&_.swiper-button-prev]:z-10"
+                        className="xl:!hidden !overflow-visible [&_.swiper-button-disabled]:!hidden  w-full [&_.swiper-button-next]:bg-white hover:[&_.swiper-button-next]:bg-gray-100 [&_.swiper-button-next]:right-10 [&_.swiper-button-prev]:left-10 [&_.swiper-button-next]:rounded-full [&_.swiper-button-next]:!size-[46px] [&_.swiper-button-next]:shadow-[0px_5px_10px_0px_#00000033] [&_.swiper-button-prev]:bg-white hover:[&_.swiper-button-prev]:bg-gray-100 [&_.swiper-button-prev]:rounded-full [&_.swiper-button-prev]:!size-[46px] [&_.swiper-button-prev]:shadow-[0px_5px_10px_0px_#00000033] [&_.swiper-button-next::after]:text-purple-600 [&_.swiper-button-prev::after]:text-purple-600 [&_.swiper-button-next::after]:!text-xl [&_.swiper-button-next::after]:!font-bold [&_.swiper-button-prev::after]:!text-xl [&_.swiper-button-prev::after]:!font-bold [&_.swiper-button-next]:z-10 [&_.swiper-button-prev]:z-10"
                     >
                         <SwiperSlide>
                             <div className='flex justify-center'>

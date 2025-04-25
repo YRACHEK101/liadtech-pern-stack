@@ -9,7 +9,7 @@ const AIChatBotFloatingButton = () => {
         <div className='fixed z-10 bottom-10 right-10 flex flex-col justify-end'>
             {/* Chat bubble container */}
             <div
-                className={` mb-5 w-80 overflow-hidden sm:w-96 h-[500px] bg-white rounded-2xl shadow-xl transition-all duration-200 transform ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4 pointer-events-none'
+                className={` mb-5 w-80 overflow-hidden sm:w-96 h-[500px] bg-white rounded-2xl shadow-xl transition-all duration-200 transform ${isOpen ? 'opacity-100 translate-y-0 hi' : 'opacity-0 translate-y-4 hidden pointer-events-none'
                     }`}
             >
                 <iframe

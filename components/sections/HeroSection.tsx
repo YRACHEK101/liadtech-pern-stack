@@ -7,11 +7,11 @@ import Image from 'next/image'
 const HeroSection = () => {
     const youtubeModalRef = useRef<ModalRef>(null)
     return (
-        <section className="container sm:px-20 xl:px-0  w-full mx-auto pt-16 pb-12">
-            <div className="grid grid-cols-1 xl:grid-cols-2 gap-2 items-center">
+        <section className="sm:container px-5 sm:px-20 xl:px-0  w-full mx-auto pt-16 pb-12">
+            <div className="grid grid-cols-1 xl:grid-cols-2  gap-2 items-center">
                 <div className="  z-10 ">
 
-                    <h1 className="text-[#2f1c6a] font-bold scale-y-95 mb-2 text-3xl xl:text-4xl">
+                    <h1 className="text-[#2f1c6a] font-bold scale-y-95 mb-2 text-2xl sm:text-3xl xl:text-4xl">
                     Plus de visibilité. Plus de clients. Moins de stress.
                     </h1>
                     <p className="text-lg text-[#2f1c6a] mb-6 font-bold">
