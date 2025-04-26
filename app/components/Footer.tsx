@@ -11,7 +11,7 @@ export default function Footer() {
         backgroundSize:'60% 90%',
       }}
       >
-      <div className="w-full px-10  mx-auto">
+      <div className="w-full px-4 sm:px-10 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 mb-10 ">
           {/* Footer Column 1 */}
           <div className="lg:col-span-1 xl:col-span-1 -mt-12 lg:pl-10">

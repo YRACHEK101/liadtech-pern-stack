@@ -50,33 +50,33 @@ const page = () => {
     return (
         <div>
             <div className=' bg-[#CC9EFF]'>
-            <section className=' container mx-auto overflow-hidden grid grid-cols-1 xl:grid-cols-2 px-4 md:px-10 pt-20'>
-                <div className='flex flex-col text-[#2D1F67] self-center '>
-                    <h2 className='text-3xl md:text-4xl lg:text-6xl font-bold !text-left'>
+            <section className=' container mx-auto overflow-hidden grid grid-cols-1 xl:grid-cols-2 px-4 md:px-10 pt-4 xl:pt-20'>
+                <div className='flex flex-col self-center '>
+                    <h2 className='text-[#2f1c6a] font-bold mb-3 sm:mb-4 text-2xl sm:text-3xl xl:text-4xl'>
                         Un site qui vous ressemble.Conçu pour convertir… et séduire vos clients.
                     </h2>
-                    <span className='font-bold md:text-xl lg:text-2xl'>
-                        Sites vitrines, e-commerce ou applications sur-mesure :
+                    <span className='text-base sm:text-lg text-[#2f1c6a] mb-4 sm:mb-6 font-bold'>
+                        Sites vitrines, e-commerce ou applications sur-mesure:
                     </span>
-                    <span className='text-[18px] md:text-[22px] mb-8 md:mb-16'>
+                    <span className='text-base sm:text-lg text-[#2f1c6a] mb-4 sm:mb-16 font-normal'>
                         offrez à vos visiteurs une expérience fluide, gagnez en visibilité, en crédibilité… et en clients.
                     </span>
                     <Link href="/create-my-website" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap">
                             Créer mon site web
                     </Link>
                 </div>
-                <Image src="/Liadtech/Accueil/image 1 section 4.svg" width={0} height={0} className='w-auto mx-auto h-auto mb-10 md:mb-20' alt='hero' />
+                <Image src="/Liadtech/Accueil/image 1 section 4.svg" width={0} height={0} className='w-auto h-auto' alt='pic' />
             </section>
             </div>
             <TrustedByClientsSection />
             {/* Pricing Table Section */}
             <PricingPacksSection />
 
-            <section className='bg-[#2D1F67]  md:pl-[66px] py-16 md:py-[132px] text-white'>
-                <div className='flex container mx-auto flex-col xl:flex-row relative'>
+            <section className='bg-[#2D1F67]  md:pl-[66px] py-16 md:py-[132px] text-white mb-16'>
+                <div className='sm:container px-4 sm:px-0 mx-auto grid grid-cols-1 xl:grid-cols-2 relative'>
                     <div className='flex flex-col gap-4 md:gap-7 z-10'>
-                        <span className='font-bold text-3xl md:text-4xl lg:text-5xl'>Types de sites que vous pouvez créer</span>
-                        <span className='font-bold text-sm md:text-base'>Ne perdez plus de temps avec les démarches techniques. Créez, animez et propulsez votre image grâce à nos packs 100% clé-en-main.</span>
+                        <span className='font-bold text-2xl sm:text-3xl xl:text-4xl'>Types de sites que vous pouvez créer</span>
+                        <span className='font-bold md:text-lg'>Ne perdez plus de temps avec les démarches techniques. Créez, animez et propulsez votre image grâce à nos packs 100% clé-en-main.</span>
                         <div className='flex flex-col gap-3 md:gap-4'>
                             {sitesTypes.map((site, index) => (
                                 <div key={index} className='flex gap-3'>
@@ -85,18 +85,18 @@ const page = () => {
                                     </svg>
                                     <div className='flex flex-col'>
                                         <span className='font-bold text-sm md:text-base'>{site.title}</span>
-                                        <span className='text-xs md:text-sm font-light w-11/12'>{site.description}</span>
+                                        <span className='text-xs md:text-sm font-normal w-11/12'>{site.description}</span>
                                     </div>
                                 </div>
                             ))}
                         </div>
                     </div>
-                    <Image src="/images/digital web Section 1 (1).svg" width={0} height={0} className=' xl:absolute w-auto h-auto right-0 bottom-0 z-0' alt='section-image' />
+                    <Image src="/images/digital web Section 1 (1).svg" width={0} height={0} className='w-auto h-auto' alt='pic' />
                 </div>
-                <div className='flex container mx-auto flex-col xl:flex-row items-center mt-10 md:mt-20'>
-                    <Image src="/images/digital web.svg" width={0} height={0} className='w-auto h-auto' alt='section-image' />
-                    <div className='flex flex-col gap-4 md:gap-7 pt-10 md:pt-20 md:pr-20 md:right-20'>
-                        <span className='font-bold text-3xl md:text-5xl'>
+                <div className='sm:container px-4 sm:px-0 mx-auto grid grid-cols-1 gap-5 xl:grid-cols-2 items-center mt-10 md:mt-20'>
+                    <Image src="/images/digital web.svg" width={0} height={0} className='w-auto h-auto' alt='pic' />
+                    <div className='flex flex-col gap-4 md:gap-7 '>
+                        <span className='font-bold text-2xl sm:text-3xl xl:text-4xl'>
                             Ce que votre site inclut
                         </span>
                         <div className='flex flex-col gap-3 md:gap-4'>
@@ -106,7 +106,7 @@ const page = () => {
                                         <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
                                     <div className='flex flex-col'>
-                                        <span className='font-bold text-sm md:text-base'>{site}</span>
+                                        <span className='font-bold md:text-lg'>{site}</span>
                                     </div>
                                 </div>
                             ))}
@@ -114,12 +114,13 @@ const page = () => {
                     </div>
                 </div>
             </section>
-            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-16 md:py-[110px] overflow-hidden'>
-                <div className='flex  flex-col'>
-                    <h2 className='text-3xl md:text-4xl lg:text-6xl font-bold !text-left'>
+            
+            <section className='grid grid-cols-1 xl:grid-cols-2 container mx-auto px-4 md:px-16 overflow-hidden mb-16'>
+                <div className='flex  flex-col xl:p-7'>
+                    <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left'>
                         Pourquoi un bon site change tout
                     </h2>
-                    <span className='text-[18px] md:text-[22px] font-light text-[#673DE6] mb-8 md:mb-12'>
+                    <span className='text-base sm:text-lg font-normal text-[#673DE6] mb-8 md:mb-12'>
                         Un site bien conçu, ce n'est pas juste un beau design.C'est un outil de croissance qui travaille pour vous, même quand vous dormez.
                     </span>
 
@@ -167,19 +168,19 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-                <Image src={"/images/Site web.svg"} width={0} height={0} className='w-auto xl:!-mt-[110px] h-auto' alt='pic' />
+                <Image src={"/images/Site web.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
             </section>
-            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-16 md:py-[110px]'>
+            <section className='grid grid-cols-1 xl:grid-cols-2 container mx-auto px-4 md:px-16 mb-16 '>
                 <Image src={"/images/SEO 7.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
-                <div className='flex flex-col'>
-                    <h2 className='text-3xl md:text-4xl lg:text-6xl font-bold !text-left'>
+                <div className='flex flex-col xl:p-7'>
+                    <h2 className=' font-bold text-2xl sm:text-3xl xl:text-4xl !text-left'>
                         Prêt à lancer un site qui vous apporte de vrais résultats ?
                     </h2>
-                    <span className='text-[18px] md:text-[22px] font-light text-[#673DE6] mb-8 md:mb-12'>
+                    <span className='md:text-lg font-normal text-[#673DE6] mb-8 md:mb-12'>
                         Parlez à un expert LIADTECH ou démarrez votre projet en quelques clics.
                     </span>
 
-                    <div className='flex flex-col gap-6 md:gap-8'>
+                    <div className='flex flex-col  gap-6 md:gap-8'>
                         <div className='flex items-center gap-3'>
                             <Image src={"/images/hand-finger.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
                             <span className='text-sm md:text-base'>
