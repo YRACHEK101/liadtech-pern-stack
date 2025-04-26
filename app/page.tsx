@@ -184,22 +184,30 @@ export default function Home() {
 
             <div className="flex flex-col gap-4 text-[#2D1F67] text-base font-normal ">
               <div className="flex items-center gap-2">
-                <Image src={"/Liadtech/Accueil/icones/Vector 10.png"} width={16} height={18} alt="check mark" />
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="text-[#00b090]">
+                                        <path fill="currentColor" d="M21.046 5.955c.439.439.439 1.151 0 1.59l-9.538 9.539a1.425 1.425 0 0 1-2.016 0l-4.288-4.288a1.125 1.125 0 0 1 1.591-1.591l3.705 3.704 8.954-8.954c.44-.44 1.152-.44 1.591 0Z"></path>
+                                    </svg>
                 <span>Avancement, tâches et échéances</span>
               </div>
 
               <div className="flex items-center gap-2">
-                <Image src={"/Liadtech/Accueil/icones/Vector 10.png"} width={16} height={18} alt="check mark" />
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="text-[#00b090]">
+                                        <path fill="currentColor" d="M21.046 5.955c.439.439.439 1.151 0 1.59l-9.538 9.539a1.425 1.425 0 0 1-2.016 0l-4.288-4.288a1.125 1.125 0 0 1 1.591-1.591l3.705 3.704 8.954-8.954c.44-.44 1.152-.44 1.591 0Z"></path>
+                                    </svg>
                 <span>Commentaires et retours simplifiés</span>
               </div>
 
               <div className="flex items-center gap-2">
-                <Image src={"/Liadtech/Accueil/icones/Vector 10.png"} width={16} height={18} alt="check mark" />
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="text-[#00b090]">
+                                        <path fill="currentColor" d="M21.046 5.955c.439.439.439 1.151 0 1.59l-9.538 9.539a1.425 1.425 0 0 1-2.016 0l-4.288-4.288a1.125 1.125 0 0 1 1.591-1.591l3.705 3.704 8.954-8.954c.44-.44 1.152-.44 1.591 0Z"></path>
+                                    </svg>
                 <span>Validations centralisées</span>
               </div>
 
               <div className="flex items-center gap-2">
-                <Image src={"/Liadtech/Accueil/icones/Vector 10.png"} width={16} height={18} alt="check mark" />
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="text-[#00b090]">
+                                        <path fill="currentColor" d="M21.046 5.955c.439.439.439 1.151 0 1.59l-9.538 9.539a1.425 1.425 0 0 1-2.016 0l-4.288-4.288a1.125 1.125 0 0 1 1.591-1.591l3.705 3.704 8.954-8.954c.44-.44 1.152-.44 1.591 0Z"></path>
+                                    </svg>
                 <span>Échanges directs avec notre équipe</span>
               </div>
             </div>
@@ -213,8 +221,8 @@ export default function Home() {
 
 
       {/* Support Section */}
-      <section className="py-16 md:py-24 lg:py-36 w-full container sm:px-20 xl:px-4  mx-auto">
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 items-center">
+      <section className="py-16 md:py-24 lg:py-36 w-full px-4 sm:container sm:px-28 xl:px-4  mx-auto">
+        <div className="flex flex-col xl:flex-row gap-8 xl:items-center justify-center">
           <div className="flex flex-col gap-3 text-[#2D1F67] text-base font-normal">
             <h3 className="text-2xl md:text-[28px] leading-[36px] lg:text-4xl  font-bold">
               Support & réactivité 24/7
@@ -249,7 +257,7 @@ export default function Home() {
             </div>
 
           </div>
-          <Image src={"/Liadtech/Accueil/Support section 10.svg"} width={0} height={410} className="w-full h-auto" alt="Support" />
+          <Image src={"/Liadtech/Accueil/Support section 10.svg"} width={0} height={0} className="w-auto h-auto" alt="Support" />
         </div>
       </section>
 
@@ -359,6 +367,7 @@ export function PricingTable({ hideTitle = false }) {
       [card]: !prev[card]
     }));
   };
+  
 
   return (
     <div className="w-full max-w-6xl mx-auto  py-8 sm:py-12 lg:py-16">

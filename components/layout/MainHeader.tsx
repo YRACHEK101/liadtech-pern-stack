@@ -432,7 +432,6 @@ const MainHeader = () => {
                         </button>
                         <div className="absolute hidden group-hover:block left-0 pt-16 opacity-0 w-screen max-w-[1044px] transform -translate-x-1/2 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50  ">
                             <div className=" bg-white pl-[88px] shadow-md shadow-black/25 rounded-md pb-12 pt-6 pr-10 ">                  <h3 className="text-lg text-gray-700 mb-6 italic pl-11">Tout ce qu'il vous faut pour suivre ou gérer vos projets</h3>
-
                                 <div className="flex gap-16">
                                     <div className="flex flex-col gap-8">
                                         <div className="flex">
