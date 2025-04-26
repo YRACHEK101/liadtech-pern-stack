@@ -63,7 +63,7 @@ const page = () => {
                             Créer mon Application mobile
                     </Link>
                 </div>
-                <Image src="/images/App mobile.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
+                <Image src="/images/Création du l'app.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
                 </section>
             </div>
             <TrustedByClientsSection />
@@ -126,9 +126,9 @@ const page = () => {
                 </div>
             </section>
             <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-[50px] md:py-[110px]'>
-                <Image src={"/images/Création du l'app.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
+                <Image src={"/images/App mobile.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
                 <div className='flex flex-col items-center md:items-end mt-8 md:mt-0'>
-                    <h2 className='text-3xl md:text-4xl lg:text-6xl font-bold !text-left mb-9 text-center md:text-left'>
+                    <h2 className='text-3xl md:text-4xl lg:text-6xl font-bold !text-left mb-9'>
                         Des applications sur mesure pour chaque besoin
                     </h2>
 

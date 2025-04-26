@@ -196,7 +196,7 @@ const MainHeader = () => {
                                                 </span>
                                             </div>
                                         </Link>
-                                        <div className="flex gap-3">
+                                        <Link href={"/services/creation-logo"} className="flex gap-3" onClick={toggleDrawer}>
                                             <Image src={"/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-50-44.png"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                                             <div className="flex flex-col flex-1  ">
                                                 <span className="font-bold">
@@ -206,7 +206,7 @@ const MainHeader = () => {
                                                     Apportez du rythme à votre identité visuelle
                                                 </span>
                                             </div>
-                                        </div>
+                                        </Link>
                                         <Link href="/services/animations-narratives" className="flex gap-3" onClick={toggleDrawer}>
                                             <Image src={"/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-44-29.png"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                                             <div className="flex flex-col flex-1  ">
@@ -218,7 +218,7 @@ const MainHeader = () => {
                                                 </span>
                                             </div>
                                         </Link>
-                                        <div className="flex gap-3">
+                                        <Link href={"/services/design-graphique"} className="flex gap-3" onClick={toggleDrawer}>
                                             <Image src={"/images/brush.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                                             <div className="flex flex-col flex-1  ">
                                                 <span className="font-bold">
@@ -228,7 +228,7 @@ const MainHeader = () => {
                                                     Créations pour vos réseaux, sites web ou présentations
                                                 </span>
                                             </div>
-                                        </div>
+                                        </Link>
                                         <Link href={"/services/design-ux-ui"} className="flex gap-3" onClick={toggleDrawer}>
                                             <Image src={"/images/Group 170 (1).svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                                             <div className="flex flex-col flex-1  ">
@@ -280,7 +280,7 @@ const MainHeader = () => {
                                                 </span>
                                             </div>
                                         </Link>
-                                        <div className="flex gap-3">
+                                        <Link href={"/services/creation-sites-web"} className="flex gap-3" onClick={toggleDrawer}>
                                             <Image src={"/images/Group 170.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                                             <div className="flex flex-col flex-1  ">
                                                 <span className="font-bold">
@@ -290,7 +290,7 @@ const MainHeader = () => {
                                                     MVP, dashboard, app métier full stack
                                                 </span>
                                             </div>
-                                        </div>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -307,7 +307,7 @@ const MainHeader = () => {
                                     </a>
                                 </div>
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                                    <div className="flex gap-3">
+                                    <Link href={"/services/chatbots"} className="flex gap-3" onClick={toggleDrawer}>
                                         <Image src={"/images/cloud-computing-security-robot.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                                         <div className="flex flex-col flex-1  ">
                                             <span className="font-bold">
@@ -317,7 +317,7 @@ const MainHeader = () => {
                                                 Automatisez vos échanges avec des bots intelligents
                                             </span>
                                         </div>
-                                    </div>
+                                    </Link>
                                     <Link href={"/services/automatisation-ia"} className="flex gap-3" onClick={toggleDrawer}>
                                         <Image src={"/images/Group 140.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                                         <div className="flex flex-col flex-1  ">
@@ -329,7 +329,7 @@ const MainHeader = () => {
                                             </span>
                                         </div>
                                     </Link>
-                                    <div className="flex gap-3">
+                                    <Link href={"/services/audit-securite"} className="flex gap-3" onClick={toggleDrawer}>
                                         <Image src={"/images/Group 146.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                                         <div className="flex flex-col flex-1  ">
                                             <span className="font-bold">
@@ -339,7 +339,7 @@ const MainHeader = () => {
                                                 Analyse complète de vos failles web, API, infra
                                             </span>
                                         </div>
-                                    </div>
+                                    </Link>
                                     <Link href={"/services/security-and-compliance"} className="flex gap-3" onClick={toggleDrawer}>
                                         <Image src={"/images/Group 147.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                                         <div className="flex flex-col flex-1  ">

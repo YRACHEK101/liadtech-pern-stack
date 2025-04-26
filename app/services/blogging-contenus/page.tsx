@@ -51,22 +51,22 @@ const page = () => {
             <div className='bg-[#DDBFFF]'>
                 <section className='overflow-hidden grid container mx-auto xl:grid-cols-2 grid-cols-1 px-4 md:px-[48px] gap-8'>
                     <div className='flex flex-col text-[#2D1F67] self-center'>
-                    <h2 className='text-3xl md:text-4xl lg:text-6xl font-bold !text-left'>
-                        Des contenus pensés pour Google, mais écrits pour vos clients.
-                    </h2>
-                    <span className='text-base md:text-xl lg:text-2xl mb-6 md:mb-9'>
-                        Nous créons une stratégie éditoriale complète — articles, pages, contenus SEO-friendly — qui attire, convainc et améliore durablement votre visibilité.
-                    </span>
+                        <h2 className='text-3xl md:text-4xl lg:text-6xl font-bold !text-left'>
+                            Des contenus pensés pour Google, mais écrits pour vos clients.
+                        </h2>
+                        <span className='text-base md:text-xl lg:text-2xl mb-6 md:mb-9'>
+                            Nous créons une stratégie éditoriale complète — articles, pages, contenus SEO-friendly — qui attire, convainc et améliore durablement votre visibilité.
+                        </span>
 
-                    <div className='flex flex-col md:flex-row gap-4 pb-4'>
-                        <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-3 md:px-[31px] py-[10px] self-start mb-4 whitespace-nowrap">
+                        <div className='flex flex-col md:flex-row gap-4 pb-4'>
+                            <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-3 md:px-[31px] py-[10px] self-start mb-4 whitespace-nowrap">
                                 Créer ma stratégie de contenus
-                        </Link>
-                        <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-3 md:px-[31px] py-[10px] self-start mb-4 whitespace-nowrap">
+                            </Link>
+                            <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-3 md:px-[31px] py-[10px] self-start mb-4 whitespace-nowrap">
                                 Voir des exemples d'articles performants
-                        </Link>
+                            </Link>
+                        </div>
                     </div>
-                </div>
                     <Image src="/images/Bloggin et contenu.svg" width={0} height={0} className='w-full md:w-auto h-auto mb-5' alt='hero' />
                 </section>
             </div>

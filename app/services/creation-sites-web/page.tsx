@@ -65,7 +65,7 @@ const page = () => {
                             Créer mon site web
                     </Link>
                 </div>
-                <Image src="/images/digital web.svg" width={0} height={0} className='w-auto mx-auto h-auto mb-10 md:mb-20' alt='hero' />
+                <Image src="/Liadtech/Accueil/image 1 section 4.svg" width={0} height={0} className='w-auto mx-auto h-auto mb-10 md:mb-20' alt='hero' />
             </section>
             </div>
             <TrustedByClientsSection />
@@ -94,7 +94,7 @@ const page = () => {
                     <Image src="/images/digital web Section 1 (1).svg" width={0} height={0} className=' xl:absolute w-auto h-auto right-0 bottom-0 z-0' alt='section-image' />
                 </div>
                 <div className='flex container mx-auto flex-col xl:flex-row items-center mt-10 md:mt-20'>
-                    <Image src="/images/digital Web Section 2.svg" width={0} height={0} className='w-auto h-auto' alt='section-image' />
+                    <Image src="/images/digital web.svg" width={0} height={0} className='w-auto h-auto' alt='section-image' />
                     <div className='flex flex-col gap-4 md:gap-7 pt-10 md:pt-20 md:pr-20 md:right-20'>
                         <span className='font-bold text-3xl md:text-5xl'>
                             Ce que votre site inclut

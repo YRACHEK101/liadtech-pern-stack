@@ -1,4 +1,5 @@
 import PricingPacksSection from '@/components/sections/PricingPacksSection'
+import TrustedByClientsSection from '@/components/sections/TrustedByClientsSection'
 import TarifPricingPlan from '@/components/tarifs/TarifPricingPlan'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -26,82 +27,182 @@ const features2 = [
 const page = () => {
     return (
         <div>
-            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-10'>
-                <div className='flex flex-col gap-7 pt-10 md:pt-20 pr-0 md:pr-20 z-10'>
-                    <span className='font-bold text-3xl md:text-4xl lg:text-6xl text-[#2D1F67]'>
-                        Expliquez votre concept
-                        en 30 secondes chrono.
-                    </span>
-                    <span className='font-bold text-[#2D1F67] text-base md:text-xl lg:text-2xl'>
-                        Attirez l'attention, simplifiez votre message et boostez vos conversions avec une animation 2D claire, moderne et percutante.
-                    </span>
-                    <div className='flex flex-col'>
-                        {features.map((site, index) => (
-                            <div key={index} className='flex gap-4 md:gap-[25px]'>
-                                <Image src={"/Liadtech/Accueil/icones/Vector 10.png"} width={0} height={0} className='!size-5 self-center' alt='pic' />
-                                <div className='flex flex-col'>
-                                    <span className='text-base md:!text-[20px]'>{site}</span>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                    <div className='flex flex-col md:flex-row items-start md:items-center gap-4'>
-                        <div className="text-5xl md:text-[85px] font-bold text-[#2D1F67]">750€</div>
-                        <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap flex items-center gap-2">
-                            <span>
-                                Profiter de l'offre
-                            </span>
-                            <Image src={"/images/Group 96.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
-                        </Link>
-                    </div>
-                </div>
-                <Image src={"/images/Ux ui.svg"} width={0} height={0} className='w-auto mx-auto origin-top-right scale-100 xl:scale-[120%] pt-10 z-0 h-auto' alt='pic' />
-            </section>
-            <PricingPacksSection />
-            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 pb-20 bg-[#2D1F67]'>
-                <div className='flex flex-col gap-7 pt-16 md:pt-32 pr-0 md:pr-20 text-white'>
-                    <span className='font-bold text-3xl md:text-4xl lg:text-6xl'>
-                        Lancez votre marque avec impact, développez sans limites.
-                    </span>
-                    <span className='font-bold text-base md:text-xl lg:text-2xl'>
-                        Ne perdez plus de temps avec les démarches techniques. Créez, animez et propulsez votre image grâce à nos packs 100% clé-en-main.
-                    </span>
-                    <div className='flex flex-col gap-4'>
-                        {features2.map((site, index) => (
-                            <div key={index} className='flex gap-3'>
-                                <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                                <div className='flex flex-col'>
-                                    <span className='text-base md:!text-[20px]'>{site}</span>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                    <div className='text-base md:text-lg'>
-                        Idéal pour les marques ambitieuses qui veulent se démarquer sur les réseaux et au-delà.
-                    </div>
-                </div>
-                <Image src={"/images/UXUI section une.svg"} width={0} height={0} className='w-auto origin-top-right scale-100 md:scale-y-125 md:scale-x-110 h-auto' alt='pic' />
-            </section>
-            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 bg-[#2D1F67] py-20 md:py-36 gap-10'>
-                <Image src={"/images/UXUI section deux.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
+            <div className='bg-[#2D1F67]'>
+                <section className='overflow-hidden grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 pt-10 md:px-[42px]'>
+                    <div className='flex flex-col text-white z-10 self-center py-8 md:py-0'>
+                        <h2 className='text-3xl md:text-4xl lg:text-6xl font-bold !text-left !text-white'>
+                            Ce n’est pas à l’utilisateur de s’adapter au design.C’est au design de s’adapter à l’utilisateur.                    </h2>
+                        <span className='text-base md:text-xl lg:text-2xl mb-9'>
+                            Chaque parcours, chaque interaction, chaque détail est pensé pour être fluide… Et donc performant.
+                        </span>
 
-                <div className='flex flex-col gap-7 pr-0 md:pr-20 text-white'>
-                    <span className='font-bold text-3xl md:text-4xl lg:text-6xl'>
-                        Donnez vie à votre message avec des animations percutantes
-                    </span>
-                    <div className='flex flex-col gap-4'>
-                        {features2.map((site, index) => (
-                            <div key={index} className='flex gap-3'>
+                        <div className='flex flex-col md:flex-row gap-4'>
+                            <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-5 lg:px-[31px] py-[10px] self-start mb-4 whitespace-nowrap flex items-center gap-2">
+                                Améliorer mon interface
+                            </Link>
+                            <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-5 lg:px-[31px] py-[10px] self-start mb-4 whitespace-nowrap flex items-center gap-2">
+                                Voir un avant/après UX
+                            </Link>
+                        </div>
+                    </div>
+                    <Image src={"/images/Ux ui.svg"} width={0} height={0} className='w-auto mx-auto origin-top-right scale-100 xl:scale-[120%] pt-10 z-0 h-auto' alt='pic' />
+
+                </section>
+            </div>
+            <TrustedByClientsSection />
+
+            <PricingPacksSection />
+            <div className='bg-[#2D1F67]'>
+                <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 pb-20 '>
+                    <div className='flex flex-col gap-7 pt-16 md:pt-32 pr-0 md:pr-20 text-white'>
+                        <span className='font-bold text-3xl md:text-4xl lg:text-6xl'>
+                            Un bon design ne s’impose pas. Il se ressent
+                            sans même y penser.
+                        </span>
+                        <span className='font-bold text-base md:text-xl lg:text-2xl'>
+                            Une bonne interface se fait oublier. Elle rassure, stimule l’action, et rend chaque clic évident.          
+                                          </span>
+                        <div className='flex flex-col gap-4'>
+                            {features2.map((site, index) => (
+                                <div key={index} className='flex gap-3'>
+                                    <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+                                    </svg>
+                                    <div className='flex flex-col'>
+                                        <span className='text-base md:!text-[20px]'>{site}</span>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                    <Image src={"/images/UI UX 1.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
+                </section>
+                <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 bg-[#2D1F67] py-20 md:py-36 gap-10'>
+                    <Image src={"/images/UXUI section une.svg"} width={0} height={0} className='w-auto origin-top-right scale-100 md:scale-y-125 md:scale-x-110 h-auto' alt='pic' />
+                    <div className='flex flex-col gap-7 pr-0 md:pr-20 text-white'>
+                        <span className='font-bold text-3xl md:text-4xl lg:text-6xl'>
+                        Pas de modèles tout faits. Pas de design au hasard.
+                                                </span>
+                                                <span className='font-bold text-base md:text-xl lg:text-2xl'>
+                                                Un process structuré, centré sur vos objectifs.
+                                                                                          </span>
+                        <div className='flex flex-col gap-4'>
+                            {features2.map((site, index) => (
+                                <div key={index} className='flex gap-3'>
+                                    <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+                                    </svg>
+                                    <div className='flex flex-col'>
+                                        <span className='text-base md:!text-[20px]'>{site}</span>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section className='px-4 md:pl-10 grid grid-cols-1 container mx-auto xl:grid-cols-2'>
+                <div className='flex flex-col gap-6 pt-8 md:pt-[151px] text-[#2D1F67]'>
+                    <div className='text-3xl md:text-4xl lg:text-6xl font-bold'>
+                    On ne reste pas sur un site bien codé.
+                    </div>
+                    <div className='font-bold text-xl md:text-2xl lg:text-3xl'>
+                        On reste sur un site bien pensé.
+                    </div>
+                    <div>
+                        Analyse de votre marché, positionnement, objectifs… Pas de posts inutiles, pas de pubs jetées au hasard. Une stratégie sur-mesure, testée, mesurée, ajustée chaque semaine.
+                    </div>
+                </div>
+                <Image src="/images/UI UX 2.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
+            </section>
+            <section className='px-4 md:pl-10 grid grid-cols-1 container mx-auto xl:grid-cols-2'>
+                <Image src="/images/UI UX 4.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
+
+                <div className='flex flex-col gap-6 pt-8 md:!pt-[151px] text-[#2D1F67]'>
+                    <div className='text-3xl md:text-4xl lg:text-6xl font-bold'>
+                        Nos services inclus
+                    </div>
+                    <div className='flex flex-col gap-4 '>
+                        {features.map((site, index) => (
+                            <div key={index} className='flex  gap-3'>
                                 <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                                 <div className='flex flex-col'>
-                                    <span className='text-base md:!text-[20px]'>{site}</span>
+                                    <span className=''>{site}</span>
                                 </div>
                             </div>
                         ))}
+                    </div>
+                </div>
+            </section>
+            <section className='bg-[#DDBFFF]'>
+                <div className='grid grid-cols-1 container mx-auto xl:grid-cols-2'>
+                    <div className='flex flex-col pt-8 md:pt-28 z-10 px-4 md:px-0'>
+                        <h2 className='text-3xl md:text-4xl lg:text-6xl font-bold !text-left mb-9'>
+                            Ce que vous gagnez avec nos Bénéfice
+                        </h2>
+
+                        <div className='flex flex-col gap-8'>
+                            <div className='flex items-center gap-3'>
+                                <span className='w-20' ></span>
+                                <div className='flex-1 flex flex-col'>
+                                    <span className='font-medium text-[24px] text-[#2D1F67] '>
+                                        Stratégie 360° centrée conversion
+                                    </span>
+                                </div>
+
+                            </div>
+                            <div className='flex items-center gap-3'>
+                                <span className='w-20' ></span>
+
+
+                                <div className='flex-1 flex flex-col'>
+                                    <span className='font-medium text-[24px] text-[#2D1F67] '>
+                                        Équipe multidisciplinaire (dev, pub, contenu, graphisme, SEO)
+                                    </span>
+                                </div>
+
+                            </div>
+                            <div className='flex items-center gap-3'>
+                                <span className='w-20' ></span>
+
+                                <div className='flex-1 flex flex-col'>
+                                    <span className='font-medium text-[24px] text-[#2D1F67] '>
+                                        Suivi régulier, résultats mesurés
+                                    </span>
+                                </div>
+
+                            </div>
+                            <div className='flex items-center gap-3'>
+                                <span className='w-20' ></span>
+
+                                <div className='flex-1 flex flex-col    '>
+                                    <span className='font-medium text-[24px] text-[#2D1F67] '>
+                                        Expertise avancée en acquisition & croissance digitale
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <Image src="/images/UI UX 3.svg" width={0} height={0} className='w-auto h-auto mb-5 scale-100 md:scale-125 origin-left z-0' alt='hero' />
+
+                </div>
+                <div className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-8 md:py-[110px]'>
+                    <Image src="/images/UI UX 6.svg" width={0} height={0} className='w-auto h-auto mb-5 origin-left z-0' alt='hero' />
+
+                    <div className='flex flex-col gap-4'>
+                        <h2 className='text-3xl md:text-4xl lg:text-6xl font-bold !text-left'>
+                            Passez à l'action dès maintenant.
+                        </h2>
+                        <h3 className='text-xl md:text-2xl lg:text-3xl font-medium text-[#2D1F67]'>
+                            Confiez-nous votre stratégie digitale, et observez les résultats.
+                        </h3>
+                        <Link href="/create-my-app-mobile" className="bg-[#673de6] self-start hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px]">
+                            Créer ma stratégie digitale sur mesure
+                        </Link>
                     </div>
                 </div>
             </section>

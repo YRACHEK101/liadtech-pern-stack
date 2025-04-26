@@ -48,7 +48,7 @@ const sitesFeatures = [
 const page = () => {
     return (
         <div>
-            <section className='overflow-hidden grid grid-cols-1 md:grid-cols-2 px-4 md:px-[48px]'>
+            <section className='overflow-hidden grid grid-cols-1 md:grid-cols-2 px-4 sm:px-0 sm:container sm:mx-auto'>
                 <div className='flex flex-col text-[#2D1F67] self-center text-center md:text-left'>
                     <h2 className='!leading-[40px] md:!leading-[56px] !text-[32px] md:!text-[52px] font-bold'>
                         Une vidéo bien faite, c'est simple : elle explique, elle convainc, elle vend.
@@ -72,7 +72,7 @@ const page = () => {
             {/* Pricing Table Section */}
             <PricingPacksSection />
 
-            <section className='px-4 md:px-10 grid grid-cols-1 md:grid-cols-2 mb-20 md:mb-36'>
+            <section className='px-4 sm:px-0 sm:container sm:mx-auto grid grid-cols-1 md:grid-cols-2 mb-20 md:mb-36'>
                 <div className='flex flex-col gap-6 text-[18px] md:text-[20px] text-[#2D1F67] text-center md:text-left'>
                     <div className='text-4xl md:text-6xl font-bold'>
                         Une vidéo, c'est plus qu'un format. C'est un outil de conversion.
@@ -110,10 +110,10 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-                <Image src="/images/Blogging et contenu 5.svg" width={0} height={0} className='w-auto invisible h-auto mb-5' alt='hero' />
+                <Image src="/images/Frame 15708.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
             </section>
-            <section className='px-4 md:px-10 grid grid-cols-1 md:grid-cols-2 mb-20 md:mb-32'>
-                <Image src="/images/Blogging et contenu 4.svg" width={0} height={0} className='w-auto invisible h-auto mb-5 origin-left z-0 order-2 md:order-1' alt='hero' />
+            <section className='px-4 sm:px-0 sm:container sm:mx-auto grid grid-cols-1 md:grid-cols-2 mb-20 md:mb-32'>
+                <Image src="/images/explainer.svg" width={0} height={0} className='w-auto h-auto mb-5 order-2 md:order-1' alt='hero' />
                 <div className='flex flex-col gap-6 text-[#2D1F67] pt-6 md:pt-11 text-center md:text-left order-1 md:order-2'>
                     <div className='text-4xl md:text-6xl font-bold'>
                         Notre méthode de création
@@ -183,134 +183,125 @@ const page = () => {
 
             </section>
 
-            <section className='bg-[#2D1F67] pt-20 md:pt-60 px-4 md:px-11 pb-14'>
-                <section className='grid grid-cols-1 md:grid-cols-2 mb-20 md:mb-[88px]'>
-                    <div className='flex flex-col gap-6 text-[18px] md:text-[20px] text-white text-center md:text-left'>
-                        <div className='text-4xl md:text-6xl font-bold'>
-                            Nos services inclus
+            <section className='px-4 sm:px-0 sm:container sm:mx-auto grid grid-cols-1 md:grid-cols-2 mb-20 md:mb-36'>
+                <div className='flex flex-col gap-6 text-[18px] md:text-[20px] text-[#2D1F67] text-center md:text-left'>
+                    <div className='text-4xl md:text-6xl font-bold'>
+                        Nos services inclus
+                    </div>
+                    <div className='flex flex-col gap-5'>
+                        <div className='flex items-center gap-3'>
+                            <div className='bg-gray-300 size-11 rounded-full'></div>
+                            <div>
+                                Une vidéo 100 % personnalisée
+                            </div>
                         </div>
-                        <div className='flex flex-col gap-5'>
-                            <div className='flex items-center gap-3'>
-                                <div className='bg-gray-300 size-11 rounded-full'></div>
-                                <div>
-                                    Une vidéo 100 % personnalisée
-                                </div>
+                        <div className='flex items-center gap-3'>
+                            <div className='bg-gray-300 size-11 rounded-full'></div>
+                            <div>
+                                Voix-off pro (FR, EN ou autre langue)
                             </div>
-                            <div className='flex items-center gap-3'>
-                                <div className='bg-gray-300 size-11 rounded-full'></div>
-                                <div>
-                                    Gestion résVoix-off pro (FR, EN ou autre langue)
-                                </div>
+                        </div>
+                        <div className='flex items-center gap-3'>
+                            <div className='bg-gray-300 size-11 rounded-full'></div>
+                            <div>
+                                Illustrations sur-mesure, personnages, mascottes
                             </div>
-                            <div className='flex items-center gap-3'>
-                                <div className='bg-gray-300 size-11 rounded-full'></div>
-                                <div>
-                                    Illustrations sur-mesure, personnages, mascottes
-                                </div>
+                        </div>
+                        <div className='flex items-center gap-3'>
+                            <div className='bg-gray-300 size-11 rounded-full'></div>
+                            <div>
+                                Un message pensé pour convaincre, pas juste pour faire beau
                             </div>
-                            <div className='flex items-center gap-3'>
-                                <div className='bg-gray-300 size-11 rounded-full'></div>
-                                <div>
-                                    Un message pensé pour convaincre, pas juste pour faire beau
-                                </div>
+                        </div>
+                        <div className='flex items-center gap-3'>
+                            <div className='bg-gray-300 size-11 rounded-full'></div>
+                            <div>
+                                Livraison multi-format (HD, vertical, story, carré, LinkedIn…)
                             </div>
-                            <div className='flex items-center gap-3'>
-                                <div className='bg-gray-300 size-11 rounded-full'></div>
-                                <div>
-                                    Livraison multi-format (HD, vertical, story, carré, LinkedIn…)
-                                </div>
-                            </div>
-                            <div className='flex items-center gap-3'>
-                                <div className='bg-gray-300 size-11 rounded-full'></div>
-                                <div>
-                                    2 à 3 allers-retours inclus
-                                </div>
+                        </div>
+                        <div className='flex items-center gap-3'>
+                            <div className='bg-gray-300 size-11 rounded-full'></div>
+                            <div>
+                                2 à 3 allers-retours inclus inclus pour ajuster au plus juste
                             </div>
                         </div>
                     </div>
-                    <Image src="/images/Blogging et contenu 5.svg" width={0} height={0} className='w-auto invisible h-auto mb-5' alt='hero' />
-                </section>
-                <section className='grid grid-cols-1 md:grid-cols-2 mb-20 md:mb-36'>
-                    <Image src="/images/explainer.svg" width={0} height={0} className='w-auto h-auto mb-5 order-2 md:order-1' alt='hero' />
-                    <div className='flex flex-col gap-6 text-[18px] md:text-[20px] text-white text-center md:text-left order-1 md:order-2'>
-                        <div className='text-4xl md:text-6xl font-bold'>
-                            Une équipe créative complète. Et ça fait toute la différence.
+                </div>
+                <Image src="/images/Frame 15719.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
+            </section>
+            <section className="bg-[#2D1F67] pt-14 lg:pt-[64px] pb-12 md:pb-24 lg:pb-[159px] text-white flex flex-col gap-16 md:gap-32 lg:gap-48">
+                <div className="px-4 sm:px-0 sm:container sm:mx-auto flex flex-col items-center ">
+                    <div className="text-white text-2xl mb-6 md:text-[28px] md:leading-[36px] lg:text-4xl  font-bold text-center">
+                        Une équipe créative complète. Et ça fait toute la différence.
+                    </div>
+                    <div className="text-center font-normal mb-8 md:mb-12">
+                        Une vidéo n’est jamais faite à moitié.Elle est conçue par une équipe composée de :
+                    </div>
+                    <div className="flex flex-wrap gap-4 justify-center">
+                        <div className="bg-[#41308F] flex flex-col gap-2 shadow-lg rounded-xl p-8 w-[450px]">
+                            <div className="bg-[#9C51F1] rounded-lg p-2 mb-2 self-start size-10">
+                                {/* <Image src={"/Liadtech/Accueil/icones/sync_svgrepo.com.svg"} width={24} height={24} alt="Rectangle 97" /> */}
+                            </div>
+                            <span className="font-bold  text-lg">
+                                Brief créatif
+                            </span>
+                            <p className=" font-normal ">
+                                pour structurer votre message
+                            </p>
                         </div>
-                        <div className='font-bold text-xl '>
-                            Une vidéo n'est jamais faite à moitié.Elle est conçue par une équipe composée de :
+                        <div className="bg-[#41308F] flex flex-col gap-2 shadow-lg rounded-xl p-8 w-[450px]">
+                            <div className="bg-[#9C51F1] rounded-lg p-2 mb-2 self-start size-10">
+                                {/* <Image src={"/Liadtech/Accueil/icones/ruler-pencil_svgrepo.com.svg"} width={24} height={24} alt="Rectangle 97" /> */}
+
+                            </div>
+                            <span className="font-bold  text-lg">
+                                Illustrateurs & character designers
+                            </span>
+                            <p className=" font-normal text-base ">
+                                Pour des visuels uniques
+                            </p>
                         </div>
-                        <div className='flex flex-col gap-5 text-left'>
-                            <div className='flex items-center gap-3'>
-                                <div className='bg-gray-300 size-11 rounded-full'></div>
-                                <div className='flex-1'>
-                                    <div className='text-[24px] font-bold'>
-                                        Brief créatif
-                                    </div>
-                                    <div>
-                                        pour structurer votre message
+                        <div className="bg-[#41308F] flex flex-col gap-2 shadow-lg rounded-xl p-8 w-[450px]">
+                            <div className="bg-[#9C51F1] rounded-lg p-2 mb-2 self-start size-10">
 
-                                    </div>
-                                </div>
+                                {/* <Image src={"/Liadtech/Accueil/icones/face-smile_svgrepo.com.svg"} width={24} height={24} alt="Rectangle 97" /> */}
                             </div>
-                            <div className='flex items-center gap-3'>
-                                <div className='bg-gray-300 size-11 rounded-full'></div>
-                                <div className='flex-1'>
-                                    <div className='text-[24px] font-bold'>
-                                        Illustrateurs & character designers
-                                    </div>
-                                    <div>
-                                        pour des visuels uniques
+                            <span className="font-bold  text-lg">
+                                Animateurs spécialisés (motion & frame-by-frame)
+                            </span>
+                            <p className=" font-normal text-base ">
+                                Pour un rendu fluide, vivant, marquant
+                            </p>
+                        </div>
+                        <div className="bg-[#41308F] flex flex-col gap-2 shadow-lg rounded-xl p-8 w-[450px]">
+                            <div className="bg-[#9C51F1] rounded-lg p-2 mb-2 self-start size-10">
 
-                                    </div>
-                                </div>
+                                {/* <Image src={"/Liadtech/Accueil/icones/face-smile_svgrepo.com.svg"} width={24} height={24} alt="Rectangle 97" /> */}
                             </div>
-                            <div className='flex items-center gap-3'>
-                                <div className='bg-gray-300 size-11 rounded-full'></div>
-                                <div className='flex-1'>
-                                    <div className='text-[24px] font-bold'>
-                                        Animateurs spécialisés (motion & frame-by-frame)
-                                    </div>
-                                    <div>
-                                        pour un rendu fluide, vivant, marquant
+                            <span className="font-bold  text-lg">
+                                Sound designers & voix-off pros
+                            </span>
+                            <p className=" font-normal text-base ">
+                                Pour l’ambiance et la narration
+                            </p>
+                        </div>
+                        <div className="bg-[#41308F] flex flex-col gap-2 shadow-lg rounded-xl p-8 w-[450px]">
+                            <div className="bg-[#9C51F1] rounded-lg p-2 mb-2 self-start size-10">
 
-                                    </div>
-                                </div>
+                                {/* <Image src={"/Liadtech/Accueil/icones/face-smile_svgrepo.com.svg"} width={24} height={24} alt="Rectangle 97" /> */}
                             </div>
-                            <div className='flex items-center gap-3'>
-                                <div className='bg-gray-300 size-11 rounded-full'></div>
-                                <div className='flex-1'>
-                                    <div className='text-[24px] font-bold'>
-                                        Sound designers & voix-off pros
-                                    </div>
-                                    <div>
-                                        pour l'ambiance et la narration
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='flex items-center gap-3'>
-                                <div className='bg-gray-300 size-11 rounded-full'></div>
-                                <div className='flex-1'>
-                                    <div className='text-[24px] font-bold'>
-                                        Stratèges marketing
-                                    </div>
-                                    <div>
-                                        pour garantir l'efficacité du message
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='flex items-center gap-3'>
-                                <div className='bg-gray-300 !size-11 rounded-full'></div>
-                                <div className='flex-1'>
-                                    Résultat : une vraie création de studio.Avec du fond, du style… et un objectif : convertir.
-                                </div>
-                            </div>
+                            <span className="font-bold  text-lg">
+                                Stratèges marketing
+                            </span>
+                            <p className=" font-normal text-base ">
+                                Pour garantir l’efficacité du message
+                            </p>
                         </div>
                     </div>
-
-                </section>
-                <section className='flex flex-col md:flex-row gap-8 md:gap-2 justify-between'>
+                </div>
+            </section>
+            <section className='bg-[#2D1F67] '>
+                <div className='px-4 sm:px-0 sm:container sm:mx-auto flex flex-col md:flex-row gap-8 md:gap-2 justify-between'>
                     <div className='flex flex-col !pt-8 md:!pt-14 text-white text-center md:text-left'>
                         <div className='text-4xl md:text-6xl font-bold mb-[6px]'>
                             Votre message mérite d'être vu, compris… et retenu.
@@ -322,8 +313,8 @@ const page = () => {
                             Créer ma vidéo explicative
                         </Link>
                     </div>
-                    <Image src="/images/Frame 15708.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
-                </section>
+                    <Image src="/images/digital Web Section 2.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
+                </div>
             </section>
 
         </div>

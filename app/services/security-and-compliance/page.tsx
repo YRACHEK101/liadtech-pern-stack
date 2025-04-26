@@ -1,4 +1,5 @@
 import PricingPacksSection from '@/components/sections/PricingPacksSection'
+import TrustedByClientsSection from '@/components/sections/TrustedByClientsSection'
 import TarifPricingPlan from '@/components/tarifs/TarifPricingPlan'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -26,84 +27,104 @@ const features2 = [
 const page = () => {
     return (
         <div>
-            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-10'>
-                <div className='flex flex-col gap-7 pt-10 md:pt-20 pr-0 md:pr-20 z-10'>
-                    <span className='font-bold text-3xl md:text-4xl lg:text-6xl text-[#2D1F67]'>
-                        Expliquez votre concept
-                        en 30 secondes chrono.
-                    </span>
-                    <span className='font-bold text-[#2D1F67] text-base md:text-xl lg:text-2xl'>
-                        Attirez l'attention, simplifiez votre message et boostez vos conversions avec une animation 2D claire, moderne et percutante.
-                    </span>
-                    <div className='flex flex-col'>
-                        {features2.map((site, index) => (
-                            <div key={index} className='flex gap-[15px] md:gap-[25px]'>
-                                <Image src={"/Liadtech/Accueil/icones/Vector 10.png"} width={0} height={0} className='!size-5 self-center' alt='pic' />
-                                <div className='flex flex-col'>
-                                    <span className='text-lg md:!text-[20px]'>{site}</span>
-                                </div>
-                            </div>
-                        ))}
+            <div className='bg-[#2D1F67]'>
+                <section className='overflow-hidden grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 pt-10 md:px-[42px]'>
+                    <div className='flex flex-col text-white z-10 self-center py-8 md:py-0'>
+                        <h2 className='text-3xl md:text-4xl lg:text-6xl font-bold !text-left !text-white'>
+                            Ce n'est pas à l'utilisateur de s'adapter au design.C'est au design de s'adapter à l'utilisateur.                    </h2>
+                        <span className='text-base md:text-xl lg:text-2xl mb-9'>
+                            Chaque parcours, chaque interaction, chaque détail est pensé pour être fluide… Et donc performant.
+                        </span>
+
+                        <div className='flex flex-col md:flex-row gap-4'>
+                            <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-5 lg:px-[31px] py-[10px] self-start mb-4 whitespace-nowrap flex items-center gap-2">
+                                Améliorer mon interface
+                            </Link>
+                            <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-5 lg:px-[31px] py-[10px] self-start mb-4 whitespace-nowrap flex items-center gap-2">
+                                Voir un avant/après UX
+                            </Link>
+                        </div>
                     </div>
-                    <div className='flex flex-col md:flex-row items-start md:items-center gap-4'>
-                        <div className="text-5xl md:text-[85px] font-bold text-[#2D1F67]">750€</div>
-                        <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap flex items-center gap-2">
-                            <span>
-                                Profiter de l'offre
-                            </span>
-                            <Image src={"/images/Group 96.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
-                        </Link>
-                    </div>
-                </div>
-                <Image src={"/images/liadteche site image_sécurité et confornité  1.svg"} width={0} height={0} className='w-auto mx-auto origin-top-right scale-100 xl:scale-110 xl:-mt-10 z-0 h-auto' alt='pic' />
-            </section>
+                    <Image src={"/images/Ux ui.svg"} width={0} height={0} className='w-auto mx-auto origin-top-right scale-100 xl:scale-[120%] pt-10 z-0 h-auto invisible' alt='pic' />
+
+                </section>
+            </div>
+            <TrustedByClientsSection />
+
             <PricingPacksSection />
-            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-10'>
-                <div className='flex flex-col gap-7 pr-0 md:pr-20'>
-                    <span className='font-bold text-3xl md:text-4xl lg:text-6xl text-[#2D1F67]'>
-                        Lancez votre marque avec impact, développez sans limites.
-                    </span>
-                    <span className='font-bold text-[#2D1F67] text-base md:text-xl lg:text-2xl'>
-                        Ne perdez plus de temps avec les démarches techniques. Créez, animez et propulsez votre image grâce à nos packs 100% clé-en-main.
-                    </span>
-                    <div className='flex flex-col gap-4'>
-                        {features2.map((site, index) => (
-                            <div key={index} className='flex gap-3'>
-                                <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                                <div className='flex flex-col'>
-                                    <span className='text-lg md:!text-[20px]'>{site}</span>
-                                </div>
-                            </div>
-                        ))}
+
+            <section className='px-4 md:pl-10 grid grid-cols-1 container mx-auto xl:grid-cols-2'>
+                <div className='flex flex-col gap-6 pt-8 md:pt-[151px] text-[#2D1F67]'>
+                    <div className='text-3xl md:text-4xl lg:text-6xl font-bold'>
+                    On ne reste pas sur un site bien codé.
+                    </div>
+                    <div className='font-bold text-xl md:text-2xl lg:text-3xl'>
+                        On reste sur un site bien pensé.
                     </div>
                     <div>
-                        Idéal pour les marques ambitieuses qui veulent se démarquer sur les réseaux et au-delà.
+                        Analyse de votre marché, positionnement, objectifs… Pas de posts inutiles, pas de pubs jetées au hasard. Une stratégie sur-mesure, testée, mesurée, ajustée chaque semaine.
                     </div>
                 </div>
-                <Image src={"/images/Sécurité & Conformité.svg"} width={0} height={0} className='w-auto xl:-mt-10 h-full' alt='pic' />
+                <Image src="/images/UI UX 2.svg" width={0} height={0} className='w-auto h-auto mb-5 invisible' alt='hero' />
             </section>
-            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 gap-10 md:gap-20 py-10'>
-                <Image src={"/images/Maintenance, TMA & MCO section 2.svg"} width={0} height={0} className='w-auto invisible origin-top !h-full' alt='pic' />
-                <div className='flex flex-col gap-7 pr-0 md:pr-20'>
-                    <span className='font-bold text-3xl md:text-4xl lg:text-6xl text-[#2D1F67]'>
-                        Donnez vie à votre message avec des animations percutantes
-                    </span>
-                    <div className='flex flex-col gap-4'>
-                        {features2.map((site, index) => (
-                            <div key={index} className='flex gap-3'>
+            <section className='px-4 md:pl-10 grid grid-cols-1 container mx-auto xl:grid-cols-2'>
+                <Image src="/images/UI UX 4.svg" width={0} height={0} className='w-auto h-auto mb-5 invisible' alt='hero' />
+
+                <div className='flex flex-col gap-6 pt-8 md:!pt-[151px] text-[#2D1F67]'>
+                    <div className='text-3xl md:text-4xl lg:text-6xl font-bold'>
+                        Nos services inclus
+                    </div>
+                    <div className='flex flex-col gap-4 '>
+                        {features.map((site, index) => (
+                            <div key={index} className='flex  gap-3'>
                                 <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                                 <div className='flex flex-col'>
-                                    <span className='text-lg md:!text-[20px]'>{site}</span>
+                                    <span className=''>{site}</span>
                                 </div>
                             </div>
                         ))}
                     </div>
                 </div>
             </section>
+
+            <section className='px-4 md:pl-10 grid grid-cols-1 container mx-auto xl:grid-cols-2'>
+                <div className='flex flex-col gap-6 pt-8 md:pt-[151px] text-[#2D1F67]'>
+                    <div className='text-3xl md:text-4xl lg:text-6xl font-bold'>
+                    On ne reste pas sur un site bien codé.
+                    </div>
+                    <div className='font-bold text-xl md:text-2xl lg:text-3xl'>
+                        On reste sur un site bien pensé.
+                    </div>
+                    <div>
+                        Analyse de votre marché, positionnement, objectifs… Pas de posts inutiles, pas de pubs jetées au hasard. Une stratégie sur-mesure, testée, mesurée, ajustée chaque semaine.
+                    </div>
+                </div>
+                <Image src="/images/UI UX 2.svg" width={0} height={0} className='w-auto h-auto mb-5 invisible' alt='hero' />
+            </section>
+            <section className='px-4 md:pl-10 grid grid-cols-1 container mx-auto xl:grid-cols-2'>
+                <Image src="/images/UI UX 4.svg" width={0} height={0} className='w-auto h-auto mb-5 invisible' alt='hero' />
+
+                <div className='flex flex-col gap-6 pt-8 md:!pt-[151px] text-[#2D1F67]'>
+                    <div className='text-3xl md:text-4xl lg:text-6xl font-bold'>
+                        Nos services inclus
+                    </div>
+                    <div className='flex flex-col gap-4 '>
+                        {features.map((site, index) => (
+                            <div key={index} className='flex  gap-3'>
+                                <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                                <div className='flex flex-col'>
+                                    <span className=''>{site}</span>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+            
         </div>
     )
 }
