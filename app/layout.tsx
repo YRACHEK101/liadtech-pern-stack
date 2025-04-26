@@ -39,7 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`${inter.className}`}>
+      <body className={`${inter.className} overflow-x-hidden`}>
         <MainHeader />
 
         <Suspense>
