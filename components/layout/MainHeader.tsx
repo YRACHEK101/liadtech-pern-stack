@@ -109,15 +109,15 @@ const MainHeader = () => {
                         Accueil
                     </Link>
                     <PopOverItem title="Services" className='max-w-7xl'>
-                        <div className=" bg-white w-full  max-h-[80vh]  overflow-auto hover:overflow-auto  pl-[88px] shadow-md shadow-black/25 rounded-2xl pb-12 pt-6 pr-10  ">
+                        <div className=" bg-white w-full  max-h-[80vh]  overflow-auto hover:overflow-auto  shadow-md shadow-black/25 rounded-3xl p-6  ">
                             <h3 className="text-lg text-gray-700 mb-6 italic pl-11">De l'idée à l'automatisation, tout est imaginé pour vous</h3>
 
-                            <div className="grid grid-cols-3 gap-10">
-                                <div className="flex flex-col gap-6">
+                            <div className="grid grid-cols-3 gap-x-2">
+                                <div className="flex flex-col gap-2">
                                     <span className="text-[#696868] font-bold">
                                         Web & Mobile
                                     </span>
-                                    <div className="flex flex-col gap-8">
+                                    <div className="flex flex-col gap-2">
                                         <Link href="/services/creation-sites-web" className="flex gap-3" onClick={toggleDrawer}>
                                             <Image src={"/images/coding.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                                             <div className="flex flex-col flex-1  ">
@@ -144,7 +144,7 @@ const MainHeader = () => {
                                     <span className="text-[#696868] font-bold">
                                         Digital Merketing
                                     </span>
-                                    <div className="flex flex-col gap-8">
+                                    <div className="flex flex-col gap-2">
                                         <Link href={"/services/marketing-digital"} className="flex gap-3" onClick={toggleDrawer}>
                                             <Image src={"/images/speakerphone.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                                             <div className="flex flex-col flex-1  ">
@@ -180,11 +180,11 @@ const MainHeader = () => {
                                         </Link>
                                     </div>
                                 </div>
-                                <div className="flex flex-col gap-6">
+                                <div className="flex flex-col gap-2">
                                     <span className="text-[#696868] font-bold">
                                         Studio Créatif
                                     </span>
-                                    <div className="flex flex-col gap-8">
+                                    <div className="flex flex-col gap-2">
                                         <Link href={"/services/videos-explicatives"} className="flex gap-3" onClick={toggleDrawer}>
                                             <Image src={"/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-45-10.png"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                                             <div className="flex flex-col flex-1  ">
@@ -242,11 +242,11 @@ const MainHeader = () => {
                                         </Link>
                                     </div>
                                 </div>
-                                <div className="flex flex-col gap-6">
+                                <div className="flex flex-col gap-2">
                                     <span className="text-[#696868] font-bold">
                                         Cloud, SaaS & Support
                                     </span>
-                                    <div className="flex flex-col gap-8">
+                                    <div className="flex flex-col gap-2">
                                         <Link href={"/services/infrastructure-cloud"} className="flex gap-3" onClick={toggleDrawer}>
                                             <Image src={"/images/cloud-computing-servers-blades.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
                                             <div className="flex flex-col flex-1  ">
@@ -297,7 +297,7 @@ const MainHeader = () => {
                             <div className="flex justify-center">
                                 <hr className="border-[#673DE6] border-2 rounded-full mt-8 mb-4 w-1/2" />
                             </div>
-                            <div className="flex flex-col gap-6">
+                            <div className="flex flex-col gap-2">
                                 <div className="flex items-center gap-2">
                                     <span className="text-[#696868] font-bold ">
                                         IA automatisation & Cybersécurité
@@ -360,7 +360,7 @@ const MainHeader = () => {
                         Tarifs
                     </Link>
                     <PopOverItem title="Explorer" className='max-w-5xl' >
-                        <div className="w-full bg-white pl-[88px] shadow-md shadow-black/25 rounded-2xl pb-12 pt-6 pr-10 ">
+                        <div className="w-full bg-white shadow-md shadow-black/25 rounded-3xl p-6 ">
                             <h3 className="text-lg text-gray-700 mb-6 italic pl-11">Ce qu'on crée, ce qu'on partage, ce qui nous anime</h3>
                             <div className="flex gap-16">
                                 <div className="flex flex-col gap-8">
@@ -468,7 +468,7 @@ const MainHeader = () => {
                         </div>
                     </PopOverItem>
                     <PopOverItem title="Support" className='max-w-5xl' >
-                        <div className="w-full bg-white pl-[88px] shadow-md shadow-black/25 rounded-2xl pb-12 pt-6 pr-10 ">                  <h3 className="text-lg text-gray-700 mb-6 italic pl-11">Tout ce qu'il vous faut pour suivre ou gérer vos projets</h3>
+                        <div className="w-full bg-white shadow-md shadow-black/25 rounded-3xl p-6 ">                  <h3 className="text-lg text-gray-700 mb-6 italic pl-11">Tout ce qu'il vous faut pour suivre ou gérer vos projets</h3>
                             <div className="flex gap-16">
                                 <div className="flex flex-col gap-8">
                                     <div className="flex">
@@ -523,7 +523,7 @@ const MainHeader = () => {
                         </div>
                     </PopOverItem>
                     <PopOverItem title="L'univers LIADTECH" className='max-w-5xl' >
-                        <div className="w-full bg-white pl-[88px] shadow-md shadow-black/25 rounded-2xl pb-12 pt-6 pr-10 ">                  <h3 className="text-lg text-gray-700 mb-6 italic pl-11">Derrière les écrans, il y a une équipe</h3>
+                        <div className="w-full bg-white shadow-md shadow-black/25 rounded-3xl p-6 ">                  <h3 className="text-lg text-gray-700 mb-6 italic pl-11">Derrière les écrans, il y a une équipe</h3>
 
                             <div className="flex gap-16">
                                 <div className="flex flex-col gap-8">
