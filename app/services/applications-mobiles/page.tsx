@@ -51,11 +51,11 @@ const page = () => {
         <div>
             <div className='bg-[#2D1F67]'>
             <section className=' overflow-hidden grid grid-cols-1 pt-10 container mx-auto xl:grid-cols-2 px-4 md:px-10'>
-                <div className='flex flex-col text-white self-center text-center md:text-left'>
-                    <h2 className='text-3xl md:text-4xl lg:text-6xl font-bold !text-white mb-4'>
+                <div className='flex flex-col text-white self-center'>
+                    <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-white mb-4'>
                         Touchez vos clients, là où ils sont : dans leur poche.
                     </h2>
-                    <span className='font-bold text-base md:text-xl lg:text-2xl mb-8 md:mb-16'>
+                    <span className='font-bold text-base sm:text-lg text-white mb-8 md:mb-16'>
                         Une application mobile, c'est une présence continue, une expérience personnalisée… et un levier puissant pour booster votre croissance.
                     </span>
 
@@ -70,20 +70,20 @@ const page = () => {
             {/* Pricing Table Section */}
             <PricingPacksSection />
 
-            <section className="bg-[#2D1F67] p-6 md:p-20 text-white flex flex-col gap-20 md:gap-40">
-                <div className="container mx-auto flex flex-col items-center gap-5">
-                    <div className="text-white text-3xl md:text-5xl font-bold mb-[50px] md:mb-[105px] text-center">
+            <section className="bg-[#2D1F67] px-4 py-10 md:p-20 text-white flex flex-col gap-20 md:gap-40">
+                <div className="sm:container sm:mx-auto flex flex-col items-center gap-5">
+                    <div className="text-white text-2xl sm:text-3xl xl:text-4xl font-bold  md:mb-[105px] text-center ">
                         Pourquoi une app mobile change tout ?
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                         <div className="bg-[#41308F] flex flex-col gap-2 items-center shadow-lg rounded-lg p-4">
                             <div className="bg-[#9C51F1] rounded-md p-2 mb-2">
                                 <Image src={"/images/rocket.svg"} width={40} height={40} alt="Rectangle 97" />
                             </div>
-                            <span className="font-bold text-center text-[18px] lg:text-[22px]">
+                            <span className="font-bold text-base sm:text-lg lg:text-xl">
                                 Accès instantané à vos services
                             </span>
-                            <p className="text-center font-light text-[18px] lg:text-[26px]">
+                            <p className=" font-light text-base sm:text-lg lg:text-xl">
                                 Vos clients n'ont plus à chercher votre site, ils vous trouvent en un tap.
                             </p>
                         </div>
@@ -91,10 +91,10 @@ const page = () => {
                             <div className="bg-[#9C51F1] rounded-md p-2 mb-2">
                                 <Image src={"/Liadtech/Accueil/icones/sync_svgrepo.com.svg"} width={40} height={40} alt="Rectangle 97" />
                             </div>
-                            <span className="font-bold text-center text-[18px] lg:text-[22px]">
+                            <span className="font-bold text-base sm:text-lg lg:text-xl">
                                 Engagement récurrent & fidélisation
                             </span>
-                            <p className="text-center font-light text-[18px] lg:text-[26px]">
+                            <p className=" font-light text-base sm:text-lg lg:text-xl">
                                 Notifications push, achats récurrents, raccourcis… vos clients reviennent plus souvent.
                             </p>
                         </div>
@@ -102,21 +102,21 @@ const page = () => {
                             <div className="bg-[#9C51F1] rounded-md p-2 mb-2">
                                 <Image src={"/Liadtech/Accueil/icones/face-smile_svgrepo.com.svg"} width={40} height={40} alt="Rectangle 97" />
                             </div>
-                            <span className="font-bold text-center text-[18px] lg:text-[22px]">
+                            <span className="font-bold text-base sm:text-lg lg:text-xl">
                                 Des données précieuses sur vos utilisateurs
                             </span>
-                            <p className="text-center font-light text-[18px] lg:text-[26px]">
+                            <p className=" font-light text-base sm:text-lg lg:text-xl">
                                 Analyse du comportement, parcours client, préférences : vous pilotez avec clarté.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 xl:grid-cols-2 container mx-auto gap-8">
+                <div className="grid grid-cols-1 xl:grid-cols-2 sm:container sm:mx-auto gap-8">
                     <div className="flex flex-col gap-9 text-[18px] md:text-[24px]">
-                        <span className="text-white text-[32px] md:text-[47px] leading-[40px] md:leading-[59px] font-bold">
+                        <span className="text-white text-2xl sm:text-3xl xl:text-4xl leading-[40px] md:leading-[59px] font-bold">
                             Notre expertise mobile, votre avantage compétitif
                         </span>
-                        <span className="text-white text-xl md:text-2xl font-semibold">
+                        <span className="text-white text-base sm:text-lg font-semibold">
                             On développe des apps qui ne sont pas juste attractives — elles sont fluides, optimisées, sécurisées, et pensées pour performer. Que ce soit en MERN stack, Flutter, ou React Native, nos solutions s'adaptent à votre projet et à votre budget.
                         </span>
                     </div>
@@ -127,8 +127,8 @@ const page = () => {
             </section>
             <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-[50px] md:py-[110px]'>
                 <Image src={"/images/App mobile.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
-                <div className='flex flex-col items-center md:items-end mt-8 md:mt-0'>
-                    <h2 className='text-3xl md:text-4xl lg:text-6xl font-bold !text-left mb-9'>
+                <div className='flex flex-col mt-8 md:mt-0'>
+                    <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left mb-9'>
                         Des applications sur mesure pour chaque besoin
                     </h2>
 
@@ -152,10 +152,10 @@ const page = () => {
                                 </defs>
                             </svg>
                             <div className='flex-1 flex flex-col'>
-                                <span className='font-bold text-[20px] md:text-[24px] text-[#2D1F67]'>
+                                <span className='font-bold text-base sm:text-lg text-[#2D1F67]'>
                                     App e-commerce
                                 </span>
-                                <span className="text-[16px] md:text-[18px]">
+                                <span className="text-sm md:text-base">
                                     Gérez vos ventes, vos stocks, vos clients depuis une interface dédiée.
                                 </span>
                             </div>
@@ -168,10 +168,10 @@ const page = () => {
                             </svg>
 
                             <div className='flex-1 flex flex-col'>
-                                <span className='font-bold text-[20px] md:text-[24px] text-[#2D1F67]'>
+                                <span className='font-bold text-base sm:text-lg text-[#2D1F67]'>
                                     App communautaire ou réseau social
                                 </span>
-                                <span>
+                                <span className="text-sm md:text-base">
                                     Connectez vos membres, créez de l'interaction.
                                 </span>
                             </div>
@@ -184,10 +184,10 @@ const page = () => {
                             </svg>
 
                             <div className='flex-1 flex flex-col'>
-                                <span className='font-bold text-[20px] md:text-[24px] text-[#2D1F67]'>
+                                <span className='font-bold text-base sm:text-lg text-[#2D1F67]'>
                                     App métier ou B2B
                                 </span>
-                                <span>
+                                <span className="text-sm md:text-base">
                                     Dashboard interne, reporting, prise de rendez-vous, suivi RH...
                                 </span>
                             </div>
@@ -200,10 +200,10 @@ const page = () => {
                             </svg>
 
                             <div className='flex-1 flex flex-col    '>
-                                <span className='font-bold text-[20px] md:text-[24px] text-[#2D1F67] '>
+                                <span className='font-bold text-base sm:text-lg text-[#2D1F67] '>
                                     App connectée à votre site / CRM / SaaS
                                 </span>
-                                <span>
+                                <span className="text-sm md:text-base">
                                     Une app qui prolonge vos outils déjà en place.
                                 </span>
                             </div>
@@ -215,10 +215,10 @@ const page = () => {
             </section>
             <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-10'>
                 <div className='flex flex-col gap-7 pt-10 md:pt-20 pr-0 md:pr-20'>
-                    <span className='font-bold text-3xl md:text-4xl lg:text-6xl text-center md:text-left'>
+                    <span className='font-bold text-2xl sm:text-3xl xl:text-4xl'>
                         Votre app inclut toujours…
                     </span>
-                    <span className='font-bold text-[#673DE6] text-base md:text-xl lg:text-2xl text-center md:text-left'>
+                    <span className='font-bold text-[#673DE6] text-base sm:text-lg'>
                         Parlez à un expert LIADTECH ou démarrez votre projet en quelques clics.
                     </span>
                     <div className='flex flex-col gap-4'>
@@ -238,8 +238,8 @@ const page = () => {
             </section>
             <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-[50px] md:py-[110px]'>
                 <Image src={"/images/Création du l'app 4.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
-                <div className='flex flex-col gap-4 mt-8 md:mt-0 text-center md:text-left'>
-                    <h2 className='text-3xl md:text-4xl lg:text-6xl font-bold'>
+                <div className='flex flex-col gap-4 mt-8 md:mt-0'>
+                    <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                         Discutons de votre projet. Une app performante peut tout changer.
                     </h2>
                     <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap">

@@ -50,8 +50,8 @@ const page = () => {
         <div>
             <div className='bg-[#DDBFFF]'>
                 <section className='overflow-hidden grid container mx-auto xl:grid-cols-2 grid-cols-1 px-4 md:px-[48px] gap-8'>
-                    <div className='flex flex-col text-[#2D1F67] self-center'>
-                        <h2 className='text-3xl md:text-4xl lg:text-6xl font-bold !text-left'>
+                    <div className='flex flex-col text-[#2D1F67] pt-8  self-center'>
+                        <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left'>
                             Des contenus pensés pour Google, mais écrits pour vos clients.
                         </h2>
                         <span className='text-base md:text-xl lg:text-2xl mb-6 md:mb-9'>
@@ -76,7 +76,7 @@ const page = () => {
 
             <section className='px-4 md:pl-10 grid container mx-auto xl:grid-cols-2 grid-cols-1 mb-20 md:mb-36 gap-8'>
                 <div className='flex flex-col gap-6 text-[18px] md:text-[20px] text-[#2D1F67]'>
-                    <div className='text-3xl md:text-4xl lg:text-6xl font-bold'>
+                    <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                         Le contenu n'est pas un luxe. C'est un moteur de croissance.
                     </div>
                     <div className='font-bold text-base md:text-xl lg:text-2xl'>
@@ -126,7 +126,7 @@ const page = () => {
             <section className='px-4 md:px-10 grid container mx-auto xl:grid-cols-2 grid-cols-1 mb-20 md:mb-32 gap-8'>
                 <Image src="/images/Blogging et contenu 4.svg" width={0} height={0} className='w-full md:w-auto h-auto mb-5 origin-left z-0 order-2 md:order-1' alt='hero' />
                 <div className='flex flex-col gap-6 text-[#2D1F67] pt-6 md:pt-11 order-1 md:order-2'>
-                    <div className='text-3xl md:text-4xl lg:text-6xl font-bold'>
+                    <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                         Ce que vous obtenez avec nous
                     </div>
                     <div className='flex flex-col gap-5 text-[18px] md:text-[20px]'>
@@ -172,7 +172,7 @@ const page = () => {
 
             <section className='px-4 md:pl-10 grid container mx-auto xl:grid-cols-2 grid-cols-1 gap-8'>
                 <div className='flex flex-col !pt-8 md:!pt-14 text-[#2D1F67]'>
-                    <div className='text-3xl md:text-4xl lg:text-6xl font-bold mb-[6px]'>
+                    <div className='text-2xl sm:text-3xl xl:text-4xl font-bold mb-[6px]'>
                         Ne laissez pas votre site vide ou invisible.
                     </div>
                     <div className='font-bold text-xl md:text-2xl lg:text-3xl mb-6 md:mb-[29px]'>

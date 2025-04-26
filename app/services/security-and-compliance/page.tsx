@@ -28,19 +28,19 @@ const page = () => {
     return (
         <div>
             <div className='bg-[#2D1F67]'>
-                <section className='overflow-hidden grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 pt-10 md:px-[42px]'>
-                    <div className='flex flex-col text-white z-10 self-center py-8 md:py-0'>
-                        <h2 className='text-3xl md:text-4xl lg:text-6xl font-bold !text-left !text-white'>
+                <section className='overflow-hidden grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 pt-8 md:px-[42px]'>
+                    <div className='flex flex-col text-white z-10 self-center'>
+                        <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left !text-white'>
                             Ce n'est pas à l'utilisateur de s'adapter au design.C'est au design de s'adapter à l'utilisateur.                    </h2>
-                        <span className='text-base md:text-xl lg:text-2xl mb-9'>
+                        <span className='text-base sm:text-lg mb-9'>
                             Chaque parcours, chaque interaction, chaque détail est pensé pour être fluide… Et donc performant.
                         </span>
 
                         <div className='flex flex-col md:flex-row gap-4'>
-                            <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-5 lg:px-[31px] py-[10px] self-start mb-4 whitespace-nowrap flex items-center gap-2">
+                            <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-5 lg:px-[31px] py-[10px] self-start whitespace-nowrap flex items-center gap-2">
                                 Améliorer mon interface
                             </Link>
-                            <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-5 lg:px-[31px] py-[10px] self-start mb-4 whitespace-nowrap flex items-center gap-2">
+                            <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-5 lg:px-[31px] py-[10px] self-start whitespace-nowrap flex items-center gap-2">
                                 Voir un avant/après UX
                             </Link>
                         </div>
@@ -55,13 +55,13 @@ const page = () => {
 
             <section className='px-4 md:pl-10 grid grid-cols-1 container mx-auto xl:grid-cols-2'>
                 <div className='flex flex-col gap-6 pt-8 md:pt-[151px] text-[#2D1F67]'>
-                    <div className='text-3xl md:text-4xl lg:text-6xl font-bold'>
+                    <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                     On ne reste pas sur un site bien codé.
                     </div>
-                    <div className='font-bold text-xl md:text-2xl lg:text-3xl'>
+                    <div className='font-bold text-base sm:text-lg'>
                         On reste sur un site bien pensé.
                     </div>
-                    <div>
+                    <div className='text-sm md:text-base'>
                         Analyse de votre marché, positionnement, objectifs… Pas de posts inutiles, pas de pubs jetées au hasard. Une stratégie sur-mesure, testée, mesurée, ajustée chaque semaine.
                     </div>
                 </div>
@@ -71,7 +71,7 @@ const page = () => {
                 <Image src="/images/UI UX 4.svg" width={0} height={0} className='w-auto h-auto mb-5 invisible' alt='hero' />
 
                 <div className='flex flex-col gap-6 pt-8 md:!pt-[151px] text-[#2D1F67]'>
-                    <div className='text-3xl md:text-4xl lg:text-6xl font-bold'>
+                    <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                         Nos services inclus
                     </div>
                     <div className='flex flex-col gap-4 '>
@@ -81,7 +81,7 @@ const page = () => {
                                     <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                                 <div className='flex flex-col'>
-                                    <span className=''>{site}</span>
+                                    <span className='text-sm md:text-base'>{site}</span>
                                 </div>
                             </div>
                         ))}
@@ -91,13 +91,13 @@ const page = () => {
 
             <section className='px-4 md:pl-10 grid grid-cols-1 container mx-auto xl:grid-cols-2'>
                 <div className='flex flex-col gap-6 pt-8 md:pt-[151px] text-[#2D1F67]'>
-                    <div className='text-3xl md:text-4xl lg:text-6xl font-bold'>
+                    <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                     On ne reste pas sur un site bien codé.
                     </div>
-                    <div className='font-bold text-xl md:text-2xl lg:text-3xl'>
+                    <div className='font-bold text-base sm:text-lg'>
                         On reste sur un site bien pensé.
                     </div>
-                    <div>
+                    <div className='text-sm md:text-base'>
                         Analyse de votre marché, positionnement, objectifs… Pas de posts inutiles, pas de pubs jetées au hasard. Une stratégie sur-mesure, testée, mesurée, ajustée chaque semaine.
                     </div>
                 </div>
@@ -107,7 +107,7 @@ const page = () => {
                 <Image src="/images/UI UX 4.svg" width={0} height={0} className='w-auto h-auto mb-5 invisible' alt='hero' />
 
                 <div className='flex flex-col gap-6 pt-8 md:!pt-[151px] text-[#2D1F67]'>
-                    <div className='text-3xl md:text-4xl lg:text-6xl font-bold'>
+                    <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                         Nos services inclus
                     </div>
                     <div className='flex flex-col gap-4 '>
@@ -117,7 +117,7 @@ const page = () => {
                                     <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                                 <div className='flex flex-col'>
-                                    <span className=''>{site}</span>
+                                    <span className='text-sm md:text-base'>{site}</span>
                                 </div>
                             </div>
                         ))}

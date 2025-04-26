@@ -28,7 +28,7 @@ const page = () => {
         <div>
             <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-10'>
                 <div className='flex flex-col gap-7 pt-10 md:pt-20 pr-0 md:pr-20 z-10'>
-                    <span className='font-bold text-3xl md:text-4xl lg:text-6xl text-[#2D1F67]'>
+                    <span className='font-bold text-2xl sm:text-3xl xl:text-4xl text-[#2D1F67]'>
                         Expliquez votre concept
                         en 30 secondes chrono.
                     </span>
@@ -60,7 +60,7 @@ const page = () => {
             <PricingPacksSection />
             <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-10'>
                 <div className='flex flex-col gap-7 pr-0 md:pr-20'>
-                    <span className='font-bold text-3xl md:text-4xl lg:text-6xl text-[#2D1F67]'>
+                    <span className='font-bold text-2xl sm:text-3xl xl:text-4xl text-[#2D1F67]'>
                         Lancez votre marque avec impact, développez sans limites.
                     </span>
                     <span className='font-bold text-[#2D1F67] text-base md:text-xl lg:text-2xl'>
@@ -87,7 +87,7 @@ const page = () => {
             <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 gap-8 md:gap-20 py-10'>
                 <Image src={"/images/cloud 1.svg"} width={0} height={0} className='w-auto origin-top invisible !h-full' alt='pic' />
                 <div className='flex flex-col gap-7 pr-0 md:pr-20'>
-                    <span className='font-bold text-3xl md:text-4xl lg:text-6xl text-[#2D1F67]'>
+                    <span className='font-bold text-2xl sm:text-3xl xl:text-4xl text-[#2D1F67]'>
                         Donnez vie à votre message avec des animations percutantes
                     </span>
                 </div>

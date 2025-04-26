@@ -73,7 +73,7 @@ const page = () => {
             <PricingPacksSection />
 
             <section className='bg-[#2D1F67]  md:pl-[66px] py-16 md:py-[132px] text-white mb-16'>
-                <div className='sm:container px-4 sm:px-0 mx-auto grid grid-cols-1 xl:grid-cols-2 relative'>
+                <div className='sm:container px-4  mx-auto grid grid-cols-1 xl:grid-cols-2 relative'>
                     <div className='flex flex-col gap-4 md:gap-7 z-10'>
                         <span className='font-bold text-2xl sm:text-3xl xl:text-4xl'>Types de sites que vous pouvez créer</span>
                         <span className='font-bold md:text-lg'>Ne perdez plus de temps avec les démarches techniques. Créez, animez et propulsez votre image grâce à nos packs 100% clé-en-main.</span>
@@ -93,7 +93,7 @@ const page = () => {
                     </div>
                     <Image src="/images/digital web Section 1 (1).svg" width={0} height={0} className='w-auto h-auto' alt='pic' />
                 </div>
-                <div className='sm:container px-4 sm:px-0 mx-auto grid grid-cols-1 gap-5 xl:grid-cols-2 items-center mt-10 md:mt-20'>
+                <div className='sm:container px-4  mx-auto grid grid-cols-1 gap-5 xl:grid-cols-2 items-center mt-10 md:mt-20'>
                     <Image src="/images/digital web.svg" width={0} height={0} className='w-auto h-auto' alt='pic' />
                     <div className='flex flex-col gap-4 md:gap-7 '>
                         <span className='font-bold text-2xl sm:text-3xl xl:text-4xl'>
