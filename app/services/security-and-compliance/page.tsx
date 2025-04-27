@@ -31,17 +31,18 @@ const page = () => {
                 <section className='overflow-hidden grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 pt-8 md:px-[42px]'>
                     <div className='flex flex-col text-white z-10 self-center'>
                         <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left !text-white'>
-                            Ce n'est pas à l'utilisateur de s'adapter au design.C'est au design de s'adapter à l'utilisateur.                    </h2>
+                            Le RGPD n'est pas une option.C'est une exigence légale… et un gage de confiance.
+                        </h2>
                         <span className='text-base sm:text-lg mb-9'>
-                            Chaque parcours, chaque interaction, chaque détail est pensé pour être fluide… Et donc performant.
+                            Nous vous aidons à mettre votre site, vos outils, vos données et vos pratiques marketing en conformité avec la réglementation européenne — simplement, efficacement, sans jargon.
                         </span>
 
                         <div className='flex flex-col md:flex-row gap-4'>
                             <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-5 lg:px-[31px] py-[10px] self-start whitespace-nowrap flex items-center gap-2">
-                                Améliorer mon interface
+                                Mettre mon entreprise en conformité
                             </Link>
                             <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-5 lg:px-[31px] py-[10px] self-start whitespace-nowrap flex items-center gap-2">
-                                Voir un avant/après UX
+                                Voir les éléments vérifiés
                             </Link>
                         </div>
                     </div>
@@ -53,78 +54,211 @@ const page = () => {
 
             <PricingPacksSection />
 
-            <section className='px-4 md:pl-10 grid grid-cols-1 container mx-auto xl:grid-cols-2'>
-                <div className='flex flex-col gap-6 pt-8 md:pt-[151px] text-[#2D1F67]'>
+            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-16 pb-10'>
+                <div className='flex flex-col gap-4 pt-4'>
                     <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
-                    On ne reste pas sur un site bien codé.
+                        Pourquoi la conformité RGPD est essentielle ?
                     </div>
-                    <div className='font-bold text-base sm:text-lg'>
-                        On reste sur un site bien pensé.
-                    </div>
-                    <div className='text-sm md:text-base'>
-                        Analyse de votre marché, positionnement, objectifs… Pas de posts inutiles, pas de pubs jetées au hasard. Une stratégie sur-mesure, testée, mesurée, ajustée chaque semaine.
-                    </div>
-                </div>
-                <Image src="/images/UI UX 2.svg" width={0} height={0} className='w-auto h-auto mb-5 invisible' alt='hero' />
-            </section>
-            <section className='px-4 md:pl-10 grid grid-cols-1 container mx-auto xl:grid-cols-2'>
-                <Image src="/images/UI UX 4.svg" width={0} height={0} className='w-auto h-auto mb-5 invisible' alt='hero' />
-
-                <div className='flex flex-col gap-6 pt-8 md:!pt-[151px] text-[#2D1F67]'>
-                    <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
-                        Nos services inclus
-                    </div>
-                    <div className='flex flex-col gap-4 '>
-                        {features.map((site, index) => (
-                            <div key={index} className='flex  gap-3'>
-                                <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                                <div className='flex flex-col'>
-                                    <span className='text-sm md:text-base'>{site}</span>
-                                </div>
+                    <div className='flex flex-col gap-4'>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    ⚖️ C'est obligatoire pour toute entreprise traitant des données personnelles en Europe
+                                </span>
                             </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            <section className='px-4 md:pl-10 grid grid-cols-1 container mx-auto xl:grid-cols-2'>
-                <div className='flex flex-col gap-6 pt-8 md:pt-[151px] text-[#2D1F67]'>
-                    <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
-                    On ne reste pas sur un site bien codé.
-                    </div>
-                    <div className='font-bold text-base sm:text-lg'>
-                        On reste sur un site bien pensé.
-                    </div>
-                    <div className='text-sm md:text-base'>
-                        Analyse de votre marché, positionnement, objectifs… Pas de posts inutiles, pas de pubs jetées au hasard. Une stratégie sur-mesure, testée, mesurée, ajustée chaque semaine.
-                    </div>
-                </div>
-                <Image src="/images/UI UX 2.svg" width={0} height={0} className='w-auto h-auto mb-5 invisible' alt='hero' />
-            </section>
-            <section className='px-4 md:pl-10 grid grid-cols-1 container mx-auto xl:grid-cols-2'>
-                <Image src="/images/UI UX 4.svg" width={0} height={0} className='w-auto h-auto mb-5 invisible' alt='hero' />
-
-                <div className='flex flex-col gap-6 pt-8 md:!pt-[151px] text-[#2D1F67]'>
-                    <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
-                        Nos services inclus
-                    </div>
-                    <div className='flex flex-col gap-4 '>
-                        {features.map((site, index) => (
-                            <div key={index} className='flex  gap-3'>
-                                <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                                <div className='flex flex-col'>
-                                    <span className='text-sm md:text-base'>{site}</span>
-                                </div>
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    💰 Les sanctions peuvent monter jusqu'à 4 % du CA
+                                </span>
                             </div>
-                        ))}
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    👥 Elle renforce la confiance de vos utilisateurs
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    📈 Elle structure vos pratiques internes (marketing, RH, CRM…)
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    🔐 Elle protège vos données en cas de piratage ou de litige
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+            </section>
+            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-16 pb-10'>
+                <div></div>
+                <div className='flex flex-col gap-4 pt-4'>
+                    <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
+                        Ce que nous vérifions et mettons en place
+                    </div>
+                    <div className='flex flex-col gap-4'>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    🍪 Gestion des cookies : bandeau, choix, consentement explicite
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    📄 Mentions légales & politique de confidentialité
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    📬 Formulaires conformes : finalité, durée, base légale
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    📥 Collecte & stockage des données : sécurisation, minimisation
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    🔐 Droits utilisateurs : accès, rectification, suppression
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    📁 Registre des traitements, DPIA si nécessaire
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    🧑‍💻 Formation de vos équipes ou DPO externe en option
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-            
+            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-16 pb-10'>
+
+                <div className='flex flex-col gap-4 pt-4'>
+                    <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
+                        Protégez vos données.Rassurez vos clients.
+                    </div>
+                    <span className='text-base sm:text-lg mb-9'>
+                        Faites de la conformité un levier de confiance.
+                    </span>
+                    
+                    <div className='flex flex-col gap-4'>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    ⚖️ Double expertise tech & réglementaire
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    🧑‍💼 Accompagnement personnalisé : TPE, PME, SaaS, e-commerce
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    🧩 Intégration fluide à vos outils web & CRM
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    🧠 Documentation claire, sans jargon
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    🤝 Approche pragmatique : utile, appliquée, non bureaucratique
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+            </section>
+            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-16 pb-10'>
+                <div></div>
+                <div className='flex flex-col gap-4 pt-4 md:pt-16'>
+                    <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
+                        Pourquoi LIADTECH ?
+                    </div>
+                    <div className='flex flex-col gap-4'>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    🛡️ Experts certifiés en cybersécurité (OSCP, CEH, etc.)
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    🧠 Audit orienté risques réels, pas techno blabla
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    🚀 Réactivité : audit livré en 5 à 10 jours ouvrés
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    🤝 Restitution claire, en langage métier ou dev
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    🔐 Confidentialité, transparence, pédagogie
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </div>
     )
 }

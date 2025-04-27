@@ -175,7 +175,7 @@ const page = () => {
                     <div className='text-2xl sm:text-3xl xl:text-4xl font-bold mb-[6px]'>
                         Ne laissez pas votre site vide ou invisible.
                     </div>
-                    <div className='font-bold text-xl md:text-2xl lg:text-3xl mb-6 md:mb-[29px]'>
+                    <div className='text-base md:text-lg font-normal mb-6 md:mb-[29px]'>
                         Une stratégie digitale qui transforme les clics… en clients.
                     </div>
                     <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap">

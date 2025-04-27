@@ -5,40 +5,40 @@ import TrustedByClientsSection from '@/components/sections/TrustedByClientsSecti
 import PricingPacksSection from '@/components/sections/PricingPacksSection'
 
 const features2 = [
-  'Script + storyboard sur-mesure',
-  'Animation fluide et professionnelle',
-  'Voix-off (1 langue) incluse',
-  'Design personnalisé à votre charte',
-  'Musique & sound design inclus',
+    'Script + storyboard sur-mesure',
+    'Animation fluide et professionnelle',
+    'Voix-off (1 langue) incluse',
+    'Design personnalisé à votre charte',
+    'Musique & sound design inclus',
 ]
 
 const sitesFeatures = [
-  'UX/UI mobile-first & responsive',
-  'Développement iOS & Android',
-  'Connexion API, CRM, site existant',
-  'Sécurité & RGPD',
-  'Hébergement + suivi technique',
-  '1 mois de maintenance offert'
+    'UX/UI mobile-first & responsive',
+    'Développement iOS & Android',
+    'Connexion API, CRM, site existant',
+    'Sécurité & RGPD',
+    'Hébergement + suivi technique',
+    '1 mois de maintenance offert'
 ]
 
 const page = () => {
-  return (
-    <div>
-      <section className='overflow-hidden grid grid-cols-1 md:grid-cols-2 px-4  sm:container sm:mx-auto'>
+    return (
+        <div>
+            <section className='overflow-hidden grid grid-cols-1 md:grid-cols-2 px-4  sm:container sm:mx-auto'>
                 <div className='flex flex-col text-[#2D1F67] pt-8 xl:pt-0 self-center'>
                     <h2 className='font-bold text-2xl sm:text-3xl xl:text-4xl'>
-                        Une vidéo bien faite, c'est simple : elle explique, elle convainc, elle vend.
+                        Votre système est peut-être exposé.Nous vous aidons à le sécuriser avant qu'il ne soit ciblé.
                     </h2>
                     <span className='text-base sm:text-lg mb-9'>
-                        En 60 secondes, votre message devient clair… et inoubliable.
+                        Nos audits de sécurité et tests d'intrusion identifient vos failles critiques, évaluent vos risques et vous livrent des solutions concrètes.Prévenez les attaques, renforcez vos défenses, inspirez confiance.
                     </span>
 
                     <div className='flex gap-4 flex-wrap md:justify-start'>
                         <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start whitespace-nowrap flex items-center gap-2">
-                            Créer ma vidéo explicative
+                            Demander un audit de sécurité
                         </Link>
                         <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start whitespace-nowrap flex items-center gap-2">
-                            Voir des exemples
+                            Voir un exemple de rapport
                         </Link>
                     </div>
                 </div>
@@ -47,164 +47,298 @@ const page = () => {
             <TrustedByClientsSection />
             {/* Pricing Table Section */}
             <PricingPacksSection />
-            
+
             <div className='bg-[#2D1F67]'>
                 <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 pb-20 '>
-                    <div className='flex flex-col gap-7 pt-16 md:pt-32 pr-0 md:pr-20 text-white'>
-                        <span className='font-bold text-2xl sm:text-3xl xl:text-4xl'>
-                            Un bon design ne s'impose pas. Il se ressent
-                            sans même y penser.
-                        </span>
-                        <span className='font-bold text-base md:text-xl lg:text-2xl'>
-                            Une bonne interface se fait oublier. Elle rassure, stimule l'action, et rend chaque clic évident.          
-                                          </span>
+                    <div className='flex flex-col text-white gap-4 pt-4 md:pt-16'>
+                        <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
+                            Pourquoi faire un audit de sécurité ?
+                        </div>
                         <div className='flex flex-col gap-4'>
-                            {features2.map((site, index) => (
-                                <div key={index} className='flex gap-3'>
-                                    <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                                    </svg>
-                                    <div className='flex flex-col'>
-                                        <span className='text-base md:!text-[20px]'>{site}</span>
-                                    </div>
+                            <div className='flex gap-2 md:gap-3'>
+                                <div className='flex flex-col flex-1'>
+                                    <span className='text-sm md:text-base'>
+                                        🔍 Identifier les vulnérabilités exploitées par les hackers
+
+                                    </span>
                                 </div>
-                            ))}
+                            </div>
+                            <div className='flex gap-2 md:gap-3'>
+                                <div className='flex flex-col flex-1'>
+                                    <span className='text-sm md:text-base'>
+                                        🧩 Respecter les normes de conformité (RGPD, ISO, CNIL...)
+
+                                    </span>
+                                </div>
+                            </div>
+                            <div className='flex gap-2 md:gap-3'>
+                                <div className='flex flex-col flex-1'>
+                                    <span className='text-sm md:text-base'>
+                                        🔐 Protéger vos données clients et internes
+
+                                    </span>
+                                </div>
+                            </div>
+                            <div className='flex gap-2 md:gap-3'>
+                                <div className='flex flex-col flex-1'>
+                                    <span className='text-sm md:text-base'>
+                                        ⚙️ Évaluer la résilience de votre architecture cloud / web
+
+                                    </span>
+                                </div>
+                            </div>
+                            <div className='flex gap-2 md:gap-3'>
+                                <div className='flex flex-col flex-1'>
+                                    <span className='text-sm md:text-base'>
+                                        �� Obtenir un plan d'action clair et priorisé
+
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <Image src={"/images/UI UX 1.svg"} width={0} height={0} className='w-auto h-auto invisible' alt='pic' />
+                    {/* <Image src={"/images/UI UX 1.svg"} width={0} height={0} className='w-auto h-auto invisible' alt='pic' /> */}
                 </section>
                 <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 bg-[#2D1F67] py-20 md:py-36 gap-10'>
-                    <Image src={"/images/UXUI section une.svg"} width={0} height={0} className='w-auto origin-top-right scale-100 md:scale-y-125 md:scale-x-110 h-auto invisible' alt='pic' />
+                    <div>
+                        {/* <Image src={"/images/UXUI section une.svg"} width={0} height={0} className='w-auto origin-top-right scale-100 md:scale-y-125 md:scale-x-110 h-auto invisible' alt='pic' /> */}
+
+                    </div>
                     <div className='flex flex-col gap-7 pr-0 md:pr-20 text-white'>
                         <span className='font-bold text-2xl sm:text-3xl xl:text-4xl'>
-                        Pas de modèles tout faits. Pas de design au hasard.
-                                                </span>
-                                                <span className='font-bold text-base md:text-xl lg:text-2xl'>
-                                                Un process structuré, centré sur vos objectifs.
-                                                                                          </span>
+                            Qu'est-ce qu'un Pentest (test d'intrusion) ?
+                        </span>
+                        <span className='font-bold text-base md:text-xl lg:text-2xl'>
+                            Un pentest, c'est une simulation d'attaque menée dans un cadre sécurisé, avec des techniques réelles de cybercriminels.
+                            L'objectif : vérifier jusqu'où un pirate peut aller dans vos systèmes, et surtout comment l'en empêcher.
+                        </span>
                         <div className='flex flex-col gap-4'>
-                            {features2.map((site, index) => (
-                                <div key={index} className='flex gap-3'>
-                                    <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                                    </svg>
-                                    <div className='flex flex-col'>
-                                        <span className='text-base md:!text-[20px]'>{site}</span>
-                                    </div>
-                                </div>
-                            ))}
+                            Test boîte noire, boîte grise, web app, API, infrastructure, cloud, Wi-Fi, etc.
                         </div>
                     </div>
                 </section>
             </div>
-            
 
-            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-10'>
-                <div className='flex flex-col gap-7 pt-10 md:pt-20 pr-0 md:pr-20'>
-                    <span className='font-bold text-2xl sm:text-3xl xl:text-4xl'>
-                        Votre app inclut toujours…
-                    </span>
-                    <span className='font-bold text-[#673DE6] text-base md:text-xl lg:text-2xl'>
-                        Parlez à un expert LIADTECH ou démarrez votre projet en quelques clics.
-                    </span>
+
+            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-16 pb-10'>
+                <div className='flex flex-col gap-4 pt-8 md:pt-16'>
+                    <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
+                        Ce que nous auditons pour vous
+                    </div>
                     <div className='flex flex-col gap-4'>
-                        {sitesFeatures.map((site, index) => (
-                            <div key={index} className='flex gap-3'>
-                                <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                                <div className='flex flex-col'>
-                                    <span className='!text-[16px] md:!text-[20px]'>{site}</span>
-                                </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    🌐 Applications web & APIs
+                                </span>
                             </div>
-                        ))}
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    ☁️ Infrastructure Cloud (Azure, AWS, GCP, OVH…)
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    🛠️ Code source & CI/CD
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    🧱 Pare-feu, WAF, VPN, accès distants
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    🧑‍💻 Règles IAM et droits utilisateurs
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    📡 Protocole d'authentification, SSO, MFA
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    ⚠️ Tests de phishing ou d'ingénierie sociale (optionnel)
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <Image src={"/images/Création du l'app 3.svg"} width={0} height={0} className='w-auto h-auto invisible' alt='pic' />
+                {/* <Image src={"/images/Création du l'app 3.svg"} width={0} height={0} className='w-auto h-auto invisible mx-auto' alt='pic' /> */}
             </section>
 
-            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-[50px] md:py-[110px]'>
-                <Image src={"/images/Création du l'app 4.svg"} width={0} height={0} className='w-auto h-auto invisible' alt='pic' />
-                <div className='flex flex-col gap-4 mt-8 md:mt-0'>
-                    <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
-                        Discutons de votre projet. Une app performante peut tout changer.
-                    </h2>
-                    <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap">
-                            Parlez à un expert
-                    </Link>
+            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-16 pb-10'>
+                <div>
+                    {/* <Image src={"/images/Création du l'app 3.svg"} width={0} height={0} className='w-auto h-auto invisible mx-auto' alt='pic' /> */}
+
+                </div>
+                <div className='flex flex-col gap-4 pt-8 md:pt-16'>
+                    <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
+                        Notre méthode
+                    </div>
+                    <div className='flex flex-col gap-4'>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                            <div className='flex flex-col flex-1'>
+                                <span className='md:text-lg font-normal'>
+                                    Brief & cadrage technique
+                                </span>
+                                <span className='text-sm'>
+                                    Ce qu'on teste, pourquoi, sur quoi
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                            <div className='flex flex-col flex-1'>
+                                <span className='md:text-lg font-normal'>
+                                    Phase d'analyse & scan
+                                </span>
+                                <span className='text-sm'>
+                                    Outils, scripts, logs
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                            <div className='flex flex-col flex-1'>
+                                <span className='md:text-lg font-normal'>
+                                    Phase d'exploitation manuelle
+                                </span>
+                                <span className='text-sm'>
+                                    Tests humains poussés
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                            <div className='flex flex-col flex-1'>
+                                <span className='md:text-lg font-normal'>
+                                    Rapport de vulnérabilités
+                                </span>
+                                <span className='text-sm'>
+                                    Critique, élevée, modérée
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                            <div className='flex flex-col flex-1'>
+                                <span className='md:text-lg font-normal'>
+                                    Recommandations concrètes
+                                </span>
+                                <span className='text-sm'>
+                                    Plan d'action technique & stratégique
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                            <div className='flex flex-col flex-1'>
+                                <span className='md:text-lg font-normal'>
+                                    Retest (optionnel)
+                                </span>
+                                <span className='text-sm'>
+                                    Après correction
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section className='bg-[#DDBFFF]'>
-                <div className='grid grid-cols-1 container mx-auto xl:grid-cols-2'>
-                    <div className='flex flex-col pt-8 md:pt-28 z-10 px-4 md:px-0'>
-                        <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left mb-9'>
-                            Ce que vous gagnez avec nos Bénéfice
-                        </h2>
+                <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-16 pb-10'>
 
-                        <div className='flex flex-col gap-8'>
-                            <div className='flex items-center gap-3'>
-                                <span className='w-20' ></span>
-                                <div className='flex-1 flex flex-col'>
-                                    <span className='font-medium text-[24px] text-[#2D1F67] '>
-                                        Stratégie 360° centrée conversion
+                    <div className='flex flex-col gap-4 pt-4 md:pt-16'>
+                        <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
+                            Pourquoi LIADTECH ?
+                        </div>
+                        <div className='flex flex-col gap-4'>
+                            <div className='flex gap-2 md:gap-3'>
+                                <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                                <div className='flex flex-col flex-1'>
+                                    <span className='text-sm md:text-base'>
+                                        🛡️ Experts certifiés en cybersécurité (OSCP, CEH, etc.)
                                     </span>
                                 </div>
-
                             </div>
-                            <div className='flex items-center gap-3'>
-                                <span className='w-20' ></span>
-
-
-                                <div className='flex-1 flex flex-col'>
-                                    <span className='font-medium text-[24px] text-[#2D1F67] '>
-                                        Équipe multidisciplinaire (dev, pub, contenu, graphisme, SEO)
+                            <div className='flex gap-2 md:gap-3'>
+                                <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                                <div className='flex flex-col flex-1'>
+                                    <span className='text-sm md:text-base'>
+                                        🧠 Audit orienté risques réels, pas techno blabla
                                     </span>
                                 </div>
-
                             </div>
-                            <div className='flex items-center gap-3'>
-                                <span className='w-20' ></span>
-
-                                <div className='flex-1 flex flex-col'>
-                                    <span className='font-medium text-[24px] text-[#2D1F67] '>
-                                        Suivi régulier, résultats mesurés
+                            <div className='flex gap-2 md:gap-3'>
+                                <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                                <div className='flex flex-col flex-1'>
+                                    <span className='text-sm md:text-base'>
+                                        🚀 Réactivité : audit livré en 5 à 10 jours ouvrés
                                     </span>
                                 </div>
-
                             </div>
-                            <div className='flex items-center gap-3'>
-                                <span className='w-20' ></span>
-
-                                <div className='flex-1 flex flex-col    '>
-                                    <span className='font-medium text-[24px] text-[#2D1F67] '>
-                                        Expertise avancée en acquisition & croissance digitale
+                            <div className='flex gap-2 md:gap-3'>
+                                <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                                <div className='flex flex-col flex-1'>
+                                    <span className='text-sm md:text-base'>
+                                        🤝 Restitution claire, en langage métier ou dev
                                     </span>
                                 </div>
-
                             </div>
-
+                            <div className='flex gap-2 md:gap-3'>
+                                <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                                <div className='flex flex-col flex-1'>
+                                    <span className='text-sm md:text-base'>
+                                        🔐 Confidentialité, transparence, pédagogie
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <Image src="/images/UI UX 3.svg" width={0} height={0} className='w-auto h-auto mb-5 scale-100 md:scale-125 origin-left z-0 invisible' alt='hero' />
-                </div>
-                <div className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-8 md:py-[110px]'>
-                    <Image src="/images/UI UX 6.svg" width={0} height={0} className='w-auto h-auto mb-5 origin-left z-0 invisible' alt='hero' />
+                    <div></div>
+                </section>
+                <div className='grid  text-[#2D1F67] grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-8 md:py-[110px]'>
 
+                    <div>
+                        {/* <Image src="/images/UI UX 6.svg" width={0} height={0} className='w-auto h-auto mb-5 origin-left z-0 invisible' alt='hero' /> */}
+
+                    </div>
                     <div className='flex flex-col gap-4'>
                         <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left'>
-                            Passez à l'action dès maintenant.
+                            Mieux vaut prévenir que réparer.
                         </h2>
                         <h3 className='text-xl md:text-2xl lg:text-3xl font-medium text-[#2D1F67]'>
-                            Confiez-nous votre stratégie digitale, et observez les résultats.
+                            Identifiez vos failles, sécurisez vos systèmes, protégez votre réputation.
                         </h3>
-                        <Link href="/create-my-app-mobile" className="bg-[#673de6] self-start hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px]">
-                            Créer ma stratégie digitale sur mesure
+                        <Link href="/" className="bg-[#673de6] self-start hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px]">
+                            Planifier un audit de sécurité
                         </Link>
                     </div>
                 </div>
             </section>
-    </div>
-  )
+        </div>
+    )
 }
 
 export default page

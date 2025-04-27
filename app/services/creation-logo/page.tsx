@@ -42,7 +42,7 @@ const page = () => {
             </Link>
           </div>
         </div>
-        <Image src="/images/Creation Logo.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='pic' />
+        <Image src="/images/Creation Logo.svg" width={0} height={0} className='w-auto h-auto mb-5 mx-auto' alt='pic' />
       </section>
       <TrustedByClientsSection />
       {/* Pricing Table Section */}
@@ -91,100 +91,103 @@ const page = () => {
               </div>
             </div>
           </div>
-          <Image src={"/images/Creation Logo 2.svg"} width={0} height={0} className='w-auto h-auto mb-5' alt='pic' />
+          <Image src={"/images/Creation Logo 2.svg"} width={0} height={0} className='w-auto h-auto mb-5 mx-auto' alt='pic' />
         </section>
-        <section className='grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px] bg-[#2D1F67] py-8 md:py-[110px] gap-6 md:gap-8'>
-          <Image src={"/images/Création du logo 3.svg"} width={0} height={0} className='w-auto h-auto mb-5 origin-left z-0' alt='pic' />
-          <div className='flex flex-col gap-6 md:gap-8 text-white'>
+        <section className='grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px] bg-[#2D1F67] pb-8 md:pb-[110px] gap-6 md:gap-8'>
+          <Image src={"/images/Création du logo 3.svg"} width={0} height={0} className='w-auto h-auto mb-5 origin-left z-0 mx-auto' alt='pic' />
+          <div className='flex flex-col justify-center gap-6 md:gap-8 text-white'>
             <span className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
               Notre méthode de création
             </span>
-            <div className='flex flex-col gap-4'>
-              <div className='flex gap-3'>
-                <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-                <div className='flex flex-col'>
-                  <span className='text-sm md:text-base'>
-                    Il rend votre marque reconnaissable au premier regard
-                  </span>
-                </div>
-              </div>
-              <div className='flex gap-3'>
-                <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-                <div className='flex flex-col'>
-                  <span className='text-sm md:text-base'>
-                    Il affirme votre crédibilité et votre professionnalisme
-                  </span>
-                </div>
-              </div>
-              <div className='flex gap-3'>
-                <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-                <div className='flex flex-col'>
-                  <span className='text-sm md:text-base'>
-                    Il soutient vos campagnes marketing
-                  </span>
-                </div>
-              </div>
-              <div className='flex gap-3'>
-                <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-                <div className='flex flex-col'>
-                  <span className='text-sm md:text-base'>
-                    Il s'intègre sur tous vos supports : print, web, réseaux
-                  </span>
-                </div>
-              </div>
-              <div className='flex gap-3'>
-                <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-                <div className='flex flex-col'>
-                  <span className='text-sm md:text-base'>
-                    Il vous accompagne dans votre croissance et vos nouveaux projets
-                  </span>
-                </div>
-              </div>
-            </div>
+            <ul className='flex flex-col gap-4 list-decimal'>
+              <li className='flex gap-3'>
+                Brief créatif & benchmark concurrentiel
+              </li>
+              <li className='flex gap-3'>
+                Axes graphiques : 2 à 3 pistes initiales
+              </li>
+              <li className='flex gap-3'>
+                Affinage & déclinaisons selon vos retours
+              </li>
+              <li className='flex gap-3'>
+                Livraison finale multi-formats
+              </li>
+              <li className='flex gap-3'>
+                Charte d’utilisation (incluse dans les packs Pro & Premium)
+              </li>
+            </ul>
           </div>
         </section>
       </div>
       <section className='grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px] py-8 md:py-[110px]'>
         <div className='flex flex-col gap-6 pt-8 md:pt-[151px]'>
           <span className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
-            Votre app inclut toujours…
-          </span>
-          <span className='font-bold text-base sm:text-lg text-[#673DE6]'>
-            Parlez à un expert LIADTECH ou démarrez votre projet en quelques clics.
+            Ce que vous obtenez concrètement
           </span>
           <div className='flex flex-col gap-4'>
-            {sitesFeatures.map((site, index) => (
-              <div key={index} className='flex gap-3'>
-                <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-                <div className='flex flex-col'>
-                  <span className='text-sm md:text-base'>{site}</span>
-                </div>
+            <div className='flex gap-3 items-center'>
+              <div className='size-[42px] bg-gray-300 rounded-full'></div>
+              <div className='flex flex-col flex-1'>
+                <span className='text-sm md:text-base'>
+                  Un logo unique et stratégique, aligné à vos valeurs
+                </span>
               </div>
-            ))}
+            </div>
+            <div className='flex gap-3 items-center'>
+              <div className='size-[42px] bg-gray-300 rounded-full'></div>
+              <div className='flex flex-col flex-1'>
+                <span className='text-sm md:text-base'>
+                  Des designers spécialisés en branding, soutenus par notre studio graphique interne
+                </span>
+              </div>
+            </div>
+            <div className='flex gap-3 items-center'>
+              <div className='size-[42px] bg-gray-300 rounded-full'></div>
+              <div className='flex flex-col flex-1'>
+                <span className='text-sm md:text-base'>
+                  Une vraie équipe créative : illustrateurs, directeurs artistiques, character designers…
+                </span>
+              </div>
+            </div>
+            <div className='flex gap-3 items-center'>
+              <div className='size-[42px] bg-gray-300 rounded-full'></div>
+              <div className='flex flex-col flex-1'>
+                <span className='text-sm md:text-base'>
+                  Tous les formats livrés, prêts à l’emploi (web, impression, réseaux)
+                </span>
+              </div>
+            </div>
+            <div className='flex gap-3 items-center'>
+              <div className='size-[42px] bg-gray-300 rounded-full'></div>
+              <div className='flex flex-col flex-1'>
+                <span className='text-sm md:text-base'>
+                  Une identité cohérente, professionnelle, qui inspire confiance
+                </span>
+              </div>
+            </div>
+            <div className='flex gap-3 items-center'>
+              <div className='size-[42px] bg-gray-300 rounded-full'></div>
+              <div className='flex flex-col flex-1'>
+                <span className='text-sm md:text-base'>
+                  Un accompagnement humain : à l’écoute, réactif, et force de proposition
+                </span>
+              </div>
+            </div>
           </div>
         </div>
-        <Image src={"/images/Création du logo 4.svg"} width={0} height={0} className='w-auto h-auto mb-5' alt='pic' />
+        <Image src={"/images/Création du logo 4.svg"} width={0} height={0} className='w-auto h-auto mb-5 mx-auto' alt='pic' />
       </section>
       <section className='grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px] py-8 md:py-[110px]'>
-        <Image src={"/images/Création du logo 5.svg"} width={0} height={0} className='w-auto h-auto mb-5' alt='pic' />
-        <div className='flex flex-col gap-4'>
+        <Image src={"/images/Création du logo 5.svg"} width={0} height={0} className='w-auto h-auto mb-5 mx-auto' alt='pic' />
+        <div className='flex flex-col gap-4 justify-center'>
           <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
-            Discutons de votre projet. Une app performante peut tout changer.
+            Votre logo mérite mieux qu’un générateur automatique.Confiez votre image à de vrais créatifs.
           </h2>
+          <span className='text-base sm:text-lg text-[#2D1F67] mb-4 sm:mb-6 font-normal'>
+            Confiez votre image à de vrais créatifs
+          </span>
           <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap">
-            Parlez à un expert
+            Créer mon logo
           </Link>
         </div>
       </section>

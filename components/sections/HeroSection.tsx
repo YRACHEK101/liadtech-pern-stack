@@ -1,15 +1,37 @@
 "use client"
-import React, { useRef } from 'react'
+import React, { useRef, useEffect } from 'react'
 import Link from 'next/link'
 import Modal, { ModalRef } from '@/components/ui/modal'
 import Image from 'next/image'
 
 const HeroSection = () => {
     const youtubeModalRef = useRef<ModalRef>(null)
+    const lottieContainerRef = useRef<HTMLDivElement>(null)
+
+    useEffect(() => {
+        const loadLottie = async () => {
+            try {
+                const lottie = await import('lottie-web')
+                if (lottieContainerRef.current) {
+                    lottie.default.loadAnimation({
+                        container: lottieContainerRef.current,
+                        renderer: 'svg',
+                        loop: true,
+                        autoplay: true,
+                        path: '/hero_animation.json' // Make sure this path is correct
+                    })
+                }
+            } catch (error) {
+                console.error('Error loading Lottie animation:', error)
+            }
+        }
+        loadLottie()
+    }, [])
+
     return (
         <section className="container px-4 sm:px-8 lg:px-20 xl:px-4 w-full mx-auto md:pt-16 pb-8 sm:pb-12">
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 sm:gap-8 items-center">
-                <div className="z-10">
+                <div className="z-10 order-2 xl:order-1 ">
                     <h1 className="text-[#2f1c6a] font-bold mb-3 sm:mb-4 text-2xl sm:text-3xl xl:text-4xl">
                         Plus de visibilité. Plus de clients. Moins de stress.
                     </h1>
@@ -65,7 +87,7 @@ const HeroSection = () => {
                         </p>
                     </div>
                 </div>
-                <div className="flex justify-center mt-6 sm:mt-8 lg:mt-0">
+                {/* <div className="flex justify-center mt-6 sm:mt-8 lg:mt-0">
                     <div className="relative w-full max-w-[400px] sm:max-w-none">
                         <Image
                             src="/images/robot-liadtech.png"
@@ -74,6 +96,11 @@ const HeroSection = () => {
                             height={0}
                             className="w-full h-auto"
                         />
+                    </div>
+                </div> */}
+                <div className="flex justify-center mt-6 sm:mt-8 lg:mt-0 order-1 xl:order-2">
+                    <div ref={lottieContainerRef} className="relative w-full max-w-[400px] sm:max-w-none">
+                        {/* Lottie animation will be rendered here */}
                     </div>
                 </div>
             </div>

@@ -5,12 +5,11 @@ import Link from 'next/link'
 import React from 'react'
 
 const sitesFeatures = [
-    'UX/UI mobile-first & responsive',
-    'Développement iOS & Android',
-    'Connexion API, CRM, site existant',
-    'Sécurité & RGPD',
-    'Hébergement + suivi technique',
-    '1 mois de maintenance offert'
+    'Scénaristes & script doctors',
+    'Character designers & illustrateurs',
+    'Animateurs 2D, FX, frame-by-frame',
+    'Sound designers & compositeurs',
+    'Directeurs artistiques & producers',
 ]
 
 
@@ -25,11 +24,11 @@ const features = [
 ]
 
 const features2 = [
-    'Script + storyboard sur-mesure',
-    'Animation fluide et professionnelle',
-    'Voix-off (1 langue) incluse',
-    'Design personnalisé à votre charte',
-    'Musique & sound design inclus',
+    'Dessin à la main ou vectoriel',
+    'Frame by frame ou animation hybride',
+    'Univers cohérents, illustrés, color-scriptés',
+    'Narration scénarisée ou poétique',
+    'Rythme cinématographique ou dynamique social',
 ]
 
 const page = () => {
@@ -63,19 +62,17 @@ const page = () => {
                     <span className='font-bold text-2xl sm:text-3xl xl:text-4xl text-[#2D1F67]'>
                         Une production animée n'est pas un format.
                     </span>
-                    <span className='font-bold text-[#2D1F67] text-base sm:text-lg'>
+                    <span className='font-normal text-[#2D1F67] text-base sm:text-lg'>
                         C'est une vision, un style unique, un souffle narratif.
                     </span>
-                    <span className='font-bold text-[#2D1F67] text-base sm:text-lg'>
+                    <span className='font-normal text-[#2D1F67] text-base sm:text-lg'>
                         On ne cherche pas à faire du "joli". On crée une œuvre animée, où chaque scène raconte, chaque geste exprime, chaque silence parle.
                     </span>
                     <div className='flex flex-col gap-3 md:gap-4'>
                         {features2.map((site, index) => (
-                            <div key={index} className='flex gap-2 md:gap-3'>
-                                <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                                <div className='flex flex-col'>
+                            <div key={index} className='flex items-center gap-2 md:gap-3'>
+                                <div className='size-2 bg-[#2D1F67] rounded-full'></div>
+                                <div className='flex flex-col flex-1'>
                                     <span className='text-sm md:text-base'>{site}</span>
                                 </div>
                             </div>
@@ -91,138 +88,200 @@ const page = () => {
 
                 <div className='flex flex-col gap-4 md:gap-7 pt-10 md:pt-20 pr-4 md:pr-20'>
                     <span className='font-bold text-2xl sm:text-3xl xl:text-4xl text-[#2D1F67]'>
-                        Donnez vie à votre message avec des animations percutantes
+                        Un studio complet derrière chaque projet
                     </span>
-                </div>
-            </section>
-            <div className='bg-[#2D1F67]'>
-                <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 pb-20 '>
-                    <div className='flex flex-col gap-7 pt-16 md:pt-32 pr-0 md:pr-20 text-white'>
-                        <span className='font-bold text-2xl sm:text-3xl xl:text-4xl'>
-                            Un bon logo, ce n'est pas qu'un joli visuel.C'est un déclencheur de confiance.
-                        </span>
-                        <div className='flex flex-col gap-4'>
-                            <div className='flex gap-3'>
-                                <div className='flex flex-col'>
-                                    <span className='text-sm md:text-base'>
-                                        Il rend votre marque reconnaissable au premier regard
-                                    </span>
-                                </div>
-                            </div>
-                            <div className='flex gap-3'>
-                                <div className='flex flex-col'>
-                                    <span className='text-sm md:text-base'>
-                                        Il affirme votre crédibilité et votre professionnalisme
-                                    </span>
-                                </div>
-                            </div>
-                            <div className='flex gap-3'>
-                                <div className='flex flex-col'>
-                                    <span className='text-sm md:text-base'>
-                                        Il soutient vos campagnes marketing
-                                    </span>
-                                </div>
-                            </div>
-                            <div className='flex gap-3'>
-                                <div className='flex flex-col'>
-                                    <span className='text-sm md:text-base'>
-                                        Il s'intègre sur tous vos supports : print, web, réseaux
-                                    </span>
-                                </div>
-                            </div>
-                            <div className='flex gap-3'>
-                                <div className='flex flex-col'>
-                                    <span className='text-sm md:text-base'>
-                                        Il vous accompagne dans votre croissance et vos nouveaux projets
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <Image src={"/images/Frame 15721.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
-                </section>
-                <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 bg-[#2D1F67] py-20 md:py-36 gap-10'>
-                    <Image src={"/images/Frame 15722.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
-                    <div className='flex flex-col gap-7 pr-0 md:pr-20 text-white'>
-                        <span className='font-bold text-2xl sm:text-3xl xl:text-4xl'>
-                            Notre méthode de création
-                        </span>
-                        <div className='flex flex-col gap-4'>
-                            <div className='flex gap-3'>
-                                <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                                <div className='flex flex-col'>
-                                    <span className='text-sm md:text-base'>
-                                        Il rend votre marque reconnaissable au premier regard
-                                    </span>
-                                </div>
-                            </div>
-                            <div className='flex gap-3'>
-                                <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                                <div className='flex flex-col'>
-                                    <span className='text-sm md:text-base'>
-                                        Il affirme votre crédibilité et votre professionnalisme
-                                    </span>
-                                </div>
-                            </div>
-                            <div className='flex gap-3'>
-                                <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                                <div className='flex flex-col'>
-                                    <span className='text-sm md:text-base'>
-                                        Il soutient vos campagnes marketing
-                                    </span>
-                                </div>
-                            </div>
-                            <div className='flex gap-3'>
-                                <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                                <div className='flex flex-col'>
-                                    <span className='text-sm md:text-base'>
-                                        Il s'intègre sur tous vos supports : print, web, réseaux
-                                    </span>
-                                </div>
-                            </div>
-                            <div className='flex gap-3'>
-                                <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                                <div className='flex flex-col'>
-                                    <span className='text-sm md:text-base'>
-                                        Il vous accompagne dans votre croissance et vos nouveaux projets
-                                    </span>
-                                </div>
-                            </div>
+                    <span className='font-normal text-[#2D1F67] text-base sm:text-lg'>
+                        Vous ne travaillez pas avec un simple motion designer.Vous collaborez avec un studio complet, orchestré comme une production animée.
+                    </span>
 
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-10'>
-                <div className='flex flex-col gap-7 pt-10 md:pt-20 pr-0 md:pr-20'>
-                    <span className='font-bold text-2xl sm:text-3xl xl:text-4xl'>
-                        Votre app inclut toujours…
-                    </span>
-                    <span className='font-bold text-[#673DE6] text-base sm:text-lg'>
-                        Parlez à un expert LIADTECH ou démarrez votre projet en quelques clics.
-                    </span>
-                    <div className='flex flex-col gap-4'>
+                    <div className='flex flex-col gap-3 md:gap-4'>
                         {sitesFeatures.map((site, index) => (
-                            <div key={index} className='flex gap-3'>
-                                <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                                <div className='flex flex-col'>
+                            <div key={index} className='flex  items-center gap-2 md:gap-3'>
+                                <div className='size-2 bg-[#2D1F67] rounded-full'></div>
+                                <div className='flex flex-col flex-1'>
                                     <span className='text-sm md:text-base'>{site}</span>
                                 </div>
                             </div>
                         ))}
                     </div>
+                </div>
+            </section>
+            <div className='bg-[#2D1F67]'>
+                <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 pt-16 px-4 md:px-16 pb-20 '>
+                    <div className='flex flex-col gap-7 text-white'>
+                        <span className='font-bold text-2xl sm:text-3xl xl:text-4xl'>
+                            Ce que nous réalisons:
+                        </span>
+                        <div className='flex flex-col gap-4'>
+                            <div className='flex gap-3 items-center'>
+                                <div className='size-[42px] bg-gray-300 rounded-full'></div>
+                                <div className='flex flex-col flex-1'>
+                                    <span className='text-sm md:text-base'>
+                                        Mini-séries scénarisées (3 à 6 épisodes)
+                                    </span>
+                                </div>
+                            </div>
+                            <div className='flex gap-3 items-center'>
+                                <div className='size-[42px] bg-gray-300 rounded-full'></div>
+                                <div className='flex flex-col flex-1'>
+                                    <span className='text-sm md:text-base'>
+                                        Pilotes ou teasers d’univers
+                                    </span>
+                                </div>
+                            </div>
+                            <div className='flex gap-3 items-center'>
+                                <div className='size-[42px] bg-gray-300 rounded-full'></div>
+                                <div className='flex flex-col flex-1'>
+                                    <span className='text-sm md:text-base'>
+                                        Animations pédagogiques stylisées
+                                    </span>
+                                </div>
+                            </div>
+                            <div className='flex gap-3 items-center'>
+                                <div className='size-[42px] bg-gray-300 rounded-full'></div>
+                                <div className='flex flex-col flex-1'>
+                                    <span className='text-sm md:text-base'>
+                                        Séries brand content à fort impact
+                                    </span>
+                                </div>
+                            </div>
+                            <div className='flex gap-3 items-center'>
+                                <div className='size-[42px] bg-gray-300 rounded-full'></div>
+                                <div className='flex flex-col flex-1'>
+                                    <span className='text-sm md:text-base'>
+                                        Contenus narratifs pour la cause, la culture, ou la communication interne
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className=''>
+                            <span className='font-bold'>
+                                Livrables :
+                            </span>
+                            <span className='font-normal'>
+                                HD / 4K · sous-titres · voix-off FR / EN · formats réseaux sociaux ou ciné
+                            </span>
+                        </div>
+                    </div>
+                    <Image src={"/images/Frame 15721.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
+                </section>
+                <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 bg-[#2D1F67] pb-20 md:pb-36 gap-10'>
+                    <Image src={"/images/Frame 15722.svg"} width={0} height={0} className='w-auto h-auto -mt-28' alt='pic' />
+                    <div className='flex flex-col gap-7 pr-0 md:pr-20 text-white'>
+                        <span className='font-bold text-2xl sm:text-3xl xl:text-4xl'>
+                            Étapes clés de création :
+                        </span>
+                        <div className='flex flex-col gap-4'>
+                            <div className='flex gap-3'>
+                                <div className='size-[42px] bg-gray-300 rounded-full'></div>
+                                <div className='flex flex-col flex-1 pt-2'>
+                                    <span className='text-sm md:text-base'>
+                                        Brief & ADN narratif (émotion, cible, style)
+                                    </span>
+                                </div>
+                            </div>
+                            <div className='flex gap-3'>
+                                <div className='size-[42px] bg-gray-300 rounded-full'></div>
+                                <div className='flex flex-col flex-1 pt-2'>
+                                    <span className='text-sm md:text-base'>
+                                        Pitch & scénario (structure 3 actes ou séquencée)
+                                    </span>
+                                </div>
+                            </div>
+                            <div className='flex gap-3'>
+                                <div className='size-[42px] bg-gray-300 rounded-full'></div>
+                                <div className='flex flex-col flex-1 pt-2'>
+                                    <span className='text-sm md:text-base'>
+                                        Moodboard, color script, character design
+                                    </span>
+                                </div>
+                            </div>
+                            <div className='flex gap-3'>
+                                <div className='size-[42px] bg-gray-300 rounded-full'></div>
+                                <div className='flex flex-col flex-1 pt-2'>
+                                    <span className='text-sm md:text-base'>
+                                        Storyboard & animatique
+                                    </span>
+                                </div>
+                            </div>
+                            <div className='flex gap-3'>
+                                <div className='size-[42px] bg-gray-300 rounded-full'></div>
+                                <div className='flex flex-col flex-1 pt-2'>
+                                    <span className='text-sm md:text-base'>
+                                        Animation : rough → clean → FX & compositing
+                                    </span>
+                                </div>
+                            </div>
+                            <div className='flex gap-3'>
+                                <div className='size-[42px] bg-gray-300 rounded-full'></div>
+                                <div className='flex flex-col flex-1 pt-2'>
+                                    <span className='text-sm md:text-base'>
+                                        Montage, sound design, voix-off, livraison
+                                    </span>
+                                </div>
+                            </div>
+                            <div className=''>
+                                <span className='font-bold'>
+                                    Bonus:
+                                </span>
+                                <span className='font-normal'>
+                                    pilotes narratifs, loops animés, fragments scénarisés pour réseaux sociaux.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-10'>
+                <div className='flex text-[#2D1F67] flex-col gap-7 pt-10 md:pt-20 pr-0 md:pr-20'>
+                    <span className='font-bold text-2xl sm:text-3xl xl:text-4xl'>
+                        Pourquoi LIADTECH ?
+                    </span>
+                    <span className='font-bold text-base sm:text-lg'>
+                        Vous ne travaillez pas avec un designer isolé. Vous travaillez avec une équipe produit complète, alignée sur vos objectifs.                    </span>
+                    <div className='flex flex-col gap-4'>
+                        <div className='flex gap-3'>
+                            <div className='size-[42px] bg-gray-300 rounded-full'></div>
+                            <div className='flex flex-col flex-1 pt-2'>
+                                <span className='text-sm md:text-base'>
+                                    Un studio hybride, entre motion design, anime et storytelling graphique
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-3'>
+                            <div className='size-[42px] bg-gray-300 rounded-full'></div>
+                            <div className='flex flex-col flex-1 pt-2'>
+                                <span className='text-sm md:text-base'>
+                                    Une exigence artistique assumée, loin des modèles recyclés
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-3'>
+                            <div className='size-[42px] bg-gray-300 rounded-full'></div>
+                            <div className='flex flex-col flex-1 pt-2'>
+                                <span className='text-sm md:text-base'>
+                                    Des narrations profondes, humaines, parfois drôles
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-3'>
+                            <div className='size-[42px] bg-gray-300 rounded-full'></div>
+                            <div className='flex flex-col flex-1 pt-2'>
+                                <span className='text-sm md:text-base'>
+                                    Un process clair et structuré, au rythme studio
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-3'>
+                            <div className='size-[42px] bg-gray-300 rounded-full'></div>
+                            <div className='flex flex-col flex-1 pt-2'>
+                                <span className='text-sm md:text-base'>
+                                    Un accompagnement créatif, stratégique et humain
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <Image src={"/images/digital marketing Section 3.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
             </section>
@@ -230,10 +289,10 @@ const page = () => {
                 <Image src={"/images/Support.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
                 <div className='flex flex-col gap-4 mt-8 md:mt-0'>
                     <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
-                        Discutons de votre projet. Une app performante peut tout changer.
+                        Vous ne cherchez pas une vidéo.Vous cherchez une création animée, un projet qui a du souffle.
                     </h2>
                     <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap">
-                        Parlez à un expert
+                        Discuter avec notre studio
                     </Link>
                 </div>
             </section>

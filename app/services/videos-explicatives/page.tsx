@@ -296,7 +296,7 @@ const page = () => {
                 </div>
             </section>
             <section className='bg-[#2D1F67] '>
-                <div className='px-4  sm:container sm:mx-auto flex flex-col md:flex-row gap-8 md:gap-2 justify-between'>
+                <div className='px-4  sm:container sm:mx-auto grid grid-cols-1 xl:grid-cols-2 pb-16 gap-8 md:gap-2 justify-between'>
                     <div className='flex flex-col !pt-8 md:!pt-14 text-white '>
                         <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                             Votre message mérite d'être vu, compris… et retenu.
@@ -308,7 +308,7 @@ const page = () => {
                             Créer ma vidéo explicative
                         </Link>
                     </div>
-                    <Image src="/images/digital Web Section 2.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
+                    <Image src="/images/digital Web Section 2.svg" width={0} height={0} className='w-auto h-auto' alt='hero' />
                 </div>
             </section>
 

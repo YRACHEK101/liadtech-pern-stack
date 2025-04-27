@@ -100,7 +100,7 @@ const page = () => {
 
                     <div className='flex flex-col gap-6 md:gap-8'>
                         <div className='flex items-center gap-3'>
-                            {/* <span className='w-20' ></span> */}
+                            <span className='size-[42px] bg-gray-300 rounded-full' ></span>
                             <div className='flex-1 flex flex-col'>
                                 <span className='font-bold text-base sm:text-lg text-[#2D1F67] '>
                                     Visibilité accrue
@@ -111,7 +111,7 @@ const page = () => {
                             </div>
                         </div>
                         <div className='flex items-center gap-3'>
-                            {/* <span className='w-20' ></span> */}
+                            <span className='size-[42px] bg-gray-300 rounded-full' ></span>
                             <div className='flex-1 flex flex-col'>
                                 <span className='font-bold text-base sm:text-lg text-[#2D1F67] '>
                                     Leads qualifiés
@@ -122,7 +122,7 @@ const page = () => {
                             </div>
                         </div>
                         <div className='flex items-center gap-3'>
-                            {/* <span className='w-20' ></span> */}
+                            <span className='size-[42px] bg-gray-300 rounded-full' ></span>
                             <div className='flex-1 flex flex-col'>
                                 <span className='font-bold text-base sm:text-lg text-[#2D1F67] '>
                                     Gain de temps
@@ -133,7 +133,7 @@ const page = () => {
                             </div>
                         </div>
                         <div className='flex items-center gap-3'>
-                            {/* <span className='w-20' ></span> */}
+                            <span className='size-[42px] bg-gray-300 rounded-full' ></span>
                             <div className='flex-1 flex flex-col'>
                                 <span className='font-bold text-base sm:text-lg text-[#2D1F67] '>
                                     Expertise + IA
@@ -144,7 +144,7 @@ const page = () => {
                             </div>
                         </div>
                         <div className='flex items-center gap-3'>
-                            {/* <span className='w-20' ></span> */}
+                            <span className='size-[42px] bg-gray-300 rounded-full' ></span>
                             <div className='flex-1 flex flex-col'>
                                 <span className='font-bold text-base sm:text-lg text-[#2D1F67] '>
                                     Suivi & ajustement
@@ -188,7 +188,7 @@ const page = () => {
 
                         <div className='flex flex-col gap-6 md:gap-8'>
                             <div className='flex items-center gap-3'>
-                                {/* <span className='w-20' ></span> */}
+                                <span className='size-[42px] bg-gray-300 rounded-full' ></span>
                                 <div className='flex-1 flex flex-col'>
                                     <span className='font-medium text-base sm:text-lg text-[#2D1F67] '>
                                         Stratégie 360° centrée conversion
@@ -196,7 +196,7 @@ const page = () => {
                                 </div>
                             </div>
                             <div className='flex items-center gap-3'>
-                                {/* <span className='w-20' ></span> */}
+                                <span className='size-[42px] bg-gray-300 rounded-full' ></span>
                                 <div className='flex-1 flex flex-col'>
                                     <span className='font-medium text-base sm:text-lg text-[#2D1F67] '>
                                         Équipe multidisciplinaire (dev, pub, contenu, graphisme, SEO)
@@ -204,7 +204,7 @@ const page = () => {
                                 </div>
                             </div>
                             <div className='flex items-center gap-3'>
-                                {/* <span className='w-20' ></span> */}
+                                <span className='size-[42px] bg-gray-300 rounded-full' ></span>
                                 <div className='flex-1 flex flex-col'>
                                     <span className='font-medium text-base sm:text-lg text-[#2D1F67] '>
                                         Suivi régulier, résultats mesurés
@@ -212,7 +212,7 @@ const page = () => {
                                 </div>
                             </div>
                             <div className='flex items-center gap-3'>
-                                {/* <span className='w-20' ></span> */}
+                                <span className='size-[42px] bg-gray-300 rounded-full' ></span>
                                 <div className='flex-1 flex flex-col'>
                                     <span className='font-medium text-base sm:text-lg text-[#2D1F67] '>
                                         Expertise avancée en acquisition & croissance digitale

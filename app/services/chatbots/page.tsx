@@ -25,7 +25,7 @@ const page = () => {
     return (
         <div>
             <section className='overflow-hidden grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px]'>
-                <div className='flex flex-col text-[#2D1F67] self-center py-8 md:py-0'>
+                <div className='flex flex-col text-[#2D1F67] self-center pt-8 md:pt-16'>
                     <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left'>
                         Vos clients attendent des réponses. Offrez-leur un échange instantané, fluide et intelligent.
                     </h2>
@@ -42,56 +42,76 @@ const page = () => {
                         </Link>
                     </div>
                 </div>
-                <Image src="/images/AI (1).svg" width={0} height={0} className='w-auto h-auto mb-5' alt='pic' />
+                <Image src="/images/AI (1).svg" width={0} height={0} className='w-auto h-auto mb-5 mx-auto' alt='pic' />
             </section>
             <TrustedByClientsSection />
             {/* Pricing Table Section */}
             <PricingPacksSection />
 
             <section className='bg-[#DDBFFF]'>
-                <div className='grid grid-cols-1 container mx-auto xl:grid-cols-2'>
-                    <div className='flex flex-col pt-8 md:pt-28 z-10 px-4 md:px-0'>
+                <div className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto px-4 md:px-16 xl:grid-cols-2'>
+                    <div className='flex flex-col pt-8 md:pt-28 z-10  '>
                         <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left mb-9'>
-                            Ce que vous gagnez avec nos Bénéfice
+                            Pourquoi adopter un chatbot ?
                         </h2>
 
                         <div className='flex flex-col gap-8'>
                             <div className='flex items-center gap-3'>
-                                <span className='w-20' ></span>
+                                <span className='size-[42px] bg-gray-300 rounded-full'></span>
                                 <div className='flex-1 flex flex-col'>
-                                    <span className='font-medium text-[24px] text-[#2D1F67] '>
-                                        Stratégie 360° centrée conversion
+                                    <span className='font-normal md:text-lg text-[#2D1F67] '>
+                                        Réponse immédiate, même à 3h du matin
                                     </span>
                                 </div>
 
                             </div>
                             <div className='flex items-center gap-3'>
-                                <span className='w-20' ></span>
+                                <span className='size-[42px] bg-gray-300 rounded-full'></span>
 
 
                                 <div className='flex-1 flex flex-col'>
-                                    <span className='font-medium text-[24px] text-[#2D1F67] '>
-                                        Équipe multidisciplinaire (dev, pub, contenu, graphisme, SEO)
+                                    <span className='font-normal md:text-lg text-[#2D1F67] '>
+                                        Améliore l’expérience client sans alourdir votre équipe
                                     </span>
                                 </div>
 
                             </div>
                             <div className='flex items-center gap-3'>
-                                <span className='w-20' ></span>
+                                <span className='size-[42px] bg-gray-300 rounded-full'></span>
 
                                 <div className='flex-1 flex flex-col'>
-                                    <span className='font-medium text-[24px] text-[#2D1F67] '>
-                                        Suivi régulier, résultats mesurés
+                                    <span className='font-normal md:text-lg text-[#2D1F67] '>
+                                        Automatise les questions fréquentes et les processus simples
                                     </span>
                                 </div>
 
                             </div>
                             <div className='flex items-center gap-3'>
-                                <span className='w-20' ></span>
+                                <span className='size-[42px] bg-gray-300 rounded-full'></span>
 
                                 <div className='flex-1 flex flex-col    '>
-                                    <span className='font-medium text-[24px] text-[#2D1F67] '>
-                                        Expertise avancée en acquisition & croissance digitale
+                                    <span className='font-normal md:text-lg text-[#2D1F67] '>
+                                        Génère des leads, redirige, qualifie, collecte
+                                    </span>
+                                </div>
+
+                            </div>
+                            <div className='flex items-center gap-3'>
+                                <span className='size-[42px] bg-gray-300 rounded-full'></span>
+
+                                <div className='flex-1 flex flex-col    '>
+                                    <span className='font-normal md:text-lg text-[#2D1F67] '>
+                                        S’adapte à votre ton de marque et vos cas métiers
+                                    </span>
+                                </div>
+
+                            </div>
+                            <div className='flex items-center gap-3'>
+                                <span className='size-[42px] bg-gray-300 rounded-full'></span>
+
+                                <div className='flex-1 flex flex-col    '>
+                                    <span className='font-normal md:text-lg text-[#2D1F67] '>
+                                        Apprend et s’améliore avec le temps
                                     </span>
                                 </div>
 
@@ -99,105 +119,204 @@ const page = () => {
 
                         </div>
                     </div>
-                    <Image src="/images/ChatBot.svg" width={0} height={0} className='w-auto h-auto ' alt='hero' />
+                    <Image src="/images/ChatBot.svg" width={0} height={0} className='w-auto h-auto mx-auto ' alt='hero' />
 
                 </div>
-                <div className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-8 md:py-[110px]'>
-                    <Image src="/images/ChatBot 2.svg" width={0} height={0} className='w-auto h-auto' alt='hero' />
+                <div className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-16 pb-8 md:pb-[110px]'>
+                    <Image src="/images/ChatBot 2.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='hero' />
 
                     <div className='flex flex-col gap-4'>
-                        <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left'>
-                            Passez à l'action dès maintenant.
-                        </h2>
-                        <h3 className='text-xl md:text-2xl lg:text-3xl font-medium text-[#2D1F67]'>
-                            Confiez-nous votre stratégie digitale, et observez les résultats.
-                        </h3>
-                        <Link href="/create-my-app-mobile" className="bg-[#673de6] self-start hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px]">
-                            Créer ma stratégie digitale sur mesure
-                        </Link>
-                    </div>
-                </div>
-            </section>
-
-            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-10'>
-                <div className='flex flex-col gap-7 pt-10 md:pt-20 pr-0 md:pr-20'>
-                    <span className='font-bold text-2xl sm:text-3xl xl:text-4xl'>
-                        Votre app inclut toujours…
-                    </span>
-                    <span className='font-bold text-[#673DE6] text-base md:text-xl lg:text-2xl'>
-                        Parlez à un expert LIADTECH ou démarrez votre projet en quelques clics.
-                    </span>
-                    <div className='flex flex-col gap-4'>
-                        {sitesFeatures.map((site, index) => (
-                            <div key={index} className='flex gap-3'>
-                                <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                                <div className='flex flex-col'>
-                                    <span className='!text-[16px] md:!text-[20px]'>{site}</span>
+                        <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
+                            Ce que nous développons pour vous
+                        </div>
+                        <div className='flex flex-col gap-4'>
+                            <div className='flex gap-2 md:gap-3'>
+                                <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                                <div className='flex flex-col flex-1'>
+                                    <span className='text-sm md:text-base'>
+                                        🤖 Chatbots sur-mesure, connectés à vos outils (CRM, FAQ, agenda…)
+                                    </span>
                                 </div>
                             </div>
-                        ))}
+                            <div className='flex gap-2 md:gap-3'>
+                                <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                                <div className='flex flex-col flex-1'>
+                                    <span className='text-sm md:text-base'>
+                                        🌐 Intégration web, app mobile, WhatsApp, Messenger ou autres
+                                    </span>
+                                </div>
+                            </div>
+                            <div className='flex gap-2 md:gap-3'>
+                                <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                                <div className='flex flex-col flex-1'>
+                                    <span className='text-sm md:text-base'>
+                                        🧩 Connexion à votre base de connaissances ou base client
+                                    </span>
+                                </div>
+                            </div>
+                            <div className='flex gap-2 md:gap-3'>
+                                <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                                <div className='flex flex-col flex-1'>
+                                    <span className='text-sm md:text-base'>
+                                        💡 Logique conversationnelle avancée (scénarios + IA)
+                                    </span>
+                                </div>
+                            </div>
+                            <div className='flex gap-2 md:gap-3'>
+                                <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                                <div className='flex flex-col flex-1'>
+                                    <span className='text-sm md:text-base'>
+                                        📊 Tableau de bord pour suivre les échanges, taux de conversion, questions clés
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <Image src={"/images/Création du l'app 3.svg"} width={0} height={0} className='w-auto h-auto invisible' alt='pic' />
             </section>
-            <section className='grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px] py-8 md:py-[110px]'>
-                <Image src={"/images/Création du l'app 4.svg"} width={0} height={0} className='w-auto h-auto mb-5' alt='pic' />
+
+            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-16 pb-10'>
                 <div className='flex flex-col gap-4'>
-                    <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
-                        Discutons de votre projet. Une app performante peut tout changer.
-                    </h2>
-                    <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap">
-                        Parlez à un expert
-                    </Link>
-                </div>
-            </section>
-            <div className='bg-[#2D1F67]'>
-                <section className='grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px] pb-20'>
-                    <div className='flex flex-col gap-6 pt-8 md:pt-[151px] text-white'>
-                        <span className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
-                            Un bon design ne s'impose pas. Il se ressent sans même y penser.
-                        </span>
-                        <span className='font-bold text-base sm:text-lg'>
-                            Une bonne interface se fait oublier. Elle rassure, stimule l'action, et rend chaque clic évident.
-                        </span>
-                        <div className='flex flex-col gap-4'>
-                            {features2.map((site, index) => (
-                                <div key={index} className='flex gap-3'>
-                                    <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                                    </svg>
-                                    <div className='flex flex-col'>
-                                        <span className='text-sm md:text-base'>{site}</span>
-                                    </div>
-                                </div>
-                            ))}
+                    <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
+                        Exemples d’usage
+                    </div>
+                    <div className='flex flex-col gap-4'>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    🛍️ E-commerce : suivi de commande, recommandation produit, qualification de besoin
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    📅 Services : prise de rendez-vous automatisée, relances
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    📚 Formation : orientation vers les bons contenus, quizz interactifs
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    📞 Support client : réponse immédiate aux demandes fréquentes
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex gap-2 md:gap-3'>
+                            <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                            <div className='flex flex-col flex-1'>
+                                <span className='text-sm md:text-base'>
+                                    📥 Lead generation : capture d’email, téléphone, besoin, etc.
+                                </span>
+                            </div>
                         </div>
                     </div>
-                    <Image src={"/images/UI UX 1.svg"} width={0} height={0} className='w-auto h-auto mb-5' alt='pic' />
+                </div>
+                {/* <Image src={"/images/Création du l'app 3.svg"} width={0} height={0} className='w-auto h-auto invisible mx-auto' alt='pic' /> */}
+            </section>
+            <section className='grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-16 pb-8 md:pb-[110px]'>
+                <div>
+
+                {/* <Image src={"/images/Création du l'app 4.svg"} width={0} height={0} className='w-auto h-auto mb-5 invisible mx-auto' alt='pic' /> */}
+                </div>
+                <div className='flex flex-col gap-4'>
+                    <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
+                        Méthode de création
+                    </div>
+                    <ul className='flex flex-col gap-4 list-decimal'>
+                        <li className='flex gap-3'>
+                            Brief : vos objectifs, vos utilisateurs, vos canaux
+                        </li>
+                        <li className='flex gap-3'>
+                            Conception : arborescence, logique, ton
+                        </li>
+                        <li className='flex gap-3'>
+                            Rédaction & IA : dialogues clairs, utiles, humains
+                        </li>
+                        <li className='flex gap-3'>
+                            Intégration : sur vos outils, site, plateformes
+                        </li>
+                        <li className='flex gap-3'>
+                            Tests & suivi : ajustements, stats, amélioration continue
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <div className='bg-[#2D1F67]'>
+                <section className='grid grid-cols-1 pt-8 xl:pt-16 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-16 pb-20'>
+                    <div className='flex text-white flex-col gap-4'>
+                        <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
+                            Pourquoi LIADTECH ?
+                        </div>
+                        <div className='flex flex-col gap-4'>
+                            <div className='flex items-center gap-2 md:gap-3'>
+                                <div className='size-2 bg-white rounded-full'></div>
+                                <div className='flex flex-col flex-1'>
+                                    <span className='text-sm md:text-base'>
+                                        🧠 Expertise IA, UX et automatisation combinées
+                                    </span>
+                                </div>
+                            </div>
+                            <div className='flex items-center gap-2 md:gap-3'>
+                                <div className='size-2 bg-white rounded-full'></div>
+                                <div className='flex flex-col flex-1'>
+                                    <span className='text-sm md:text-base'>
+                                        🤝 Approche centrée utilisateur : utile, humain, direct
+                                    </span>
+                                </div>
+                            </div>
+                            <div className='flex items-center gap-2 md:gap-3'>
+                                <div className='size-2 bg-white rounded-full'></div>
+                                <div className='flex flex-col flex-1'>
+                                    <span className='text-sm md:text-base'>
+                                        🎯 Des bots pensés pour convertir ou soulager vos équipes
+                                    </span>
+                                </div>
+                            </div>
+                            <div className='flex items-center gap-2 md:gap-3'>
+                                <div className='size-2 bg-white rounded-full'></div>
+                                <div className='flex flex-col flex-1'>
+                                    <span className='text-sm md:text-base'>
+                                        🧩 Intégration fluide à vos outils existants
+                                    </span>
+                                </div>
+                            </div>
+                            <div className='flex items-center gap-2 md:gap-3'>
+                                <div className='size-2 bg-white rounded-full'></div>
+                                <div className='flex flex-col flex-1'>
+                                    <span className='text-sm md:text-base'>
+                                        🚀 Studio agile, réactif, humain
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* <Image src={"/images/UI UX 1.svg"} width={0} height={0} className='w-auto h-auto mb-5 invisible' alt='pic' /> */}
                 </section>
-                <section className='grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px] bg-[#2D1F67] py-8 md:py-[110px] gap-6 md:gap-8'>
-                    <Image src={"/images/AI Section deux (1).svg"} width={0} height={0} className='w-auto h-auto mb-5' alt='pic' />
-                    <div className='flex flex-col gap-6 md:gap-8 text-white'>
+                <section className='grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px] bg-[#2D1F67] pb-8 md:pb-[110px] gap-6 md:gap-8'>
+                    <Image src={"/images/AI Section deux (2).svg"} width={0} height={0} className='w-auto h-auto mb-5 mx-auto' alt='pic' />
+                    <div className='flex flex-col gap-6 md:gap-8 self-center text-white'>
                         <span className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
-                            Pas de modèles tout faits. Pas de design au hasard.
+                            Votre prochain collaborateur ne dort jamais.
                         </span>
                         <span className='font-bold text-base sm:text-lg'>
-                            Un process structuré, centré sur vos objectifs.
+                            Créez un chatbot intelligent, efficace et aligné à votre business.
                         </span>
-                        <div className='flex flex-col gap-4'>
-                            {features2.map((site, index) => (
-                                <div key={index} className='flex gap-3'>
-                                    <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                                    </svg>
-                                    <div className='flex flex-col'>
-                                        <span className='text-sm md:text-base'>{site}</span>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
+                        <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap">
+                            Lancer mon projet chatbot
+                        </Link>
                     </div>
                 </section>
             </div>

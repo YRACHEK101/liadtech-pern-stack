@@ -73,17 +73,25 @@ const page = () => {
             <PricingPacksSection />
 
             <section className='bg-[#2D1F67]  md:pl-[66px] py-16 md:py-[132px] text-white mb-16'>
-                <div className='sm:container px-4  mx-auto grid grid-cols-1 xl:grid-cols-2 relative'>
-                    <div className='flex flex-col gap-4 md:gap-7 z-10'>
+                <div className='sm:container px-4  mx-auto'>
+                    <div className='col-span-2 flex flex-col gap-2 mb-6'>
                         <span className='font-bold text-2xl sm:text-3xl xl:text-4xl'>Types de sites que vous pouvez créer</span>
-                        <span className='font-bold md:text-lg'>Ne perdez plus de temps avec les démarches techniques. Créez, animez et propulsez votre image grâce à nos packs 100% clé-en-main.</span>
-                        <div className='flex flex-col gap-3 md:gap-4'>
+                        <span className='font-normal md:text-lg flex flex-col '>
+                            <span>
+                            Ne perdez plus de temps avec les démarches techniques.
+                            </span>
+                            <span>
+                            Créez, animez et propulsez votre image grâce à nos packs 100% clé-en-main.
+                            </span>
+                        </span>
+                    </div>
+                    <div className='grid grid-cols-1 xl:grid-cols-2 gap-4'>
+                    <div className='flex flex-col gap-4 md:gap-7 z-10'>
+                        <div className='flex flex-col gap-3 md:gap-8'>
                             {sitesTypes.map((site, index) => (
                                 <div key={index} className='flex gap-3'>
-                                    <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                                    </svg>
-                                    <div className='flex flex-col'>
+                                    <div className='size-[42px] bg-gray-300 rounded-full'></div>
+                                    <div className='flex flex-col flex-1'>
                                         <span className='font-bold text-sm md:text-base'>{site.title}</span>
                                         <span className='text-xs md:text-sm font-normal w-11/12'>{site.description}</span>
                                     </div>
@@ -92,6 +100,7 @@ const page = () => {
                         </div>
                     </div>
                     <Image src="/images/digital web Section 1 (1).svg" width={0} height={0} className='w-auto h-auto' alt='pic' />
+                    </div>
                 </div>
                 <div className='sm:container px-4  mx-auto grid grid-cols-1 gap-5 xl:grid-cols-2 items-center mt-10 md:mt-20'>
                     <Image src="/images/digital web.svg" width={0} height={0} className='w-auto h-auto' alt='pic' />
