@@ -30,7 +30,7 @@ const HeroSection = () => {
     }, [])
 
     return (
-        <section className="container relative px-4 sm:px-8 lg:px-20 xl:px-4 w-full mx-auto md:pt-16 pb-8 sm:pb-12">
+        <section className="container relative px-4 sm:px-8 lg:px-20 xl:px-8 w-full mx-auto pb-8 sm:pb-12">
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 sm:gap-8">
                 <div className="z-10 order-2 xl:order-1 self-center ">
                     <h1 className="text-[#2f1c6a] font-bold mb-3 sm:mb-4 text-2xl sm:text-3xl xl:text-4xl">
@@ -99,20 +99,20 @@ const HeroSection = () => {
                         />
                     </div>
                 </div> */}
-                <div className="flex mt-6 max-h-[700px] relative  w-full sm:mt-8 lg:mt-0 order-1 xl:order-2">
+                <div className="flex mt-6 max-h-[400px] md:max-h-[700px] relative  w-full sm:mt-8 lg:mt-0 order-1 xl:order-2">
                     <div
                         ref={lottieContainerRef} 
-                        className="relative w-full  scale-150 xl:scale-[200%] z-0 xl:pt-24"
+                        className="relative w-full  scale-150 xl:scale-[200%] z-0 xl:pt-20"
                         style={{
                             backgroundImage: "url('/images/robot background.svg')",
                             backgroundSize: '80%',
-                            backgroundPosition: 'center center',
+                            backgroundPosition: '30% 60%',
                             backgroundRepeat: 'no-repeat',
                         }}
                     >
                         {/* Lottie animation will be rendered here */}
                     </div>
-                    <SocialMediaVerticalIcons className='absolute bottom-0 right-0 md:bottom-24 md:right-8 2xl:bottom-20 2xl:-right-20' />
+                    <SocialMediaVerticalIcons className='absolute bottom-0 right-0 md:bottom-24 md:right-20  lg:bottom-20 lg:right-[92px] xl:bottom-10 xl:-right-7 2xl:bottom-14 2xl:-right-7' />
                 </div>
             </div>
             <Modal ref={youtubeModalRef}>

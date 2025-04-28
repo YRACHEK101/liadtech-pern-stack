@@ -79,7 +79,7 @@ const MainHeader = () => {
 
     return (
         <header className={`bg-white h-[62px] lg:h-[88px] text-black shadow-black/15 z-50 sticky top-0 transition-shadow duration-300 ${isScrolled ? 'shadow-lg' : ''}`}>
-            <div className="w-full mx-auto flex justify-between h-full items-center px-4">
+            <div className="w-full mx-auto flex justify-between h-full items-center px-4 lg:px-10">
                 <Link href="/" className="flex items-center">
                     <Image
                         src="/images/Logo Liadtech V2 3.svg"
@@ -104,7 +104,7 @@ const MainHeader = () => {
                 </button>
 
                 {/* Desktop Navigation */}
-                <nav className="hidden lg:flex items-center gap-6">
+                <nav className="hidden lg:flex items-center gap-3 xl:gap-6">
                     <Link href="/" className="text-[#1f1d2c] hover:text-[#673de6]">
                         Accueil
                     </Link>
