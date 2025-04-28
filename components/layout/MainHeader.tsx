@@ -40,8 +40,8 @@ const PopOverItem = ({ title = "", children = "" as React.ReactNode,className='w
                 )} />
             </button>
             <div  className={cn(
-                "fixed flex-col inset-0 top-[113px] pt-3 px-4  bg-[#262831]/60 transition-all duration-300 z-50",
-                isOpen ? "flex  opacity-100 visible " : "hidden opacity-0 invisible "
+                "fixed flex-col inset-0 top-[62px] flex lg:top-[88px] pt-3 px-4  bg-[#262831]/60 transition-all duration-300 z-50",
+                isOpen ? "  opacity-100 visible " : " opacity-0 invisible "
             )}>
                 <div ref={popoverRef} className={cn(
                     "w-full mx-auto",
