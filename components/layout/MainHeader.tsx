@@ -31,7 +31,7 @@ const PopOverItem = ({ title = "", children = "" as React.ReactNode,className='w
     return (
         <div className="" >
             <button ref={buttonRef} onClick={() =>setIsOpen(!isOpen)} className={cn(
-                "flex items-center",
+                "flex items-center  whitespace-nowrap",
                 isOpen ? "text-[#673de6]" : "text-[#1f1d2c]"
             )}>
                 {title} <ChevronDown className={cn(
@@ -78,15 +78,15 @@ const MainHeader = () => {
     }
 
     return (
-        <header className={`bg-white h-[80px] lg:h-[113px] text-black shadow-black/15 z-50 sticky top-0 transition-shadow duration-300 ${isScrolled ? 'shadow-lg' : ''}`}>
+        <header className={`bg-white h-[62px] lg:h-[88px] text-black shadow-black/15 z-50 sticky top-0 transition-shadow duration-300 ${isScrolled ? 'shadow-lg' : ''}`}>
             <div className="w-full mx-auto flex justify-between h-full items-center px-4">
                 <Link href="/" className="flex items-center">
                     <Image
                         src="/images/Logo Liadtech V2 3.svg"
                         alt="LIADTECH Logo"
-                        width={215.11}
-                        height={121}
-                        className="mr-2"
+                        width={0}
+                        height={0}
+                        className="mr-2 w-auto h-20"
                     />
                 </Link>
 
@@ -104,7 +104,7 @@ const MainHeader = () => {
                 </button>
 
                 {/* Desktop Navigation */}
-                <nav className="hidden lg:flex items-center gap-9">
+                <nav className="hidden lg:flex items-center gap-6">
                     <Link href="/" className="text-[#1f1d2c] hover:text-[#673de6]">
                         Accueil
                     </Link>
@@ -580,13 +580,13 @@ const MainHeader = () => {
                     </PopOverItem>
                 </nav>
 
-                <div className="hidden lg:flex  flex-col xl:flex-row items-center space-x-4">
-                    <div className="hidden lg:flex items-center rounded-md px-2 py-1">
-                        <img src="/images/fr.svg" alt="Français" className="w-12 h-10 mr-1" />
-                        <span className="text-[20px">Français</span>
+                <div className="hidden lg:flex items-center space-x-4">
+                    <div className="hidden lg:flex items-center rounded-md">
+                        <img src="/images/fr.svg" alt="Français" className="w-8 h-5" />
+                        <span className="font-bold text-[#2D1F67]">Français</span>
                     </div>
                     <a target="_blank" href="https://espace-client.liadtech.com/login">
-                        <button className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px]">Connexion</button>
+                        <button className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-5 py-[10px]">Connexion</button>
                     </a>
                 </div>
             </div>
