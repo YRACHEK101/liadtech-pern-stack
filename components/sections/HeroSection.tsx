@@ -18,7 +18,7 @@ const HeroSection = () => {
                         renderer: 'svg',
                         loop: true,
                         autoplay: true,
-                        path: '/hero_animation.json' // Make sure this path is correct
+                        path: '/lottie-animations/hero_animation.json' // Make sure this path is correct
                     })
                 }
             } catch (error) {

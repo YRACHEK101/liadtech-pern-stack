@@ -101,6 +101,7 @@ const contentSections = [
 
 const page = () => {
     const [activeSection, setActiveSection] = useState('digital-marketing')
+
     return (
         <section className="px-5 py-16">
             <div className="w-full flex flex-col gap-16 ">

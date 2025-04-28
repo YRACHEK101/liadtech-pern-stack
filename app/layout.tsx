@@ -17,7 +17,7 @@ import {
   Network,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import Footer from "./components/Footer"
+import Footer from "@/components/layout/Footer"
 import Image from "next/image"
 import { Suspense } from "react"
 import MainHeader from "@/components/layout/MainHeader"

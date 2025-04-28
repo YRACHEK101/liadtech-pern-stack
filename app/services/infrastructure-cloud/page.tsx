@@ -182,47 +182,33 @@ const page = () => {
                     <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                         Notre méthode
                     </div>
-                    <span className='text-base sm:text-lg mb-9'>
+                    <span className='text-base sm:text-lg '>
                         {"(Design > Déploiement > Management) "}
                     </span>
 
-                    <div className='flex flex-col gap-4'>
-                        <div className='flex gap-2 md:gap-3'>
-                            <div className='flex flex-col flex-1'>
-                                <span className='text-sm md:text-base'>
-                                    ⚖️ Double expertise tech & réglementaire
-                                </span>
-                            </div>
-                        </div>
-                        <div className='flex gap-2 md:gap-3'>
-                            <div className='flex flex-col flex-1'>
-                                <span className='text-sm md:text-base'>
-                                    🧑‍💼 Accompagnement personnalisé : TPE, PME, SaaS, e-commerce
-                                </span>
-                            </div>
-                        </div>
-                        <div className='flex gap-2 md:gap-3'>
-                            <div className='flex flex-col flex-1'>
-                                <span className='text-sm md:text-base'>
-                                    🧩 Intégration fluide à vos outils web & CRM
-                                </span>
-                            </div>
-                        </div>
-                        <div className='flex gap-2 md:gap-3'>
-                            <div className='flex flex-col flex-1'>
-                                <span className='text-sm md:text-base'>
-                                    🧠 Documentation claire, sans jargon
-                                </span>
-                            </div>
-                        </div>
-                        <div className='flex gap-2 md:gap-3'>
-                            <div className='flex flex-col flex-1'>
-                                <span className='text-sm md:text-base'>
-                                    🤝 Approche pragmatique : utile, appliquée, non bureaucratique
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+                    <ol className='flex flex-col gap-4 list-decimal'>
+                        <li className=' gap-3'>
+                            Brief : vos objectifs, vos utilisateurs, vos canaux
+                        </li>
+                        <li className=' gap-3'>
+                            Cadrage & audit de l'existant ou des besoins
+                        </li>
+                        <li className=' gap-3'>
+                            Design de l'architecture cible : sécurité, performance, coût
+                        </li>
+                        <li className=' gap-3'>
+                            Déploiement automatisé (IaC) + migration si besoin
+                        </li>
+                        <li className=' gap-3'>
+                            Configuration des accès, des rôles, des sauvegardes
+                        </li>
+                        <li className=' gap-3'>
+                            Monitoring, alerting et supervision continue
+                        </li>
+                        <li className=' gap-3'>
+                            Optimisation régulière & évolutions à la demande
+                        </li>
+                    </ol>
                 </div>
                 <div></div>
             </section>

@@ -234,23 +234,23 @@ const page = () => {
                     <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                         Méthode de création
                     </div>
-                    <ul className='flex flex-col gap-4 list-decimal'>
-                        <li className='flex gap-3'>
+                    <ol className='flex flex-col gap-4 list-decimal '>
+                        <li className=' gap-3'>
                             Brief : vos objectifs, vos utilisateurs, vos canaux
                         </li>
-                        <li className='flex gap-3'>
+                        <li className=' gap-3'>
                             Conception : arborescence, logique, ton
                         </li>
-                        <li className='flex gap-3'>
+                        <li className=' gap-3'>
                             Rédaction & IA : dialogues clairs, utiles, humains
                         </li>
-                        <li className='flex gap-3'>
+                        <li className=' gap-3'>
                             Intégration : sur vos outils, site, plateformes
                         </li>
-                        <li className='flex gap-3'>
+                        <li className=' gap-3'>
                             Tests & suivi : ajustements, stats, amélioration continue
                         </li>
-                    </ul>
+                    </ol>
                 </div>
             </section>
 
