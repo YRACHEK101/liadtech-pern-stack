@@ -106,7 +106,7 @@ const HeroSection = () => {
                         style={{
                             backgroundImage: "url('/images/robot background.svg')",
                             backgroundSize: '80%',
-                            backgroundPosition: '30% 60%',
+                            backgroundPosition: 'center center',
                             backgroundRepeat: 'no-repeat',
                         }}
                     >
