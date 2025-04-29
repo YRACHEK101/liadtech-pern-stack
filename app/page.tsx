@@ -165,7 +165,7 @@ export default function Home() {
 
       <TestimonialsSection />
 
-      <section>
+      <section className="bg-[#fafbff]">
         <div className="w-full container !px-4 pt-10 mx-auto lg:pr-7 grid grid-cols-1 xl:grid-cols-2 pb-8 xl:pb-16 relative gap-8 xl:gap-0">
 
           <div className="order-2 xl:order-1  overflow-hidden">
