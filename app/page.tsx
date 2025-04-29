@@ -168,13 +168,15 @@ export default function Home() {
       <section>
         <div className="w-full container !px-4 pt-10 mx-auto lg:pr-7 grid grid-cols-1 xl:grid-cols-2 pb-8 xl:pb-16 relative gap-8 xl:gap-0">
 
-          <Image
-            src="/Liadtech/Accueil/dashboard section 9.svg"
-            width={0}
-            height={0}
-            alt="Dashboard Liadtech"
-            className="w-full h-auto order-2 xl:order-1"
-          />
+          <div className="order-2 xl:order-1  overflow-hidden">
+            <Image
+              src="/Liadtech/Accueil/dashboard section 9.svg"
+              width={0}
+              height={0}
+              alt="Dashboard Liadtech"
+              className="w-full h-auto scale-125 py-14"
+            />
+          </div>
 
           <div className="flex flex-col gap-5 order-1 xl:order-2">
           <span className='py-1 px-3 self-start rounded-full text-[#2D1F67] font-bold bg-[#d5dfff]'>
