@@ -1,3 +1,4 @@
+"use client"
 import React, { useRef } from 'react'
 import TarifPricingPlan from '../tarifs/TarifPricingPlan'
 import Modal, { ModalRef } from '../ui/modal'
