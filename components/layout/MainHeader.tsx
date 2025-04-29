@@ -589,20 +589,38 @@ const MainHeader = () => {
                     <PopOverItem
                         title={
                             <div className="hidden lg:flex items-center rounded-md">
-                                <img src="/images/fr.svg" alt="Français" className="w-8 h-5" />
+                                <img src="/images/fr.png" alt="Français" className="w-8 h-5" />
                                 <span className="font-bold text-[#2D1F67]">Français</span>
                             </div>
                         }
                         hideChevronIcon
                         className='flex justify-center'
                     >
-                        <div className="w-full max-w-xl bg-white shadow-md shadow-black/25 rounded-3xl p-6 !text-[#2D1F67] ">                 
-                         <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold !text-[#2D1F67]">
-                            Choisissez votre pays
-                         </h3>
-
-                            <div className="grid grid-cols-2 gap-16">
-                                
+                        <div className="w-full max-w-xl felx flex-col bg-white shadow-md shadow-black/25 rounded-3xl p-6 !text-[#2D1F67] ">
+                            <h3 className="text-2xl md:text-3xl mb-4 lg:text-4xl font-bold !text-[#2D1F67]">
+                                Choisissez votre pays
+                            </h3>
+                            <div className="grid grid-cols-2 gap-6">
+                                <div className='flex items-center gap-2 hover:scale-[107%] transition-transform cursor-pointer duration-300'>
+                                    <img src="/images/fr.png" alt="Français" className="w-8 h-5" />
+                                    <span className="font-bold text-[#2D1F67]">Français</span>
+                                </div>
+                                <div className='flex items-center gap-2 hover:scale-[107%] transition-transform cursor-pointer duration-300'>
+                                    <img src="/images/usa.png" alt="Français" className="w-8 h-5" />
+                                    <span className="font-bold text-[#2D1F67]">English</span>
+                                </div>
+                                <div className='flex items-center gap-2 hover:scale-[107%] transition-transform cursor-pointer duration-300'>
+                                    <img src="/images/Español.png" alt="Français" className="w-8 h-5" />
+                                    <span className="font-bold text-[#2D1F67]">Español</span>
+                                </div>
+                                <div className='flex items-center gap-2 hover:scale-[107%] transition-transform cursor-pointer duration-300'>
+                                    <img src="/images/arabic.png" alt="Français" className="w-8 h-5" />
+                                    <span className="font-bold text-[#2D1F67]">الدول العربية</span>
+                                </div>
+                                <div className='flex items-center gap-2 hover:scale-[107%] transition-transform cursor-pointer duration-300'>
+                                    <img src="/images/Deutsch.png" alt="Français" className="w-8 h-5" />
+                                    <span className="font-bold text-[#2D1F67]">Deutsch</span>
+                                </div>
                             </div>
                         </div>
                     </PopOverItem>
@@ -955,7 +973,7 @@ const MainHeader = () => {
 
                             <div className='flex-1'></div>
                             <div className="flex items-center self-center rounded-md px-2 py-1">
-                                <img src="/images/fr.svg" alt="Français" className="w-12 h-10 mr-1" />
+                                <img src="/images/fr.png" alt="Français" className="w-12 h-10 mr-1" />
                                 <span className="text-[20px">Français</span>
                             </div>
                         </div>
