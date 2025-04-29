@@ -36,12 +36,15 @@ export default function Home() {
   return (
     <main className="min-h-screen overflow-x-hidden bg-white">
       {/* Hero Section */}
-      <HeroSection />
-
-
-
-      {/* Trusted by clients section */}
+        <HeroSection />
+      <div className="pt-8">
+         {/* Trusted by clients section */}
       <TrustedByClientsSection />
+      </div>
+
+
+
+     
 
       {/* Pricing Table Section */}
       <PricingPacksSection />

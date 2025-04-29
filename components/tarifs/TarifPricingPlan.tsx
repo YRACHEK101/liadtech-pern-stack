@@ -258,7 +258,7 @@ const TarifPricingPlan = ({ plans = [] }: { plans: string[] }) => {
     ];
 
     return (
-        <div className="w-full mx-auto bg-[#fafbff] relative ">
+        <div className="w-full mx-auto relative ">
             <div className="xl:flex xl:flex-row xl:justify-center xl:items-end xl:gap-4">
                 <div className='relative lg:!hidden'>
                     <Swiper
