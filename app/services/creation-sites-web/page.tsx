@@ -1,4 +1,5 @@
 import { PricingTable } from '@/app/page'
+import SocialMediaVerticalIcons from '@/components/common/SocialMediaVerticalIcons'
 import PricingPacksSection from '@/components/sections/PricingPacksSection'
 import TrustedByClientsSection from '@/components/sections/TrustedByClientsSection'
 import TarifPricingPlan from '@/components/tarifs/TarifPricingPlan'
@@ -50,7 +51,7 @@ const page = () => {
     return (
         <div>
             <div className=' bg-[#CC9EFF]'>
-            <section className=' container mx-auto overflow-hidden grid grid-cols-1 xl:grid-cols-2 px-4 md:px-10 pt-4 xl:pt-20'>
+            <section className=' relative container mx-auto overflow-hidden grid grid-cols-1 xl:grid-cols-2 px-4 md:px-10 pt-4 xl:pt-20'>
                 <div className='flex flex-col self-center '>
                     <h2 className='text-[#2f1c6a] font-bold mb-3 sm:mb-4 text-2xl sm:text-3xl xl:text-4xl'>
                         Un site qui vous ressemble.Conçu pour convertir… et séduire vos clients.
@@ -66,6 +67,8 @@ const page = () => {
                     </Link>
                 </div>
                 <Image src="/Liadtech/Accueil/image 1 section 4.svg" width={0} height={0} className='w-auto h-auto' alt='pic' />
+                <SocialMediaVerticalIcons className='absolute bottom-5 right-0' />
+
             </section>
             </div>
             <TrustedByClientsSection />

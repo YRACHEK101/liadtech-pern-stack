@@ -1,4 +1,5 @@
 import PricingPacksSection from '@/components/sections/PricingPacksSection'
+import SocialMediaVerticalIcons from '@/components/common/SocialMediaVerticalIcons'
 import TarifPricingPlan from '@/components/tarifs/TarifPricingPlan'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -26,7 +27,7 @@ const features2 = [
 const page = () => {
     return (
         <div>
-            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-10'>
+            <section className='relative grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-10'>
                 <div className='flex flex-col gap-7 pt-10 md:pt-20 pr-0 md:pr-20 z-10'>
                     <span className='font-bold text-2xl sm:text-3xl xl:text-4xl text-[#2D1F67]'>
                         Expliquez votre concept
@@ -56,6 +57,7 @@ const page = () => {
                     </div>
                 </div>
                 <Image src={"/images/Développement Web-App.svg"} width={0} height={0} className='w-auto origin-top-right  pt-32 z-0  h-auto' alt='pic' />
+                <SocialMediaVerticalIcons className='absolute bottom-5 right-0' />
             </section>
             <PricingPacksSection />
             <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-10'>

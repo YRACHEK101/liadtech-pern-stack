@@ -1,4 +1,5 @@
 import PricingPacksSection from '@/components/sections/PricingPacksSection'
+import SocialMediaVerticalIcons from '@/components/common/SocialMediaVerticalIcons'
 import TrustedByClientsSection from '@/components/sections/TrustedByClientsSection'
 import TarifPricingPlan from '@/components/tarifs/TarifPricingPlan'
 import Image from 'next/image'
@@ -28,7 +29,7 @@ const page = () => {
     return (
         <div>
             <div className='bg-[#2D1F67]'>
-                <section className='overflow-hidden grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 pt-8 md:px-[42px]'>
+                <section className='relative overflow-hidden grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 pt-8 md:px-[42px]'>
                     <div className='flex flex-col text-white z-10 self-center'>
                         <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left !text-white'>
                             Le RGPD n'est pas une option.C'est une exigence légale… et un gage de confiance.
@@ -47,7 +48,7 @@ const page = () => {
                         </div>
                     </div>
                     <Image src={"/images/Ux ui.svg"} width={0} height={0} className='w-auto mx-auto origin-top-right scale-100 xl:scale-[120%] pt-10 z-0 h-auto invisible' alt='pic' />
-
+                    <SocialMediaVerticalIcons className='absolute bottom-5 right-0' />
                 </section>
             </div>
             <TrustedByClientsSection />

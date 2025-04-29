@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
+import SocialMediaVerticalIcons from '@/components/common/SocialMediaVerticalIcons'
 import TrustedByClientsSection from '@/components/sections/TrustedByClientsSection'
 import PricingPacksSection from '@/components/sections/PricingPacksSection'
 
@@ -25,13 +26,13 @@ const page = () => {
     return (
         <div>
             <div className='bg-[#DDBFFF]'>
-                <section className='overflow-hidden grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px]'>
+                <section className='relative overflow-hidden grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px]'>
                     <div className='flex flex-col text-[#2D1F67] self-center py-8 md:py-0'>
                         <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left'>
-                            Votre image parle avant vous.Assurons-nous qu’elle transmette le bon message.
+                            Votre image parle avant vous.Assurons-nous qu'elle transmette le bon message.
                         </h2>
                         <span className='text-base sm:text-lg text-[#2D1F67] mb-4 sm:mb-6 font-normal'>
-                            Le design graphique n’est pas une finition.C’est le fond et la forme, l’essence même de votre identité visuelle.De la direction artistique à l’exécution, tout est pensé pour sublimer votre univers.
+                            Le design graphique n'est pas une finition.C'est le fond et la forme, l'essence même de votre identité visuelle.De la direction artistique à l'exécution, tout est pensé pour sublimer votre univers.
                         </span>
 
                         <div className='flex gap-4 flex-wrap md:justify-start'>
@@ -44,6 +45,7 @@ const page = () => {
                         </div>
                     </div>
                     <Image src="/images/Design Graphic 1.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='pic' />
+                    <SocialMediaVerticalIcons className='absolute bottom-5 right-0' />
                 </section>
             </div>
             <TrustedByClientsSection />
@@ -53,7 +55,7 @@ const page = () => {
                 <section className='grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px] pb-20'>
                     <div className='flex flex-col gap-6 pt-8 md:pt-[151px] text-white'>
                         <span className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
-                            Ce qu’on crée pour vous
+                            Ce qu'on crée pour vous
                         </span>
                         <span className='font-bold text-base sm:text-lg'>
                             Pas de visuels jetables.On conçoit des créations qui durent, qui vivent sur tous vos supports.
@@ -118,7 +120,7 @@ const page = () => {
 
                         </div>
                         <div className='font-normal text-base sm:text-lg'>
-                            Votre besoin est unique ? Notre design l’est aussi.
+                            Votre besoin est unique ? Notre design l'est aussi.
                         </div>
                     </div>
                     <Image src={"/images/Design Graphic 2.svg"} width={0} height={0} className='w-auto h-auto mb-5' alt='pic' />
@@ -179,7 +181,7 @@ const page = () => {
 
                         </div>
                         <div className='font-normal text-base sm:text-lg'>
-                            De l’idée brute à l’exécution soignée, on est là à chaque étape.
+                            De l'idée brute à l'exécution soignée, on est là à chaque étape.
                         </div>
                     </div>
                 </section>
@@ -191,7 +193,7 @@ const page = () => {
                     </span>
                     <span className='font-normal text-base sm:text-lg '>
                         Un bon design ne doit pas juste être beau. Il doit marquer, mobiliser, servir vos objectifs.
-                                            Ce qu’
+                                            Ce qu'
                                         </span>
                     <div className='flex flex-col gap-4'>
                         <div className='flex items-center gap-2 md:gap-3'>
@@ -206,7 +208,7 @@ const page = () => {
                             <div className='size-2 bg-[#2D1F67] rounded-full'></div>
                             <div className='flex flex-col flex-1'>
                                 <span className='text-sm md:text-base'>
-                                    📱 S’adapte à tous les formats
+                                    📱 S'adapte à tous les formats
                                 </span>
                             </div>
                         </div>

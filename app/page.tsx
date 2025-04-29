@@ -52,15 +52,15 @@ export default function Home() {
       </div>
 
       <section className="bg-[#2D1F67] pt-14 lg:pt-[64px] mb-16 md:mb-24 lg:mb-36 pb-12 md:pb-24 lg:pb-[159px] text-white flex flex-col gap-16 md:gap-32 lg:gap-48">
-        <div className="px-4 sm:px-0 sm:container sm:mx-auto flex flex-col items-center ">
-          <div className="text-white text-2xl mb-6 md:text-[28px] md:leading-[36px] lg:text-4xl  font-bold text-center">
+        <div className="px-4 md:px-10 xl:!max-w-[1208px] w-full lg:mx-auto flex flex-col ">
+          <div className="text-white text-2xl mb-6 md:text-[28px] md:leading-[36px] lg:text-4xl self-center font-bold text-center">
             Migration & refonte en toute sérénité
           </div>
           <div className="text-center font-normal mb-8 md:mb-12">
             Ne repartez pas de zéro.<br />
             LIADTECH récupère vos bases, les modernise, et vous fait franchir un cap digital.
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-[688px] lg:max-w-full w-full mx-auto ">
             <div className="bg-[#41308F] flex flex-col gap-2 shadow-lg rounded-xl p-8">
               <div className="bg-[#9C51F1] rounded-lg p-2 mb-2 self-start">
                 <Image src={"/Liadtech/Accueil/icones/sync_svgrepo.com.svg"} width={24} height={24} alt="Rectangle 97" />
@@ -98,7 +98,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 xl:grid-cols-2 sm:px-20 xl:px-4 container mx-auto gap-8">
+        <div className="grid w-full grid-cols-1 lg:grid-cols-2 px-4 sm:px-10 !max-w-[1208px] sm:mx-auto gap-8">
           <div className="flex flex-col gap-5 text-base md:text-lg lg:text-[24px]">
             <span className="text-white text-2xl md:text-[28px] leading-[36px] lg:text-4xl  font-bold">
               Une refonte qui change tout
@@ -133,10 +133,10 @@ export default function Home() {
             </span>
           </div>
           <div className="relative self-start">
-            <span className="absolute -bottom-2 left-0 text-white font-bold text-2xl md:text-4xl lg:text-5xl">
+            <span className="absolute -bottom-2 left-0 text-white font-bold text-2xl sm:text-5xl lg:text-3xl xl:text-5xl">
               Avant
             </span>
-            <span className="absolute -top-2 right-0 text-white font-bold text-2xl md:text-4xl lg:text-5xl">
+            <span className="absolute -top-2 right-0 text-white font-bold text-2xl sm:text-5xl lg:text-3xl xl:text-5xl">
               Après
             </span>
             <Image src={"/Liadtech/Accueil/section 8 before after.svg"} width={0} height={622} alt="check mark" className="w-full" />
@@ -155,7 +155,7 @@ export default function Home() {
               alt="Pourquoi choisir LIADTECH"
               width={0}
               height={0}
-              className="w-full h-full  max-w-[1263px] max-h-[897px]"
+              className="w-full h-full  max-w-[1263px] max-h-[897px] sm:ml-20"
             />
         </div>
       </section>

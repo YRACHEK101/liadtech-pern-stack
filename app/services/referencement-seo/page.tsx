@@ -1,4 +1,5 @@
 import { PricingTable } from '@/app/page'
+import SocialMediaVerticalIcons from '@/components/common/SocialMediaVerticalIcons'
 import PricingPacksSection from '@/components/sections/PricingPacksSection'
 import TrustedByClientsSection from '@/components/sections/TrustedByClientsSection'
 import TarifPricingPlan from '@/components/tarifs/TarifPricingPlan'
@@ -49,7 +50,7 @@ const page = () => {
     return (
         <div className='overflow-x-hidden'>
             <div className='bg-[#2D1F67]'>
-            <section className='overflow-hidden grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 pt-10 md:px-[42px]'>
+            <section className='relative overflow-hidden grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 pt-10 md:px-[42px]'>
                 <div className='flex flex-col text-white self-center pb-8 pt-0 md:py-0'>
                     <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left !text-white'>
                         Vos clients vous cherchent. Assurons-nous qu'ils vous trouvent.
@@ -71,6 +72,7 @@ const page = () => {
                     </div>
                 </div>
                 <Image src="/images/SEO 4.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
+                <SocialMediaVerticalIcons className='absolute bottom-5 right-0' />
             </section>
             </div>
             <TrustedByClientsSection />

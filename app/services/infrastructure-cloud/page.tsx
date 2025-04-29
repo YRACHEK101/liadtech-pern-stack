@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
+import SocialMediaVerticalIcons from '@/components/common/SocialMediaVerticalIcons'
 import TrustedByClientsSection from '@/components/sections/TrustedByClientsSection'
 import PricingPacksSection from '@/components/sections/PricingPacksSection'
 
@@ -25,7 +26,7 @@ const page = () => {
     return (
         <div>
             <div className='bg-[#DDBFFF]'>
-                <section className='overflow-hidden grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 py-8 md:px-[42px]'>
+                <section className='relative overflow-hidden grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 py-8 md:px-[42px]'>
                     <div className='flex flex-col text-[#2D1F67] self-center pt-8 xl:pt-0'>
                         <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left'>
                             Du design à la gestion :
@@ -46,6 +47,7 @@ const page = () => {
                         </div>
                     </div>
                     {/* <Image src="/images/Video explainer.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='pic' /> */}
+                    <SocialMediaVerticalIcons className='absolute bottom-5 right-0' />
                 </section>
             </div>
             <TrustedByClientsSection />

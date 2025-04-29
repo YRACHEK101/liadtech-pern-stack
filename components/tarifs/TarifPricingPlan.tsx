@@ -320,15 +320,15 @@ const TarifPricingPlan = ({ plans = [] }: { plans: string[] }) => {
                 </div>
 
                 {/* Desktop view */}
-                <div className="hidden w-full lg:flex justify-center gap-4  ">
-                    <div className='mt-10'>
+                <div className="hidden w-full lg:flex justify-center gap-4 ">
+                    <div className='mt-10 flex flex-col items-center w-full max-w-[300px] sm:!max-w-[360px]'>
                         <PricingCard
                             title={plans[0]}
                             features={features}
                             blockedFeatures={blockedFeatures}
                         />
                     </div>
-                    <div className=''>
+                    <div className=' flex flex-col items-center w-full max-w-[300px] sm:!max-w-[360px]'>
                         <PricingCard
                             title={plans[1]}
                             isPopular={true}
@@ -336,7 +336,7 @@ const TarifPricingPlan = ({ plans = [] }: { plans: string[] }) => {
                             blockedFeatures={blockedFeatures.slice(1)}
                         />
                     </div>
-                    <div className='mt-10'>
+                    <div className='mt-10 flex flex-col items-center w-full max-w-[300px] sm:!max-w-[360px]'>
                         <PricingCard
                             title={plans[2]}
                             features={ultimateFeatures}

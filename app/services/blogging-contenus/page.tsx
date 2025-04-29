@@ -5,6 +5,7 @@ import TarifPricingPlan from '@/components/tarifs/TarifPricingPlan'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import SocialMediaVerticalIcons from '@/components/common/SocialMediaVerticalIcons'
 
 const sitesTypes = [
     {
@@ -49,7 +50,7 @@ const page = () => {
     return (
         <div>
             <div className='bg-[#DDBFFF]'>
-                <section className='overflow-hidden grid container mx-auto xl:grid-cols-2 grid-cols-1 px-4 md:px-[48px] gap-8'>
+                <section className='relative overflow-hidden grid container mx-auto xl:grid-cols-2 grid-cols-1 px-4 md:px-[48px] gap-8'>
                     <div className='flex flex-col text-[#2D1F67] pt-8  self-center'>
                         <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left'>
                             Des contenus pensés pour Google, mais écrits pour vos clients.
@@ -68,6 +69,7 @@ const page = () => {
                         </div>
                     </div>
                     <Image src="/images/Bloggin et contenu.svg" width={0} height={0} className='w-full md:w-auto h-auto mb-5' alt='hero' />
+                    <SocialMediaVerticalIcons className='absolute bottom-5 right-0' />
                 </section>
             </div>
             <TrustedByClientsSection />

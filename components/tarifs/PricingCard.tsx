@@ -22,7 +22,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
 }) => {
     const [isExpanded, setIsExpanded] = useState(false);
     return (
-        <div className={`flex-1 !w-full !max-w-[300px] sm:!max-w-[360px] !self-start relative rounded-2xl border border-gray-200 ${isPopular ?'border-purple-600':''} `} style={{ marginTop: 46 }}>
+        <div className={`flex-1 !w-full !max-w-[300px] sm:!max-w-[360px] relative rounded-2xl border border-gray-200 ${isPopular ?'border-purple-600':''} `} style={{ marginTop: 46 }}>
             {isPopular && (
                 <div className="title bg-purple-400 font-bold text-white text-center py-2 rounded-t-2xl">
                     Le plus populaire

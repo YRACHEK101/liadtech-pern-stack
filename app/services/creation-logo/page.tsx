@@ -3,6 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import TrustedByClientsSection from '@/components/sections/TrustedByClientsSection'
 import PricingPacksSection from '@/components/sections/PricingPacksSection'
+import SocialMediaVerticalIcons from '@/components/common/SocialMediaVerticalIcons'
 
 const features2 = [
   'Script + storyboard sur-mesure',
@@ -24,7 +25,7 @@ const sitesFeatures = [
 const page = () => {
   return (
     <div>
-      <section className='overflow-hidden grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px]'>
+      <section className='relative overflow-hidden grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px]'>
         <div className='flex flex-col text-[#2D1F67] self-center py-8 md:py-0'>
           <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left'>
             Votre logo, ce n'est pas un dessin. C'est votre première impression, votre signature.
@@ -43,6 +44,7 @@ const page = () => {
           </div>
         </div>
         <Image src="/images/Creation Logo.svg" width={0} height={0} className='w-auto h-auto mb-5 mx-auto' alt='pic' />
+        <SocialMediaVerticalIcons className='absolute bottom-5 right-0' />
       </section>
       <TrustedByClientsSection />
       {/* Pricing Table Section */}
@@ -113,7 +115,7 @@ const page = () => {
                 Livraison finale multi-formats
               </li>
               <li className='flex gap-3'>
-                Charte d’utilisation (incluse dans les packs Pro & Premium)
+                Charte d'utilisation (incluse dans les packs Pro & Premium)
               </li>
             </ul>
           </div>
@@ -153,7 +155,7 @@ const page = () => {
               <div className='size-[42px] bg-gray-300 rounded-full'></div>
               <div className='flex flex-col flex-1'>
                 <span className='text-sm md:text-base'>
-                  Tous les formats livrés, prêts à l’emploi (web, impression, réseaux)
+                  Tous les formats livrés, prêts à l'emploi (web, impression, réseaux)
                 </span>
               </div>
             </div>
@@ -169,7 +171,7 @@ const page = () => {
               <div className='size-[42px] bg-gray-300 rounded-full'></div>
               <div className='flex flex-col flex-1'>
                 <span className='text-sm md:text-base'>
-                  Un accompagnement humain : à l’écoute, réactif, et force de proposition
+                  Un accompagnement humain : à l'écoute, réactif, et force de proposition
                 </span>
               </div>
             </div>
@@ -181,7 +183,7 @@ const page = () => {
         <Image src={"/images/Création du logo 5.svg"} width={0} height={0} className='w-auto h-auto mb-5 mx-auto' alt='pic' />
         <div className='flex flex-col gap-4 justify-center'>
           <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
-            Votre logo mérite mieux qu’un générateur automatique.Confiez votre image à de vrais créatifs.
+            Votre logo mérite mieux qu'un générateur automatique.Confiez votre image à de vrais créatifs.
           </h2>
           <span className='text-base sm:text-lg text-[#2D1F67] mb-4 sm:mb-6 font-normal'>
             Confiez votre image à de vrais créatifs

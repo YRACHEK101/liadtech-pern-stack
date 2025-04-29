@@ -3,6 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import TrustedByClientsSection from '@/components/sections/TrustedByClientsSection'
 import PricingPacksSection from '@/components/sections/PricingPacksSection'
+import SocialMediaVerticalIcons from '@/components/common/SocialMediaVerticalIcons'
 
 const features2 = [
     'Script + storyboard sur-mesure',
@@ -25,7 +26,7 @@ const page = () => {
     return (
         <div>
             <div className='bg-[#DDBFFF]'>
-                <section className='overflow-hidden grid grid-cols-1 md:grid-cols-2 px-4  sm:container sm:mx-auto'>
+                <section className='relative overflow-hidden grid grid-cols-1 md:grid-cols-2 px-4  sm:container sm:mx-auto'>
                     <div className='flex flex-col text-[#2D1F67] py-8 xl:py-0 self-center'>
                         <h2 className='font-bold text-2xl sm:text-3xl xl:text-4xl'>
                             Vos process sont intelligents.Ils méritent d'être automatisés avec IA.
@@ -44,6 +45,7 @@ const page = () => {
                         </div>
                     </div>
                     <Image src="/images/Video explainer.svg" width={0} height={0} className='w-auto h-auto mb-5 invisible' alt='hero' />
+                    <SocialMediaVerticalIcons className='absolute bottom-5 right-0' />
                 </section>
             </div>
             <TrustedByClientsSection />
@@ -53,10 +55,10 @@ const page = () => {
                 <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 pb-20 '>
                     <div className='flex flex-col gap-7 pt-16 md:pt-32 pr-0 md:pr-20 text-white'>
                         <span className='font-bold text-2xl sm:text-3xl xl:text-4xl'>
-                            Qu’est-ce qu’un agent IA ?
+                            Qu'est-ce qu'un agent IA ?
                         </span>
                         <span className='font-bold text-base sm:text-lg'>
-                            Un agent IA, c’est plus qu’un script ou un chatbot.C’est un assistant numérique autonome, capable d’observer, analyser, décider et agir.
+                            Un agent IA, c'est plus qu'un script ou un chatbot.C'est un assistant numérique autonome, capable d'observer, analyser, décider et agir.
                         </span>
                         <ul className='flex flex-col gap-4 list-decimal'>
                             <li className='flex gap-3'>
@@ -79,7 +81,7 @@ const page = () => {
                     </div>
                     <div className='flex flex-col gap-7 text-white'>
                         <span className='font-bold text-2xl sm:text-3xl xl:text-4xl'>
-                            Exemples concrets d’automatisation intelligente
+                            Exemples concrets d'automatisation intelligente
                         </span>
                         <div className='flex flex-col gap-4'>
                             <div className='flex gap-2 md:gap-3'>
@@ -194,7 +196,7 @@ const page = () => {
                         <div className='flex gap-2 md:gap-3'>
                             <div className='flex flex-col flex-1'>
                                 <span className='text-sm md:text-base'>
-                                    🧠 Des solutions pensées pour l’utilisateur, pas juste pour la techno
+                                    🧠 Des solutions pensées pour l'utilisateur, pas juste pour la techno
                                 </span>
                             </div>
                         </div>

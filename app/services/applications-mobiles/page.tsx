@@ -5,6 +5,7 @@ import TarifPricingPlan from '@/components/tarifs/TarifPricingPlan'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import SocialMediaVerticalIcons from '@/components/common/SocialMediaVerticalIcons'
 
 const sitesTypes = [
     {
@@ -50,8 +51,8 @@ const page = () => {
     return (
         <div>
             <div className='bg-[#2D1F67]'>
-            <section className=' overflow-hidden grid grid-cols-1 pt-10 container mx-auto xl:grid-cols-2 px-4 md:px-10'>
-                <div className='flex flex-col text-white self-center'>
+            <section className='relative overflow-hidden grid grid-cols-1 md:grid-cols-2 px-4 sm:container sm:mx-auto'>
+                <div className='flex flex-col text-[#2D1F67] self-center pt-8 xl:pt-0'>
                     <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-white mb-4'>
                         Touchez vos clients, là où ils sont : dans leur poche.
                     </h2>
@@ -63,8 +64,9 @@ const page = () => {
                             Créer mon Application mobile
                     </Link>
                 </div>
-                <Image src="/images/Création du l'app.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
-                </section>
+                <Image src="/Liadtech/Accueil/image 3  section 4.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
+                <SocialMediaVerticalIcons className='absolute bottom-5 right-0' />
+            </section>
             </div>
             <TrustedByClientsSection />
             {/* Pricing Table Section */}

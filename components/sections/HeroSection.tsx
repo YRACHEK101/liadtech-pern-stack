@@ -19,7 +19,7 @@ const HeroSection = () => {
                         renderer: 'svg',
                         loop: true,
                         autoplay: true,
-                        path: '/lottie-animations/hero_animation.json' // Make sure this path is correct
+                        path: '/lottie-animations/hero_animation.json', // Make sure this path is correct
                     })
                 }
             } catch (error) {
@@ -102,11 +102,11 @@ const HeroSection = () => {
                 <div className="flex mt-6 max-h-[400px] md:max-h-[700px] relative  w-full sm:mt-8 lg:mt-0 order-1 xl:order-2">
                     <div
                         ref={lottieContainerRef} 
-                        className="relative w-full  scale-150 xl:scale-[200%] z-0 xl:pt-20"
+                        className="relative w-full [&>svg:nth-child(2)]:hidden scale-150 xl:scale-[200%]  z-0 xl:pt-20"
                         style={{
                             backgroundImage: "url('/images/robot background.svg')",
                             backgroundSize: '80%',
-                            backgroundPosition: '30% 60%',
+                            backgroundPosition: '30% 70%',
                             backgroundRepeat: 'no-repeat',
                         }}
                     >

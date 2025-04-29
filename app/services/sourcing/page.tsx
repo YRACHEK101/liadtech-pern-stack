@@ -1,4 +1,5 @@
 import PricingPacksSection from '@/components/sections/PricingPacksSection'
+import SocialMediaVerticalIcons from '@/components/common/SocialMediaVerticalIcons'
 import TarifPricingPlan from '@/components/tarifs/TarifPricingPlan'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -27,7 +28,7 @@ const page = () => {
     return (
         <div>
             <div className='bg-[#2D1F67]'>
-            <section className='grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px] py-8 md:py-[110px] text-white'>
+            <section className='relative grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px] py-8 md:py-[110px] text-white'>
                 <div className='flex flex-col gap-6 pt-8 md:pt-[151px] z-10'>
                     <span className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                         Expliquez votre concept en 30 secondes chrono.
@@ -56,6 +57,7 @@ const page = () => {
                     </div>
                 </div>
                 <Image src={"/images/Sourcing.svg"} width={0} height={0} className='w-auto h-auto mb-5 origin-left z-0' alt='pic' />
+                <SocialMediaVerticalIcons className='absolute bottom-5 right-0' />
             </section>
             </div>
             <PricingPacksSection />

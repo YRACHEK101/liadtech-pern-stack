@@ -1,4 +1,5 @@
 import { PricingTable } from '@/app/page'
+import SocialMediaVerticalIcons from '@/components/common/SocialMediaVerticalIcons'
 import PricingPacksSection from '@/components/sections/PricingPacksSection'
 import TrustedByClientsSection from '@/components/sections/TrustedByClientsSection'
 import TarifPricingPlan from '@/components/tarifs/TarifPricingPlan'
@@ -48,7 +49,7 @@ const sitesFeatures = [
 const page = () => {
     return (
         <div>
-            <section className='overflow-hidden grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px]'>
+            <section className='relative overflow-hidden grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px]'>
                 <div className='flex flex-col text-[#2D1F67] self-center py-8 md:py-0'>
                     <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left'>
                         Une vidéo bien faite, c'est simple : elle explique, elle convainc, elle vend.
@@ -67,6 +68,7 @@ const page = () => {
                     </div>
                 </div>
                 <Image src="/images/Video explainer.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
+                <SocialMediaVerticalIcons className='absolute bottom-5 right-0' />
             </section>
             <TrustedByClientsSection />
             {/* Pricing Table Section */}

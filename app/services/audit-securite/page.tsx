@@ -3,6 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import TrustedByClientsSection from '@/components/sections/TrustedByClientsSection'
 import PricingPacksSection from '@/components/sections/PricingPacksSection'
+import SocialMediaVerticalIcons from '@/components/common/SocialMediaVerticalIcons'
 
 const features2 = [
     'Script + storyboard sur-mesure',
@@ -24,7 +25,7 @@ const sitesFeatures = [
 const page = () => {
     return (
         <div>
-            <section className='overflow-hidden grid grid-cols-1 md:grid-cols-2 px-4  sm:container sm:mx-auto'>
+            <section className='relative overflow-hidden grid grid-cols-1 md:grid-cols-2 px-4  sm:container sm:mx-auto'>
                 <div className='flex flex-col text-[#2D1F67] pt-8 xl:pt-0 self-center'>
                     <h2 className='font-bold text-2xl sm:text-3xl xl:text-4xl'>
                         Votre système est peut-être exposé.Nous vous aidons à le sécuriser avant qu'il ne soit ciblé.
@@ -43,6 +44,7 @@ const page = () => {
                     </div>
                 </div>
                 <Image src="/images/Video explainer.svg" width={0} height={0} className='w-auto h-auto mb-5 invisible' alt='hero' />
+                <SocialMediaVerticalIcons className='absolute bottom-5 right-0' />
             </section>
             <TrustedByClientsSection />
             {/* Pricing Table Section */}

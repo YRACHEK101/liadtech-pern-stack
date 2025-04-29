@@ -3,6 +3,7 @@ import TarifPricingPlan from '@/components/tarifs/TarifPricingPlan'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import SocialMediaVerticalIcons from '@/components/common/SocialMediaVerticalIcons'
 
 const sitesFeatures = [
     'Scénaristes & script doctors',
@@ -34,8 +35,7 @@ const features2 = [
 const page = () => {
     return (
         <div>
-            <section className='overflow-hidden grid grid-cols-1 md:grid-cols-2 px-4 sm:container sm:mx-auto'>
-
+            <section className='relative overflow-hidden grid grid-cols-1 md:grid-cols-2 px-4 sm:container sm:mx-auto'>
                 <div className='flex flex-col text-[#2D1F67] self-center pt-8 xl:pt-0'>
                     <h2 className='font-bold text-2xl sm:text-3xl xl:text-4xl'>
                         Nous ne faisons pas des vidéos. Nous produisons des mondes animés.
@@ -54,7 +54,7 @@ const page = () => {
                     </div>
                 </div>
                 <Image src="/Liadtech/Accueil/image 3  section 4.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
-
+                <SocialMediaVerticalIcons className='absolute bottom-5 right-0' />
             </section>
             <PricingPacksSection />
             <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-6 md:py-10'>
@@ -125,7 +125,7 @@ const page = () => {
                                 <div className='size-[42px] bg-gray-300 rounded-full'></div>
                                 <div className='flex flex-col flex-1'>
                                     <span className='text-sm md:text-base'>
-                                        Pilotes ou teasers d’univers
+                                        Pilotes ou teasers d'univers
                                     </span>
                                 </div>
                             </div>

@@ -1,4 +1,5 @@
 import PricingPacksSection from '@/components/sections/PricingPacksSection'
+import SocialMediaVerticalIcons from '@/components/common/SocialMediaVerticalIcons'
 import TrustedByClientsSection from '@/components/sections/TrustedByClientsSection'
 import TarifPricingPlan from '@/components/tarifs/TarifPricingPlan'
 import Image from 'next/image'
@@ -28,7 +29,7 @@ const page = () => {
     return (
         <div>
             <div className='bg-[#2D1F67]'>
-                <section className='overflow-hidden grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 xl:pt-10 md:px-[42px]'>
+                <section className='relative overflow-hidden grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 xl:pt-10 md:px-[42px]'>
                     <div className='flex flex-col text-white z-10 self-center pt-8 xl:pt-0'>
                         <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left !text-white'>
                             Ce n'est pas à l'utilisateur de s'adapter au design.C'est au design de s'adapter à l'utilisateur.                    </h2>
@@ -46,7 +47,7 @@ const page = () => {
                         </div>
                     </div>
                     <Image src={"/images/Ux ui.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
-
+                    <SocialMediaVerticalIcons className='absolute bottom-5 right-0' />
                 </section>
             </div>
             <TrustedByClientsSection />

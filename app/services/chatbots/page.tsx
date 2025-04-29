@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
+import SocialMediaVerticalIcons from '@/components/common/SocialMediaVerticalIcons'
 import TrustedByClientsSection from '@/components/sections/TrustedByClientsSection'
 import PricingPacksSection from '@/components/sections/PricingPacksSection'
 
@@ -24,7 +25,7 @@ const sitesFeatures = [
 const page = () => {
     return (
         <div>
-            <section className='overflow-hidden grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px]'>
+            <section className='relative overflow-hidden grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px]'>
                 <div className='flex flex-col text-[#2D1F67] self-center pt-8 md:pt-16'>
                     <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left'>
                         Vos clients attendent des réponses. Offrez-leur un échange instantané, fluide et intelligent.
@@ -43,6 +44,7 @@ const page = () => {
                     </div>
                 </div>
                 <Image src="/images/AI (1).svg" width={0} height={0} className='w-auto h-auto mb-5 mx-auto' alt='pic' />
+                <SocialMediaVerticalIcons className='absolute bottom-5 right-0' />
             </section>
             <TrustedByClientsSection />
             {/* Pricing Table Section */}
@@ -71,7 +73,7 @@ const page = () => {
 
                                 <div className='flex-1 flex flex-col'>
                                     <span className='font-normal md:text-lg text-[#2D1F67] '>
-                                        Améliore l’expérience client sans alourdir votre équipe
+                                        Améliore l'expérience client sans alourdir votre équipe
                                     </span>
                                 </div>
 
@@ -101,7 +103,7 @@ const page = () => {
 
                                 <div className='flex-1 flex flex-col    '>
                                     <span className='font-normal md:text-lg text-[#2D1F67] '>
-                                        S’adapte à votre ton de marque et vos cas métiers
+                                        S'adapte à votre ton de marque et vos cas métiers
                                     </span>
                                 </div>
 
@@ -111,7 +113,7 @@ const page = () => {
 
                                 <div className='flex-1 flex flex-col    '>
                                     <span className='font-normal md:text-lg text-[#2D1F67] '>
-                                        Apprend et s’améliore avec le temps
+                                        Apprend et s'améliore avec le temps
                                     </span>
                                 </div>
 
@@ -178,7 +180,7 @@ const page = () => {
             <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-16 pb-10'>
                 <div className='flex flex-col gap-4'>
                     <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
-                        Exemples d’usage
+                        Exemples d'usage
                     </div>
                     <div className='flex flex-col gap-4'>
                         <div className='flex gap-2 md:gap-3'>
@@ -217,7 +219,7 @@ const page = () => {
                             <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
                             <div className='flex flex-col flex-1'>
                                 <span className='text-sm md:text-base'>
-                                    📥 Lead generation : capture d’email, téléphone, besoin, etc.
+                                    📥 Lead generation : capture d'email, téléphone, besoin, etc.
                                 </span>
                             </div>
                         </div>
