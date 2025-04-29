@@ -97,9 +97,9 @@ const ContentSection = () => {
                         )}
                         key={section.id}
                     >
-                        <div className="rounded-3xl  bg-[#1f1d2c] p-6 md:p-10 md:!pr-0 grid grid-cols-1 lg:grid-cols-2 relative">
+                        <div className="rounded-3xl  bg-[#1f1d2c]  grid grid-cols-1 lg:grid-cols-2 relative">
                             {/* Left Column */}
-                            <div className="z-10 flex flex-col">
+                            <div className="z-10 flex flex-col p-6 md:p-10">
                                 <h2 className="text-2xl md:text-[28px] leading-[36px] lg:text-4xl flex-1  font-bold !text-white mb-4 md:mb-6">
                                     {section.title}
                                 </h2>
@@ -114,13 +114,13 @@ const ContentSection = () => {
                                     </Link>
                                 </div>
                             </div>
-                            <div className="flex justify-center items-center">
+                            <div className="flex justify-center items-center pt-2">
                                 <Image
                                     src={section.image}
                                     alt={section.alt}
                                     width={0}
                                     height={0}
-                                    className=" z-0 size-auto lg:max-h-[300px] mx-auto "
+                                    className=" z-0 size-auto  lg:max-h-[400px] mx-auto "
                                 />
                             </div>
                         </div>

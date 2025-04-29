@@ -36,22 +36,22 @@ export default function Home() {
   return (
     <main className="min-h-screen overflow-x-hidden bg-white">
       {/* Hero Section */}
-        <HeroSection />
+      <HeroSection />
       <div className="pt-8">
-         {/* Trusted by clients section */}
-      <TrustedByClientsSection />
+        {/* Trusted by clients section */}
+        <TrustedByClientsSection />
       </div>
 
 
 
-     
+
 
       {/* Pricing Table Section */}
       <PricingPacksSection />
       {/* <PricingTable /> */}
 
-      <div className="mb-16 md:mb-28 lg:mb-44">
-      <ContentSection />
+      <div className="mb-16 md:mb-28 lg:mb-44 pt-16">
+        <ContentSection />
       </div>
 
       <section className="bg-[#2D1F67] pt-14 lg:pt-[64px] mb-16 md:mb-24 lg:mb-36 pb-12 md:pb-24 lg:pb-[159px] text-white flex flex-col gap-16 md:gap-32 lg:gap-48">
@@ -153,32 +153,30 @@ export default function Home() {
           <p className="text-center text-gray-600 mb-8 md:mb-12">Rapide. Fiable. Créatif.</p>
 
           <Image
-              src="/images/Pourquoi-choisir.svg"
-              alt="Pourquoi choisir LIADTECH"
-              width={0}
-              height={0}
-              className="w-full h-full  max-w-[1263px] max-h-[897px] sm:ml-20"
-            />
+            src="/images/Pourquoi-choisir.svg"
+            alt="Pourquoi choisir LIADTECH"
+            width={0}
+            height={0}
+            className="w-full h-full  max-w-[1263px] max-h-[897px] sm:ml-20"
+          />
         </div>
       </section>
 
       <TestimonialsSection />
 
       <section className="bg-[#fafbff]">
-        <div className="w-full container !px-4 pt-10 mx-auto lg:pr-7 grid grid-cols-1 lg:grid-cols-2 pb-8 xl:pb-16 relative gap-8 xl:gap-0">
+        <div className="w-full container !px-4 pt-10 mx-auto lg:pr-7 grid grid-cols-1 lg:grid-cols-2 pb-8 mb-10 relative gap-8 xl:gap-0">
 
-          <div className="order-2 lg:order-1  overflow-hidden">
-            <Image
-              src="/Liadtech/Accueil/dashboard section 9.svg"
-              width={0}
-              height={0}
-              alt="Dashboard Liadtech"
-              className="w-full h-auto scale-125 py-14"
-            />
-          </div>
+          <Image
+            src="/Liadtech/Accueil/dashboard section 9.svg"
+            width={0}
+            height={0}
+            alt="Dashboard Liadtech"
+            className="w-full h-auto lg:-mt-5 order-2 lg:order-1"
+          />
 
-          <div className="flex flex-col gap-5 order-1 lg:order-2">
-          <span className='py-1 px-3 self-start rounded-full text-[#2D1F67] font-bold bg-[#d5dfff]'>
+          <div className="flex flex-col gap-5 order-1 lg:order-2 lg:pl-5">
+            <span className='py-1 px-3 self-start rounded-full text-[#2D1F67] font-bold bg-[#d5dfff]'>
               EASY TO USE DASHBOARD
             </span>
             <h3 className="text-2xl md:text-[28px] leading-[36px] lg:text-4xl font-bold text-[#2D1F67]">Un seul espace pour tout gérer</h3>
@@ -189,29 +187,29 @@ export default function Home() {
             <div className="flex flex-col gap-4 text-[#2D1F67] text-base font-normal ">
               <div className="flex items-center gap-2">
                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="text-[#00b090]">
-                                        <path fill="currentColor" d="M21.046 5.955c.439.439.439 1.151 0 1.59l-9.538 9.539a1.425 1.425 0 0 1-2.016 0l-4.288-4.288a1.125 1.125 0 0 1 1.591-1.591l3.705 3.704 8.954-8.954c.44-.44 1.152-.44 1.591 0Z"></path>
-                                    </svg>
+                  <path fill="currentColor" d="M21.046 5.955c.439.439.439 1.151 0 1.59l-9.538 9.539a1.425 1.425 0 0 1-2.016 0l-4.288-4.288a1.125 1.125 0 0 1 1.591-1.591l3.705 3.704 8.954-8.954c.44-.44 1.152-.44 1.591 0Z"></path>
+                </svg>
                 <span>Avancement, tâches et échéances</span>
               </div>
 
               <div className="flex items-center gap-2">
                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="text-[#00b090]">
-                                        <path fill="currentColor" d="M21.046 5.955c.439.439.439 1.151 0 1.59l-9.538 9.539a1.425 1.425 0 0 1-2.016 0l-4.288-4.288a1.125 1.125 0 0 1 1.591-1.591l3.705 3.704 8.954-8.954c.44-.44 1.152-.44 1.591 0Z"></path>
-                                    </svg>
+                  <path fill="currentColor" d="M21.046 5.955c.439.439.439 1.151 0 1.59l-9.538 9.539a1.425 1.425 0 0 1-2.016 0l-4.288-4.288a1.125 1.125 0 0 1 1.591-1.591l3.705 3.704 8.954-8.954c.44-.44 1.152-.44 1.591 0Z"></path>
+                </svg>
                 <span>Commentaires et retours simplifiés</span>
               </div>
 
               <div className="flex items-center gap-2">
                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="text-[#00b090]">
-                                        <path fill="currentColor" d="M21.046 5.955c.439.439.439 1.151 0 1.59l-9.538 9.539a1.425 1.425 0 0 1-2.016 0l-4.288-4.288a1.125 1.125 0 0 1 1.591-1.591l3.705 3.704 8.954-8.954c.44-.44 1.152-.44 1.591 0Z"></path>
-                                    </svg>
+                  <path fill="currentColor" d="M21.046 5.955c.439.439.439 1.151 0 1.59l-9.538 9.539a1.425 1.425 0 0 1-2.016 0l-4.288-4.288a1.125 1.125 0 0 1 1.591-1.591l3.705 3.704 8.954-8.954c.44-.44 1.152-.44 1.591 0Z"></path>
+                </svg>
                 <span>Validations centralisées</span>
               </div>
 
               <div className="flex items-center gap-2">
                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="text-[#00b090]">
-                                        <path fill="currentColor" d="M21.046 5.955c.439.439.439 1.151 0 1.59l-9.538 9.539a1.425 1.425 0 0 1-2.016 0l-4.288-4.288a1.125 1.125 0 0 1 1.591-1.591l3.705 3.704 8.954-8.954c.44-.44 1.152-.44 1.591 0Z"></path>
-                                    </svg>
+                  <path fill="currentColor" d="M21.046 5.955c.439.439.439 1.151 0 1.59l-9.538 9.539a1.425 1.425 0 0 1-2.016 0l-4.288-4.288a1.125 1.125 0 0 1 1.591-1.591l3.705 3.704 8.954-8.954c.44-.44 1.152-.44 1.591 0Z"></path>
+                </svg>
                 <span>Échanges directs avec notre équipe</span>
               </div>
             </div>
@@ -225,9 +223,9 @@ export default function Home() {
 
 
       {/* Support Section */}
-      <section className="py-16 md:py-24 lg:py-36 w-full px-4 sm:container sm:px-28 xl:px-4  mx-auto">
-        <div className="flex flex-col lg:flex-row gap-8 lg:items-center justify-center">
-          <div className="flex flex-col gap-3 text-[#2D1F67] text-base font-normal">
+      <section className="pb-16 md:pb-24 lg:pb-36 w-full px-4 sm:container sm:px-28 xl:px-4  mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-8 lg:gap-0">
+          <div className="flex flex-col gap-3 text-[#2D1F67] text-base font-normal lg:pl-20">
             <h3 className="text-2xl md:text-[28px] leading-[36px] lg:text-4xl  font-bold">
               Support & réactivité 24/7
             </h3>
@@ -265,7 +263,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="text-white py-16 md:py-20 w-full min-h-0 md:min-h-[80vh] lg:min-h-[130vh] bg-no-repeat bg-cover" style={{
+      <section className="text-white py-16 md:py-20 w-full min-h-0 md:min-h-[80vh] lg:min-h-[100vh] bg-no-repeat bg-cover" style={{
         backgroundImage: "url('/Liadtech/Accueil/questions_bg.svg')",
         backgroundPosition: 'center',
       }}>
@@ -352,7 +350,7 @@ export default function Home() {
         </div>
       </section> */}
 
-      
+
     </main>
   )
 }
@@ -371,7 +369,7 @@ export function PricingTable({ hideTitle = false }) {
       [card]: !prev[card]
     }));
   };
-  
+
 
   return (
     <div className="w-full max-w-6xl mx-auto py-8 sm:py-12 lg:py-16 px-4">
@@ -406,7 +404,7 @@ export function PricingTable({ hideTitle = false }) {
               </div>
             </div>
 
-            <a href="/Checkout?productId=1" 
+            <a href="/Checkout?productId=1"
               className="block w-full py-3 px-4 bg-white border-2 border-[#673de6] text-[#673de6] rounded-lg font-medium text-center mb-8 hover:bg-[#673de6] hover:text-white transition-colors duration-300">
               Sélectionner
             </a>
@@ -464,7 +462,7 @@ export function PricingTable({ hideTitle = false }) {
               </div>
             </div>
 
-            <a href="/Checkout?productId=2" 
+            <a href="/Checkout?productId=2"
               className="block w-full py-3 px-4 bg-[#673de6] text-white rounded-lg font-medium text-center mb-8 hover:bg-[#5028d9] transition-colors duration-300">
               Sélectionner
             </a>
@@ -519,7 +517,7 @@ export function PricingTable({ hideTitle = false }) {
               </div>
             </div>
 
-            <a href="/Checkout?productId=3" 
+            <a href="/Checkout?productId=3"
               className="block w-full py-3 px-4 bg-white border-2 border-[#673de6] text-[#673de6] rounded-lg font-medium text-center mb-8 hover:bg-[#673de6] hover:text-white transition-colors duration-300">
               Sélectionner
             </a>
@@ -621,13 +619,13 @@ const ServiceItem = ({ active = false, text = '', hasInfo = false }) => {
     <li className="flex items-start gap-3">
       {active ? (
         <svg width="20" height="20" viewBox="0 0 20 20" className="flex-shrink-0 mt-1">
-          <circle cx="10" cy="10" r="10" fill="#E6F2FF"/>
-          <path d="M14 7L8.5 12.5L6 10" stroke="#673de6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          <circle cx="10" cy="10" r="10" fill="#E6F2FF" />
+          <path d="M14 7L8.5 12.5L6 10" stroke="#673de6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       ) : (
         <svg width="20" height="20" viewBox="0 0 20 20" className="flex-shrink-0 mt-1">
-          <circle cx="10" cy="10" r="10" fill="#F5F5F5"/>
-          <path d="M7 10H13" stroke="#999999" strokeWidth="2" strokeLinecap="round"/>
+          <circle cx="10" cy="10" r="10" fill="#F5F5F5" />
+          <path d="M7 10H13" stroke="#999999" strokeWidth="2" strokeLinecap="round" />
         </svg>
       )}
       <span className={`text-sm ${active ? 'text-[#2D1F67]' : 'text-gray-500'}`}>
