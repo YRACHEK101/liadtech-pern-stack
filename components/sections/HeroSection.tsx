@@ -31,8 +31,8 @@ const HeroSection = () => {
 
     return (
         <section className="container relative px-4 sm:px-8 lg:px-20 xl:px-8 w-full mx-auto pb-8 sm:pb-12">
-            <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 sm:gap-8">
-                <div className="z-10 order-2 xl:order-1 self-center ">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-8">
+                <div className="z-10 order-2 lg:order-1 self-center ">
                     <h1 className="text-[#2f1c6a] font-bold mb-3 sm:mb-4 text-2xl sm:text-3xl xl:text-4xl">
                         Plus de visibilité. Plus de clients. Moins de stress.
                     </h1>
@@ -99,14 +99,14 @@ const HeroSection = () => {
                         />
                     </div>
                 </div> */}
-                <div className="flex mt-6 max-h-[400px] md:max-h-[700px] relative  w-full sm:mt-8 lg:mt-0 order-1 xl:order-2">
+                <div className="flex mt-6 max-h-[400px] md:max-h-[700px] relative  w-full sm:mt-8 lg:mt-0 order-1 lg:order-2">
                     <div
                         ref={lottieContainerRef} 
-                        className="relative w-full [&>svg:nth-child(2)]:hidden scale-150 xl:scale-[200%]  z-0 xl:pt-20"
+                        className="relative w-full [&>svg:nth-child(2)]:hidden scale-150 lg:scale-[200%]  z-0 xl:pt-20"
                         style={{
                             backgroundImage: "url('/images/robot background.svg')",
                             backgroundSize: '80%',
-                            backgroundPosition: '30% 70%',
+                            backgroundPosition: '30% 60%',
                             backgroundRepeat: 'no-repeat',
                         }}
                     >

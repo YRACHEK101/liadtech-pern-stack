@@ -6,7 +6,7 @@ import { ChevronDown, MessageCircle, FileText, HelpCircle, User, Dna, Users, Bri
 import { cn } from '@/lib/utils'
 import { usePathname } from 'next/navigation'
 
-const PopOverItem = ({ title = "", children = "" as React.ReactNode,className='w-full' }) => {
+const PopOverItem = ({ title = "" as React.ReactNode, children = "" as React.ReactNode, className = 'w-full', hideChevronIcon = false }) => {
     const [isOpen, setIsOpen] = useState(false)
     const popoverRef = useRef<HTMLDivElement>(null)
     const pathname = usePathname()
@@ -30,16 +30,21 @@ const PopOverItem = ({ title = "", children = "" as React.ReactNode,className='w
 
     return (
         <div className="" >
-            <button ref={buttonRef} onClick={() =>setIsOpen(!isOpen)} className={cn(
+            <button ref={buttonRef} onClick={() => setIsOpen(!isOpen)} className={cn(
                 "flex items-center  whitespace-nowrap",
                 isOpen ? "text-[#673de6]" : "text-[#1f1d2c]"
             )}>
-                {title} <ChevronDown className={cn(
-                    "h-4 w-4 ml-1 transition-all",
-                    isOpen ? "-rotate-180" : ""
-                )} />
+                {title}
+                {
+                    !hideChevronIcon && (
+                        <ChevronDown className={cn(
+                            "h-4 w-4 ml-1 transition-all",
+                            isOpen ? "-rotate-180" : ""
+                        )} />
+                    )
+                }
             </button>
-            <div  className={cn(
+            <div className={cn(
                 "fixed flex-col inset-0 top-[62px] flex lg:top-[88px] pt-3 px-4  bg-[#262831]/60 transition-all duration-300 z-50",
                 isOpen ? "  opacity-100 visible " : " opacity-0 invisible "
             )}>
@@ -47,7 +52,7 @@ const PopOverItem = ({ title = "", children = "" as React.ReactNode,className='w
                     "w-full mx-auto",
                     className
                 )}  >
-                {children}
+                    {children}
                 </div>
             </div>
         </div>
@@ -581,10 +586,26 @@ const MainHeader = () => {
                 </nav>
 
                 <div className="hidden lg:flex items-center space-x-4">
-                    <div className="hidden lg:flex items-center rounded-md">
-                        <img src="/images/fr.svg" alt="Français" className="w-8 h-5" />
-                        <span className="font-bold text-[#2D1F67]">Français</span>
-                    </div>
+                    <PopOverItem
+                        title={
+                            <div className="hidden lg:flex items-center rounded-md">
+                                <img src="/images/fr.svg" alt="Français" className="w-8 h-5" />
+                                <span className="font-bold text-[#2D1F67]">Français</span>
+                            </div>
+                        }
+                        hideChevronIcon
+                        className='flex justify-center'
+                    >
+                        <div className="w-full max-w-xl bg-white shadow-md shadow-black/25 rounded-3xl p-6 !text-[#2D1F67] ">                 
+                         <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold !text-[#2D1F67]">
+                            Choisissez votre pays
+                         </h3>
+
+                            <div className="grid grid-cols-2 gap-16">
+                                
+                            </div>
+                        </div>
+                    </PopOverItem>
                     <a target="_blank" href="https://espace-client.liadtech.com/login">
                         <button className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-5 py-[10px]">Connexion</button>
                     </a>

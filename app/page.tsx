@@ -130,7 +130,6 @@ export default function Home() {
                 Aucune perte de contenu, aucun stress.
               </span>
             </div>
-
             <span className="mt-5 text-lg font-normal">
               Vous validez, on s'occupe du reste.
             </span>
@@ -166,9 +165,9 @@ export default function Home() {
       <TestimonialsSection />
 
       <section className="bg-[#fafbff]">
-        <div className="w-full container !px-4 pt-10 mx-auto lg:pr-7 grid grid-cols-1 xl:grid-cols-2 pb-8 xl:pb-16 relative gap-8 xl:gap-0">
+        <div className="w-full container !px-4 pt-10 mx-auto lg:pr-7 grid grid-cols-1 lg:grid-cols-2 pb-8 xl:pb-16 relative gap-8 xl:gap-0">
 
-          <div className="order-2 xl:order-1  overflow-hidden">
+          <div className="order-2 lg:order-1  overflow-hidden">
             <Image
               src="/Liadtech/Accueil/dashboard section 9.svg"
               width={0}
@@ -178,7 +177,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="flex flex-col gap-5 order-1 xl:order-2">
+          <div className="flex flex-col gap-5 order-1 lg:order-2">
           <span className='py-1 px-3 self-start rounded-full text-[#2D1F67] font-bold bg-[#d5dfff]'>
               EASY TO USE DASHBOARD
             </span>
@@ -227,7 +226,7 @@ export default function Home() {
 
       {/* Support Section */}
       <section className="py-16 md:py-24 lg:py-36 w-full px-4 sm:container sm:px-28 xl:px-4  mx-auto">
-        <div className="flex flex-col xl:flex-row gap-8 xl:items-center justify-center">
+        <div className="flex flex-col lg:flex-row gap-8 lg:items-center justify-center">
           <div className="flex flex-col gap-3 text-[#2D1F67] text-base font-normal">
             <h3 className="text-2xl md:text-[28px] leading-[36px] lg:text-4xl  font-bold">
               Support & réactivité 24/7

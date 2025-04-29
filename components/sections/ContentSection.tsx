@@ -97,7 +97,7 @@ const ContentSection = () => {
                         )}
                         key={section.id}
                     >
-                        <div className="rounded-3xl xl:!h-[370px] bg-[#1f1d2c] p-6 md:p-10 md:!pr-0 grid grid-cols-1 xl:grid-cols-2 relative">
+                        <div className="rounded-3xl  bg-[#1f1d2c] p-6 md:p-10 md:!pr-0 grid grid-cols-1 lg:grid-cols-2 relative">
                             {/* Left Column */}
                             <div className="z-10 flex flex-col">
                                 <h2 className="text-2xl md:text-[28px] leading-[36px] lg:text-4xl flex-1  font-bold !text-white mb-4 md:mb-6">
@@ -120,7 +120,7 @@ const ContentSection = () => {
                                     alt={section.alt}
                                     width={0}
                                     height={0}
-                                    className=" xl:absolute z-0 size-auto xl:!w-auto xl:!h-[450px] xl:ml-28"
+                                    className=" z-0 size-auto lg:max-h-[300px] mx-auto "
                                 />
                             </div>
                         </div>
