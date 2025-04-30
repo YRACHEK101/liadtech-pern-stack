@@ -226,7 +226,7 @@ const page = () => {
                 </div>
                 <Image src="/images/Frame 15719.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='hero' />
             </section>
-            <section className="bg-[#2D1F67] text-white flex flex-col gap-10 lg:gap-20 py-12 lg:py-14">
+            <section className="bg-[#2D1F67] -mb-0.5 text-white flex flex-col py-12 lg:py-14">
                 <div className="px-4  sm:container sm:mx-auto flex flex-col items-center ">
                     <div className="text-white text-2xl sm:text-3xl lg:text-4xl font-bold text-center">
                         Une équipe créative complète. Et ça fait toute la différence.
@@ -297,8 +297,8 @@ const page = () => {
                     </div>
                 </div>
             </section>
-            <section className='bg-[#2D1F67] pb-10 '>
-                <div className='px-4  sm:container sm:mx-auto grid grid-cols-1 lg:grid-cols-2  justify-between gap-10 lg:gap-20 py-12 lg:py-10 '>
+            <section className=''>
+                <div className='bg-[#2D1F67] pb-10  px-4  sm:container sm:mx-auto grid grid-cols-1 lg:grid-cols-2  justify-between gap-10 lg:gap-20 py-12 lg:py-10 '>
                     <div className='flex flex-col  text-white self-center '>
                         <div className='text-2xl sm:text-3xl lg:text-4xl font-bold'>
                             Votre message mérite d'être vu, compris… et retenu.
