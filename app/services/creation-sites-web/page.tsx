@@ -51,25 +51,24 @@ const page = () => {
     return (
         <div>
             <div className=' bg-[#CC9EFF]'>
-            <section className=' relative container mx-auto overflow-hidden grid grid-cols-1 xl:grid-cols-2 px-4 md:px-10 pt-4 xl:pt-20'>
-                <div className='flex flex-col self-center '>
-                    <h2 className='text-[#2f1c6a] font-bold mb-3 sm:mb-4 text-2xl sm:text-3xl xl:text-4xl'>
-                        Un site qui vous ressemble.Conçu pour convertir… et séduire vos clients.
-                    </h2>
-                    <span className='text-base sm:text-lg text-[#2f1c6a] mb-4 sm:mb-6 font-bold'>
-                        Sites vitrines, e-commerce ou applications sur-mesure:
-                    </span>
-                    <span className='text-base sm:text-lg text-[#2f1c6a] mb-4 sm:mb-16 font-normal'>
-                        offrez à vos visiteurs une expérience fluide, gagnez en visibilité, en crédibilité… et en clients.
-                    </span>
-                    <Link href="/create-my-website" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap">
+                <section className=' relative container mx-auto overflow-hidden grid grid-cols-1 lg:grid-cols-2 px-4 md:px-10 py-12 lg:py-10 gap-8'>
+                    <div className='flex flex-col self-center pt-8 xl:pt-0'>
+                        <h2 className='text-[#2f1c6a] font-bold mb-3 sm:mb-4 text-2xl sm:text-3xl xl:text-4xl'>
+                            Un site qui vous ressemble.Conçu pour convertir… et séduire vos clients.
+                        </h2>
+                        <span className='text-base sm:text-lg text-[#2f1c6a] mb-4 sm:mb-6 font-bold'>
+                            Sites vitrines, e-commerce ou applications sur-mesure:
+                        </span>
+                        <span className='text-base sm:text-lg text-[#2f1c6a] mb-4 sm:mb-16 font-normal'>
+                            offrez à vos visiteurs une expérience fluide, gagnez en visibilité, en crédibilité… et en clients.
+                        </span>
+                        <Link href="/create-my-website" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap">
                             Créer mon site web
-                    </Link>
-                </div>
-                <Image src="/Liadtech/Accueil/image 1 section 4.svg" width={0} height={0} className='w-auto h-auto' alt='pic' />
-                <SocialMediaVerticalIcons className='absolute bottom-5 right-0' />
-
-            </section>
+                        </Link>
+                    </div>
+                    <Image src="/Liadtech/Accueil/image 1 section 4.svg" width={0} height={0} className='w-auto h-auto' alt='pic' />
+                    <SocialMediaVerticalIcons className='absolute bottom-5 right-0' />
+                </section>
             </div>
             <TrustedByClientsSection />
             {/* Pricing Table Section */}
@@ -105,7 +104,7 @@ const page = () => {
                     <Image src="/images/digital web Section 1 (1).svg" width={0} height={0} className='w-auto h-auto' alt='pic' />
                     </div>
                 </div>
-                <div className='sm:container px-4  mx-auto grid grid-cols-1 gap-5 xl:grid-cols-2 items-center mt-10 md:mt-20'>
+                <div className='sm:container px-4  mx-auto grid grid-cols-1 xl:grid-cols-2 gap-20 items-center mt-10 md:mt-20'>
                     <Image src="/images/digital web.svg" width={0} height={0} className='w-auto h-auto' alt='pic' />
                     <div className='flex flex-col gap-4 md:gap-7 '>
                         <span className='font-bold text-2xl sm:text-3xl xl:text-4xl'>
@@ -127,7 +126,7 @@ const page = () => {
                 </div>
             </section>
             
-            <section className='grid grid-cols-1 xl:grid-cols-2 container mx-auto px-4 md:px-16 overflow-hidden mb-16'>
+            <section className='grid grid-cols-1 xl:grid-cols-2 container mx-auto px-4 md:px-16 overflow-hidden mb-5'>
                 <div className='flex  flex-col xl:p-7'>
                     <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left'>
                         Pourquoi un bon site change tout
@@ -182,9 +181,9 @@ const page = () => {
                 </div>
                 <Image src={"/images/Site web.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
             </section>
-            <section className='grid grid-cols-1 xl:grid-cols-2 container mx-auto px-4 md:px-16 mb-16 '>
+            <section className='grid grid-cols-1 xl:grid-cols-2 gap-7 lg:gap-20 container mx-auto px-4 md:px-16 mb-16 '>
                 <Image src={"/images/SEO 7.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
-                <div className='flex flex-col xl:p-7'>
+                <div className='flex flex-col xl:p-7 justify-center'>
                     <h2 className=' font-bold text-2xl sm:text-3xl xl:text-4xl !text-left'>
                         Prêt à lancer un site qui vous apporte de vrais résultats ?
                     </h2>

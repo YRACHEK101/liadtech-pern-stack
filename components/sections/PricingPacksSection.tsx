@@ -6,7 +6,7 @@ import Modal, { ModalRef } from '../ui/modal'
 const PricingPacksSection = () => {
   const paymentConditionsModal = useRef<ModalRef>(null)
   return (
-    <div className='bg-[#fafbff] '>
+    <div className='bg-[#fafbff] !overflow-x-hidden !overflow-y-visible'>
 
 
       <section className='py-12 px-1 container mx-auto flex flex-col items-center'>

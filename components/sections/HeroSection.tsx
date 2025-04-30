@@ -32,7 +32,7 @@ const HeroSection = () => {
     return (
         <section className="container relative px-4 sm:px-8 lg:px-20 xl:px-8 w-full mx-auto pb-8 sm:pb-12">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-8 ">
-                <div className="z-10 order-2 lg:order-1 self-center pt-10 lg:pt-0 ">
+                <div className="z-10 order-2 lg:order-1 self-center pt-10 lg:pt-24 ">
                     <h1 className="text-[#2f1c6a] font-bold mb-3 sm:mb-4 text-2xl sm:text-3xl xl:text-4xl">
                         Plus de visibilité. Plus de clients. Moins de stress.
                     </h1>
@@ -112,7 +112,7 @@ const HeroSection = () => {
                     >
                         {/* Lottie animation will be rendered here */}
                     </div>
-                    <SocialMediaVerticalIcons className='absolute bottom-0 right-0 md:bottom-24 md:right-20  lg:bottom-20 lg:right-[92px] xl:bottom-10 xl:-right-7 2xl:bottom-14 2xl:-right-7' />
+                    <SocialMediaVerticalIcons className='absolute bottom-0 right-0 md:bottom-24 md:right-20  lg:bottom-10 lg:right-3 xl:bottom-10 xl:right-5 2xl:bottom-14 2xl:right-5' />
                 </div>
             </div>
             <Modal ref={youtubeModalRef}>

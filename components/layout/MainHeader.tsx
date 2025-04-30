@@ -114,248 +114,250 @@ const MainHeader = () => {
                         Accueil
                     </Link>
                     <PopOverItem title="Services" className='max-w-7xl'>
-                        <div className=" bg-white w-full  max-h-[80vh]  overflow-auto hover:overflow-auto  shadow-md shadow-black/25 rounded-3xl p-6  ">
-                            <h3 className="text-lg text-gray-700 mb-6 italic pl-11">De l'idée à l'automatisation, tout est imaginé pour vous</h3>
+                        <div className='bg-white max-h-[80vh] overflow-hidden rounded-3xl'>
+                            <div className="  w-full max-h-[80vh] overflow-auto hover:overflow-auto shadow-md shadow-black/25 rounded-3xl p-6  ">
+                                <h3 className="text-lg text-gray-700 mb-6 italic pl-11">De l'idée à l'automatisation, tout est imaginé pour vous</h3>
 
-                            <div className="grid grid-cols-3 gap-x-2">
-                                <div className="flex flex-col gap-2">
-                                    <span className="text-[#696868] font-bold">
-                                        Web & Mobile
-                                    </span>
+                                <div className="grid grid-cols-3 gap-x-2">
                                     <div className="flex flex-col gap-2">
-                                        <Link href="/services/creation-sites-web" className="flex gap-3" onClick={toggleDrawer}>
-                                            <Image src={"/images/coding.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
-                                            <div className="flex flex-col flex-1  ">
-                                                <span className="font-bold">
-                                                    Création de sites web
-                                                </span>
-                                                <span className="text-[#3C3C3C]">
-                                                    Sites vitrine ou e-commerce conçus pour booster vos ventes et valoriser votre image
-                                                </span>
-                                            </div>
-                                        </Link>
-                                        <Link href="/services/applications-mobiles" className="flex gap-3" onClick={toggleDrawer}>
-                                            <Image src={"/images/Group 141.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
-                                            <div className="flex flex-col flex-1  ">
-                                                <span className="font-bold">
-                                                    Applications mobiles
-                                                </span>
-                                                <span className="text-[#3C3C3C]">
-                                                    Apps iOS & Android intuitives pour toucher vos clients où qu'ils soient
-                                                </span>
-                                            </div>
-                                        </Link>
+                                        <span className="text-[#696868] font-bold">
+                                            Web & Mobile
+                                        </span>
+                                        <div className="flex flex-col">
+                                            <Link href="/services/creation-sites-web" className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
+                                                <Image src={"/images/coding.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
+                                                <div className="flex flex-col flex-1  ">
+                                                    <span className="font-bold">
+                                                        Création de sites web
+                                                    </span>
+                                                    <span className="text-[#3C3C3C]">
+                                                        Sites vitrine ou e-commerce conçus pour booster vos ventes et valoriser votre image
+                                                    </span>
+                                                </div>
+                                            </Link>
+                                            <Link href="/services/applications-mobiles" className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
+                                                <Image src={"/images/Group 141.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
+                                                <div className="flex flex-col flex-1  ">
+                                                    <span className="font-bold">
+                                                        Applications mobiles
+                                                    </span>
+                                                    <span className="text-[#3C3C3C]">
+                                                        Apps iOS & Android intuitives pour toucher vos clients où qu'ils soient
+                                                    </span>
+                                                </div>
+                                            </Link>
+                                        </div>
+                                        <span className="text-[#696868] font-bold">
+                                            Digital Merketing
+                                        </span>
+                                        <div className="flex flex-col">
+                                            <Link href={"/services/marketing-digital"} className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
+                                                <Image src={"/images/speakerphone.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
+                                                <div className="flex flex-col flex-1  ">
+                                                    <span className="font-bold">
+                                                        Marketing digital & publicité
+                                                    </span>
+                                                    <span className="text-[#3C3C3C]">
+                                                        Générez plus de leads avec nos stratégies SEO, SEA & pub ciblée
+                                                    </span>
+                                                </div>
+                                            </Link>
+                                            <Link href="/services/referencement-seo" className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
+                                                <Image src={"/images/seo-tag-search-engine-optimization_svgrepo.com.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
+                                                <div className="flex flex-col flex-1  ">
+                                                    <span className="font-bold">
+                                                        Référencement  Web /SEO
+                                                    </span>
+                                                    <span className="text-[#3C3C3C]">
+                                                        Optimisez votre visibilité sur Google et attirez un trafic qualifié
+                                                    </span>
+                                                </div>
+                                            </Link>
+                                            <Link href={"/services/blogging-contenus"} className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
+                                                <Image src={"/images/edit.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
+                                                <div className="flex flex-col flex-1  ">
+                                                    <span className="font-bold">
+                                                        Blogging & contenus
+                                                    </span>
+                                                    <span className="text-[#3C3C3C]">
+                                                        Attirez votre audience avec des articles stratégiques
+                                                    </span>
+                                                </div>
+                                            </Link>
+                                        </div>
                                     </div>
-                                    <span className="text-[#696868] font-bold">
-                                        Digital Merketing
-                                    </span>
                                     <div className="flex flex-col gap-2">
-                                        <Link href={"/services/marketing-digital"} className="flex gap-3" onClick={toggleDrawer}>
-                                            <Image src={"/images/speakerphone.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
-                                            <div className="flex flex-col flex-1  ">
-                                                <span className="font-bold">
-                                                    Marketing digital & publicité
-                                                </span>
-                                                <span className="text-[#3C3C3C]">
-                                                    Générez plus de leads avec nos stratégies SEO, SEA & pub ciblée
-                                                </span>
-                                            </div>
-                                        </Link>
-                                        <Link href="/services/referencement-seo" className="flex gap-3" onClick={toggleDrawer}>
-                                            <Image src={"/images/seo-tag-search-engine-optimization_svgrepo.com.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
-                                            <div className="flex flex-col flex-1  ">
-                                                <span className="font-bold">
-                                                    Référencement  Web /SEO
-                                                </span>
-                                                <span className="text-[#3C3C3C]">
-                                                    Optimisez votre visibilité sur Google et attirez un trafic qualifié
-                                                </span>
-                                            </div>
-                                        </Link>
-                                        <Link href={"/services/blogging-contenus"} className="flex gap-3" onClick={toggleDrawer}>
-                                            <Image src={"/images/edit.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
-                                            <div className="flex flex-col flex-1  ">
-                                                <span className="font-bold">
-                                                    Blogging & contenus
-                                                </span>
-                                                <span className="text-[#3C3C3C]">
-                                                    Attirez votre audience avec des articles stratégiques
-                                                </span>
-                                            </div>
-                                        </Link>
+                                        <span className="text-[#696868] font-bold">
+                                            Studio Créatif
+                                        </span>
+                                        <div className="flex flex-col">
+                                            <Link href={"/services/videos-explicatives"} className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
+                                                <Image src={"/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-45-10.png"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
+                                                <div className="flex flex-col flex-1  ">
+                                                    <span className="font-bold">
+                                                        Vidéos explicatives 2D/3D
+                                                    </span>
+                                                    <span className="text-[#3C3C3C]">
+                                                        Expliquez vos services avec clarté et impact
+                                                    </span>
+                                                </div>
+                                            </Link>
+                                            <Link href={"/services/creation-logo"} className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
+                                                <Image src={"/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-50-44.png"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
+                                                <div className="flex flex-col flex-1  ">
+                                                    <span className="font-bold">
+                                                        création de logo
+                                                    </span>
+                                                    <span className="text-[#3C3C3C]">
+                                                        Apportez du rythme à votre identité visuelle
+                                                    </span>
+                                                </div>
+                                            </Link>
+                                            <Link href="/services/animations-narratives" className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
+                                                <Image src={"/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-44-29.png"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
+                                                <div className="flex flex-col flex-1  ">
+                                                    <span className="font-bold">
+                                                        Animations narratives & mini-séries
+                                                    </span>
+                                                    <span className="text-[#3C3C3C]">
+                                                        Des histoires engageantes pour réseaux ou communication interne
+                                                    </span>
+                                                </div>
+                                            </Link>
+                                            <Link href={"/services/design-graphique"} className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
+                                                <Image src={"/images/brush.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
+                                                <div className="flex flex-col flex-1  ">
+                                                    <span className="font-bold">
+                                                        Design Graphique & Visuels
+                                                    </span>
+                                                    <span className="text-[#3C3C3C]">
+                                                        Créations pour vos réseaux, sites web ou présentations
+                                                    </span>
+                                                </div>
+                                            </Link>
+                                            <Link href={"/services/design-ux-ui"} className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
+                                                <Image src={"/images/Group 170 (1).svg"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
+                                                <div className="flex flex-col flex-1  ">
+                                                    <span className="font-bold">
+                                                        Design UX/UI
+                                                    </span>
+                                                    <span className="text-[#3C3C3C]">
+                                                        Interfaces modernes, intuitives et responsive
+                                                    </span>
+                                                </div>
+                                            </Link>
+                                        </div>
                                     </div>
+                                    <div className="flex flex-col gap-2">
+                                        <span className="text-[#696868] font-bold">
+                                            Cloud, SaaS & Support
+                                        </span>
+                                        <div className="flex flex-col">
+                                            <Link href={"/services/infrastructure-cloud"} className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
+                                                <Image src={"/images/cloud-computing-servers-blades.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
+                                                <div className="flex flex-col flex-1  ">
+                                                    <span className="font-bold">
+                                                        Infrastructure Cloud et migration
+                                                    </span>
+                                                    <span className="text-[#3C3C3C]">
+                                                        Hébergement sécurisé, scalable, performant
+                                                    </span>
+                                                </div>
+                                            </Link>
+                                            <Link href={"/services/developpement-saas"} className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
+                                                <Image src={"/images/12-ui-code.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
+                                                <div className="flex flex-col flex-1  ">
+                                                    <span className="font-bold">
+                                                        Développement SaaS
+                                                    </span>
+                                                    <span className="text-[#3C3C3C]">
+                                                        Applications modulaires et connectées à vos outils
+                                                    </span>
+                                                </div>
+                                            </Link>
+                                            <Link href={"/services/maintenance-infogerance"} className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
+                                                <Image src={"/images/hammer-and-wrench_svgrepo.com.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
+                                                <div className="flex flex-col flex-1  ">
+                                                    <span className="font-bold">
+                                                        Maintenance & infogérance
+                                                    </span>
+                                                    <span className="text-[#3C3C3C]">
+                                                        Support, mises à jour, supervision technique continue
+                                                    </span>
+                                                </div>
+                                            </Link>
+                                            <Link href={"/services/creation-sites-web"} className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
+                                                <Image src={"/images/Group 170.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
+                                                <div className="flex flex-col flex-1  ">
+                                                    <span className="font-bold">
+                                                        Applications sur mesure
+                                                    </span>
+                                                    <span className="text-[#3C3C3C]">
+                                                        MVP, dashboard, app métier full stack
+                                                    </span>
+                                                </div>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="flex justify-center">
+                                    <hr className="border-[#673DE6] border-2 rounded-full my-4 w-1/2" />
                                 </div>
                                 <div className="flex flex-col gap-2">
-                                    <span className="text-[#696868] font-bold">
-                                        Studio Créatif
-                                    </span>
-                                    <div className="flex flex-col gap-2">
-                                        <Link href={"/services/videos-explicatives"} className="flex gap-3" onClick={toggleDrawer}>
-                                            <Image src={"/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-45-10.png"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
+                                    <div className="flex items-center gap-2 pt-2">
+                                        <span className="text-[#696868] font-bold ">
+                                            IA automatisation & Cybersécurité
+                                        </span>
+                                        <a href="http://" className="bg-[#E2C8FF] text-[#673DE6] font-normal text-base px-2 py-1 rounded-full">
+                                            AVEC AI
+                                        </a>
+                                    </div>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                                        <Link href={"/services/chatbots"} className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
+                                            <Image src={"/images/cloud-computing-security-robot.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
                                             <div className="flex flex-col flex-1  ">
                                                 <span className="font-bold">
-                                                    Vidéos explicatives 2D/3D
+                                                    Chatbots
                                                 </span>
                                                 <span className="text-[#3C3C3C]">
-                                                    Expliquez vos services avec clarté et impact
+                                                    Automatisez vos échanges avec des bots intelligents
                                                 </span>
                                             </div>
                                         </Link>
-                                        <Link href={"/services/creation-logo"} className="flex gap-3" onClick={toggleDrawer}>
-                                            <Image src={"/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-50-44.png"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
+                                        <Link href={"/services/automatisation-ia"} className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
+                                            <Image src={"/images/Group 140.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
                                             <div className="flex flex-col flex-1  ">
                                                 <span className="font-bold">
-                                                    création de logo
+                                                    Automatisation & agents IA
                                                 </span>
                                                 <span className="text-[#3C3C3C]">
-                                                    Apportez du rythme à votre identité visuelle
+                                                    Optimisez vos process internes et relation client
                                                 </span>
                                             </div>
                                         </Link>
-                                        <Link href="/services/animations-narratives" className="flex gap-3" onClick={toggleDrawer}>
-                                            <Image src={"/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-44-29.png"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
+                                        <Link href={"/services/audit-securite"} className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
+                                            <Image src={"/images/Group 146.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
                                             <div className="flex flex-col flex-1  ">
                                                 <span className="font-bold">
-                                                    Animations narratives & mini-séries
+                                                    Audit de sécurité & Pentest
                                                 </span>
                                                 <span className="text-[#3C3C3C]">
-                                                    Des histoires engageantes pour réseaux ou communication interne
+                                                    Analyse complète de vos failles web, API, infra
                                                 </span>
                                             </div>
                                         </Link>
-                                        <Link href={"/services/design-graphique"} className="flex gap-3" onClick={toggleDrawer}>
-                                            <Image src={"/images/brush.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
+                                        <Link href={"/services/security-and-compliance"} className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
+                                            <Image src={"/images/Group 147.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
                                             <div className="flex flex-col flex-1  ">
                                                 <span className="font-bold">
-                                                    Design Graphique & Visuels
+                                                    Conformité RGPD
                                                 </span>
                                                 <span className="text-[#3C3C3C]">
-                                                    Créations pour vos réseaux, sites web ou présentations
-                                                </span>
-                                            </div>
-                                        </Link>
-                                        <Link href={"/services/design-ux-ui"} className="flex gap-3" onClick={toggleDrawer}>
-                                            <Image src={"/images/Group 170 (1).svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
-                                            <div className="flex flex-col flex-1  ">
-                                                <span className="font-bold">
-                                                    Design UX/UI
-                                                </span>
-                                                <span className="text-[#3C3C3C]">
-                                                    Interfaces modernes, intuitives et responsive
+                                                    Données, cookies, politiques légales & formations
                                                 </span>
                                             </div>
                                         </Link>
                                     </div>
-                                </div>
-                                <div className="flex flex-col gap-2">
-                                    <span className="text-[#696868] font-bold">
-                                        Cloud, SaaS & Support
-                                    </span>
-                                    <div className="flex flex-col gap-2">
-                                        <Link href={"/services/infrastructure-cloud"} className="flex gap-3" onClick={toggleDrawer}>
-                                            <Image src={"/images/cloud-computing-servers-blades.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
-                                            <div className="flex flex-col flex-1  ">
-                                                <span className="font-bold">
-                                                    Infrastructure Cloud et migration
-                                                </span>
-                                                <span className="text-[#3C3C3C]">
-                                                    Hébergement sécurisé, scalable, performant
-                                                </span>
-                                            </div>
-                                        </Link>
-                                        <Link href={"/services/developpement-saas"} className="flex gap-3" onClick={toggleDrawer}>
-                                            <Image src={"/images/12-ui-code.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
-                                            <div className="flex flex-col flex-1  ">
-                                                <span className="font-bold">
-                                                    Développement SaaS
-                                                </span>
-                                                <span className="text-[#3C3C3C]">
-                                                    Applications modulaires et connectées à vos outils
-                                                </span>
-                                            </div>
-                                        </Link>
-                                        <Link href={"/services/maintenance-infogerance"} className="flex gap-3" onClick={toggleDrawer}>
-                                            <Image src={"/images/hammer-and-wrench_svgrepo.com.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
-                                            <div className="flex flex-col flex-1  ">
-                                                <span className="font-bold">
-                                                    Maintenance & infogérance
-                                                </span>
-                                                <span className="text-[#3C3C3C]">
-                                                    Support, mises à jour, supervision technique continue
-                                                </span>
-                                            </div>
-                                        </Link>
-                                        <Link href={"/services/creation-sites-web"} className="flex gap-3" onClick={toggleDrawer}>
-                                            <Image src={"/images/Group 170.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
-                                            <div className="flex flex-col flex-1  ">
-                                                <span className="font-bold">
-                                                    Applications sur mesure
-                                                </span>
-                                                <span className="text-[#3C3C3C]">
-                                                    MVP, dashboard, app métier full stack
-                                                </span>
-                                            </div>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="flex justify-center">
-                                <hr className="border-[#673DE6] border-2 rounded-full mt-8 mb-4 w-1/2" />
-                            </div>
-                            <div className="flex flex-col gap-2">
-                                <div className="flex items-center gap-2">
-                                    <span className="text-[#696868] font-bold ">
-                                        IA automatisation & Cybersécurité
-                                    </span>
-                                    <a href="http://" className="bg-[#E2C8FF] text-[#673DE6] font-normal text-base px-2 py-1 rounded-full">
-                                        AVEC AI
-                                    </a>
-                                </div>
-                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                                    <Link href={"/services/chatbots"} className="flex gap-3" onClick={toggleDrawer}>
-                                        <Image src={"/images/cloud-computing-security-robot.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
-                                        <div className="flex flex-col flex-1  ">
-                                            <span className="font-bold">
-                                                Chatbots
-                                            </span>
-                                            <span className="text-[#3C3C3C]">
-                                                Automatisez vos échanges avec des bots intelligents
-                                            </span>
-                                        </div>
-                                    </Link>
-                                    <Link href={"/services/automatisation-ia"} className="flex gap-3" onClick={toggleDrawer}>
-                                        <Image src={"/images/Group 140.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
-                                        <div className="flex flex-col flex-1  ">
-                                            <span className="font-bold">
-                                                Automatisation & agents IA
-                                            </span>
-                                            <span className="text-[#3C3C3C]">
-                                                Optimisez vos process internes et relation client
-                                            </span>
-                                        </div>
-                                    </Link>
-                                    <Link href={"/services/audit-securite"} className="flex gap-3" onClick={toggleDrawer}>
-                                        <Image src={"/images/Group 146.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
-                                        <div className="flex flex-col flex-1  ">
-                                            <span className="font-bold">
-                                                Audit de sécurité & Pentest
-                                            </span>
-                                            <span className="text-[#3C3C3C]">
-                                                Analyse complète de vos failles web, API, infra
-                                            </span>
-                                        </div>
-                                    </Link>
-                                    <Link href={"/services/security-and-compliance"} className="flex gap-3" onClick={toggleDrawer}>
-                                        <Image src={"/images/Group 147.svg"} alt="icon" width={46} height={46} className="self-start mt-1.5" />
-                                        <div className="flex flex-col flex-1  ">
-                                            <span className="font-bold">
-                                                Conformité RGPD
-                                            </span>
-                                            <span className="text-[#3C3C3C]">
-                                                Données, cookies, politiques légales & formations
-                                            </span>
-                                        </div>
-                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -666,8 +668,8 @@ const MainHeader = () => {
                                         <ChevronDown className={`h-4 w-4 transition-transform ${openDropdown === 'services' ? 'rotate-180' : ''}`} />
                                     </button>
                                     {openDropdown === 'services' && (
-                                        <div className="pl-4 space-y-4 mt-2">
-                                            <div className="space-y-2">
+                                        <div className="pl-4 space-y-6 mt-2">
+                                            <div className="space-y-4">
                                                 <span className="text-[#696868] font-bold block">Web & Mobile</span>
                                                 <Link href="/services/creation-sites-web" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                     <Image src="/images/coding.svg" alt="icon" width={24} height={24} />
@@ -679,7 +681,7 @@ const MainHeader = () => {
                                                 </Link>
                                             </div>
 
-                                            <div className="space-y-2">
+                                            <div className="space-y-4">
                                                 <span className="text-[#696868] font-bold block">Digital Marketing</span>
                                                 <Link href="/services/marketing-digital" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                     <Image src="/images/speakerphone.svg" alt="icon" width={24} height={24} />
@@ -695,7 +697,7 @@ const MainHeader = () => {
                                                 </Link>
                                             </div>
 
-                                            <div className="space-y-2">
+                                            <div className="space-y-4">
                                                 <span className="text-[#696868] font-bold block">Studio Créatif</span>
                                                 <Link href="/services/videos-explicatives" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                     <Image src="/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-45-10.png" alt="icon" width={24} height={24} />
@@ -719,7 +721,7 @@ const MainHeader = () => {
                                                 </Link>
                                             </div>
 
-                                            <div className="space-y-2">
+                                            <div className="space-y-4">
                                                 <span className="text-[#696868] font-bold block">Cloud, SaaS & Support</span>
                                                 <Link href="/services/infrastructure-cloud" className="flex items-center gap-3 text-[#1f1d2c] hover:text-[#673de6] py-1" onClick={toggleDrawer}>
                                                     <Image src="/images/cloud-computing-servers-blades.svg" alt="icon" width={24} height={24} />
@@ -739,7 +741,7 @@ const MainHeader = () => {
                                                 </Link>
                                             </div>
 
-                                            <div className="space-y-2">
+                                            <div className="space-y-4">
                                                 <div className="flex items-center gap-2">
                                                     <span className="text-[#696868] font-bold">IA automatisation & Cybersécurité</span>
                                                     {/* <span className="bg-[#E2C8FF] text-[#673DE6] font-normal text-xs px-2 py-0.5 rounded-full">

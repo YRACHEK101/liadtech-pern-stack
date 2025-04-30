@@ -51,20 +51,20 @@ const page = () => {
     return (
         <div>
             <div className='bg-[#2D1F67]'>
-            <section className='relative overflow-hidden grid grid-cols-1 md:grid-cols-2 px-4 sm:container sm:mx-auto'>
+            <section className='relative overflow-hidden grid grid-cols-1 lg:grid-cols-2 px-4 sm:container sm:mx-auto py-12 lg:py-10'>
                 <div className='flex flex-col text-[#2D1F67] self-center pt-8 xl:pt-0'>
+                    
                     <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-white mb-4'>
                         Touchez vos clients, là où ils sont : dans leur poche.
                     </h2>
-                    <span className='font-bold text-base sm:text-lg text-white mb-8 md:mb-16'>
+                    <span className='font-bold text-base sm:text-lg text-white mb-8 lg:mb-16'>
                         Une application mobile, c'est une présence continue, une expérience personnalisée… et un levier puissant pour booster votre croissance.
                     </span>
-
                     <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap">
-                            Créer mon Application mobile
+                        Créer mon Application mobile
                     </Link>
                 </div>
-                <Image src="/Liadtech/Accueil/image 3  section 4.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
+                <Image src="/images/Création du l'app (1).svg" width={0} height={0} className='w-auto h-auto max-h-[500px] mx-auto mb-5 py-5 lg:py-0' alt='hero' />
                 <SocialMediaVerticalIcons className='absolute bottom-5 right-0' />
             </section>
             </div>
@@ -72,9 +72,9 @@ const page = () => {
             {/* Pricing Table Section */}
             <PricingPacksSection />
 
-            <section className="bg-[#2D1F67] px-4 py-10 md:p-20 text-white flex flex-col gap-20 md:gap-40">
+            <section className="bg-[#2D1F67] px-4 py-10 md:p-20 text-white flex flex-col gap-20 lg:gap-40">
                 <div className="sm:container sm:mx-auto flex flex-col items-center gap-5">
-                    <div className="text-white text-2xl sm:text-3xl xl:text-4xl font-bold  md:mb-[105px] text-center ">
+                    <div className="text-white text-2xl sm:text-3xl xl:text-4xl font-bold mb-10 lg:mb-[105px] text-center ">
                         Pourquoi une app mobile change tout ?
                     </div>
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -113,7 +113,7 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 xl:grid-cols-2 sm:container sm:mx-auto gap-8">
+                <div className="grid grid-cols-1 xl:grid-cols-2 sm:container sm:mx-auto gap-20 lg:gap-8">
                     <div className="flex flex-col gap-9 text-[18px] md:text-[24px]">
                         <span className="text-white text-2xl sm:text-3xl xl:text-4xl leading-[40px] md:leading-[59px] font-bold">
                             Notre expertise mobile, votre avantage compétitif
@@ -122,12 +122,10 @@ const page = () => {
                             On développe des apps qui ne sont pas juste attractives — elles sont fluides, optimisées, sécurisées, et pensées pour performer. Que ce soit en MERN stack, Flutter, ou React Native, nos solutions s'adaptent à votre projet et à votre budget.
                         </span>
                     </div>
-
                     <Image src={"/images/App mobile (1).svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
-
                 </div>
             </section>
-            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-[50px] md:py-[110px]'>
+            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 gap-20 px-4 md:px-16 pt-[50px] md:pt-[110px]'>
                 <Image src={"/images/App mobile.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
                 <div className='flex flex-col mt-8 md:mt-0'>
                     <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left mb-9'>
@@ -238,9 +236,9 @@ const page = () => {
                 </div>
                 <Image src={"/images/Création du l'app 3.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
             </section>
-            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-[50px] md:py-[110px]'>
+            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 pb-[50px] md:pb-[110px]'>
                 <Image src={"/images/Création du l'app 4.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
-                <div className='flex flex-col gap-4 mt-8 md:mt-0'>
+                <div className='flex flex-col gap-4 mt-8 md:mt-0 self-center'>
                     <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                         Discutons de votre projet. Une app performante peut tout changer.
                     </h2>

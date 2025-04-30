@@ -50,9 +50,9 @@ const page = () => {
     return (
         <div>
             <div className='bg-[#DDBFFF]'>
-                <section className='relative overflow-hidden grid container mx-auto xl:grid-cols-2 grid-cols-1 px-4 md:px-[48px] gap-8'>
+                <section className='relative overflow-hidden grid container mx-auto lg:grid-cols-2 grid-cols-1 px-4 md:px-[48px] gap-10 lg:gap-20 py-12 lg:py-10'>
                     <div className='flex flex-col text-[#2D1F67] pt-8  self-center'>
-                        <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left'>
+                        <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold !text-left'>
                             Des contenus pensés pour Google, mais écrits pour vos clients.
                         </h2>
                         <span className='text-base md:text-xl lg:text-2xl mb-6 md:mb-9'>
@@ -68,7 +68,7 @@ const page = () => {
                             </Link>
                         </div>
                     </div>
-                    <Image src="/images/Bloggin et contenu.svg" width={0} height={0} className='w-full md:w-auto h-auto mb-5' alt='hero' />
+                    <Image src="/images/Bloggin et contenu.svg" width={0} height={0} className='w-auto h-auto' alt='hero' />
                     <SocialMediaVerticalIcons className='absolute bottom-5 right-0' />
                 </section>
             </div>
@@ -76,9 +76,9 @@ const page = () => {
             {/* Pricing Table Section */}
             <PricingPacksSection />
 
-            <section className='px-4 md:pl-10 grid container mx-auto xl:grid-cols-2 grid-cols-1 mb-20 md:mb-36 gap-8'>
+            <section className='px-4 md:px-10 grid container mx-auto lg:grid-cols-2 grid-cols-1  gap-10 lg:gap-20 pt-12 lg:pt-20 lg:mb-5'>
                 <div className='flex flex-col gap-6 text-[18px] md:text-[20px] text-[#2D1F67]'>
-                    <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
+                    <div className='text-2xl sm:text-3xl lg:text-4xl font-bold'>
                         Le contenu n'est pas un luxe. C'est un moteur de croissance.
                     </div>
                     <div className='font-bold text-base md:text-xl lg:text-2xl'>
@@ -123,12 +123,12 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-                <Image src="/images/Blogging et contenu 5.svg" width={0} height={0} className='w-full md:w-auto h-auto mb-5' alt='hero' />
+                <Image src="/images/Blogging et contenu 5.svg" width={0} height={0} className='w-auto h-auto' alt='hero' />
             </section>
-            <section className='px-4 md:px-10 grid container mx-auto xl:grid-cols-2 grid-cols-1 mb-20 md:mb-32 gap-8'>
-                <Image src="/images/Blogging et contenu 4.svg" width={0} height={0} className='w-full md:w-auto h-auto mb-5 origin-left z-0 order-2 md:order-1' alt='hero' />
-                <div className='flex flex-col gap-6 text-[#2D1F67] pt-6 md:pt-11 order-1 md:order-2'>
-                    <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
+            <section className='px-4 md:px-10 grid container mx-auto lg:grid-cols-2 grid-cols-1  mb-5 lg:mb-10 gap-10 lg:gap-20  lg:py-5'>
+                <Image src="/images/Blogging et contenu 4.svg" width={0} height={0} className='w-auto h-auto lg:pt-20' alt='hero' />
+                <div className='flex flex-col gap-6 text-[#2D1F67] order-1 md:order-2'>
+                    <div className='text-2xl sm:text-3xl lg:text-4xl font-bold'>
                         Ce que vous obtenez avec nous
                     </div>
                     <div className='flex flex-col gap-5 text-[18px] md:text-[20px]'>
@@ -172,9 +172,9 @@ const page = () => {
                 </div>
             </section>
 
-            <section className='px-4 md:pl-10 grid container mx-auto xl:grid-cols-2 grid-cols-1 gap-8'>
+            <section className='px-4 md:px-10 grid container mx-auto lg:grid-cols-2 grid-cols-1 gap-10 lg:gap-20  lg:pt-10 mb-10'>
                 <div className='flex flex-col !pt-8 md:!pt-14 text-[#2D1F67]'>
-                    <div className='text-2xl sm:text-3xl xl:text-4xl font-bold mb-[6px]'>
+                    <div className='text-2xl sm:text-3xl lg:text-4xl font-bold mb-[6px]'>
                         Ne laissez pas votre site vide ou invisible.
                     </div>
                     <div className='text-base md:text-lg font-normal mb-6 md:mb-[29px]'>
@@ -184,7 +184,7 @@ const page = () => {
                         Créer ma stratégie de contenus
                     </Link>
                 </div>
-                <Image src="/images/Blogging et contenu 6.svg" width={0} height={0} className='w-full md:w-auto h-auto mb-5' alt='hero' />
+                <Image src="/images/Blogging et contenu 6.svg" width={0} height={0} className='w-auto h-auto' alt='hero' />
             </section>
         </div>
     )
