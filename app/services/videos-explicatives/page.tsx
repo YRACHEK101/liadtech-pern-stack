@@ -49,9 +49,9 @@ const sitesFeatures = [
 const page = () => {
     return (
         <div>
-            <section className='relative overflow-hidden grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px]'>
+            <section className='relative overflow-hidden grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 gap-10 lg:gap-20 py-12 lg:py-10'>
                 <div className='flex flex-col text-[#2D1F67] self-center py-8 md:py-0'>
-                    <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left'>
+                    <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold !text-left'>
                         Une vidéo bien faite, c'est simple : elle explique, elle convainc, elle vend.
                     </h2>
                     <span className='text-base sm:text-lg mb-9'>
@@ -67,16 +67,16 @@ const page = () => {
                         </Link>
                     </div>
                 </div>
-                <Image src="/images/Video explainer.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
+                <Image src="/images/Video explainer.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='hero' />
                 <SocialMediaVerticalIcons className='absolute bottom-5 right-0' />
             </section>
             <TrustedByClientsSection />
             {/* Pricing Table Section */}
             <PricingPacksSection />
 
-            <section className='px-4  sm:container sm:mx-auto grid grid-cols-1 md:grid-cols-2 mb-20 md:mb-36'>
+            <section className='px-4  sm:container sm:mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-20 py-12 lg:pb-10 lg:pt-20'>
                 <div className='flex flex-col gap-6 text-[#2D1F67] '>
-                    <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
+                    <div className='text-2xl sm:text-3xl lg:text-4xl font-bold'>
                         Une vidéo, c'est plus qu'un format. C'est un outil de conversion.
                     </div>
                     <div className='flex flex-col gap-5'>
@@ -112,12 +112,12 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-                <Image src="/images/Frame 15708.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
+                <Image src="/images/Frame 15708.svg" width={0} height={0} className='w-auto h-auto mx-auto self-center' alt='hero' />
             </section>
-            <section className='px-4  sm:container sm:mx-auto grid grid-cols-1 md:grid-cols-2 mb-20 md:mb-32'>
-                <Image src="/images/explainer.svg" width={0} height={0} className='w-auto h-auto mb-5 order-2 md:order-1' alt='hero' />
+            <section className='px-4  sm:container sm:mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-20 py-12 lg:py-10'>
+                <Image src="/images/explainer.svg" width={0} height={0} className='w-auto h-auto mx-auto order-2 md:order-1' alt='hero' />
                 <div className='flex flex-col gap-6 text-[#2D1F67] pt-6 md:pt-11 order-1 md:order-2'>
-                    <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
+                    <div className='text-2xl sm:text-3xl lg:text-4xl font-bold'>
                         Notre méthode de création
                     </div>
                     <div className='flex flex-col gap-5 text-left'>
@@ -180,9 +180,9 @@ const page = () => {
                 </div>
             </section>
 
-            <section className='px-4  sm:container sm:mx-auto grid grid-cols-1 md:grid-cols-2 mb-20 md:mb-36'>
-                <div className='flex flex-col gap-6 text-[#2D1F67] '>
-                    <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
+            <section className='px-4  sm:container sm:mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-20 py-12 lg:py-10 mb-5'>
+                <div className='flex flex-col gap-6 text-[#2D1F67] self-center '>
+                    <div className='text-2xl sm:text-3xl lg:text-4xl font-bold'>
                         Nos services inclus
                     </div>
                     <div className='flex flex-col gap-5'>
@@ -224,18 +224,18 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-                <Image src="/images/Frame 15719.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
+                <Image src="/images/Frame 15719.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='hero' />
             </section>
-            <section className="bg-[#2D1F67] pt-14 lg:pt-[64px] pb-12 md:pb-24 lg:pb-[159px] text-white flex flex-col gap-16 md:gap-32 lg:gap-48">
+            <section className="bg-[#2D1F67] text-white flex flex-col gap-10 lg:gap-20 py-12 lg:py-14">
                 <div className="px-4  sm:container sm:mx-auto flex flex-col items-center ">
-                    <div className="text-white text-2xl sm:text-3xl xl:text-4xl font-bold text-center">
+                    <div className="text-white text-2xl sm:text-3xl lg:text-4xl font-bold text-center">
                         Une équipe créative complète. Et ça fait toute la différence.
                     </div>
                     <div className="text-center font-normal mb-8 md:mb-12 text-base sm:text-lg">
                         Une vidéo n'est jamais faite à moitié.Elle est conçue par une équipe composée de :
                     </div>
                     <div className="flex flex-wrap gap-4 justify-center">
-                        <div className="bg-[#41308F] flex flex-col gap-2 shadow-lg rounded-xl p-8 w-[450px]">
+                        <div className="bg-[#41308F] flex flex-col gap-2 shadow-lg rounded-xl p-8 w-full max-w-[450px]">
                             <div className="bg-[#9C51F1] rounded-lg p-2 mb-2 self-start size-10">
                                 {/* <Image src={"/Liadtech/Accueil/icones/sync_svgrepo.com.svg"} width={24} height={24} alt="Rectangle 97" /> */}
                             </div>
@@ -246,7 +246,7 @@ const page = () => {
                                 pour structurer votre message
                             </p>
                         </div>
-                        <div className="bg-[#41308F] flex flex-col gap-2 shadow-lg rounded-xl p-8 w-[450px]">
+                        <div className="bg-[#41308F] flex flex-col gap-2 shadow-lg rounded-xl p-8 w-full max-w-[450px]">
                             <div className="bg-[#9C51F1] rounded-lg p-2 mb-2 self-start size-10">
                                 {/* <Image src={"/Liadtech/Accueil/icones/ruler-pencil_svgrepo.com.svg"} width={24} height={24} alt="Rectangle 97" /> */}
 
@@ -258,7 +258,7 @@ const page = () => {
                                 Pour des visuels uniques
                             </p>
                         </div>
-                        <div className="bg-[#41308F] flex flex-col gap-2 shadow-lg rounded-xl p-8 w-[450px]">
+                        <div className="bg-[#41308F] flex flex-col gap-2 shadow-lg rounded-xl p-8 w-full max-w-[450px]">
                             <div className="bg-[#9C51F1] rounded-lg p-2 mb-2 self-start size-10">
 
                                 {/* <Image src={"/Liadtech/Accueil/icones/face-smile_svgrepo.com.svg"} width={24} height={24} alt="Rectangle 97" /> */}
@@ -270,7 +270,7 @@ const page = () => {
                                 Pour un rendu fluide, vivant, marquant
                             </p>
                         </div>
-                        <div className="bg-[#41308F] flex flex-col gap-2 shadow-lg rounded-xl p-8 w-[450px]">
+                        <div className="bg-[#41308F] flex flex-col gap-2 shadow-lg rounded-xl p-8 w-full max-w-[450px]">
                             <div className="bg-[#9C51F1] rounded-lg p-2 mb-2 self-start size-10">
 
                                 {/* <Image src={"/Liadtech/Accueil/icones/face-smile_svgrepo.com.svg"} width={24} height={24} alt="Rectangle 97" /> */}
@@ -282,7 +282,7 @@ const page = () => {
                                 Pour l'ambiance et la narration
                             </p>
                         </div>
-                        <div className="bg-[#41308F] flex flex-col gap-2 shadow-lg rounded-xl p-8 w-[450px]">
+                        <div className="bg-[#41308F] flex flex-col gap-2 shadow-lg rounded-xl p-8 w-full max-w-[450px]">
                             <div className="bg-[#9C51F1] rounded-lg p-2 mb-2 self-start size-10">
 
                                 {/* <Image src={"/Liadtech/Accueil/icones/face-smile_svgrepo.com.svg"} width={24} height={24} alt="Rectangle 97" /> */}
@@ -297,10 +297,10 @@ const page = () => {
                     </div>
                 </div>
             </section>
-            <section className='bg-[#2D1F67] '>
-                <div className='px-4  sm:container sm:mx-auto grid grid-cols-1 xl:grid-cols-2 pb-16 gap-8 md:gap-2 justify-between'>
-                    <div className='flex flex-col !pt-8 md:!pt-14 text-white '>
-                        <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
+            <section className='bg-[#2D1F67] pb-10 '>
+                <div className='px-4  sm:container sm:mx-auto grid grid-cols-1 lg:grid-cols-2  justify-between gap-10 lg:gap-20 py-12 lg:py-10 '>
+                    <div className='flex flex-col  text-white self-center '>
+                        <div className='text-2xl sm:text-3xl lg:text-4xl font-bold'>
                             Votre message mérite d'être vu, compris… et retenu.
                         </div>
                         <div className='font-bold text-base sm:text-lg mb-9'>
@@ -310,7 +310,7 @@ const page = () => {
                             Créer ma vidéo explicative
                         </Link>
                     </div>
-                    <Image src="/images/digital Web Section 2.svg" width={0} height={0} className='w-auto h-auto' alt='hero' />
+                    <Image src="/images/digital Web Section 2.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='hero' />
                 </div>
             </section>
 
