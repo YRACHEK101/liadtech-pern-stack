@@ -59,7 +59,7 @@ const page = () => {
                             Nous créons une stratégie éditoriale complète — articles, pages, contenus SEO-friendly — qui attire, convainc et améliore durablement votre visibilité.
                         </span>
 
-                        <div className='flex gap-4'>
+                        <div className='flex gap-4 flex-wrap'>
                             <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-3 md:px-[31px] py-[10px] w-min whitespace-nowrap">
                                 Créer ma stratégie de contenus
                             </Link>
