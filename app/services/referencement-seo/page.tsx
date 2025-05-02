@@ -79,7 +79,7 @@ const page = () => {
             {/* Pricing Table Section */}
             <PricingPacksSection />
 
-            <section className='px-4 md:pl-10 grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 lg:items-center gap-10 lg:gap-20 py-12 lg:py-10'>
+            <section className='px-4 md:pl-10 grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 lg:items-center gap-10 lg:gap-20 py-12 lg:py-10 '>
                 <div className='flex flex-col gap-6 text-[#2D1F67]'>
                     <div className='text-2xl sm:text-3xl lg:text-4xl font-bold'>
                         Notre approche stratégique

@@ -76,7 +76,7 @@ const page = () => {
             {/* Pricing Table Section */}
             <PricingPacksSection />
 
-            <section className='px-4 md:px-10 grid container mx-auto lg:grid-cols-2 grid-cols-1 gap-10 lg:gap-20 lg:items-center mb-4 md:mb-20'>
+            <section className='px-4 md:px-10 grid container mx-auto lg:grid-cols-2 grid-cols-1 gap-10 lg:gap-20 lg:items-center my-4 md:my-20'>
                 <div className='flex flex-col gap-6 text-[18px] md:text-[20px] text-[#2D1F67]'>
                     <div className='text-2xl sm:text-3xl lg:text-4xl font-bold'>
                         Le contenu n'est pas un luxe. C'est un moteur de croissance.
