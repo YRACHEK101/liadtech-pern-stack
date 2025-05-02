@@ -50,7 +50,7 @@ const page = () => {
     return (
         <div className='overflow-x-hidden'>
             <div className='bg-[#2D1F67]'>
-            <section className='relative overflow-hidden grid grid-cols-1 gap-10 lg:gap-20 sm:container sm:mx-auto lg:grid-cols-2 px-4 py-12 lg:py-10'>
+            <section className='relative overflow-hidden grid grid-cols-1 gap-10 lg:gap-20 sm:container sm:mx-auto lg:grid-cols-2 px-4 pb-12 lg:py-10'>
                 <div className='flex flex-col text-white self-center pb-8 pt-8 lg:pt-0'>
                     <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold !text-left !text-white'>
                         Vos clients vous cherchent. Assurons-nous qu'ils vous trouvent.

@@ -51,7 +51,7 @@ const page = () => {
     return (
         <div>
             <div className=' bg-[#CC9EFF]'>
-                <section className=' relative container mx-auto overflow-hidden grid grid-cols-1 lg:grid-cols-2 px-4 md:px-10 py-12 lg:py-10 gap-8'>
+                <section className=' relative container mx-auto overflow-hidden grid grid-cols-1 lg:grid-cols-2 px-4 md:px-10 pb-12 lg:py-10 gap-8'>
                     <div className='flex flex-col self-center pt-8 xl:pt-0'>
                         <h2 className='text-[#2f1c6a] font-bold mb-3 sm:mb-4 text-2xl sm:text-3xl xl:text-4xl'>
                             Un site qui vous ressemble.Conçu pour convertir… et séduire vos clients.

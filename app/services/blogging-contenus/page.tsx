@@ -50,7 +50,7 @@ const page = () => {
     return (
         <div>
             <div className='bg-[#DDBFFF]'>
-                <section className='relative overflow-hidden grid container mx-auto lg:grid-cols-2 grid-cols-1 px-4 md:px-[48px] gap-10 lg:gap-20 py-12 lg:py-10'>
+                <section className='relative overflow-hidden grid container mx-auto lg:grid-cols-2 grid-cols-1 px-4 md:px-[48px] gap-5 md:gap-10 lg:gap-20 pb-12 lg:py-10'>
                     <div className='flex flex-col text-[#2D1F67] pt-8  self-center'>
                         <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold !text-left'>
                             Des contenus pensés pour Google, mais écrits pour vos clients.
@@ -60,15 +60,15 @@ const page = () => {
                         </span>
 
                         <div className='flex flex-col md:flex-row gap-4 pb-4'>
-                            <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-3 md:px-[31px] py-[10px] self-start mb-4 whitespace-nowrap">
+                            <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-3 md:px-[31px] py-[10px] self-start whitespace-nowrap">
                                 Créer ma stratégie de contenus
                             </Link>
-                            <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-3 md:px-[31px] py-[10px] self-start mb-4 whitespace-nowrap">
+                            <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-3 md:px-[31px] py-[10px] self-start whitespace-nowrap">
                                 Voir des exemples d'articles performants
                             </Link>
                         </div>
                     </div>
-                    <Image src="/images/Bloggin et contenu.svg" width={0} height={0} className='w-auto h-auto' alt='hero' />
+                    <Image src="/images/Bloggin et contenu.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='hero' />
                     <SocialMediaVerticalIcons className='absolute bottom-5 right-0' />
                 </section>
             </div>

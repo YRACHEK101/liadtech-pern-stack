@@ -50,7 +50,7 @@ const page = () => {
     return (
         <div>
             <div className='bg-[#2D1F67]'>
-                <section className='relative bg-[#2D1F67] overflow-hidden gap-10 sm:gap-0 lg:gap-20 grid grid-cols-1 container mx-auto lg:grid-cols-2 px-4 md:px-[42px] py-12 lg:py-10'>
+                <section className='relative bg-[#2D1F67] overflow-hidden gap-10 sm:gap-0 lg:gap-20 grid grid-cols-1 container mx-auto lg:grid-cols-2 px-4 md:px-[42px] pb-12 lg:py-10'>
                     <div className='flex flex-col text-white self-center pt-8 lg:pt-0'>
                         <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold !text-left !text-white'>
                             Plus qu'une présence en ligne: une machine à générer des clients.

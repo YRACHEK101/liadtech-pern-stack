@@ -51,7 +51,7 @@ const page = () => {
     return (
         <div>
             <div className='bg-[#2D1F67]'>
-            <section className='relative overflow-hidden grid grid-cols-1 lg:grid-cols-2 px-4 sm:container sm:mx-auto py-12 lg:py-10'>
+            <section className='relative overflow-hidden grid grid-cols-1 lg:grid-cols-2 px-4 sm:container sm:mx-auto pb-12 lg:py-10'>
                 <div className='flex flex-col text-[#2D1F67] self-center pt-8 xl:pt-0'>
                     
                     <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-white mb-4'>

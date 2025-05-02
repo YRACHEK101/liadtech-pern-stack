@@ -49,7 +49,7 @@ const sitesFeatures = [
 const page = () => {
     return (
         <div>
-            <section className='relative overflow-hidden grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 gap-10 lg:gap-20 py-12 lg:py-10'>
+            <section className='relative overflow-hidden grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 gap-10 lg:gap-20 pb-12 lg:py-10'>
                 <div className='flex flex-col text-[#2D1F67] self-center py-8 md:py-0'>
                     <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold !text-left'>
                         Une vidéo bien faite, c'est simple : elle explique, elle convainc, elle vend.
