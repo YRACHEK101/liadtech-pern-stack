@@ -35,8 +35,8 @@ const features2 = [
 const page = () => {
     return (
         <div>
-            <section className='relative overflow-hidden grid grid-cols-1 md:grid-cols-2 px-4 sm:container sm:mx-auto'>
-                <div className='flex flex-col text-[#2D1F67] self-center pt-8 xl:pt-0'>
+            <section className='relative overflow-hidden grid grid-cols-1 lg:grid-cols-2 px-4 sm:container sm:mx-auto pb-12 pt-5 lg:py-10 gap-10 lg:gap-20 lg:items-center'>
+                <div className='flex flex-col text-[#2D1F67]'>
                     <h2 className='font-bold text-2xl sm:text-3xl xl:text-4xl'>
                         Nous ne faisons pas des vidéos. Nous produisons des mondes animés.
                     </h2>
@@ -45,20 +45,20 @@ const page = () => {
                     </span>
 
                     <div className='flex gap-4 flex-wrap md:justify-start'>
-                        <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start whitespace-nowrap flex items-center gap-2">
+                        <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] w-min whitespace-nowrap flex items-center gap-2">
                             Lancer mon projet d'animation
                         </Link>
-                        <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start whitespace-nowrap flex items-center gap-2">
+                        <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] w-min whitespace-nowrap flex items-center gap-2">
                             Voir nos univers animés
                         </Link>
                     </div>
                 </div>
-                <Image src="/Liadtech/Accueil/image 3  section 4.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
+                <Image src="/Liadtech/Accueil/image 3  section 4.svg" width={0} height={0} className='w-auto h-auto' alt='hero' />
                 <SocialMediaVerticalIcons className='absolute bottom-5 right-0' />
             </section>
             <PricingPacksSection />
-            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-6 md:py-10'>
-                <div className='flex flex-col gap-4 md:gap-7 pt-10 md:pt-20 pr-4 md:pr-20'>
+            <section className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 py-6 md:py-10 gap-10 lg:gap-20 lg:items-center mb-4'>
+                <div className='flex flex-col gap-4 md:gap-7'>
                     <span className='font-bold text-2xl sm:text-3xl xl:text-4xl text-[#2D1F67]'>
                         Une production animée n'est pas un format.
                     </span>
@@ -80,13 +80,12 @@ const page = () => {
                     </div>
                 </div>
                 <Image src={"/images/animation et motion section 1.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
-
             </section>
 
-            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-6 md:py-10'>
+            <section className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 py-6 md:py-10 gap-10 lg:gap-20 lg:items-center mb-4 md:mb-20'>
                 <Image src={"/images/animation et motion section 2.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
 
-                <div className='flex flex-col gap-4 md:gap-7 pt-10 md:pt-20 pr-4 md:pr-20'>
+                <div className='flex flex-col gap-4 md:gap-7'>
                     <span className='font-bold text-2xl sm:text-3xl xl:text-4xl text-[#2D1F67]'>
                         Un studio complet derrière chaque projet
                     </span>
@@ -107,7 +106,7 @@ const page = () => {
                 </div>
             </section>
             <div className='bg-[#2D1F67]'>
-                <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 pt-16 px-4 md:px-16 pb-20 '>
+                <section className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 pt-16 px-4 pb-20 gap-10 lg:gap-20 lg:items-center mb-4'>
                     <div className='flex flex-col gap-7 text-white'>
                         <span className='font-bold text-2xl sm:text-3xl xl:text-4xl'>
                             Ce que nous réalisons:
@@ -165,7 +164,7 @@ const page = () => {
                     </div>
                     <Image src={"/images/Frame 15721.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
                 </section>
-                <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 bg-[#2D1F67] pb-20 md:pb-36 gap-10'>
+                <section className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4  bg-[#2D1F67] pb-20 md:pb-36 gap-10 lg:gap-20 lg:items-center mb-4 md:mb-20'>
                     <Image src={"/images/Frame 15722.svg"} width={0} height={0} className='w-auto h-auto -mt-28' alt='pic' />
                     <div className='flex flex-col gap-7 pr-0 md:pr-20 text-white'>
                         <span className='font-bold text-2xl sm:text-3xl xl:text-4xl'>
@@ -232,8 +231,8 @@ const page = () => {
                     </div>
                 </section>
             </div>
-            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-10'>
-                <div className='flex text-[#2D1F67] flex-col gap-7 pt-10 md:pt-20 pr-0 md:pr-20'>
+            <section className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 py-10 gap-10 lg:gap-20 lg:items-center mb-4 md:mb-20'>
+                <div className='flex text-[#2D1F67] flex-col gap-7'>
                     <span className='font-bold text-2xl sm:text-3xl xl:text-4xl'>
                         Pourquoi LIADTECH ?
                     </span>
@@ -285,13 +284,13 @@ const page = () => {
                 </div>
                 <Image src={"/images/digital marketing Section 3.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
             </section>
-            <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-[50px] md:py-[110px]'>
+            <section className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 gap-10 lg:gap-20 lg:items-center mb-4 md:mb-20 pb-10'>
                 <Image src={"/images/Support.svg"} width={0} height={0} className='w-auto h-auto' alt='pic' />
-                <div className='flex flex-col gap-4 mt-8 md:mt-0'>
+                <div className='flex flex-col gap-4'>
                     <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                         Vous ne cherchez pas une vidéo.Vous cherchez une création animée, un projet qui a du souffle.
                     </h2>
-                    <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap">
+                    <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] w-min whitespace-nowrap">
                         Discuter avec notre studio
                     </Link>
                 </div>

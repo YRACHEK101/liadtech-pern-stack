@@ -26,34 +26,33 @@ const page = () => {
     return (
         <div>
             <div className='bg-[#DDBFFF]'>
-                <section className='relative overflow-hidden grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px]'>
-                    <div className='flex flex-col text-[#2D1F67] self-center py-8 md:py-0'>
+                <section className='relative overflow-hidden grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 lg:items-center px-4 md:px-[42px] gap-10 lg:gap-20 pb-10 md:pb-20 pt-5 lg:pt-0'>
+                    <div className='flex flex-col text-[#2D1F67]'>
                         <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left'>
                             Votre image parle avant vous.Assurons-nous qu'elle transmette le bon message.
                         </h2>
                         <span className='text-base sm:text-lg text-[#2D1F67] mb-4 sm:mb-6 font-normal'>
                             Le design graphique n'est pas une finition.C'est le fond et la forme, l'essence même de votre identité visuelle.De la direction artistique à l'exécution, tout est pensé pour sublimer votre univers.
                         </span>
-
                         <div className='flex gap-4 flex-wrap md:justify-start'>
-                            <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start whitespace-nowrap flex items-center gap-2">
+                            <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] w-min whitespace-nowrap flex items-center gap-2">
                                 Imaginer mes visuels avec LIADTECH
                             </Link>
-                            <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start whitespace-nowrap flex items-center gap-2">
+                            <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] w-min whitespace-nowrap flex items-center gap-2">
                                 Voir notre portfolio visuel
                             </Link>
                         </div>
                     </div>
-                    <Image src="/images/Design Graphic 1.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='pic' />
+                    <Image src="/images/Design Graphic 1.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
                     <SocialMediaVerticalIcons className='absolute bottom-5 right-0' />
                 </section>
             </div>
             <TrustedByClientsSection />
             {/* Pricing Table Section */}
             <PricingPacksSection />
-            <div className='bg-[#2D1F67]'>
-                <section className='grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px] pb-20'>
-                    <div className='flex flex-col gap-6 pt-8 md:pt-[151px] text-white'>
+            <div className='bg-[#2D1F67] mb-4 md:mb-20 py-10 md:py-20'>
+                <section className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 lg:items-center px-4 md:px-[42px] gap-10 lg:gap-20'>
+                    <div className='flex flex-col gap-6 text-white'>
                         <span className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                             Ce qu'on crée pour vous
                         </span>
@@ -123,11 +122,11 @@ const page = () => {
                             Votre besoin est unique ? Notre design l'est aussi.
                         </div>
                     </div>
-                    <Image src={"/images/Design Graphic 2.svg"} width={0} height={0} className='w-auto h-auto mb-5' alt='pic' />
+                    <Image src={"/images/Design Graphic 2.svg"} width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
                 </section>
-                <section className='grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px] bg-[#2D1F67] py-8 md:py-[110px] gap-6 md:gap-8'>
-                    <Image src={"/images/Design Graphc 3.svg"} width={0} height={0} className='w-auto h-auto mb-5 origin-left z-0' alt='pic' />
-                    <div className='flex flex-col gap-6 pt-8 md:pt-[151px] text-white'>
+                <section className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 lg:items-center px-4 md:px-[42px] bg-[#2D1F67] gap-10 lg:gap-20'>
+                    <Image src={"/images/Design Graphc 3.svg"} width={0} height={0} className='w-auto h-auto origin-left z-0 mx-auto' alt='pic' />
+                    <div className='flex flex-col gap-6 text-white'>
                         <span className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                             Un studio, pas juste un designer
                         </span>
@@ -186,8 +185,8 @@ const page = () => {
                     </div>
                 </section>
             </div>
-            <section className='grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px] py-8 md:py-[110px]'>
-                <div className='flex flex-col gap-6 pt-8 text-[#2D1F67] md:pt-[151px]'>
+            <section className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 lg:items-center px-4 md:px-[42px] gap-10 lg:gap-20 mb-4 md:mb-20'>
+                <div className='flex flex-col gap-6 text-[#2D1F67]'>
                     <span className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                         Nos visuels sont faits pour performer
                     </span>
@@ -233,11 +232,11 @@ const page = () => {
                         Ici, on ne fait pas du joli. On fait du percutant, du aligné, du remarquable.
                     </div>
                 </div>
-                <Image src={"/images/Design Graphic 4.svg"} width={0} height={0} className='w-auto h-auto mb-5' alt='pic' />
+                <Image src={"/images/Design Graphic 4.svg"} width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
             </section>
-            <section className='px-4 md:pl-10 grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2'>
-                <Image src="/images/Design Graphic 5.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='pic' />
-                <div className='flex flex-col gap-6 pt-8 md:pt-[151px] text-[#2D1F67]'>
+            <section className='px-4 md:pl-10 grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 lg:items-center gap-10 lg:gap-20 mb-4 md:mb-20'>
+                <Image src="/images/Design Graphic 5.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
+                <div className='flex flex-col gap-6 text-[#2D1F67]'>
                     <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                         Au-delà du design : ce que nos créations vous apportent
                     </div>
@@ -285,16 +284,16 @@ const page = () => {
                     </div>
                 </div>
             </section>
-            <section className='grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px] py-8 md:py-[110px]'>
+            <section className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 lg:items-center px-4 md:px-[42px] gap-10 lg:gap-20 mb-4 md:mb-20 pb-10'>
                 <div className='flex flex-col gap-4'>
                     <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                         Vous avez un message.Nous lui donnons une forme qui marque, et une esthétique qui reste.
                     </h2>
-                    <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap">
+                    <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[20px] sm:px-[31px] py-[10px] w-min whitespace-nowrap">
                         Travailler mon image de marque avec LIADTECH
                     </Link>
                 </div>
-                <Image src={"/images/Marketing digital (1).svg"} width={0} height={0} className='w-auto h-auto mb-5' alt='pic' />
+                <Image src={"/images/Marketing digital (1).svg"} width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
             </section>
         </div>
     )
