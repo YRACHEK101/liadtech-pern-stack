@@ -25,34 +25,34 @@ const sitesFeatures = [
 const page = () => {
     return (
         <div>
-            <section className='relative overflow-hidden grid grid-cols-1 md:grid-cols-2 px-4  sm:container sm:mx-auto'>
-                <div className='flex flex-col text-[#2D1F67] pt-8 xl:pt-0 self-center'>
+            <section className='relative overflow-hidden grid grid-cols-1 md:grid-cols-2 px-4 sm:container sm:mx-auto pb-10 md:pb-20 pt-5 lg:pt-0 gap-10 lg:gap-20 lg:items-center mb-4 md:mb-20'>
+                <div className='flex flex-col text-[#2D1F67]'>
                     <h2 className='font-bold text-2xl sm:text-3xl xl:text-4xl'>
                         Votre système est peut-être exposé.Nous vous aidons à le sécuriser avant qu'il ne soit ciblé.
                     </h2>
-                    <span className='text-base sm:text-lg mb-9'>
+                    <span className='text-base sm:text-lg'>
                         Nos audits de sécurité et tests d'intrusion identifient vos failles critiques, évaluent vos risques et vous livrent des solutions concrètes.Prévenez les attaques, renforcez vos défenses, inspirez confiance.
                     </span>
 
                     <div className='flex gap-4 flex-wrap md:justify-start'>
-                        <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start whitespace-nowrap flex items-center gap-2">
+                        <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] w-min whitespace-nowrap flex items-center gap-2">
                             Demander un audit de sécurité
                         </Link>
-                        <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start whitespace-nowrap flex items-center gap-2">
+                        <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] w-min whitespace-nowrap flex items-center gap-2">
                             Voir un exemple de rapport
                         </Link>
                     </div>
                 </div>
-                <Image src="/images/Video explainer.svg" width={0} height={0} className='w-auto h-auto mb-5 invisible' alt='hero' />
+                <Image src="/images/Group 239.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
                 <SocialMediaVerticalIcons className='absolute bottom-5 right-0' />
             </section>
             <TrustedByClientsSection />
             {/* Pricing Table Section */}
             <PricingPacksSection />
 
-            <div className='bg-[#2D1F67]'>
-                <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 pb-20 '>
-                    <div className='flex flex-col text-white gap-4 pt-4 md:pt-16'>
+            <div className='bg-[#2D1F67] py-10 md:py-20'>
+                <section className='grid grid-cols-1 container mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center mb-4 md:mb-20'>
+                    <div className='flex flex-col text-white gap-4'>
                         <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                             Pourquoi faire un audit de sécurité ?
                         </div>
@@ -99,13 +99,10 @@ const page = () => {
                             </div>
                         </div>
                     </div>
-                    {/* <Image src={"/images/UI UX 1.svg"} width={0} height={0} className='w-auto h-auto invisible' alt='pic' /> */}
-                </section>
-                <section className='grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 bg-[#2D1F67] py-20 md:py-36 gap-10'>
-                    <div>
-                        {/* <Image src={"/images/UXUI section une.svg"} width={0} height={0} className='w-auto origin-top-right scale-100 md:scale-y-125 md:scale-x-110 h-auto invisible' alt='pic' /> */}
-
-                    </div>
+                    <Image src="/images/Frame 40248.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
+                                    </section>
+                <section className='grid grid-cols-1 container mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center mb-4 md:mb-20'>
+                <Image src="/images/Frame 40249.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
                     <div className='flex flex-col gap-7 pr-0 md:pr-20 text-white'>
                         <span className='font-bold text-2xl sm:text-3xl xl:text-4xl'>
                             Qu'est-ce qu'un Pentest (test d'intrusion) ?
@@ -122,8 +119,8 @@ const page = () => {
             </div>
 
 
-            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-16 pb-10'>
-                <div className='flex flex-col gap-4 pt-8 md:pt-16'>
+            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center mb-4 md:mb-20'>
+                <div className='flex flex-col gap-4'>
                     <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                         Ce que nous auditons pour vous
                     </div>
@@ -186,15 +183,12 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-                {/* <Image src={"/images/Création du l'app 3.svg"} width={0} height={0} className='w-auto h-auto invisible mx-auto' alt='pic' /> */}
-            </section>
+                <Image src="/images/Frame 40250.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
+                            </section>
 
-            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-16 pb-10'>
-                <div>
-                    {/* <Image src={"/images/Création du l'app 3.svg"} width={0} height={0} className='w-auto h-auto invisible mx-auto' alt='pic' /> */}
-
-                </div>
-                <div className='flex flex-col gap-4 pt-8 md:pt-16'>
+            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center mb-4 md:mb-20'>
+            <Image src="/images/Frame 40251.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
+                <div className='flex flex-col gap-4'>
                     <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                         Notre méthode
                     </div>
@@ -269,9 +263,9 @@ const page = () => {
                 </div>
             </section>
             <section className='bg-[#DDBFFF]'>
-                <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-16 pb-10'>
+                <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center mb-4 md:mb-20'>
 
-                    <div className='flex flex-col gap-4 pt-4 md:pt-16'>
+                    <div className='flex flex-col gap-4'>
                         <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                             Pourquoi LIADTECH ?
                         </div>
@@ -318,14 +312,11 @@ const page = () => {
                             </div>
                         </div>
                     </div>
-                    <div></div>
+                    <Image src="/images/Site web (2).svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
+
                 </section>
-                <div className='grid  text-[#2D1F67] grid-cols-1 container mx-auto xl:grid-cols-2 px-4 md:px-16 py-8 md:py-[110px]'>
-
-                    <div>
-                        {/* <Image src="/images/UI UX 6.svg" width={0} height={0} className='w-auto h-auto mb-5 origin-left z-0 invisible' alt='hero' /> */}
-
-                    </div>
+                <div className='grid text-[#2D1F67] grid-cols-1 container mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center py-8 md:py-[110px] pb-10'>
+                    <Image src="/images/Site web 1.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
                     <div className='flex flex-col gap-4'>
                         <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left'>
                             Mieux vaut prévenir que réparer.
@@ -333,7 +324,7 @@ const page = () => {
                         <h3 className='text-xl md:text-2xl lg:text-3xl font-medium text-[#2D1F67]'>
                             Identifiez vos failles, sécurisez vos systèmes, protégez votre réputation.
                         </h3>
-                        <Link href="/" className="bg-[#673de6] self-start hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px]">
+                        <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] w-min whitespace-nowrap">
                             Planifier un audit de sécurité
                         </Link>
                     </div>
