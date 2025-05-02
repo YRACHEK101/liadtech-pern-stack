@@ -25,12 +25,12 @@ const sitesFeatures = [
 const page = () => {
     return (
         <div>
-            <section className='relative overflow-hidden grid grid-cols-1 md:grid-cols-2 px-4 sm:container sm:mx-auto pb-10 md:pb-20 pt-5 lg:pt-0 gap-10 lg:gap-20 lg:items-center mb-4 md:mb-20'>
+            <section className='relative overflow-hidden grid grid-cols-1 lg:grid-cols-2 px-4 sm:container sm:mx-auto pb-10 md:pb-20 pt-5 lg:pt-0 gap-10 lg:gap-20 lg:items-center mb-4 md:mb-20'>
                 <div className='flex flex-col text-[#2D1F67]'>
                     <h2 className='font-bold text-2xl sm:text-3xl xl:text-4xl'>
                         Votre système est peut-être exposé.Nous vous aidons à le sécuriser avant qu'il ne soit ciblé.
                     </h2>
-                    <span className='text-base sm:text-lg'>
+                    <span className='text-base sm:text-lg mb-4'>
                         Nos audits de sécurité et tests d'intrusion identifient vos failles critiques, évaluent vos risques et vous livrent des solutions concrètes.Prévenez les attaques, renforcez vos défenses, inspirez confiance.
                     </span>
 
@@ -50,7 +50,7 @@ const page = () => {
             {/* Pricing Table Section */}
             <PricingPacksSection />
 
-            <div className='bg-[#2D1F67] py-10 md:py-20'>
+            <div className='bg-[#2D1F67] py-10 md:py-20 mb-10 md:mb-20'>
                 <section className='grid grid-cols-1 container mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center mb-4 md:mb-20'>
                     <div className='flex flex-col text-white gap-4'>
                         <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
@@ -119,7 +119,7 @@ const page = () => {
             </div>
 
 
-            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center mb-4 md:mb-20'>
+            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center mb-10 md:mb-20'>
                 <div className='flex flex-col gap-4'>
                     <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                         Ce que nous auditons pour vous
@@ -186,8 +186,8 @@ const page = () => {
                 <Image src="/images/Frame 40250.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
                             </section>
 
-            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center mb-4 md:mb-20'>
-            <Image src="/images/Frame 40251.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
+            <section className=' grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center mb-10 md:mb-20'>
+                <Image src="/images/Frame 40251.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
                 <div className='flex flex-col gap-4'>
                     <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                         Notre méthode
@@ -263,7 +263,7 @@ const page = () => {
                 </div>
             </section>
             <section className='bg-[#2D1F67] text-white'>
-                <section className='grid  grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center mb-4 md:mb-20'>
+                <section className='grid  grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center mb-4 pt-10 lg:pt-0 '>
 
                     <div className='flex flex-col gap-4'>
                         <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
@@ -271,7 +271,7 @@ const page = () => {
                         </div>
                         <div className='flex flex-col gap-4'>
                             <div className='flex gap-2 md:gap-3'>
-                                <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                                <div className='size-2 bg-white rounded-full mt-2'></div>
                                 <div className='flex flex-col flex-1'>
                                     <span className='text-sm md:text-base'>
                                         🛡️ Experts certifiés en cybersécurité (OSCP, CEH, etc.)
@@ -279,7 +279,7 @@ const page = () => {
                                 </div>
                             </div>
                             <div className='flex gap-2 md:gap-3'>
-                                <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                                <div className='size-2 bg-white rounded-full mt-2'></div>
                                 <div className='flex flex-col flex-1'>
                                     <span className='text-sm md:text-base'>
                                         🧠 Audit orienté risques réels, pas techno blabla
@@ -287,7 +287,7 @@ const page = () => {
                                 </div>
                             </div>
                             <div className='flex gap-2 md:gap-3'>
-                                <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                                <div className='size-2 bg-white rounded-full mt-2'></div>
                                 <div className='flex flex-col flex-1'>
                                     <span className='text-sm md:text-base'>
                                         🚀 Réactivité : audit livré en 5 à 10 jours ouvrés
@@ -295,7 +295,7 @@ const page = () => {
                                 </div>
                             </div>
                             <div className='flex gap-2 md:gap-3'>
-                                <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                                <div className='size-2 bg-white rounded-full mt-2'></div>
                                 <div className='flex flex-col flex-1'>
                                     <span className='text-sm md:text-base'>
                                         🤝 Restitution claire, en langage métier ou dev
@@ -303,7 +303,7 @@ const page = () => {
                                 </div>
                             </div>
                             <div className='flex gap-2 md:gap-3'>
-                                <div className='size-2 bg-[#2D1F67] rounded-full mt-2'></div>
+                                <div className='size-2 bg-white rounded-full mt-2'></div>
                                 <div className='flex flex-col flex-1'>
                                     <span className='text-sm md:text-base'>
                                         🔐 Confidentialité, transparence, pédagogie
@@ -315,7 +315,7 @@ const page = () => {
                     <Image src="/images/Site web (2).svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
 
                 </section>
-                <div className='grid grid-cols-1 container mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center py-8 md:py-[110px] pb-10'>
+                <div className='grid grid-cols-1 container mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center pb-10'>
                     <Image src="/images/Site web 1.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
                     <div className='flex flex-col gap-4'>
                         <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left'>

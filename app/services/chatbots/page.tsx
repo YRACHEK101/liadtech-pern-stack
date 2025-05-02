@@ -50,7 +50,7 @@ const page = () => {
             {/* Pricing Table Section */}
             <PricingPacksSection />
 
-            <section className='bg-[#DDBFFF] mb-4 md:mb-20 pt-10'>
+            <section className='bg-[#DDBFFF] mb-10 lg:mb-20 py-10'>
                 <div className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto px-4 md:px-16 lg:grid-cols-2 gap-10 lg:gap-20 lg:items-center mb-4 md:mb-20'>
                     <div className='flex flex-col z-10'>
                         <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left mb-9'>
@@ -226,7 +226,7 @@ const page = () => {
                 </div>
                 {/* <Image src={"/images/Création du l'app 3.svg"} width={0} height={0} className='w-auto h-auto invisible mx-auto' alt='pic' /> */}
             </section>
-            <section className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 pb-8 md:pb-[110px] gap-10 lg:gap-20 mb-4 md:mb-20'>
+            <section className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 pb-8 md:pb-[110px] gap-10 lg:gap-20 mb-10 lg:mb-20'>
                 <div>
 
                 {/* <Image src={"/images/Création du l'app 4.svg"} width={0} height={0} className='w-auto h-auto mb-5 invisible mx-auto' alt='pic' /> */}
@@ -235,7 +235,7 @@ const page = () => {
                     <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                         Méthode de création
                     </div>
-                    <ol className='flex flex-col gap-4 list-decimal '>
+                    <ol className='flex flex-col gap-4 list-decimal pl-4'>
                         <li className=' gap-3'>
                             Brief : vos objectifs, vos utilisateurs, vos canaux
                         </li>
@@ -256,7 +256,7 @@ const page = () => {
             </section>
 
             <div className='bg-[#2D1F67] py-10 md:py-20'>
-                <section className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center mb-4 '>
+                <section className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center mb-10 lg:mb-20'>
                     <div className='flex text-white flex-col gap-4'>
                         <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                             Pourquoi LIADTECH ?

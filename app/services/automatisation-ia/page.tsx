@@ -26,7 +26,7 @@ const page = () => {
     return (
         <div>
             <div className='bg-[#DDBFFF]'>
-                <section className='relative overflow-hidden grid grid-cols-1 md:grid-cols-2 px-4 sm:container sm:mx-auto gap-10 lg:gap-20 lg:items-center pb-10 md:pb-20 pt-5 lg:pt-0'>
+                <section className='relative overflow-hidden grid grid-cols-1 lg:grid-cols-2 px-4 sm:container sm:mx-auto gap-10 lg:gap-20 lg:items-center pb-10 md:pb-20 pt-5 lg:pt-0'>
                     <div className='flex flex-col text-[#2D1F67]'>
                         <h2 className='font-bold text-2xl sm:text-3xl xl:text-4xl'>
                             Vos process sont intelligents.Ils méritent d'être automatisés avec IA.
@@ -51,8 +51,8 @@ const page = () => {
             <TrustedByClientsSection />
             {/* Pricing Table Section */}
             <PricingPacksSection />
-            <div className='bg-[#2D1F67] py-10 md:py-20'>
-                <section className='grid grid-cols-1 container mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center mb-4 md:mb-20'>
+            <div className='bg-[#2D1F67] py-10 lg:py-20 mb-10 lg:mb-20'>
+                <section className='grid grid-cols-1 container mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center'>
                     <div className='flex flex-col gap-7 pr-0 md:pr-20 text-white'>
                         <span className='font-bold text-2xl sm:text-3xl xl:text-4xl'>
                             Qu'est-ce qu'un agent IA ?
@@ -126,7 +126,7 @@ const page = () => {
                     </div>
                 </section>
             </div>
-            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center mb-4 md:mb-20'>
+            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center mb-10 lg:mb-20'>
                 <div className='flex flex-col gap-4'>
                     <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                         Notre méthode de mise en place
@@ -176,7 +176,7 @@ const page = () => {
                 </div>
                 <Image src={"/images/Group 244.svg"} width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
             </section>
-            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center mb-4 md:mb-20'>
+            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center mb-10 lg:mb-20'>
                 <div></div>
                 <div className='flex flex-col gap-4'>
                     <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>

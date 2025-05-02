@@ -49,7 +49,7 @@ const page = () => {
       <TrustedByClientsSection />
       <PricingPacksSection />
       <div className='bg-[#2D1F67] mb-4 md:mb-20'>
-        <section className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 lg:items-center px-4 md:px-[42px] gap-10 lg:gap-20 pb-20 pt-10 lg:pt-0'>
+        <section className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 lg:items-center px-4 md:px-[42px] gap-10 lg:gap-20 pb-20 pt-10 lg:pt-20'>
           <div className='flex flex-col gap-6 text-white'>
             <span className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
               Un bon logo, ce n'est pas qu'un joli visuel. C'est un déclencheur de confiance.
@@ -120,7 +120,7 @@ const page = () => {
           </div>
         </section>
       </div>
-      <section className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 lg:items-center px-4 md:px-[42px] gap-10 lg:gap-20 py-8 mb-4 md:mb-20'>
+      <section className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 lg:items-center px-4 md:px-[42px] gap-10 lg:gap-20 py-8 mb-4 lg:mb-10 '>
         <div className='flex flex-col gap-6'>
           <span className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
             Ce que vous obtenez concrètement

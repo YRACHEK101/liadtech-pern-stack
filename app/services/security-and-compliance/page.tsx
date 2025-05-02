@@ -100,7 +100,7 @@ const page = () => {
                 </div>
                 <Image src="/images/RGBD 3.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
             </section>
-            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center mb-4 md:mb-20'>
+            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center mb-10 md:mb-20'>
                 <Image src="/images/RGBD2.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
                 <div className='flex flex-col gap-4'>
                     <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
@@ -164,7 +164,7 @@ const page = () => {
                     <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                         Protégez vos données.Rassurez vos clients.
                     </div>
-                    <span className='text-base sm:text-lg mb-9'>
+                    <span className='text-base sm:text-lg mb-4'>
                         Faites de la conformité un levier de confiance.
                     </span>
 
@@ -208,7 +208,7 @@ const page = () => {
                 </div>
                 <Image src="/images/RGBD 6.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
             </section>
-            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center mb-4 md:mb-20'>
+            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center mb-10 md:mb-20'>
                 <Image src="/images/RGBD 5.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
                 <div className='flex flex-col gap-4'>
                     <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
