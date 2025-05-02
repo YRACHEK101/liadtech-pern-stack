@@ -25,8 +25,8 @@ const sitesFeatures = [
 const page = () => {
     return (
         <div>
-            <section className='relative overflow-hidden grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px]'>
-                <div className='flex flex-col text-[#2D1F67] self-center pt-8 md:pt-16'>
+            <section className='relative overflow-hidden grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-[42px] pb-10 md:pb-20 pt-5 lg:pt-0 gap-10 lg:gap-20 mb-4 md:mb-20 lg:items-center'>
+                <div className='flex flex-col text-[#2D1F67]'>
                     <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left'>
                         Vos clients attendent des réponses. Offrez-leur un échange instantané, fluide et intelligent.
                     </h2>
@@ -35,24 +35,24 @@ const page = () => {
                     </span>
 
                     <div className='flex gap-4 flex-wrap md:justify-start'>
-                        <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start whitespace-nowrap flex items-center gap-2">
+                        <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] w-min whitespace-nowrap flex items-center gap-2">
                             Créer mon chatbot intelligent
                         </Link>
-                        <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start whitespace-nowrap flex items-center gap-2">
+                        <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] w-min whitespace-nowrap flex items-center gap-2">
                             Voir des cas d'usage concrets
                         </Link>
                     </div>
                 </div>
-                <Image src="/images/AI (1).svg" width={0} height={0} className='w-auto h-auto mb-5 mx-auto' alt='pic' />
+                <Image src="/images/AI.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
                 <SocialMediaVerticalIcons className='absolute bottom-5 right-0' />
             </section>
             <TrustedByClientsSection />
             {/* Pricing Table Section */}
             <PricingPacksSection />
 
-            <section className='bg-[#DDBFFF]'>
-                <div className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto px-4 md:px-16 xl:grid-cols-2'>
-                    <div className='flex flex-col pt-8 md:pt-28 z-10  '>
+            <section className='bg-[#DDBFFF] mb-4 md:mb-20 pt-10'>
+                <div className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto px-4 md:px-16 lg:grid-cols-2 gap-10 lg:gap-20 lg:items-center mb-4 md:mb-20'>
+                    <div className='flex flex-col z-10'>
                         <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left mb-9'>
                             Pourquoi adopter un chatbot ?
                         </h2>
@@ -121,10 +121,9 @@ const page = () => {
 
                         </div>
                     </div>
-                    <Image src="/images/ChatBot.svg" width={0} height={0} className='w-auto h-auto mx-auto ' alt='hero' />
-
+                    <Image src="/images/ChatBot.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='hero' />
                 </div>
-                <div className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-16 pb-8 md:pb-[110px]'>
+                <div className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 pb-8 md:pb-[110px] gap-10 lg:gap-20 lg:items-center'>
                     <Image src="/images/ChatBot 2.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='hero' />
 
                     <div className='flex flex-col gap-4'>
@@ -177,7 +176,7 @@ const page = () => {
                 </div>
             </section>
 
-            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-16 pb-10'>
+            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 pb-10 gap-10 lg:gap-20 mb-4 md:mb-20'>
                 <div className='flex flex-col gap-4'>
                     <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                         Exemples d'usage
@@ -227,7 +226,7 @@ const page = () => {
                 </div>
                 {/* <Image src={"/images/Création du l'app 3.svg"} width={0} height={0} className='w-auto h-auto invisible mx-auto' alt='pic' /> */}
             </section>
-            <section className='grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-16 pb-8 md:pb-[110px]'>
+            <section className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 pb-8 md:pb-[110px] gap-10 lg:gap-20 mb-4 md:mb-20'>
                 <div>
 
                 {/* <Image src={"/images/Création du l'app 4.svg"} width={0} height={0} className='w-auto h-auto mb-5 invisible mx-auto' alt='pic' /> */}
@@ -256,8 +255,8 @@ const page = () => {
                 </div>
             </section>
 
-            <div className='bg-[#2D1F67]'>
-                <section className='grid grid-cols-1 pt-8 xl:pt-16 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-16 pb-20'>
+            <div className='bg-[#2D1F67] py-10 md:py-20'>
+                <section className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center mb-4 '>
                     <div className='flex text-white flex-col gap-4'>
                         <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                             Pourquoi LIADTECH ?
@@ -307,16 +306,16 @@ const page = () => {
                     </div>
                     {/* <Image src={"/images/UI UX 1.svg"} width={0} height={0} className='w-auto h-auto mb-5 invisible' alt='pic' /> */}
                 </section>
-                <section className='grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px] bg-[#2D1F67] pb-8 md:pb-[110px] gap-6 md:gap-8'>
-                    <Image src={"/images/AI Section deux (2).svg"} width={0} height={0} className='w-auto h-auto mb-5 mx-auto' alt='pic' />
-                    <div className='flex flex-col gap-6 md:gap-8 self-center text-white'>
+                <section className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-[42px] bg-[#2D1F67] pb-10 gap-10 lg:gap-20 lg:items-center'>
+                    <Image src={"/images/AI Section deux.svg"} width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
+                    <div className='flex flex-col gap-6 md:gap-8 text-white'>
                         <span className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                             Votre prochain collaborateur ne dort jamais.
                         </span>
                         <span className='font-bold text-base sm:text-lg'>
                             Créez un chatbot intelligent, efficace et aligné à votre business.
                         </span>
-                        <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap">
+                        <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] w-min whitespace-nowrap">
                             Lancer mon projet chatbot
                         </Link>
                     </div>
