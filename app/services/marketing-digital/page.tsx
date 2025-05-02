@@ -50,19 +50,19 @@ const page = () => {
     return (
         <div>
             <div className='bg-[#2D1F67]'>
-                <section className='relative bg-[#2D1F67] overflow-hidden gap-10 sm:gap-0 lg:gap-20 grid grid-cols-1 container mx-auto lg:grid-cols-2 px-4 md:px-[42px] pb-12 lg:py-10'>
-                    <div className='flex flex-col text-white self-center pt-8 lg:pt-0'>
+                <section className='relative bg-[#2D1F67] overflow-hidden gap-10 sm:gap-0 lg:gap-20 grid grid-cols-1 container mx-auto lg:grid-cols-2 px-4 md:px-[42px] pb-12 pt-5 lg:py-10 lg:items-center'>
+                    <div className='flex flex-col text-white'>
                         <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold !text-left !text-white'>
                             Plus qu'une présence en ligne: une machine à générer des clients.
                         </h2>
-                        <span className='text-base sm:text-lg text-white mb-4 sm:mb-6 font-bold'>
+                        <span className='text-base sm:text-lg text-white font-bold'>
                             Nous transformons votre visibilité digitale en résultats concrets
                         </span>
-                        <span className='text-base sm:text-lg text-white mb-4 sm:mb-16 font-normal'>
+                        <span className='text-base sm:text-lg text-white font-normal'>
                             grâce à une stratégie complète de contenus, campagnes publicitaires, SEO… et gestion de vos réseaux sociaux
                         </span>
                     </div>
-                    <Image src="/images/digital marketing.svg" width={0} height={0} className='w-auto h-auto mb-5 mx-auto' alt='hero' />
+                    <Image src="/images/digital marketing.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='hero' />
                     <SocialMediaVerticalIcons className='absolute bottom-5 right-0' />
                 </section>
             </div>
@@ -70,8 +70,8 @@ const page = () => {
             {/* Pricing Table Section */}
             <PricingPacksSection />
 
-            <section className='px-4 md:pl-10 grid grid-cols-1 gap-7  sm:gap-20 mb-16 container mx-auto lg:grid-cols-2 py-12 lg:py-10'>
-                <div className='flex flex-col gap-6 pt-8 self-center text-[#2D1F67]'>
+            <section className='px-4 md:pl-10 grid grid-cols-1 gap-7 sm:gap-20 container mx-auto lg:grid-cols-2 py-12 lg:py-10 lg:items-center'>
+                <div className='flex flex-col gap-6 text-[#2D1F67]'>
                     <div className='text-2xl sm:text-3xl lg:text-4xl font-bold'>
                         Notre approche stratégique
                     </div>
@@ -82,10 +82,10 @@ const page = () => {
                         Analyse de votre marché, positionnement, objectifs… Pas de posts inutiles, pas de pubs jetées au hasard. Une stratégie sur-mesure, testée, mesurée, ajustée chaque semaine.
                     </div>
                 </div>
-                <Image src="/images/digital marketing Section 1.svg" width={0} height={0} className='w-auto h-auto mb-5 mx-auto' alt='hero' />
+                <Image src="/images/digital marketing Section 1.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='hero' />
             </section>
-            <section className='px-4 md:px-10 grid grid-cols-1 gap-10 sm:gap-20 container mx-auto lg:grid-cols-2'>
-                <Image src="/images/Blogging et contenu 3.svg" width={0} height={0} className='w-auto h-auto mb-5 origin-left z-0 order-2 md:order-1' alt='hero' />
+            <section className='px-4 md:px-10 grid grid-cols-1 gap-10 sm:gap-20 container mx-auto lg:grid-cols-2 lg:items-center'>
+                <Image src="/images/Blogging et contenu 3.svg" width={0} height={0} className='w-auto h-auto origin-left z-0 order-2 md:order-1' alt='hero' />
                 <div className='flex flex-col z-10 order-1 md:order-2'>
                     <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold !text-left mb-9'>
                         Ce que vous gagnez avec nos Bénéfice
@@ -150,14 +150,14 @@ const page = () => {
                 </div>
             </section>
 
-            <section className='px-4 md:px-10 grid grid-cols-1 gap-10 sm:gap-20 container mx-auto lg:grid-cols-2 py-12 lg:py-10'>
-                <div className='flex flex-col gap-6 self-center text-[#2D1F67]'>
+            <section className='px-4 md:px-10 grid grid-cols-1 gap-10 sm:gap-20 container mx-auto lg:grid-cols-2 py-12 lg:py-10 lg:items-center'>
+                <div className='flex flex-col gap-6 text-[#2D1F67]'>
                     <div className='text-2xl sm:text-3xl lg:text-4xl font-bold'>
                         Nos services inclus
                     </div>
                     <div className='flex flex-col gap-4 '>
                         {sitesFeatures.map((site, index) => (
-                            <div key={index} className='flex  gap-3'>
+                            <div key={index} className='flex gap-3'>
                                 <svg width="14" height="15" viewBox="0 0 14 15" className='mt-2' fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12 2L5.63636 13L2 7.4127" stroke="#60BB6F" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
@@ -171,9 +171,9 @@ const page = () => {
                 <Image src="/images/Bloggin et contenu 2.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='hero' />
             </section>
             <section className='bg-[#DDBFFF]'>
-                <div className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 py-12 lg:py-10 gap-5 lg:gap-20'>
-                    <Image src="/images/digital marketing Section 2.svg" width={0} height={0} className='w-auto h-auto mx-auto  z-0 order-2 md:order-1' alt='hero' />
-                    <div className='flex flex-col pt-8 lg:pt-28 z-10 order-1 md:order-2 px-4 md:px-0'>
+                <div className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 py-12 lg:py-10 gap-5 lg:gap-20 lg:items-center'>
+                    <Image src="/images/digital marketing Section 2.svg" width={0} height={0} className='w-auto h-auto mx-auto z-0 order-2 md:order-1' alt='hero' />
+                    <div className='flex flex-col z-10 order-1 md:order-2 px-4 md:px-0'>
                         <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold !text-left mb-9'>
                             Pourquoi choisir LIADTECH
                         </h2>
@@ -214,15 +214,15 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-                <div className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 lg:px-16 py-8 lg:pb-20 gap-10 sm:gap-20'>
-                    <div className='flex flex-col gap-4 self-center'>
+                <div className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 lg:px-16 py-8 lg:pb-20 gap-10 sm:gap-20 lg:items-center pb-10 md:pb-0'>
+                    <div className='flex flex-col gap-4'>
                         <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold !text-left'>
                             Passez à l'action dès maintenant.
                         </h2>
                         <h3 className='text-base sm:text-lg font-medium text-[#2D1F67]'>
                             Confiez-nous votre stratégie digitale, et observez les résultats.
                         </h3>
-                        <Link href="/create-my-app-mobile" className="bg-[#673de6] self-start hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px]">
+                        <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] w-min whitespace-nowrap">
                             Créer ma stratégie digitale sur mesure
                         </Link>
                     </div>

@@ -49,8 +49,8 @@ const sitesFeatures = [
 const page = () => {
     return (
         <div>
-            <section className='relative overflow-hidden grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 gap-10 lg:gap-20 pb-12 lg:py-10'>
-                <div className='flex flex-col text-[#2D1F67] self-center py-8 md:py-0'>
+            <section className='relative overflow-hidden grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 gap-10 lg:gap-20 pb-12 pt-5 lg:py-10 lg:items-center'>
+                <div className='flex flex-col text-[#2D1F67]'>
                     <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold !text-left'>
                         Une vidéo bien faite, c'est simple : elle explique, elle convainc, elle vend.
                     </h2>
@@ -59,10 +59,10 @@ const page = () => {
                     </span>
 
                     <div className='flex gap-4 flex-wrap'>
-                        <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap flex items-center gap-2">
+                        <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] w-min whitespace-nowrap flex items-center gap-2">
                             Créer ma vidéo explicative
                         </Link>
-                        <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap flex items-center gap-2">
+                        <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] w-min whitespace-nowrap flex items-center gap-2">
                             Voir des exemples
                         </Link>
                     </div>
@@ -74,7 +74,7 @@ const page = () => {
             {/* Pricing Table Section */}
             <PricingPacksSection />
 
-            <section className='px-4  sm:container sm:mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-20 py-12 lg:pb-10 lg:pt-20'>
+            <section className='px-4 sm:container sm:mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-20 py-12 lg:pb-10 lg:pt-20 lg:items-center'>
                 <div className='flex flex-col gap-6 text-[#2D1F67] '>
                     <div className='text-2xl sm:text-3xl lg:text-4xl font-bold'>
                         Une vidéo, c'est plus qu'un format. C'est un outil de conversion.
@@ -114,7 +114,7 @@ const page = () => {
                 </div>
                 <Image src="/images/Frame 15708.svg" width={0} height={0} className='w-auto h-auto mx-auto self-center' alt='hero' />
             </section>
-            <section className='px-4  sm:container sm:mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-20 py-12 lg:py-10'>
+            <section className='px-4 sm:container sm:mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-20 py-12 lg:py-10 lg:items-center'>
                 <Image src="/images/explainer.svg" width={0} height={0} className='w-auto h-auto mx-auto order-2 md:order-1' alt='hero' />
                 <div className='flex flex-col gap-6 text-[#2D1F67] pt-6 md:pt-11 order-1 md:order-2'>
                     <div className='text-2xl sm:text-3xl lg:text-4xl font-bold'>
@@ -180,7 +180,7 @@ const page = () => {
                 </div>
             </section>
 
-            <section className='px-4  sm:container sm:mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-20 py-12 lg:py-10 mb-5'>
+            <section className='px-4 sm:container sm:mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-20 py-12 lg:py-10 mb-5 lg:items-center'>
                 <div className='flex flex-col gap-6 text-[#2D1F67] self-center '>
                     <div className='text-2xl sm:text-3xl lg:text-4xl font-bold'>
                         Nos services inclus
@@ -226,7 +226,7 @@ const page = () => {
                 </div>
                 <Image src="/images/Frame 15719.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='hero' />
             </section>
-            <section className="bg-[#2D1F67] -mb-0.5 text-white flex flex-col py-12 lg:py-14">
+            <section className="bg-[#2D1F67] -mb-0.5 text-white flex flex-col py-12 lg:py-14 pb-10 md:pb-0">
                 <div className="px-4  sm:container sm:mx-auto flex flex-col items-center ">
                     <div className="text-white text-2xl sm:text-3xl lg:text-4xl font-bold text-center">
                         Une équipe créative complète. Et ça fait toute la différence.
@@ -297,9 +297,9 @@ const page = () => {
                     </div>
                 </div>
             </section>
-            <section className=''>
-                <div className='bg-[#2D1F67] pb-10  px-4  sm:container sm:mx-auto grid grid-cols-1 lg:grid-cols-2  justify-between gap-10 lg:gap-20 py-12 lg:py-10 '>
-                    <div className='flex flex-col  text-white self-center '>
+            <section className='bg-[#2D1F67]'>
+                <div className='pb-16 px-4 sm:container sm:mx-auto grid grid-cols-1 lg:grid-cols-2 justify-between gap-10 lg:gap-20 py-12 lg:py-10 lg:items-center'>
+                    <div className='flex flex-col text-white self-center '>
                         <div className='text-2xl sm:text-3xl lg:text-4xl font-bold'>
                             Votre message mérite d'être vu, compris… et retenu.
                         </div>

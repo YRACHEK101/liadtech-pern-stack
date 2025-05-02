@@ -50,8 +50,8 @@ const page = () => {
     return (
         <div className='overflow-x-hidden'>
             <div className='bg-[#2D1F67]'>
-            <section className='relative overflow-hidden grid grid-cols-1 gap-10 lg:gap-20 sm:container sm:mx-auto lg:grid-cols-2 px-4 pb-12 lg:py-10'>
-                <div className='flex flex-col text-white self-center pb-8 pt-8 lg:pt-0'>
+            <section className='relative overflow-hidden grid grid-cols-1 gap-10 lg:gap-20 sm:container sm:mx-auto lg:grid-cols-2 lg:items-center px-4 pb-12 pt-5 lg:py-10'>
+                <div className='flex flex-col text-white pb-8 lg:pb-0'>
                     <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold !text-left !text-white'>
                         Vos clients vous cherchent. Assurons-nous qu'ils vous trouvent.
                     </h2>
@@ -63,15 +63,15 @@ const page = () => {
                     </span>
 
                     <div className='flex flex-row flex-wrap gap-4'>
-                        <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start whitespace-nowrap flex items-center gap-2">
+                        <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] w-min whitespace-nowrap flex items-center gap-2">
                                 Lancer mon audit SEO gratuit
                         </Link>
-                        <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start whitespace-nowrap flex items-center gap-2">
+                        <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] w-min whitespace-nowrap flex items-center gap-2">
                                 Demander ma stratégie de référencement
                         </Link>
                     </div>
                 </div>
-                <Image src="/images/SEO 4.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
+                <Image src="/images/SEO 4.svg" width={0} height={0} className='w-auto h-auto' alt='hero' />
                 <SocialMediaVerticalIcons className='absolute bottom-5 right-0' />
             </section>
             </div>
@@ -79,8 +79,8 @@ const page = () => {
             {/* Pricing Table Section */}
             <PricingPacksSection />
 
-            <section className='px-4 md:pl-10 grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 gap-10 lg:gap-20 py-12 lg:py-10'>
-                <div className='flex flex-col gap-6 pt-8  text-[#2D1F67]'>
+            <section className='px-4 md:pl-10 grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 lg:items-center gap-10 lg:gap-20 py-12 lg:py-10'>
+                <div className='flex flex-col gap-6 text-[#2D1F67]'>
                     <div className='text-2xl sm:text-3xl lg:text-4xl font-bold'>
                         Notre approche stratégique
                     </div>
@@ -91,10 +91,10 @@ const page = () => {
                         Analyse de votre marché, positionnement, objectifs… Pas de posts inutiles, pas de pubs jetées au hasard. Une stratégie sur-mesure, testée, mesurée, ajustée chaque semaine.
                     </div>
                 </div>
-                <Image src="/images/SEO 3.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
+                <Image src="/images/SEO 3.svg" width={0} height={0} className='w-auto h-auto' alt='hero' />
             </section>
-            <section className='px-4 md:px-10 grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 gap-10 lg:gap-20 py-12 lg:py-10'>
-                <Image src="/images/SEO.svg" width={0} height={0} className='w-auto h-auto mb-5 z-0' alt='hero' />
+            <section className='px-4 md:px-10 grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 lg:items-center gap-10 lg:gap-20 py-12 lg:py-10'>
+                <Image src="/images/SEO.svg" width={0} height={0} className='w-auto h-auto z-0' alt='hero' />
                 <div className='flex flex-col z-10'>
                     <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold !text-left mb-9'>
                         Ce que vous gagnez avec nos Bénéfice
@@ -160,8 +160,8 @@ const page = () => {
                 </div>
             </section>
 
-            <section className='px-4 md:px-10 mb-5 grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 gap-10 lg:gap-20 py-12 lg:py-10'>
-                <div className='flex flex-col gap-6 pt-8 text-[#2D1F67]'>
+            <section className='px-4 md:px-10 mb-5 grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 lg:items-center gap-10 lg:gap-20 py-12 lg:py-10'>
+                <div className='flex flex-col gap-6 text-[#2D1F67]'>
                     <div className='text-2xl sm:text-3xl lg:text-4xl font-bold'>
                         Nos services inclus
                     </div>
@@ -181,9 +181,9 @@ const page = () => {
                 <Image src="/images/SEO 5.svg" width={0} height={0} className='w-auto h-auto mb-5' alt='hero' />
             </section>
             <section className='bg-[#DDBFFF]'>
-                <div className='grid grid-cols-1 mb-5 sm:container sm:mx-auto lg:grid-cols-2 gap-10 lg:gap-20 py-12 lg:py-10'>
+                <div className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 lg:items-center gap-10 lg:gap-20 py-12 lg:py-10'>
                     <Image src="/images/SEO 2.svg" width={0} height={0} className='w-auto h-auto z-0' alt='hero' />
-                    <div className='flex flex-col lg:pt-8 z-10 px-4 md:px-0'>
+                    <div className='flex flex-col z-10 px-4 md:px-0'>
                         <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold !text-left mb-9'>
                             Pourquoi choisir LIADTECH
                         </h2>
@@ -224,19 +224,19 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-                <div className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 lg:px-16 pb-8 md:pb-[110px] gap-10 lg:gap-20'>
-                    <div className='flex flex-col gap-4 self-center'>
+                <div className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 lg:items-center px-4 lg:px-16 pb-16 md:pb-[110px] gap-10 lg:gap-20'>
+                    <div className='flex flex-col gap-4'>
                         <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold !text-left'>
                             Passez à l'action dès maintenant.
                         </h2>
                         <h3 className='text-base sm:text-lg font-medium text-[#2D1F67]'>
                             Confiez-nous votre stratégie digitale, et observez les résultats.
                         </h3>
-                        <Link href="/create-my-app-mobile" className="bg-[#673de6] self-start hover:bg-[#5735bc] text-white rounded-lg px-4 sm:px-[31px] py-[10px]">
+                        <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-4 sm:px-[31px] py-[10px] w-min whitespace-nowrap">
                             Créer ma stratégie digitale sur mesure
                         </Link>
                     </div>
-                    <Image src="/images/SEO 7 (2).svg" width={0} height={0} className='w-auto h-auto mt-5 mb-10 sm:my-0' alt='pic' />
+                    <Image src="/images/SEO 7 (2).svg" width={0} height={0} className='w-auto h-auto' alt='pic' />
                 </div>
             </section>
 
