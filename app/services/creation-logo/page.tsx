@@ -25,8 +25,8 @@ const sitesFeatures = [
 const page = () => {
   return (
     <div>
-      <section className='relative overflow-hidden grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px]'>
-        <div className='flex flex-col text-[#2D1F67] self-center py-8 md:py-0'>
+      <section className='relative overflow-hidden grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 lg:items-center px-4 md:px-[42px] gap-10 lg:gap-20 pb-12 pt-5 lg:py-0 mb-4 md:mb-20'>
+        <div className='flex flex-col text-[#2D1F67]'>
           <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left'>
             Votre logo, ce n'est pas un dessin. C'est votre première impression, votre signature.
           </h2>
@@ -35,23 +35,22 @@ const page = () => {
           </span>
 
           <div className='flex gap-4 flex-wrap md:justify-start'>
-            <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start whitespace-nowrap flex items-center gap-2">
+            <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] w-min whitespace-nowrap flex items-center gap-2">
               Créer mon logo
             </Link>
-            <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start whitespace-nowrap flex items-center gap-2">
+            <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] w-min whitespace-nowrap flex items-center gap-2">
               Voir nos réalisations
             </Link>
           </div>
         </div>
-        <Image src="/images/Creation Logo.svg" width={0} height={0} className='w-auto h-auto mb-5 mx-auto' alt='pic' />
+        <Image src="/images/Creation Logo.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
         <SocialMediaVerticalIcons className='absolute bottom-5 right-0' />
       </section>
       <TrustedByClientsSection />
-      {/* Pricing Table Section */}
       <PricingPacksSection />
-      <div className='bg-[#2D1F67]'>
-        <section className='grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px] pb-20'>
-          <div className='flex flex-col gap-6 pt-8 md:pt-[151px] text-white'>
+      <div className='bg-[#2D1F67] mb-4 md:mb-20'>
+        <section className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 lg:items-center px-4 md:px-[42px] gap-10 lg:gap-20 pb-20 pt-10 lg:pt-0'>
+          <div className='flex flex-col gap-6 text-white'>
             <span className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
               Un bon logo, ce n'est pas qu'un joli visuel. C'est un déclencheur de confiance.
             </span>
@@ -93,10 +92,10 @@ const page = () => {
               </div>
             </div>
           </div>
-          <Image src={"/images/Creation Logo 2.svg"} width={0} height={0} className='w-auto h-auto mb-5 mx-auto' alt='pic' />
+          <Image src={"/images/Creation Logo 2.svg"} width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
         </section>
-        <section className='grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px] bg-[#2D1F67] pb-8 md:pb-[110px] gap-6 md:gap-8'>
-          <Image src={"/images/Création du logo 3.svg"} width={0} height={0} className='w-auto h-auto mb-5 origin-left z-0 mx-auto' alt='pic' />
+        <section className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 lg:items-center px-4 md:px-[42px] gap-10 lg:gap-20 pb-8 md:pb-[110px]'>
+          <Image src={"/images/Création du logo 3.svg"} width={0} height={0} className='w-auto h-auto origin-left z-0 mx-auto' alt='pic' />
           <div className='flex flex-col justify-center gap-6 md:gap-8 text-white'>
             <span className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
               Notre méthode de création
@@ -121,8 +120,8 @@ const page = () => {
           </div>
         </section>
       </div>
-      <section className='grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px] py-8 md:py-[110px]'>
-        <div className='flex flex-col gap-6 pt-8 md:pt-[151px]'>
+      <section className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 lg:items-center px-4 md:px-[42px] gap-10 lg:gap-20 py-8 mb-4 md:mb-20'>
+        <div className='flex flex-col gap-6'>
           <span className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
             Ce que vous obtenez concrètement
           </span>
@@ -177,18 +176,18 @@ const page = () => {
             </div>
           </div>
         </div>
-        <Image src={"/images/Création du logo 4.svg"} width={0} height={0} className='w-auto h-auto mb-5 mx-auto' alt='pic' />
+        <Image src={"/images/Création du logo 4.svg"} width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
       </section>
-      <section className='grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-[42px] py-8 md:py-[110px]'>
-        <Image src={"/images/Création du logo 5.svg"} width={0} height={0} className='w-auto h-auto mb-5 mx-auto' alt='pic' />
+      <section className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 lg:items-center px-4 md:px-[42px] gap-10 lg:gap-20 py-8 pb-10'>
+        <Image src={"/images/Création du logo 5.svg"} width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
         <div className='flex flex-col gap-4 justify-center'>
           <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
             Votre logo mérite mieux qu'un générateur automatique.Confiez votre image à de vrais créatifs.
           </h2>
-          <span className='text-base sm:text-lg text-[#2D1F67] mb-4 sm:mb-6 font-normal'>
+          <span className='text-base sm:text-lg text-[#2D1F67] font-normal'>
             Confiez votre image à de vrais créatifs
           </span>
-          <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] self-start mb-4 whitespace-nowrap">
+          <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] w-min whitespace-nowrap">
             Créer mon logo
           </Link>
         </div>
