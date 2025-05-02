@@ -262,8 +262,8 @@ const page = () => {
                     </div>
                 </div>
             </section>
-            <section className='bg-[#DDBFFF]'>
-                <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center mb-4 md:mb-20'>
+            <section className='bg-[#2D1F67] text-white'>
+                <section className='grid  grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center mb-4 md:mb-20'>
 
                     <div className='flex flex-col gap-4'>
                         <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
@@ -315,13 +315,13 @@ const page = () => {
                     <Image src="/images/Site web (2).svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
 
                 </section>
-                <div className='grid text-[#2D1F67] grid-cols-1 container mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center py-8 md:py-[110px] pb-10'>
+                <div className='grid grid-cols-1 container mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center py-8 md:py-[110px] pb-10'>
                     <Image src="/images/Site web 1.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
                     <div className='flex flex-col gap-4'>
                         <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left'>
                             Mieux vaut prévenir que réparer.
                         </h2>
-                        <h3 className='text-xl md:text-2xl lg:text-3xl font-medium text-[#2D1F67]'>
+                        <h3 className='text-xl md:text-2xl lg:text-3xl font-medium'>
                             Identifiez vos failles, sécurisez vos systèmes, protégez votre réputation.
                         </h3>
                         <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] w-min whitespace-nowrap">

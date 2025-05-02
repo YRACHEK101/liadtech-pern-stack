@@ -29,25 +29,25 @@ const page = () => {
     return (
         <div>
             <div className='bg-[#2D1F67]'>
-                <section className='relative overflow-hidden grid grid-cols-1 container mx-auto xl:grid-cols-2 px-4 pt-8 md:px-[42px]'>
-                    <div className='flex flex-col text-white z-10 self-center'>
+                <section className='relative overflow-hidden grid grid-cols-1 container mx-auto lg:grid-cols-2 px-4 pb-10 md:pb-20 pt-5 lg:pt-0 md:px-[42px] gap-10 lg:gap-20 lg:items-center'>
+                    <div className='flex flex-col text-white z-10'>
                         <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left !text-white'>
                             Le RGPD n'est pas une option.C'est une exigence légale… et un gage de confiance.
                         </h2>
-                        <span className='text-base sm:text-lg mb-9'>
+                        <span className='text-base sm:text-lg mb-4'>
                             Nous vous aidons à mettre votre site, vos outils, vos données et vos pratiques marketing en conformité avec la réglementation européenne — simplement, efficacement, sans jargon.
                         </span>
 
-                        <div className='flex flex-col md:flex-row gap-4'>
-                            <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-5 lg:px-[31px] py-[10px] self-start whitespace-nowrap flex items-center gap-2">
+                        <div className='flex flex-wrap gap-4'>
+                            <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-5 lg:px-[31px] py-[10px] w-min whitespace-nowrap flex items-center gap-2">
                                 Mettre mon entreprise en conformité
                             </Link>
-                            <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-5 lg:px-[31px] py-[10px] self-start whitespace-nowrap flex items-center gap-2">
+                            <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-5 lg:px-[31px] py-[10px] w-min whitespace-nowrap flex items-center gap-2">
                                 Voir les éléments vérifiés
                             </Link>
                         </div>
                     </div>
-                    <Image src={"/images/Ux ui.svg"} width={0} height={0} className='w-auto mx-auto origin-top-right scale-100 xl:scale-[120%] pt-10 z-0 h-auto invisible' alt='pic' />
+                    <Image src="/images/RGBD.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
                     <SocialMediaVerticalIcons className='absolute bottom-5 right-0' />
                 </section>
             </div>
@@ -55,8 +55,8 @@ const page = () => {
 
             <PricingPacksSection />
 
-            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-16 pb-10'>
-                <div className='flex flex-col gap-4 pt-4'>
+            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center mb-4 md:mb-20'>
+                <div className='flex flex-col gap-4'>
                     <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                         Pourquoi la conformité RGPD est essentielle ?
                     </div>
@@ -98,11 +98,11 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-                <div></div>
+                <Image src="/images/RGBD 3.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
             </section>
-            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-16 pb-10'>
-                <div></div>
-                <div className='flex flex-col gap-4 pt-4'>
+            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center mb-4 md:mb-20'>
+                <Image src="/images/RGBD2.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
+                <div className='flex flex-col gap-4'>
                     <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                         Ce que nous vérifions et mettons en place
                     </div>
@@ -159,16 +159,15 @@ const page = () => {
                     </div>
                 </div>
             </section>
-            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-16 pb-10'>
-
-                <div className='flex flex-col gap-4 pt-4'>
+            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center mb-4 md:mb-20'>
+                <div className='flex flex-col gap-4'>
                     <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                         Protégez vos données.Rassurez vos clients.
                     </div>
                     <span className='text-base sm:text-lg mb-9'>
                         Faites de la conformité un levier de confiance.
                     </span>
-                    
+
                     <div className='flex flex-col gap-4'>
                         <div className='flex gap-2 md:gap-3'>
                             <div className='flex flex-col flex-1'>
@@ -207,11 +206,11 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-                <div></div>
+                <Image src="/images/RGBD 6.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
             </section>
-            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 md:px-16 pb-10'>
-                <div></div>
-                <div className='flex flex-col gap-4 pt-4 md:pt-16'>
+            <section className='grid text-[#2D1F67] grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center mb-4 md:mb-20'>
+                <Image src="/images/RGBD 5.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
+                <div className='flex flex-col gap-4'>
                     <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
                         Pourquoi LIADTECH ?
                     </div>
@@ -259,7 +258,22 @@ const page = () => {
                     </div>
                 </div>
             </section>
-
+            <section className='bg-[#2D1F67] text-white py-10 md:py-20'>
+                <div className='grid grid-cols-1 container mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center pb-10'>
+                    <div className='flex flex-col gap-4'>
+                        <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left'>
+                            Protégez vos données.
+                        </h2>
+                        <h3 className='text-xl md:text-2xl lg:text-3xl font-medium'>
+                            Rassurez vos clients.Faites de la conformité un levier de confiance
+                        </h3>
+                        <Link href="/" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] w-min whitespace-nowrap">
+                            Planifier ma mise en conformité
+                        </Link>
+                    </div>
+                    <Image src="/images/RGBD 4.svg" width={0} height={0} className='w-auto h-auto mx-auto' alt='pic' />
+                </div>
+            </section>
         </div>
     )
 }
