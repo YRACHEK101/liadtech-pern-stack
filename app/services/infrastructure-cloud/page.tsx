@@ -272,6 +272,72 @@ const page = () => {
                     </div>
                 </div>
             </section>
+            <div className='bg-[#2D1F67] py-10 md:py-20'>
+                <section className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-16 gap-10 lg:gap-20 lg:items-center mb-10 lg:mb-20'>
+                    <div className='flex text-white flex-col gap-4'>
+                        <div className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
+                            Pourquoi LIADTECH ?
+                        </div>
+                        <div className='flex flex-col gap-4'>
+                            <div className='flex items-center gap-2 md:gap-3'>
+                                <div className='size-2 bg-white rounded-full'></div>
+                                <div className='flex flex-col flex-1'>
+                                    <span className='text-sm md:text-base'>
+                                        🧠 Architectes Cloud certifiés (Azure/AWS)
+                                    </span>
+                                </div>
+                            </div>
+                            <div className='flex items-center gap-2 md:gap-3'>
+                                <div className='size-2 bg-white rounded-full'></div>
+                                <div className='flex flex-col flex-1'>
+                                    <span className='text-sm md:text-base'>
+                                        💡 Expertise dev + infra + sécurité + coût
+                                    </span>
+                                </div>
+                            </div>
+                            <div className='flex items-center gap-2 md:gap-3'>
+                                <div className='size-2 bg-white rounded-full'></div>
+                                <div className='flex flex-col flex-1'>
+                                    <span className='text-sm md:text-base'>
+                                        🔐 Approche Cloud secure by design
+                                    </span>
+                                </div>
+                            </div>
+                            <div className='flex items-center gap-2 md:gap-3'>
+                                <div className='size-2 bg-white rounded-full'></div>
+                                <div className='flex flex-col flex-1'>
+                                    <span className='text-sm md:text-base'>
+                                        ☁️ Multi-cloud, hybride ou souverain, selon vos besoins
+                                    </span>
+                                </div>
+                            </div>
+                            <div className='flex items-center gap-2 md:gap-3'>
+                                <div className='size-2 bg-white rounded-full'></div>
+                                <div className='flex flex-col flex-1'>
+                                    <span className='text-sm md:text-base'>
+                                        🤝 Accompagnement stratégique + exécution technique
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* <Image src={"/images/UI UX 1.svg"} width={0} height={0} className='w-auto h-auto mb-5 invisible' alt='pic' /> */}
+                </section>
+                <section className='grid grid-cols-1 sm:container sm:mx-auto lg:grid-cols-2 px-4 md:px-[42px] bg-[#2D1F67] pb-10 gap-10 lg:gap-20 lg:items-center'>
+                    <div></div>
+                    <div className='flex flex-col gap-6 md:gap-8 text-white'>
+                        <span className='text-2xl sm:text-3xl xl:text-4xl font-bold'>
+                            Votre cloud mérite mieux qu’un simple hébergeur.
+                        </span>
+                        <span className='font-bold text-base sm:text-lg'>
+                            Confiez-le à une équipe d’architectes et de développeurs qui comprennent vos enjeux business et tech.
+                        </span>
+                        <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] w-min whitespace-nowrap">
+                            Construire ou migrer mon infrastructure Cloud
+                        </Link>
+                    </div>
+                </section>
+            </div>
         </div>
     )
 }

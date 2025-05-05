@@ -286,7 +286,7 @@ const MainHeader = () => {
                                                     </span>
                                                 </div>
                                             </Link>
-                                            <Link href={"/services/creation-sites-web"} className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
+                                            <Link href={"/services/applications-sur-mesure"} className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
                                                 <Image src={"/images/Group 170.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
                                                 <div className="flex flex-col flex-1  ">
                                                     <span className="font-bold">
