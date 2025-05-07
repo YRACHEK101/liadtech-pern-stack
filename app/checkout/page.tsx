@@ -48,8 +48,8 @@ export default function CheckoutView() {
         if (!data.data) throw new Error('Produit non trouvé');
 
         setProduct(data.data);
-      } catch (err) {
-        setError(err.message || 'Erreur inattendue');
+      } catch {
+        setError('Erreur inattendue');
       } finally {
         setLoading(false);
       }
@@ -84,8 +84,8 @@ export default function CheckoutView() {
       if (data.url) {
         window.location.href = data.url;
       }
-    } catch (err) {
-      setError(err.message || 'Erreur lors du traitement du paiement');
+    } catch {
+      setError('Erreur lors du traitement du paiement');
     } finally {
       setSubmitting(false);
     }
@@ -111,23 +111,23 @@ export default function CheckoutView() {
 
 
   return (
-    <section className="px-5 py-16">
+    <section className="px-1 md:px-5 py-16 md:container sm:mx-auto">
       <div className="w-full flex flex-col gap-16 ">
 
-        <div className=" flex flex-col gap-[22px] items-center text-[#2D1F67]">
-          <h1 className="text-6xl font-bold ">
+        <div className=" flex px-4 flex-col gap-[22px] items-center text-center text-[#2D1F67]">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold ">
             Finalisez votre paiement maintenant
           </h1>
-          <h3 className='text-2xl'>
+          <h3 className='text-xl md:text-2xl'>
             Paiement simple, rapide et sécurisé
           </h3>
         </div>
     
-        <div className="w-full flex relative gap-9 py-[30px] px-[37px]">
-          <Image src={"/Liadtech/checkout/Rectangle 92.svg"} className='absolute top-0 z-0 right-0 !w-auto !h-5/6 ' width={0} height={0} alt='bg' />
-          <Image src={"/Liadtech/checkout/Rectangle 93.svg"} className='absolute bottom-0 z-0 left-0 !w-auto !h-5/6 ' width={0} height={0} alt='bg' />
-          <div className='grid grid-cols-2 p-10 gap-6 gap-x-10 bg-white z-10 border-2 basis-3/5 border-[#B7C1E7] rounded-lg'>
-            <span className='text-3xl text-[#2D1F67] mb-4 col-span-full font-bold'>
+        <div className="w-full flex flex-col lg:flex-row relative gap-9 p-4 md:py-[30px] md:px-[37px]">
+          <Image src={"/Liadtech/checkout/Rectangle 92.svg"} className='absolute top-0 z-0 right-0 !w-auto !h-5/6  ' width={0} height={0} alt='bg' />
+          <Image src={"/Liadtech/checkout/Rectangle 93.svg"} className='absolute bottom-0 z-0 left-0 !w-auto !h-5/6  ' width={0} height={0} alt='bg' />
+          <div className='grid grid-cols-2 p-5 md:p-10 gap-6 gap-x-10 bg-white z-10 border-2 basis-3/5 border-[#B7C1E7] rounded-lg'>
+            <span className='text-2xl md:text-3xl text-[#2D1F67] mb-4 col-span-full font-bold'>
               Détails de facturation
             </span>
 
@@ -184,7 +184,7 @@ export default function CheckoutView() {
               <span className='font-bold'>
                 Adresse
               </span>
-              <Input name="address" placeholder="Adresse" required />
+              <Input name="address" placeholder="Adresse" required className='mb-2' />
               <Input name="full_address" placeholder="Complélement d’adresse" required />
             </label>
             <label className='flex flex-col gap-1.5 text-[#2D1F67]'>
@@ -200,29 +200,29 @@ export default function CheckoutView() {
               <Input name="postalCode" placeholder="Code postal" required />
             </label>
           </div>
-          <div className='p-10 basis-2/5 border-2 bg-white z-10  border-[#B7C1E7] rounded-lg'>
-            <span className='text-3xl text-[#2D1F67] font-bold '>
+          <div className='p-5 md:p-10 basis-2/5 border-2 bg-white z-10  border-[#B7C1E7] rounded-lg'>
+            <span className='text-2xl md:text-3xl text-[#2D1F67] font-bold '>
               Votre commande
             </span>
-            <div className='text-[#2D1F67]'>
-              <div className='flex items-center justify-between gap-2 py-5 font-bold text-[25px] border-b-2 border-[#2D1F67]'>
+            <div className='text-[#2D1F67] mb-6'>
+              <div className='flex items-center justify-between gap-2 py-5 font-bold text-xl md:text-2xl border-b-2 border-[#2D1F67]'>
                 <span>Produit</span>
                 <span>Total</span>
               </div>
-              <div className='flex items-center justify-between gap-2 py-5 text-[25px] border-b-2 border-[#2D1F67]'>
+              <div className='flex items-center justify-between gap-2 py-5 text-xl md:text-2xl border-b-2 border-[#2D1F67]'>
                 <span>Sous Total</span>
                 <span>0 €</span>
               </div>
-              <div className='flex items-center justify-between gap-2 py-5 text-[25px] border-b-2 border-[#2D1F67]'>
+              <div className='flex items-center justify-between gap-2 py-5 text-xl md:text-2xl border-b-2 border-[#2D1F67]'>
                 <span>TVA(20%)</span>
                 <span>0.00 €</span>
               </div>
-              <div className='flex items-center justify-between gap-2 py-5 font-bold text-[25px] border-b-2 border-[#2D1F67]'>
+              <div className='flex items-center justify-between gap-2 py-5 font-bold text-xl md:text-2xl border-b-2 border-[#2D1F67]'>
                 <span>Total</span>
                 <span>0.00 €</span>
               </div>
             </div>
-            <span className='text-3xl text-[#2D1F67] font-bold '>
+            <span className='text-2xl md:text-3xl text-[#2D1F67] font-bold '>
               Méthode de paiment
             </span>
             <label className='flex gap-2 items-center my-5'>
@@ -231,7 +231,7 @@ export default function CheckoutView() {
                 Paiement via Stripe
               </span>
             </label>
-            <div className='px-10'>
+            <div className='px-5 md:px-10'>
             <Image src={"/images/stripe.png"} className='w-auto h-auto ' width={0} height={0} alt='bg' />
             </div>
             <label className='flex gap-2 flex-nowrap my-5'>
@@ -242,15 +242,15 @@ export default function CheckoutView() {
             </label>
 
             <span className=''>
-            Vos données personnelles seront utilisées pour traiter votre commande, soutenir votre expérience sur tout ce site Web et à d'autres fins décrites dans notre <a className='text-[#673DE6] underline'>politique de confidentialité</a>.
+              Vos données personnelles seront utilisées pour traiter votre commande, soutenir votre expérience sur tout ce site Web et à d'autres fins décrites dans notre <a className='text-[#673DE6] underline'>politique de confidentialité</a>.
             </span>
-            <label className='flex gap-2 items-center my-10'>
-              <input type='checkbox' />
-              <span>
+            <label className='flex gap-2 items-start my-10'>
+              <input type='checkbox' className='mt-1' />
+              <span className='flex-1'>
                 J'accepte <a href="http://" className='text-blue-600'>les conditions générales de vente</a>
               </span>
             </label>
-            <Button className='w-full'>
+            <Button className='w-full text-white font-bold text-xl rounded-lg'>
               Continue
             </Button>
           </div>
