@@ -1,28 +1,40 @@
 import React, { useState } from 'react';
 import { Select, SelectValue, SelectTrigger, SelectItem, SelectContent } from '../ui/select';
 import { ChevronDown, ChevronUp } from 'lucide-react';
+import { RadioGroup, RadioGroupItem } from '../ui/radio-group';
 
 interface Feature {
     title: React.ReactNode;
     description: React.ReactNode;
 }
 
-interface PricingCardProps {
+interface Option {
+    label: string;
+    value: string;
+}
+
+export interface PricingCardProps {
     title: string;
     isPopular?: boolean;
+    options: Option[];
     features: Feature[];
     blockedFeatures: Feature[];
+    price: number;
+    discount?: number; // 0 to 100
 }
 
 const PricingCard: React.FC<PricingCardProps> = ({
     title,
     isPopular = false,
     features,
-    blockedFeatures
+    blockedFeatures,
+    options = [],
+    price,
+    discount = 0
 }) => {
     const [isExpanded, setIsExpanded] = useState(false);
     return (
-        <div className={`flex-1 !w-full !max-w-[300px] sm:!max-w-[360px] relative rounded-2xl border border-gray-200 ${isPopular ?'border-purple-600':''} `} style={{ marginTop: 46 }}>
+        <div className={`flex-1 !w-full !max-w-[300px] sm:!max-w-[360px] relative rounded-2xl border border-gray-200 ${isPopular ? 'border-purple-600' : ''} `} style={{ marginTop: 46 }}>
             {isPopular && (
                 <div className="title bg-purple-400 font-bold text-white text-center py-2 rounded-t-2xl">
                     Le plus populaire
@@ -35,18 +47,16 @@ const PricingCard: React.FC<PricingCardProps> = ({
                 </h3>
 
                 <div className='flex flex-col gap-1 my-4'>
-                    <label className='flex items-center gap-3'>
-                        <input type="radio" name="offre" className='text-purple-900 size-5' />
-                        <span>Site vitrine</span>
-                    </label>
-                    <label className='flex items-center gap-3'>
-                        <input type="radio" name="offre" className='text-purple-900 size-5' />
-                        <span>Site dynamique et wordpress</span>
-                    </label>
-                    <label className='flex items-center gap-3'>
-                        <input type="radio" name="offre" className='text-purple-900 size-5' />
-                        <span>Site e commerce</span>
-                    </label>
+                    <RadioGroup>
+                        {
+                            options.map((option, index) => (
+                                <label key={index} className='flex items-center gap-3 cursor-pointer w-min whitespace-nowrap'>
+                                    <RadioGroupItem value={option.value} />
+                                    <span>{option.label}</span>
+                                </label>
+                            ))
+                        }
+                    </RadioGroup>
                 </div>
 
                 <label className='flex flex-col gap-3'>
@@ -65,17 +75,21 @@ const PricingCard: React.FC<PricingCardProps> = ({
                     </Select>
                 </label>
 
-                <div className='flex items-center gap-2 mt-5'>
-                    <span className='text-sm line-through text-[#2D1F67]'>
-                        US$ 11.99
-                    </span>
-                    <span className='py-1 px-3 rounded-full text-[#2D1F67] font-bold bg-[#d5dfff]'>
-                        SAVE 75%
-                    </span>
-                </div>
+                {
+                    discount > 0 && (
+                        <div className='flex items-center gap-2 mt-5'>
+                            <span className='text-sm line-through text-[#2D1F67]'>
+                                US$ {(price - (price * discount / 100)).toFixed(2)}
+                            </span>
+                            <span className='py-1 px-3 rounded-full text-[#2D1F67] font-bold bg-[#d5dfff]'>
+                                SAVE {discount}%
+                            </span>
+                        </div>
+                    )
+                }
 
                 <div className="text-5xl font-bold text-purple-900 my-3 !ml-0">
-                    0
+                    {discount > 0 ? (price - (price * discount / 100)).toFixed(2) : price}
                     <span className='text-3xl'>€</span>
                 </div>
 
@@ -86,8 +100,8 @@ const PricingCard: React.FC<PricingCardProps> = ({
                 <a
                     href="/Checkout?productId=1"
                     className={`block !w-full py-4 border-2 border-purple-600 rounded-lg font-medium mb-8 text-center ${isPopular
-                            ? 'text-white bg-purple-600'
-                            : 'text-purple-600 hover:bg-purple-50'
+                        ? 'text-white bg-purple-600'
+                        : 'text-purple-600 hover:bg-purple-50'
                         }`}
                 >
                     Sélectionner
@@ -107,7 +121,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
                                             {feature.description} Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat ipsam aliquid ducimus dolores at magni maiores tenetur beatae eos nisi, magnam ut velit, a reiciendis repellendus quis et repudiandae. Quasi!
                                         </div>
                                     </div>
-        
+
                                 </div>
                             )),
                             ...blockedFeatures.map((feature, index) => (
@@ -121,7 +135,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
                                     </div>
                                 </div>
                             ))
-                        ].splice(0,isExpanded ? features.length + blockedFeatures.length : 5).map((item, index) => (
+                        ].splice(0, isExpanded ? features.length + blockedFeatures.length : 5).map((item, index) => (
                             <div key={index}>
                                 {item}
                             </div>
@@ -130,12 +144,12 @@ const PricingCard: React.FC<PricingCardProps> = ({
                 </ul>
 
                 <button
-              onClick={() => setIsExpanded(!isExpanded)}
-              className=" mx-auto flex justify-center mt-4 sm:mt-6 text-purple-600 font-bold"
-            >
-              {isExpanded ? 'Masquer' : 'Voir tous'}
-              {isExpanded ? <ChevronUp className="h-4 w-4 sm:h-5 sm:w-5 ml-1" /> : <ChevronDown className="h-4 w-4 sm:h-5 sm:w-5 ml-1" />}
-            </button>
+                    onClick={() => setIsExpanded(!isExpanded)}
+                    className=" mx-auto flex justify-center mt-4 sm:mt-6 text-purple-600 font-bold"
+                >
+                    {isExpanded ? 'Masquer' : 'Voir tous'}
+                    {isExpanded ? <ChevronUp className="h-4 w-4 sm:h-5 sm:w-5 ml-1" /> : <ChevronDown className="h-4 w-4 sm:h-5 sm:w-5 ml-1" />}
+                </button>
             </div>
         </div>
     );

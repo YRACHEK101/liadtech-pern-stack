@@ -27,7 +27,7 @@ const page = () => {
         <div>
             <div className='bg-[#DDBFFF]'>
                 <section className='relative overflow-hidden grid grid-cols-1 sm:container sm:mx-auto xl:grid-cols-2 px-4 py-8 md:px-[42px]'>
-                    <div className='flex flex-col text-[#2D1F67] self-center pt-8 xl:pt-0'>
+                    <div className='flex flex-col text-[#2D1F67] self-center '>
                         <h2 className='text-2xl sm:text-3xl xl:text-4xl font-bold !text-left'>
                             Du design à la gestion :
                             votre infrastructure Cloud,pensée pour durer, scalée pour grandir.
@@ -332,7 +332,7 @@ const page = () => {
                         <span className='font-bold text-base sm:text-lg'>
                             Confiez-le à une équipe d’architectes et de développeurs qui comprennent vos enjeux business et tech.
                         </span>
-                        <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-[31px] py-[10px] w-min whitespace-nowrap">
+                        <Link href="/create-my-app-mobile" className="bg-[#673de6] hover:bg-[#5735bc] text-white rounded-lg px-4 py-2 sm:px-[31px] sm:py-[10px] w-min whitespace-nowrap">
                             Construire ou migrer mon infrastructure Cloud
                         </Link>
                     </div>
