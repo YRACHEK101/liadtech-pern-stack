@@ -124,10 +124,10 @@ const MainHeader = () => {
                                             Web & Mobile
                                         </span>
                                         <div className="flex flex-col">
-                                            <Link href="/services/creation-sites-web" className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
-                                                <Image src={"/images/coding.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
-                                                <div className="flex flex-col flex-1  ">
-                                                    <span className="font-bold">
+                                            <Link href="/services/creation-sites-web" className="flex gap-3 px-4 py-3 hover:bg-[#f4f0ff] hover:rounded-xl transition-all duration-300 hover:transform hover:scale-[1.02] group" onClick={toggleDrawer}>
+                                                <Image src={"/images/coding.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5 group-hover:transform group-hover:scale-110 transition-transform duration-300" />
+                                                <div className="flex flex-col flex-1">
+                                                    <span className="font-bold group-hover:text-[#673de6] transition-colors duration-300">
                                                         Création de sites web
                                                     </span>
                                                     <span className="text-[#3C3C3C]">
@@ -135,10 +135,10 @@ const MainHeader = () => {
                                                     </span>
                                                 </div>
                                             </Link>
-                                            <Link href="/services/applications-mobiles" className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
-                                                <Image src={"/images/Group 141.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
-                                                <div className="flex flex-col flex-1  ">
-                                                    <span className="font-bold">
+                                            <Link href="/services/applications-mobiles" className="flex gap-3 px-4 py-3 hover:bg-[#f4f0ff] hover:rounded-xl transition-all duration-300 hover:transform hover:scale-[1.02] group" onClick={toggleDrawer}>
+                                                <Image src={"/images/Group 141.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5 group-hover:transform group-hover:scale-110 transition-transform duration-300" />
+                                                <div className="flex flex-col flex-1">
+                                                    <span className="font-bold group-hover:text-[#673de6] transition-colors duration-300">
                                                         Applications mobiles
                                                     </span>
                                                     <span className="text-[#3C3C3C]">
@@ -151,10 +151,10 @@ const MainHeader = () => {
                                             Digital Merketing
                                         </span>
                                         <div className="flex flex-col">
-                                            <Link href={"/services/marketing-digital"} className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
-                                                <Image src={"/images/speakerphone.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
-                                                <div className="flex flex-col flex-1  ">
-                                                    <span className="font-bold">
+                                            <Link href={"/services/marketing-digital"} className="flex gap-3 px-4 py-3 hover:bg-[#f4f0ff] hover:rounded-xl transition-all duration-300 hover:transform hover:scale-[1.02] group" onClick={toggleDrawer}>
+                                                <Image src={"/images/speakerphone.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5 group-hover:transform group-hover:scale-110 transition-transform duration-300" />
+                                                <div className="flex flex-col flex-1">
+                                                    <span className="font-bold group-hover:text-[#673de6] transition-colors duration-300">
                                                         Marketing digital & publicité
                                                     </span>
                                                     <span className="text-[#3C3C3C]">
@@ -162,10 +162,10 @@ const MainHeader = () => {
                                                     </span>
                                                 </div>
                                             </Link>
-                                            <Link href="/services/referencement-seo" className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
-                                                <Image src={"/images/seo-tag-search-engine-optimization_svgrepo.com.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
-                                                <div className="flex flex-col flex-1  ">
-                                                    <span className="font-bold">
+                                            <Link href="/services/referencement-seo" className="flex gap-3 px-4 py-3 hover:bg-[#f4f0ff] hover:rounded-xl transition-all duration-300 hover:transform hover:scale-[1.02] group" onClick={toggleDrawer}>
+                                                <Image src={"/images/seo-tag-search-engine-optimization_svgrepo.com.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5 group-hover:transform group-hover:scale-110 transition-transform duration-300" />
+                                                <div className="flex flex-col flex-1">
+                                                    <span className="font-bold group-hover:text-[#673de6] transition-colors duration-300">
                                                         Référencement  Web /SEO
                                                     </span>
                                                     <span className="text-[#3C3C3C]">
@@ -173,10 +173,10 @@ const MainHeader = () => {
                                                     </span>
                                                 </div>
                                             </Link>
-                                            <Link href={"/services/blogging-contenus"} className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
-                                                <Image src={"/images/edit.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
-                                                <div className="flex flex-col flex-1  ">
-                                                    <span className="font-bold">
+                                            <Link href={"/services/blogging-contenus"} className="flex gap-3 px-4 py-3 hover:bg-[#f4f0ff] hover:rounded-xl transition-all duration-300 hover:transform hover:scale-[1.02] group" onClick={toggleDrawer}>
+                                                <Image src={"/images/edit.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5 group-hover:transform group-hover:scale-110 transition-transform duration-300" />
+                                                <div className="flex flex-col flex-1">
+                                                    <span className="font-bold group-hover:text-[#673de6] transition-colors duration-300">
                                                         Blogging & contenus
                                                     </span>
                                                     <span className="text-[#3C3C3C]">
@@ -191,10 +191,10 @@ const MainHeader = () => {
                                             Studio Créatif
                                         </span>
                                         <div className="flex flex-col">
-                                            <Link href={"/services/videos-explicatives"} className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
-                                                <Image src={"/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-45-10.png"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
-                                                <div className="flex flex-col flex-1  ">
-                                                    <span className="font-bold">
+                                            <Link href={"/services/videos-explicatives"} className="flex gap-3 px-4 py-3 hover:bg-[#f4f0ff] hover:rounded-xl transition-all duration-300 hover:transform hover:scale-[1.02] group" onClick={toggleDrawer}>
+                                                <Image src={"/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-45-10.png"} alt="icon" width={26} height={26} className="self-start mt-1.5 group-hover:transform group-hover:scale-110 transition-transform duration-300" />
+                                                <div className="flex flex-col flex-1">
+                                                    <span className="font-bold group-hover:text-[#673de6] transition-colors duration-300">
                                                         Vidéos explicatives 2D/3D
                                                     </span>
                                                     <span className="text-[#3C3C3C]">
@@ -202,10 +202,10 @@ const MainHeader = () => {
                                                     </span>
                                                 </div>
                                             </Link>
-                                            <Link href={"/services/creation-logo"} className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
-                                                <Image src={"/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-50-44.png"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
-                                                <div className="flex flex-col flex-1  ">
-                                                    <span className="font-bold">
+                                            <Link href={"/services/creation-logo"} className="flex gap-3 px-4 py-3 hover:bg-[#f4f0ff] hover:rounded-xl transition-all duration-300 hover:transform hover:scale-[1.02] group" onClick={toggleDrawer}>
+                                                <Image src={"/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-50-44.png"} alt="icon" width={26} height={26} className="self-start mt-1.5 group-hover:transform group-hover:scale-110 transition-transform duration-300" />
+                                                <div className="flex flex-col flex-1">
+                                                    <span className="font-bold group-hover:text-[#673de6] transition-colors duration-300">
                                                         création de logo
                                                     </span>
                                                     <span className="text-[#3C3C3C]">
@@ -213,10 +213,10 @@ const MainHeader = () => {
                                                     </span>
                                                 </div>
                                             </Link>
-                                            <Link href="/services/animations-narratives" className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
-                                                <Image src={"/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-44-29.png"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
-                                                <div className="flex flex-col flex-1  ">
-                                                    <span className="font-bold">
+                                            <Link href="/services/animations-narratives" className="flex gap-3 px-4 py-3 hover:bg-[#f4f0ff] hover:rounded-xl transition-all duration-300 hover:transform hover:scale-[1.02] group" onClick={toggleDrawer}>
+                                                <Image src={"/Liadtech/Accueil/icones/Screenshot from 2025-04-22 00-44-29.png"} alt="icon" width={26} height={26} className="self-start mt-1.5 group-hover:transform group-hover:scale-110 transition-transform duration-300" />
+                                                <div className="flex flex-col flex-1">
+                                                    <span className="font-bold group-hover:text-[#673de6] transition-colors duration-300">
                                                         Animations narratives & mini-séries
                                                     </span>
                                                     <span className="text-[#3C3C3C]">
@@ -224,10 +224,10 @@ const MainHeader = () => {
                                                     </span>
                                                 </div>
                                             </Link>
-                                            <Link href={"/services/design-graphique"} className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
-                                                <Image src={"/images/brush.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
-                                                <div className="flex flex-col flex-1  ">
-                                                    <span className="font-bold">
+                                            <Link href={"/services/design-graphique"} className="flex gap-3 px-4 py-3 hover:bg-[#f4f0ff] hover:rounded-xl transition-all duration-300 hover:transform hover:scale-[1.02] group" onClick={toggleDrawer}>
+                                                <Image src={"/images/brush.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5 group-hover:transform group-hover:scale-110 transition-transform duration-300" />
+                                                <div className="flex flex-col flex-1">
+                                                    <span className="font-bold group-hover:text-[#673de6] transition-colors duration-300">
                                                         Design Graphique & Visuels
                                                     </span>
                                                     <span className="text-[#3C3C3C]">
@@ -235,10 +235,10 @@ const MainHeader = () => {
                                                     </span>
                                                 </div>
                                             </Link>
-                                            <Link href={"/services/design-ux-ui"} className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
-                                                <Image src={"/images/Group 170 (1).svg"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
-                                                <div className="flex flex-col flex-1  ">
-                                                    <span className="font-bold">
+                                            <Link href={"/services/design-ux-ui"} className="flex gap-3 px-4 py-3 hover:bg-[#f4f0ff] hover:rounded-xl transition-all duration-300 hover:transform hover:scale-[1.02] group" onClick={toggleDrawer}>
+                                                <Image src={"/images/Group 170 (1).svg"} alt="icon" width={26} height={26} className="self-start mt-1.5 group-hover:transform group-hover:scale-110 transition-transform duration-300" />
+                                                <div className="flex flex-col flex-1">
+                                                    <span className="font-bold group-hover:text-[#673de6] transition-colors duration-300">
                                                         Design UX/UI
                                                     </span>
                                                     <span className="text-[#3C3C3C]">
@@ -253,10 +253,10 @@ const MainHeader = () => {
                                             Cloud, SaaS & Support
                                         </span>
                                         <div className="flex flex-col">
-                                            <Link href={"/services/infrastructure-cloud"} className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
-                                                <Image src={"/images/cloud-computing-servers-blades.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
-                                                <div className="flex flex-col flex-1  ">
-                                                    <span className="font-bold">
+                                            <Link href={"/services/infrastructure-cloud"} className="flex gap-3 px-4 py-3 hover:bg-[#f4f0ff] hover:rounded-xl transition-all duration-300 hover:transform hover:scale-[1.02] group" onClick={toggleDrawer}>
+                                                <Image src={"/images/cloud-computing-servers-blades.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5 group-hover:transform group-hover:scale-110 transition-transform duration-300" />
+                                                <div className="flex flex-col flex-1">
+                                                    <span className="font-bold group-hover:text-[#673de6] transition-colors duration-300">
                                                         Infrastructure Cloud et migration
                                                     </span>
                                                     <span className="text-[#3C3C3C]">
@@ -264,10 +264,10 @@ const MainHeader = () => {
                                                     </span>
                                                 </div>
                                             </Link>
-                                            <Link href={"/services/developpement-saas"} className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
-                                                <Image src={"/images/12-ui-code.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
-                                                <div className="flex flex-col flex-1  ">
-                                                    <span className="font-bold">
+                                            <Link href={"/services/developpement-saas"} className="flex gap-3 px-4 py-3 hover:bg-[#f4f0ff] hover:rounded-xl transition-all duration-300 hover:transform hover:scale-[1.02] group" onClick={toggleDrawer}>
+                                                <Image src={"/images/12-ui-code.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5 group-hover:transform group-hover:scale-110 transition-transform duration-300" />
+                                                <div className="flex flex-col flex-1">
+                                                    <span className="font-bold group-hover:text-[#673de6] transition-colors duration-300">
                                                         Développement SaaS
                                                     </span>
                                                     <span className="text-[#3C3C3C]">
@@ -275,10 +275,10 @@ const MainHeader = () => {
                                                     </span>
                                                 </div>
                                             </Link>
-                                            <Link href={"/services/maintenance-infogerance"} className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
-                                                <Image src={"/images/hammer-and-wrench_svgrepo.com.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
-                                                <div className="flex flex-col flex-1  ">
-                                                    <span className="font-bold">
+                                            <Link href={"/services/maintenance-infogerance"} className="flex gap-3 px-4 py-3 hover:bg-[#f4f0ff] hover:rounded-xl transition-all duration-300 hover:transform hover:scale-[1.02] group" onClick={toggleDrawer}>
+                                                <Image src={"/images/hammer-and-wrench_svgrepo.com.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5 group-hover:transform group-hover:scale-110 transition-transform duration-300" />
+                                                <div className="flex flex-col flex-1">
+                                                    <span className="font-bold group-hover:text-[#673de6] transition-colors duration-300">
                                                         Maintenance & infogérance
                                                     </span>
                                                     <span className="text-[#3C3C3C]">
@@ -286,10 +286,10 @@ const MainHeader = () => {
                                                     </span>
                                                 </div>
                                             </Link>
-                                            <Link href={"/services/applications-sur-mesure"} className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
-                                                <Image src={"/images/Group 170.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
-                                                <div className="flex flex-col flex-1  ">
-                                                    <span className="font-bold">
+                                            <Link href={"/services/applications-sur-mesure"} className="flex gap-3 px-4 py-3 hover:bg-[#f4f0ff] hover:rounded-xl transition-all duration-300 hover:transform hover:scale-[1.02] group" onClick={toggleDrawer}>
+                                                <Image src={"/images/Group 170.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5 group-hover:transform group-hover:scale-110 transition-transform duration-300" />
+                                                <div className="flex flex-col flex-1">
+                                                    <span className="font-bold group-hover:text-[#673de6] transition-colors duration-300">
                                                         Applications sur mesure
                                                     </span>
                                                     <span className="text-[#3C3C3C]">
@@ -313,10 +313,10 @@ const MainHeader = () => {
                                         </a>
                                     </div>
                                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                                        <Link href={"/services/chatbots"} className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
-                                            <Image src={"/images/cloud-computing-security-robot.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
-                                            <div className="flex flex-col flex-1  ">
-                                                <span className="font-bold">
+                                        <Link href={"/services/chatbots"} className="flex gap-3 px-4 py-3 hover:bg-[#f4f0ff] hover:rounded-xl transition-all duration-300 hover:transform hover:scale-[1.02] group" onClick={toggleDrawer}>
+                                            <Image src={"/images/cloud-computing-security-robot.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5 group-hover:transform group-hover:scale-110 transition-transform duration-300" />
+                                            <div className="flex flex-col flex-1">
+                                                <span className="font-bold group-hover:text-[#673de6] transition-colors duration-300">
                                                     Chatbots
                                                 </span>
                                                 <span className="text-[#3C3C3C]">
@@ -324,10 +324,10 @@ const MainHeader = () => {
                                                 </span>
                                             </div>
                                         </Link>
-                                        <Link href={"/services/automatisation-ia"} className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
-                                            <Image src={"/images/Group 140.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
-                                            <div className="flex flex-col flex-1  ">
-                                                <span className="font-bold">
+                                        <Link href={"/services/automatisation-ia"} className="flex gap-3 px-4 py-3 hover:bg-[#f4f0ff] hover:rounded-xl transition-all duration-300 hover:transform hover:scale-[1.02] group" onClick={toggleDrawer}>
+                                            <Image src={"/images/Group 140.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5 group-hover:transform group-hover:scale-110 transition-transform duration-300" />
+                                            <div className="flex flex-col flex-1">
+                                                <span className="font-bold group-hover:text-[#673de6] transition-colors duration-300">
                                                     Automatisation & agents IA
                                                 </span>
                                                 <span className="text-[#3C3C3C]">
@@ -335,10 +335,10 @@ const MainHeader = () => {
                                                 </span>
                                             </div>
                                         </Link>
-                                        <Link href={"/services/audit-securite"} className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
-                                            <Image src={"/images/Group 146.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
-                                            <div className="flex flex-col flex-1  ">
-                                                <span className="font-bold">
+                                        <Link href={"/services/audit-securite"} className="flex gap-3 px-4 py-3 hover:bg-[#f4f0ff] hover:rounded-xl transition-all duration-300 hover:transform hover:scale-[1.02] group" onClick={toggleDrawer}>
+                                            <Image src={"/images/Group 146.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5 group-hover:transform group-hover:scale-110 transition-transform duration-300" />
+                                            <div className="flex flex-col flex-1">
+                                                <span className="font-bold group-hover:text-[#673de6] transition-colors duration-300">
                                                     Audit de sécurité & Pentest
                                                 </span>
                                                 <span className="text-[#3C3C3C]">
@@ -346,10 +346,10 @@ const MainHeader = () => {
                                                 </span>
                                             </div>
                                         </Link>
-                                        <Link href={"/services/security-and-compliance"} className="flex gap-3 px-4 py-3" onClick={toggleDrawer}>
-                                            <Image src={"/images/Group 147.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5" />
-                                            <div className="flex flex-col flex-1  ">
-                                                <span className="font-bold">
+                                        <Link href={"/services/security-and-compliance"} className="flex gap-3 px-4 py-3 hover:bg-[#f4f0ff] hover:rounded-xl transition-all duration-300 hover:transform hover:scale-[1.02] group" onClick={toggleDrawer}>
+                                            <Image src={"/images/Group 147.svg"} alt="icon" width={26} height={26} className="self-start mt-1.5 group-hover:transform group-hover:scale-110 transition-transform duration-300" />
+                                            <div className="flex flex-col flex-1">
+                                                <span className="font-bold group-hover:text-[#673de6] transition-colors duration-300">
                                                     Conformité RGPD
                                                 </span>
                                                 <span className="text-[#3C3C3C]">
