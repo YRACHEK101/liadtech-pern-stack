@@ -26,8 +26,8 @@ export interface PricingCardProps {
 const PricingCard: React.FC<PricingCardProps> = ({
     title,
     isPopular = false,
-    features,
-    blockedFeatures,
+    features = [],
+    blockedFeatures = [],
     options = [],
     price,
     discount = 0
@@ -110,7 +110,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
                 <ul className="flex flex-col gap-3 justify-between text-[#2D1F67]">
                     {
                         [
-                            ...features.map((feature, index) => (
+                            ...(features?.map((feature, index) => (
                                 <div key={index} className='flex  items-center gap-2 '>
                                     <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="text-[#00b090]">
                                         <path fill="currentColor" d="M21.046 5.955c.439.439.439 1.151 0 1.59l-9.538 9.539a1.425 1.425 0 0 1-2.016 0l-4.288-4.288a1.125 1.125 0 0 1 1.591-1.591l3.705 3.704 8.954-8.954c.44-.44 1.152-.44 1.591 0Z"></path>
@@ -123,8 +123,8 @@ const PricingCard: React.FC<PricingCardProps> = ({
                                     </div>
 
                                 </div>
-                            )),
-                            ...blockedFeatures.map((feature, index) => (
+                            )) || []),
+                            ...(blockedFeatures?.map((feature, index) => (
                                 <div key={index} className='flex cursor-pointer items-center gap-2'>
                                     <span className='text-2xl pl-2 pr-1 text-gray-400'>-</span>
                                     <div className='text-sm  group cursor-pointer  relative flex flex-wrap items-start gap-1 border-b border-[#2D1F67] border-dashed text-gray-400'>
@@ -134,8 +134,8 @@ const PricingCard: React.FC<PricingCardProps> = ({
                                         </div>
                                     </div>
                                 </div>
-                            ))
-                        ].splice(0, isExpanded ? features.length + blockedFeatures.length : 5).map((item, index) => (
+                            )) || [])
+                        ].splice(0, isExpanded ? (features?.length || 0) + (blockedFeatures?.length || 0) : 5).map((item, index) => (
                             <div key={index}>
                                 {item}
                             </div>
